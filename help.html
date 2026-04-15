@@ -12,60 +12,67 @@
 
   <link rel="stylesheet" href="style/base.css">
   <link rel="stylesheet" href="style/help.css">
-  <title>CarryOver Help</title>
+  <script src="i18n.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <h2>CarryOver</h2>
-    <p>CarryOver is a smart "Read Later" and content collection app that seamlessly integrates with your iOS or macOS
-      workflow. It allows you to save text and URLs from any app and access them later, with built-in iCloud sync to
-      keep your data available across all your devices.</p>
+    <div class="lang-switch">
+      <button onclick="setLang('en')" class="lang-btn" data-lang="en">English</button>
+      <button onclick="setLang('zh-Hans')" class="lang-btn" data-lang="zh-Hans">简体中文</button>
+      <button onclick="setLang('zh-Hant')" class="lang-btn" data-lang="zh-Hant">繁體中文</button>
+    </div>
 
-    <h3>Features</h3>
-    <ul>
-      <li><strong>Universal Sharing</strong>: Share text and links from any app using the system Share Sheet.</li>
-      <li><strong>Smart URL Detection</strong>: Automatically identifies URLs in shared text and provides a one-tap
-        button to open them.</li>
-      <li><strong>iCloud Sync</strong>: Your saved items are automatically synced across all your devices using
-        CloudKit.</li>
-      <li><strong>History Tracking</strong>: Keep track of your reading history.</li>
-      <li><strong>Pro Features</strong>: Unlock unlimited daily saves (Free tier has a daily limit).</li>
-    </ul>
+    <!-- Dynamic Content -->
+    <div class="lang-content" style="display: block;">
+      <h2 data-i18n="app_name">CarryOver</h2>
+      <p data-i18n="intro"></p>
 
-    <h3>How to Use</h3>
+      <h3 data-i18n="features_title">Features</h3>
+      <ul>
+        <li data-i18n="feature_1"></li>
+        <li data-i18n="feature_2"></li>
+        <li data-i18n="feature_3"></li>
+        <li data-i18n="feature_4"></li>
+        <li data-i18n="feature_5"></li>
+      </ul>
 
-    <h4>1. Saving Content</h4>
-    <ol>
-      <li>Open any app (e.g., Safari, Twitter, Notes).</li>
-      <li>Select the text or URL you want to save.</li>
-      <li>Tap the <strong>Share</strong> button.</li>
-      <li>Select <strong>CarryOver</strong> from the list of apps.
-        <ul>
-          <li><em>Note: If you don't see CarryOver, tap "More..." and enable it.</em></li>
-        </ul>
-      </li>
-      <li>The content will be saved to your list automatically.</li>
-    </ol>
+      <h3 data-i18n="guide_title">How to Use</h3>
 
-    <h4>2. Managing Your List</h4>
-    <ul>
-      <li><strong>View Items</strong>: Open the CarryOver app to see your "Recent" list.</li>
-      <li><strong>Open Links</strong>: If an item contains a URL, tap the "Open Link" button to view it immediately.
-      </li>
-      <li><strong>Delete Items</strong>: Swipe left on an item to delete it.</li>
-      <li><strong>Retry Sync</strong>: If an item fails to sync (indicated by a red icon), tap the icon to retry.</li>
-    </ul>
+      <h4 data-i18n="save_title">1. Saving Content</h4>
+      <ol>
+        <li data-i18n="save_step_1"></li>
+        <li data-i18n="save_step_2"></li>
+        <li data-i18n="save_step_3"></li>
+        <li data-i18n="save_step_4"></li>
+        <li data-i18n="save_step_5"></li>
+      </ol>
 
-    <h4>3. History</h4>
-    <ul>
-      <li>Tap the <strong>History</strong> button (clock icon) at the bottom of the list to view your archived items.
-      </li>
-    </ul>
+      <h4 data-i18n="manage_title">2. Managing Your List</h4>
+      <ul>
+        <li data-i18n="manage_1"></li>
+        <li data-i18n="manage_2"></li>
+        <li data-i18n="manage_3"></li>
+        <li data-i18n="manage_4"></li>
+      </ul>
+
+      <h4 data-i18n="history_title">3. History</h4>
+      <ul>
+        <li data-i18n="history_1"></li>
+      </ul>
+
+      <h3 data-i18n="faq_title" style="margin-top: 30px;">Frequently Asked Questions</h3>
+      <p>
+        <strong data-i18n="faq_q1"></strong><br>
+        <span data-i18n="faq_a1"></span>
+      </p>
+
+    </div>
 
     <br />
-    <div class="footer">If you have any questions, don’t hesitate to contact our Support service -
-      cameoshell09@gmail.com</div>
+    <div class="footer">
+      <span data-i18n="footer"></span>
+    </div>
   </div>
 </body>
 

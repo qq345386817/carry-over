@@ -1,67 +1,99 @@
 :root {
-  --panel-bg-color: white;
-  --accordion-bg-color: #eee;
-  --accordion-text-color: #444;
-  --accordion-hover-bg-color: #ccc;
-  --accordion-icon-color: #777;
+  --text-color: #333;
+  --bg-color: #fff;
+  --link-color: #007aff;
+  --btn-bg: #f2f2f7;
+  --btn-text: #007aff;
+  --btn-active-bg: #007aff;
+  --btn-active-text: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --panel-bg-color: #121212;
-    --accordion-bg-color: #333;
-    --accordion-text-color: #fff;
-    --accordion-hover-bg-color: #555;
-    --accordion-icon-color: #ddd;
+    --text-color: #eee;
+    --bg-color: #1c1c1e;
+    --link-color: #0a84ff;
+    --btn-bg: #2c2c2e;
+    --btn-text: #0a84ff;
+    --btn-active-bg: #0a84ff;
+    --btn-active-text: #fff;
   }
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 20px;
+}
+
 .wrapper {
-  margin: auto;
-  max-width: 1280px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: var(--accordion-bg-color);
-  color: var(--accordion-text-color);
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  font-weight: bold;
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid var(--btn-bg);
+  padding-bottom: 0.2em;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: flex-end;
+}
+
+.lang-btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
   border: none;
-  outline: none;
-  transition: 0.4s;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: var(--accordion-hover-bg-color);
+.lang-btn:hover {
+  opacity: 0.8;
 }
 
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: var(--accordion-icon-color);
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  background-color: var(--panel-bg-color);
-  max-height: none;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+.lang-btn.active {
+  background-color: var(--btn-active-bg);
+  color: var(--btn-active-text);
+  font-weight: 600;
 }
 
 .footer {
-  width: 100%;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--btn-bg);
   text-align: center;
+  font-size: 0.9em;
+  color: #888;
 }
