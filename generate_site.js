@@ -71,6 +71,17 @@ const languages = [
   }
 ];
 
+const languageSelectLabels = {
+  "en-US": "Language",
+  "zh-Hans": "语言",
+  "zh-Hant": "語言",
+  ja: "言語",
+  ko: "언어",
+  "de-DE": "Sprache",
+  "fr-FR": "Langue",
+  "es-MX": "Idioma"
+};
+
 const copy = {
   "en-US": {
     nav: { home: "Home", help: "Help", support: "Support", privacy: "Privacy", appStore: "App Store" },
@@ -821,7 +832,7 @@ function languageSelect(activeLang, slug) {
   const links = languages.map((lang) =>
     `<a href="../${lang.code}/${slug ? slug : ""}">${lang.label}</a>`
   ).join("");
-  const aria = activeLang.code === "en-US" ? "Language" : activeLang.code === "zh-Hans" ? "语言" : "語言";
+  const aria = languageSelectLabels[activeLang.code] || "Language";
   return `<select class="language-select" aria-label="${aria}" onchange="if (this.value) window.location.href = this.value;">${options}</select><noscript><span class="language-noscript">${links}</span></noscript>`;
 }
 
