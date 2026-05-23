@@ -1,2 +1,11 @@
 .DS_Store
-
+node_modules/
+dist/
+.cache/
+.parcel-cache/
+.vite/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
