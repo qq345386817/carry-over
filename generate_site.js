@@ -6,6 +6,7 @@ const siteUrl = "https://carryover.luopeike.com";
 const appName = "CarryOver";
 const appStoreId = "6755507048";
 const appStoreUrl = `https://apps.apple.com/app/id${appStoreId}`;
+const macDownloadUrl = "https://pub-921ff78698074a30a8b3a65a51a6faa8.r2.dev/carryover/macos/CarryOver.dmg";
 const supportEmail = "cameoshell09@gmail.com";
 const lastmod = "2026-05-15";
 const appIconPath = "../images/app-icon.png";
@@ -93,6 +94,7 @@ const copy = {
       h1: "Carry ideas from mobile discovery to focused work.",
       lead: "CarryOver is a reliable net for links, text, and ideas you find while browsing. Save them from any app, sync across devices, and return to them when you are ready to think, verify, or act.",
       primary: "View on App Store",
+      macDownload: "Download Mac DMG",
       secondary: "Read help",
       sections: [
         {
@@ -206,6 +208,7 @@ const copy = {
       h1: "把移动端的灵感顺畅带到专注工作中。",
       lead: "CarryOver 是一个可靠的收集网，用来保存浏览时遇到的链接、文字和想法。你可以从任何 App 快速保存，并在准备好思考、验证或行动时回到它们。",
       primary: "在 App Store 查看",
+      macDownload: "下载 Mac DMG",
       secondary: "阅读帮助",
       sections: [
         {
@@ -319,6 +322,7 @@ const copy = {
       h1: "把行動端的靈感順暢帶到專注工作中。",
       lead: "CarryOver 是一個可靠的收集網，用來保存瀏覽時遇到的連結、文字和想法。你可以從任何 App 快速儲存，並在準備好思考、驗證或行動時回到它們。",
       primary: "在 App Store 查看",
+      macDownload: "下載 Mac DMG",
       secondary: "閱讀幫助",
       sections: [
         {
@@ -435,6 +439,7 @@ function makeLocalizedCopy(t) {
       h1: t.homeH1,
       lead: t.homeLead,
       primary: t.primary,
+      macDownload: t.macDownload || "Download Mac DMG",
       secondary: t.secondary,
       sections: [
         {
@@ -661,6 +666,7 @@ Object.assign(copy, {
     homeH1: "モバイルで見つけたものを、集中できる作業へつなげる。",
     homeLead: "CarryOver は、ブラウズ中に見つけたリンク、テキスト、アイデアを一時的に受け止める場所です。必要なときに保存し、準備ができたらもう一度戻れます。",
     primary: "App Store で見る",
+    macDownload: "Mac DMG をダウンロード",
     secondary: "ヘルプを読む",
     captureTitle: "すばやい保存のために",
     shareSheetTitle: "システム共有シート", shareSheetText: "Safari、メモ、SNS など共有に対応した App からリンクやテキストを保存できます。",
@@ -711,7 +717,7 @@ Object.assign(copy, {
   "ko": makeLocalizedCopy({
     nav: { home: "홈", help: "도움말", support: "지원", privacy: "개인정보", appStore: "App Store" },
     homeTitle: "CarryOver - 지금 저장하고 나중에 실행", homeDescription: "CarryOver는 iPhone, iPad, Mac에서 찾은 링크, 텍스트, 이미지를 저장하고 iCloud로 동기화해 나중에 다시 볼 수 있게 합니다.", homeKeywords: "CarryOver,나중에 읽기,링크 저장,공유 시트,iCloud 동기화,아이디어 저장,iPhone 생산성,Mac 생산성",
-    eyebrow: "지금 저장하고 나중에 실행", homeH1: "모바일에서 발견한 것을 집중할 작업으로 이어가세요.", homeLead: "CarryOver는 탐색 중 발견한 링크, 텍스트, 아이디어를 안전하게 붙잡아 두는 공간입니다. 지금 저장하고 준비되면 다시 돌아오세요.", primary: "App Store에서 보기", secondary: "도움말 보기",
+    eyebrow: "지금 저장하고 나중에 실행", homeH1: "모바일에서 발견한 것을 집중할 작업으로 이어가세요.", homeLead: "CarryOver는 탐색 중 발견한 링크, 텍스트, 아이디어를 안전하게 붙잡아 두는 공간입니다. 지금 저장하고 준비되면 다시 돌아오세요.", primary: "App Store에서 보기", macDownload: "Mac DMG 다운로드", secondary: "도움말 보기",
     captureTitle: "빠른 저장을 위해 설계", shareSheetTitle: "시스템 공유 시트", shareSheetText: "Safari, 메모, 소셜 앱 등 공유를 지원하는 앱에서 텍스트와 링크를 저장하세요.", urlTitle: "스마트 URL 감지", urlText: "공유 텍스트 안의 URL을 감지하고 원래 맥락과 함께 보관합니다.", syncTitle: "iCloud 동기화", syncText: "CloudKit으로 저장 항목을 동기화해 iPhone, iPad, Mac을 맞춰 줍니다.",
     followTitle: "발견에서 실제 후속 작업으로", recentTitle: "최근 목록", recentText: "새로 저장한 항목을 흩어지지 않은 하나의 목록에서 검토하세요.", historyTitle: "기록", historyText: "처리한 항목을 보관하고 다시 확인할 수 있습니다.", favoriteTitle: "즐겨찾기", favoriteText: "중요한 항목은 눈에 잘 띄게 남겨 후속 작업을 이어갑니다.", feedback: `질문이나 피드백은 ${supportEmail}로 보내 주세요.`,
     helpTitle: "CarryOver 도움말 - Apple 기기 간 링크, 텍스트, 아이디어 저장", helpDescription: "iPhone, iPad, Mac에서 CarryOver를 사용하는 방법. 공유 시트, URL 감지, iCloud 동기화, 기록, 삭제, 동기화 문제 해결을 안내합니다.", helpKeywords: "CarryOver 도움말,링크 저장,나중에 읽기,공유 시트,iCloud 동기화,URL 감지,Apple 기기", helpEyebrow: "도움말 및 지원", helpH1: "CarryOver 사용 방법", helpLead: "CarryOver는 링크, 텍스트, 관심 있는 순간을 지금 저장하고 나중에 알맞은 기기에서 검토하고 실행하도록 도와줍니다.",
@@ -728,7 +734,7 @@ Object.assign(copy, {
   "de-DE": makeLocalizedCopy({
     nav: { home: "Start", help: "Hilfe", support: "Support", privacy: "Datenschutz", appStore: "App Store" },
     homeTitle: "CarryOver - Jetzt sichern, später zurückkehren", homeDescription: "CarryOver speichert Links, Texte und Bilder von iPhone, iPad und Mac, damit du sie später mit iCloud-Sync auf deinen Apple-Geräten prüfen kannst.", homeKeywords: "CarryOver,später lesen,Links sichern,Share Sheet,iCloud Sync,Ideen erfassen,iPhone Produktivität,Mac Produktivität",
-    eyebrow: "Jetzt sichern, später handeln", homeH1: "Bring mobile Fundstücke in fokussierte Arbeit.", homeLead: "CarryOver ist ein verlässlicher Ort für Links, Texte und Ideen, die du unterwegs findest. Speichere sie jetzt und kehre zurück, wenn du bereit bist.", primary: "Im App Store ansehen", secondary: "Hilfe lesen",
+    eyebrow: "Jetzt sichern, später handeln", homeH1: "Bring mobile Fundstücke in fokussierte Arbeit.", homeLead: "CarryOver ist ein verlässlicher Ort für Links, Texte und Ideen, die du unterwegs findest. Speichere sie jetzt und kehre zurück, wenn du bereit bist.", primary: "Im App Store ansehen", macDownload: "Mac-DMG laden", secondary: "Hilfe lesen",
     captureTitle: "Für schnelles Erfassen gebaut", shareSheetTitle: "System-Share-Sheet", shareSheetText: "Speichere Text und Links aus Safari, Notizen, sozialen Apps und anderen Apps mit Teilen-Funktion.", urlTitle: "Intelligente URL-Erkennung", urlText: "CarryOver erkennt URLs in geteiltem Text und behält den ursprünglichen Kontext bei.", syncTitle: "iCloud-Sync", syncText: "Gespeicherte Elemente werden über CloudKit zwischen iPhone, iPad und Mac synchronisiert.",
     followTitle: "Vom passiven Lesen zur Nacharbeit", recentTitle: "Aktuelle Liste", recentText: "Neue Funde landen in einer ruhigen Warteschlange statt verstreut in vielen Apps.", historyTitle: "Verlauf", historyText: "Erledigte Elemente bleiben als Verlauf verfügbar.", favoriteTitle: "Favoriten", favoriteText: "Wichtige Hinweise bleiben sichtbar, wenn sie einen zweiten Blick verdienen.", feedback: `Fragen oder Feedback? Schreibe an ${supportEmail}.`,
     helpTitle: "CarryOver Hilfe - Links, Texte und Ideen auf Apple-Geräten sichern", helpDescription: "So nutzt du CarryOver auf iPhone, iPad und Mac: Share Sheet, URL-Erkennung, iCloud-Sync, Verlauf, Löschen und Sync-Fehlerbehebung.", helpKeywords: "CarryOver Hilfe,Links sichern,später lesen,Share Sheet,iCloud Sync,URL Erkennung,Apple Geräte", helpEyebrow: "Hilfe und Support", helpH1: "So nutzt du CarryOver", helpLead: "CarryOver hilft dir, Links, Texte und interessante Momente jetzt zu erfassen und später auf dem passenden Gerät zu bearbeiten.",
@@ -745,7 +751,7 @@ Object.assign(copy, {
   "fr-FR": makeLocalizedCopy({
     nav: { home: "Accueil", help: "Aide", support: "Support", privacy: "Confidentialité", appStore: "App Store" },
     homeTitle: "CarryOver - Enregistrez maintenant, revenez plus tard", homeDescription: "CarryOver enregistre les liens, textes et images trouvés sur iPhone, iPad et Mac, puis les synchronise avec iCloud pour les retrouver sur vos appareils Apple.", homeKeywords: "CarryOver,lire plus tard,enregistrer liens,feuille de partage,synchronisation iCloud,capturer idées,productivité iPhone,productivité Mac",
-    eyebrow: "Enregistrez maintenant, revenez plus tard", homeH1: "Transformez les découvertes mobiles en travail concentré.", homeLead: "CarryOver est un filet fiable pour les liens, textes et idées trouvés en navigation. Enregistrez-les depuis n'importe quelle app et revenez quand vous êtes prêt à réfléchir, vérifier ou agir.", primary: "Voir sur l'App Store", secondary: "Lire l'aide",
+    eyebrow: "Enregistrez maintenant, revenez plus tard", homeH1: "Transformez les découvertes mobiles en travail concentré.", homeLead: "CarryOver est un filet fiable pour les liens, textes et idées trouvés en navigation. Enregistrez-les depuis n'importe quelle app et revenez quand vous êtes prêt à réfléchir, vérifier ou agir.", primary: "Voir sur l'App Store", macDownload: "Télécharger le DMG Mac", secondary: "Lire l'aide",
     captureTitle: "Conçu pour capturer vite", shareSheetTitle: "Feuille de partage système", shareSheetText: "Enregistrez du texte et des liens depuis Safari, Notes, les apps sociales et toute app compatible avec le partage.", urlTitle: "Détection intelligente des URL", urlText: "CarryOver repère les URL dans le texte partagé et conserve le contexte d'origine.", syncTitle: "Synchronisation iCloud", syncText: "Les éléments enregistrés se synchronisent via CloudKit pour garder iPhone, iPad et Mac alignés.",
     followTitle: "Passer de la lecture au suivi réel", recentTitle: "Liste récente", recentText: "Retrouvez les nouvelles captures dans une file claire plutôt que dispersées entre plusieurs apps.", historyTitle: "Historique", historyText: "Archivez les éléments traités et gardez une trace de ce que vous avez déjà vérifié.", favoriteTitle: "Favoris", favoriteText: "Gardez les pistes importantes visibles pour y revenir facilement.", feedback: `Questions ou retours ? Contactez ${supportEmail}.`,
     helpTitle: "Aide CarryOver - Enregistrer liens, textes et idées sur appareils Apple", helpDescription: "Apprenez à utiliser CarryOver sur iPhone, iPad et Mac : feuille de partage, détection d'URL, synchronisation iCloud, historique, suppression et dépannage.", helpKeywords: "Aide CarryOver,enregistrer liens,lire plus tard,feuille de partage,synchronisation iCloud,détection URL,appareils Apple", helpEyebrow: "Aide et support", helpH1: "Comment utiliser CarryOver", helpLead: "CarryOver vous aide à capturer maintenant les liens, textes et moments intéressants, puis à les revoir plus tard depuis l'appareil adapté au travail.",
@@ -762,7 +768,7 @@ Object.assign(copy, {
   "es-MX": makeLocalizedCopy({
     nav: { home: "Inicio", help: "Ayuda", support: "Soporte", privacy: "Privacidad", appStore: "App Store" },
     homeTitle: "CarryOver - Guarda ahora, vuelve después", homeDescription: "CarryOver guarda enlaces, texto e imágenes desde iPhone, iPad y Mac, y los sincroniza con iCloud para revisarlos después en tus dispositivos Apple.", homeKeywords: "CarryOver,leer después,guardar enlaces,hoja compartir,sincronización iCloud,capturar ideas,productividad iPhone,productividad Mac",
-    eyebrow: "Guarda ahora, vuelve después", homeH1: "Lleva lo que descubres en móvil a trabajo con foco.", homeLead: "CarryOver es una red confiable para enlaces, texto e ideas que encuentras al navegar. Guarda desde cualquier app y vuelve cuando estés listo para pensar, verificar o actuar.", primary: "Ver en App Store", secondary: "Leer ayuda",
+    eyebrow: "Guarda ahora, vuelve después", homeH1: "Lleva lo que descubres en móvil a trabajo con foco.", homeLead: "CarryOver es una red confiable para enlaces, texto e ideas que encuentras al navegar. Guarda desde cualquier app y vuelve cuando estés listo para pensar, verificar o actuar.", primary: "Ver en App Store", macDownload: "Descargar DMG para Mac", secondary: "Leer ayuda",
     captureTitle: "Hecho para capturar rápido", shareSheetTitle: "Hoja de compartir del sistema", shareSheetText: "Guarda texto y enlaces desde Safari, Notas, apps sociales y otras apps compatibles con compartir.", urlTitle: "Detección inteligente de URL", urlText: "CarryOver encuentra URL dentro del texto compartido y conserva el contexto original.", syncTitle: "Sincronización iCloud", syncText: "Los elementos guardados se sincronizan con CloudKit para mantener iPhone, iPad y Mac al día.",
     followTitle: "De lectura pasiva a seguimiento real", recentTitle: "Lista reciente", recentText: "Revisa nuevas capturas en una cola clara en lugar de dejarlas dispersas entre apps.", historyTitle: "Historial", historyText: "Archiva elementos tratados y conserva lo que ya revisaste.", favoriteTitle: "Favoritos", favoriteText: "Mantén visibles las pistas importantes para retomarlas después.", feedback: `¿Preguntas o comentarios? Contacta a ${supportEmail}.`,
     helpTitle: "Ayuda de CarryOver - Guarda enlaces, texto e ideas en dispositivos Apple", helpDescription: "Aprende a usar CarryOver en iPhone, iPad y Mac: hoja de compartir, detección de URL, sincronización iCloud, historial, borrado y solución de problemas.", helpKeywords: "Ayuda CarryOver,guardar enlaces,leer después,hoja compartir,sincronización iCloud,detección URL,dispositivos Apple", helpEyebrow: "Ayuda y soporte", helpH1: "Cómo usar CarryOver", helpLead: "CarryOver te ayuda a capturar ahora enlaces, texto y momentos de interés, para revisarlos y actuar después desde el dispositivo adecuado.",
@@ -945,6 +951,11 @@ function appStoreButton(label, extraClass = "") {
   return `<a class="${className}" href="${appStoreUrl}"><img class="store-icon" src="${appStoreIconPath}" alt="">${escapeHtml(label)}</a>`;
 }
 
+function macDownloadButton(label, extraClass = "secondary") {
+  const className = extraClass ? `button ${extraClass}` : "button";
+  return `<a class="${className}" href="${macDownloadUrl}" download="CarryOver.dmg">${escapeHtml(label)}</a>`;
+}
+
 function head(lang, page, pageCopy) {
   const slug = page.slug;
   const alternateOgLocales = languages
@@ -1023,6 +1034,7 @@ function renderHome(lang) {
         <p class="lead">${escapeHtml(c.lead)}</p>
         <div class="cta-row">
           ${appStoreButton(c.primary)}
+          ${macDownloadButton(c.macDownload)}
           <a class="button secondary" href="help">${escapeHtml(c.secondary)}</a>
         </div>
       </div>
@@ -1074,6 +1086,7 @@ function renderHelp(lang) {
 
       <div class="download-strip">
         ${appStoreButton(nav.appStore)}
+        ${macDownloadButton(copy[lang.code].home.macDownload)}
       </div>
 
       <p class="footer">${escapeHtml(c.footer)}</p>
@@ -1125,6 +1138,7 @@ function renderPrivacy(lang) {
 
       <div class="download-strip">
         ${appStoreButton(nav.appStore)}
+        ${macDownloadButton(copy[lang.code].home.macDownload)}
       </div>
 
       <p class="footer">${escapeHtml(c.footer)}</p>
