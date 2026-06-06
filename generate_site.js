@@ -8,7 +8,7 @@ const appStoreId = "6755507048";
 const appStoreUrl = `https://apps.apple.com/app/id${appStoreId}`;
 const macDownloadUrl = "https://pub-921ff78698074a30a8b3a65a51a6faa8.r2.dev/carryover/macos/CarryOver.dmg";
 const supportEmail = "cameoshell09@gmail.com";
-const lastmod = "2026-05-15";
+const lastmod = "2026-06-06";
 const appIconPath = "../images/app-icon.png";
 const appStoreIconPath = "../images/app-store-icon.svg";
 const socialImageUrl = `${siteUrl}/images/app-icon.png`;
@@ -69,6 +69,20 @@ const languages = [
     htmlLang: "es-MX",
     label: "Español",
     ogLocale: "es_MX"
+  },
+  {
+    code: "it",
+    hreflang: "it",
+    htmlLang: "it",
+    label: "Italiano",
+    ogLocale: "it_IT"
+  },
+  {
+    code: "id",
+    hreflang: "id",
+    htmlLang: "id",
+    label: "Bahasa Indonesia",
+    ogLocale: "id_ID"
   }
 ];
 
@@ -80,7 +94,9 @@ const languageSelectLabels = {
   ko: "언어",
   "de-DE": "Sprache",
   "fr-FR": "Langue",
-  "es-MX": "Idioma"
+  "es-MX": "Idioma",
+  it: "Lingua",
+  id: "Bahasa"
 };
 
 const copy = {
@@ -161,7 +177,7 @@ const copy = {
     },
     privacy: {
       title: "CarryOver Privacy Policy - Local Capture and iCloud Sync",
-      description: "CarryOver privacy policy: no CarryOver account required, local storage for saved items, optional iCloud sync through Apple services, no advertising SDKs, and support email only when you contact us.",
+      description: "CarryOver privacy policy: local storage, optional iCloud sync through Apple services, no account required, no advertising SDKs, and email-only support.",
       keywords: "CarryOver privacy policy, iCloud sync privacy, local storage, no account, no advertising SDK",
       eyebrow: "CarryOver",
       h1: "Privacy Policy",
@@ -653,6 +669,34 @@ const supportCopy = {
       ["Temas comunes", "Hoja de compartir, retrasos de iCloud, detección de enlaces, historial, eliminación y estado de Pro."],
       ["Descargar CarryOver", "Instala CarryOver desde App Store en iPhone, iPad y Mac."]
     ]
+  },
+  "it": {
+    title: "Supporto CarryOver - Aiuto per iPhone, iPad e Mac",
+    description: "Contatta il supporto CarryOver per salvare link, configurare il pannello di condivisione, sincronizzare iCloud, verificare Pro e lavorare tra dispositivi.",
+    keywords: "supporto CarryOver,contattare CarryOver,aiuto iCloud,pannello condivisione,App Store",
+    eyebrow: "Supporto",
+    h1: "Ricevi aiuto con CarryOver",
+    lead: "Per problemi di sincronizzazione, condivisione, acquisti o feedback, invia un’email con dispositivo, versione di sistema e una breve descrizione.",
+    emailLabel: "Contatta il supporto",
+    sections: [
+      ["Cosa includere", "Modello del dispositivo, versione iOS/iPadOS/macOS, stato di iCloud e tipo di contenuto che stavi salvando."],
+      ["Argomenti comuni", "Visibilità del pannello di condivisione, ritardi iCloud, rilevamento link, cronologia, eliminazione e stato Pro."],
+      ["Scarica CarryOver", "Installa CarryOver dall’App Store su iPhone, iPad e Mac."]
+    ]
+  },
+  "id": {
+    title: "Dukungan CarryOver - Bantuan untuk iPhone, iPad, dan Mac",
+    description: "Hubungi dukungan CarryOver untuk bantuan menyimpan tautan, pengaturan Share Sheet, sinkronisasi iCloud, status Pro, dan alur lintas perangkat.",
+    keywords: "dukungan CarryOver,kontak CarryOver,bantuan iCloud,Share Sheet,App Store",
+    eyebrow: "Dukungan",
+    h1: "Dapatkan bantuan CarryOver",
+    lead: "Untuk masalah sinkronisasi, Share Sheet, pembelian, atau masukan, kirim email berisi perangkat, versi sistem, dan ringkasan masalah.",
+    emailLabel: "Email dukungan",
+    sections: [
+      ["Yang perlu disertakan", "Model perangkat, versi iOS/iPadOS/macOS, status iCloud, dan jenis konten yang sedang kamu simpan."],
+      ["Topik umum", "Visibilitas Share Sheet, jeda sinkronisasi iCloud, deteksi tautan, riwayat, penghapusan, dan status Pro."],
+      ["Unduh CarryOver", "Instal CarryOver dari App Store di iPhone, iPad, dan Mac."]
+    ]
   }
 };
 
@@ -754,13 +798,13 @@ Object.assign(copy, {
     eyebrow: "Enregistrez maintenant, revenez plus tard", homeH1: "Transformez les découvertes mobiles en travail concentré.", homeLead: "CarryOver est un filet fiable pour les liens, textes et idées trouvés en navigation. Enregistrez-les depuis n'importe quelle app et revenez quand vous êtes prêt à réfléchir, vérifier ou agir.", primary: "Voir sur l'App Store", macDownload: "Télécharger le DMG Mac", secondary: "Lire l'aide",
     captureTitle: "Conçu pour capturer vite", shareSheetTitle: "Feuille de partage système", shareSheetText: "Enregistrez du texte et des liens depuis Safari, Notes, les apps sociales et toute app compatible avec le partage.", urlTitle: "Détection intelligente des URL", urlText: "CarryOver repère les URL dans le texte partagé et conserve le contexte d'origine.", syncTitle: "Synchronisation iCloud", syncText: "Les éléments enregistrés se synchronisent via CloudKit pour garder iPhone, iPad et Mac alignés.",
     followTitle: "Passer de la lecture au suivi réel", recentTitle: "Liste récente", recentText: "Retrouvez les nouvelles captures dans une file claire plutôt que dispersées entre plusieurs apps.", historyTitle: "Historique", historyText: "Archivez les éléments traités et gardez une trace de ce que vous avez déjà vérifié.", favoriteTitle: "Favoris", favoriteText: "Gardez les pistes importantes visibles pour y revenir facilement.", feedback: `Questions ou retours ? Contactez ${supportEmail}.`,
-    helpTitle: "Aide CarryOver - Enregistrer liens, textes et idées sur appareils Apple", helpDescription: "Apprenez à utiliser CarryOver sur iPhone, iPad et Mac : feuille de partage, détection d'URL, synchronisation iCloud, historique, suppression et dépannage.", helpKeywords: "Aide CarryOver,enregistrer liens,lire plus tard,feuille de partage,synchronisation iCloud,détection URL,appareils Apple", helpEyebrow: "Aide et support", helpH1: "Comment utiliser CarryOver", helpLead: "CarryOver vous aide à capturer maintenant les liens, textes et moments intéressants, puis à les revoir plus tard depuis l'appareil adapté au travail.",
+    helpTitle: "Aide CarryOver - Liens, textes et idées sur Apple", helpDescription: "Apprenez à utiliser CarryOver sur iPhone, iPad et Mac : feuille de partage, détection d'URL, synchronisation iCloud, historique, suppression et dépannage.", helpKeywords: "Aide CarryOver,enregistrer liens,lire plus tard,feuille de partage,synchronisation iCloud,détection URL,appareils Apple", helpEyebrow: "Aide et support", helpH1: "Comment utiliser CarryOver", helpLead: "CarryOver vous aide à capturer maintenant les liens, textes et moments intéressants, puis à les revoir plus tard depuis l'appareil adapté au travail.",
     saveGroup: "Enregistrer du contenu", openAppTitle: "Ouvrir une app", openAppText: "Commencez dans Safari, Notes, une app sociale ou toute app capable de partager du texte ou des URL.", selectTitle: "Sélectionner texte ou URL", selectText: "Choisissez le contenu à garder pour plus tard.", shareTitle: "Utiliser Partager", shareText: "Touchez le bouton de partage système et choisissez CarryOver. S'il n'apparaît pas, activez-le dans Plus.", confirmTitle: "Confirmer l'enregistrement", confirmText: "L'élément est ajouté à la liste récente et préparé pour la synchronisation iCloud.",
     manageGroup: "Gérer la liste", reviewTitle: "Revoir les captures récentes", reviewText: "Ouvrez CarryOver pour voir les derniers éléments enregistrés.", openLinkTitle: "Ouvrir les liens détectés", openLinkText: "Quand un élément contient une URL, ouvrez-la dans le navigateur.", deleteTitle: "Supprimer des éléments", deleteText: "Retirez de la liste ce dont vous n'avez plus besoin.", historyHelpTitle: "Utiliser l'historique", historyHelpText: "Retrouvez les contenus déjà traités dans l'historique.",
     syncGroup: "Synchronisation et dépannage", icloudTitle: "Utiliser le même compte iCloud", icloudText: "Les appareils doivent utiliser le même identifiant Apple avec iCloud disponible.", retryTitle: "Réessayer la synchronisation", retryText: "Si un élément signale un problème, touchez l'icône d'état pour réessayer.", storageTitle: "Vérifier le stockage iCloud", storageText: "Si un autre appareil ne se met pas à jour, vérifiez le réseau, le stockage iCloud et l'envoi en arrière-plan.", faqTitle: "Questions fréquentes",
     faq: [["Pourquoi CarryOver n'apparaît-il pas dans la feuille de partage ?", "Activez CarryOver dans la section Plus de la feuille de partage et placez-le plus haut si besoin."], ["Pourquoi la synchronisation n'arrive-t-elle pas immédiatement ?", "Le réseau, le mode économie d'énergie ou un stockage iCloud insuffisant peuvent retarder la synchronisation."], ["CarryOver nécessite-t-il un compte ?", "Non. La synchronisation utilise les services iCloud d'Apple lorsqu'ils sont disponibles."]],
     helpFooter: `Besoin d'aide ? Contactez ${supportEmail}.`,
-    privacyTitle: "Politique de confidentialité CarryOver - Capture locale et synchronisation iCloud", privacyDescription: "Politique de confidentialité CarryOver : aucun compte requis, stockage local, synchronisation iCloud optionnelle via Apple, aucun SDK publicitaire.", privacyKeywords: "confidentialité CarryOver,synchronisation iCloud,stockage local,aucun compte,aucune publicité", privacyH1: "Politique de confidentialité", effective: "Date d'effet : 15 mai 2026", privacyLead: "CarryOver est conçu pour une capture privée et une consultation ultérieure. Aucun compte CarryOver n'est requis et les informations personnelles ne sont pas vendues.",
+    privacyTitle: "Confidentialité CarryOver - Capture locale et iCloud", privacyDescription: "Politique de confidentialité CarryOver : aucun compte requis, stockage local, synchronisation iCloud optionnelle via Apple, aucun SDK publicitaire.", privacyKeywords: "confidentialité CarryOver,synchronisation iCloud,stockage local,aucun compte,aucune publicité", privacyH1: "Politique de confidentialité", effective: "Date d'effet : 15 mai 2026", privacyLead: "CarryOver est conçu pour une capture privée et une consultation ultérieure. Aucun compte CarryOver n'est requis et les informations personnelles ne sont pas vendues.",
     privacyGlance: "Confidentialité en bref", noAccountTitle: "Aucun compte CarryOver", noAccountText: "Vous n'avez pas besoin de vous inscrire, de vous connecter ou de créer un profil.", controlTitle: "Vos éléments restent sous votre contrôle", controlText: "Les textes et liens enregistrés sont stockés sur l'appareil et peuvent se synchroniser via iCloud si activé.", noAdsTitle: "Aucun SDK publicitaire", noAdsText: "L'app n'inclut pas de SDK publicitaire tiers et ne vend pas d'informations personnelles.", emailTitle: "Support par e-mail", emailText: "Si vous contactez le support, votre e-mail sert uniquement à répondre.",
     infoTitle: "Informations utilisées par l'app", sharedContentTitle: "Contenu partagé", sharedContentText: "CarryOver stocke les textes et URL que vous choisissez d'enregistrer depuis l'app ou la feuille de partage.", localTitle: "Stockage local", localText: "L'app stocke localement les éléments, préférences, historique et état de synchronisation.", icloudPrivacyTitle: "iCloud", icloudPrivacyText: "Si iCloud est disponible, les éléments peuvent être synchronisés via CloudKit d'Apple.", purchaseTitle: "Statut d'achat", purchaseText: "L'app peut vérifier le statut d'achat App Store pour débloquer les fonctions Pro.",
     retentionTitle: "Conservation, suppression et changements", deletePrivacyTitle: "Suppression d'éléments", deletePrivacyText: "Les éléments supprimés dans l'app sont retirés de la liste et suivent le comportement de synchronisation du système.", removeTitle: "Suppression de l'app", removeText: "Supprimer l'app efface les données locales de cet appareil.", changeTitle: "Mises à jour", changeText: "Toute modification sera publiée sur cette page avec une date mise à jour.", privacyFooter: `Questions de confidentialité : ${supportEmail}.`
@@ -771,16 +815,50 @@ Object.assign(copy, {
     eyebrow: "Guarda ahora, vuelve después", homeH1: "Lleva lo que descubres en móvil a trabajo con foco.", homeLead: "CarryOver es una red confiable para enlaces, texto e ideas que encuentras al navegar. Guarda desde cualquier app y vuelve cuando estés listo para pensar, verificar o actuar.", primary: "Ver en App Store", macDownload: "Descargar DMG para Mac", secondary: "Leer ayuda",
     captureTitle: "Hecho para capturar rápido", shareSheetTitle: "Hoja de compartir del sistema", shareSheetText: "Guarda texto y enlaces desde Safari, Notas, apps sociales y otras apps compatibles con compartir.", urlTitle: "Detección inteligente de URL", urlText: "CarryOver encuentra URL dentro del texto compartido y conserva el contexto original.", syncTitle: "Sincronización iCloud", syncText: "Los elementos guardados se sincronizan con CloudKit para mantener iPhone, iPad y Mac al día.",
     followTitle: "De lectura pasiva a seguimiento real", recentTitle: "Lista reciente", recentText: "Revisa nuevas capturas en una cola clara en lugar de dejarlas dispersas entre apps.", historyTitle: "Historial", historyText: "Archiva elementos tratados y conserva lo que ya revisaste.", favoriteTitle: "Favoritos", favoriteText: "Mantén visibles las pistas importantes para retomarlas después.", feedback: `¿Preguntas o comentarios? Contacta a ${supportEmail}.`,
-    helpTitle: "Ayuda de CarryOver - Guarda enlaces, texto e ideas en dispositivos Apple", helpDescription: "Aprende a usar CarryOver en iPhone, iPad y Mac: hoja de compartir, detección de URL, sincronización iCloud, historial, borrado y solución de problemas.", helpKeywords: "Ayuda CarryOver,guardar enlaces,leer después,hoja compartir,sincronización iCloud,detección URL,dispositivos Apple", helpEyebrow: "Ayuda y soporte", helpH1: "Cómo usar CarryOver", helpLead: "CarryOver te ayuda a capturar ahora enlaces, texto y momentos de interés, para revisarlos y actuar después desde el dispositivo adecuado.",
+    helpTitle: "Ayuda CarryOver - Enlaces, texto e ideas en Apple", helpDescription: "Aprende a usar CarryOver en iPhone, iPad y Mac: hoja de compartir, detección de URL, sincronización iCloud, historial, borrado y solución de problemas.", helpKeywords: "Ayuda CarryOver,guardar enlaces,leer después,hoja compartir,sincronización iCloud,detección URL,dispositivos Apple", helpEyebrow: "Ayuda y soporte", helpH1: "Cómo usar CarryOver", helpLead: "CarryOver te ayuda a capturar ahora enlaces, texto y momentos de interés, para revisarlos y actuar después desde el dispositivo adecuado.",
     saveGroup: "Guardar contenido", openAppTitle: "Abre cualquier app", openAppText: "Empieza en Safari, Notas, una app social o cualquier app que pueda compartir texto o URL.", selectTitle: "Selecciona texto o URL", selectText: "Elige el contenido que quieres conservar para revisarlo después.", shareTitle: "Usa Compartir", shareText: "Toca el botón de compartir del sistema y elige CarryOver. Si no aparece, actívalo en Más.", confirmTitle: "Confirma el guardado", confirmText: "El elemento se agrega a la lista reciente y queda listo para sincronizarse con iCloud.",
     manageGroup: "Gestionar la lista", reviewTitle: "Revisa capturas recientes", reviewText: "Abre CarryOver para ver los últimos elementos guardados.", openLinkTitle: "Abre enlaces detectados", openLinkText: "Cuando un elemento contiene una URL, ábrela en el navegador.", deleteTitle: "Borra elementos", deleteText: "Elimina de la lista lo que ya no necesitas.", historyHelpTitle: "Usa el historial", historyHelpText: "Vuelve al historial cuando necesites consultar contenido ya revisado.",
     syncGroup: "Sincronización y solución de problemas", icloudTitle: "Usa la misma cuenta de iCloud", icloudText: "Los dispositivos deben usar el mismo Apple ID y tener iCloud disponible.", retryTitle: "Reintenta la sincronización", retryText: "Si un elemento muestra un problema, toca el icono de estado para reintentar.", storageTitle: "Revisa el almacenamiento de iCloud", storageText: "Si otro dispositivo no se actualiza, revisa red, espacio de iCloud y carga en segundo plano.", faqTitle: "Preguntas frecuentes",
     faq: [["¿Por qué no veo CarryOver en la hoja de compartir?", "Activa CarryOver en la sección Más de la hoja de compartir y ordénalo arriba si lo necesitas."], ["¿Por qué no aparece de inmediato en otro dispositivo?", "La red, el modo de bajo consumo o poco espacio en iCloud pueden retrasar la sincronización."], ["¿CarryOver requiere una cuenta?", "No. La sincronización usa los servicios iCloud de Apple cuando están disponibles."]],
     helpFooter: `¿Necesitas ayuda? Contacta a ${supportEmail}.`,
-    privacyTitle: "Política de privacidad de CarryOver - Captura local y sincronización iCloud", privacyDescription: "Política de privacidad de CarryOver: no requiere cuenta, almacenamiento local, sincronización iCloud opcional mediante Apple y sin SDK publicitarios.", privacyKeywords: "privacidad CarryOver,sincronización iCloud,almacenamiento local,sin cuenta,sin publicidad", privacyH1: "Política de privacidad", effective: "Fecha de entrada en vigor: 15 de mayo de 2026", privacyLead: "CarryOver está diseñado para capturar en privado y revisar después. No requiere una cuenta CarryOver y no vende información personal.",
+    privacyTitle: "Privacidad CarryOver - Captura local e iCloud", privacyDescription: "Política de privacidad de CarryOver: no requiere cuenta, almacenamiento local, sincronización iCloud opcional mediante Apple y sin SDK publicitarios.", privacyKeywords: "privacidad CarryOver,sincronización iCloud,almacenamiento local,sin cuenta,sin publicidad", privacyH1: "Política de privacidad", effective: "Fecha de entrada en vigor: 15 de mayo de 2026", privacyLead: "CarryOver está diseñado para capturar en privado y revisar después. No requiere una cuenta CarryOver y no vende información personal.",
     privacyGlance: "Privacidad de un vistazo", noAccountTitle: "Sin cuenta CarryOver", noAccountText: "No necesitas registrarte, iniciar sesión ni crear un perfil.", controlTitle: "Tus elementos siguen bajo tu control", controlText: "El texto y los enlaces guardados se almacenan en tu dispositivo y pueden sincronizarse con iCloud si está activado.", noAdsTitle: "Sin SDK publicitarios", noAdsText: "La app no incluye SDK publicitarios de terceros ni vende información personal.", emailTitle: "Soporte por correo", emailText: "Si contactas soporte, tu correo solo se usa para responder.",
     infoTitle: "Información que usa la app", sharedContentTitle: "Contenido compartido", sharedContentText: "CarryOver guarda el texto y las URL que eliges guardar desde la app o la hoja de compartir.", localTitle: "Almacenamiento local", localText: "La app guarda localmente elementos, preferencias, historial y estado de sincronización.", icloudPrivacyTitle: "iCloud", icloudPrivacyText: "Cuando iCloud está disponible, los elementos pueden sincronizarse mediante CloudKit de Apple.", purchaseTitle: "Estado de compra", purchaseText: "La app puede verificar compras en App Store para desbloquear funciones Pro.",
     retentionTitle: "Retención, borrado y cambios", deletePrivacyTitle: "Borrar elementos", deletePrivacyText: "Los elementos borrados en la app se eliminan de la lista y siguen el comportamiento de sincronización del sistema.", removeTitle: "Eliminar la app", removeText: "Eliminar la app borra los datos locales de ese dispositivo.", changeTitle: "Actualizaciones", changeText: "Si esta política cambia, la versión actualizada se publicará aquí con una nueva fecha.", privacyFooter: `Preguntas de privacidad: ${supportEmail}.`
+  }),
+  "it": makeLocalizedCopy({
+    nav: { home: "Home", help: "Aiuto", support: "Supporto", privacy: "Privacy", appStore: "App Store" },
+    homeTitle: "CarryOver - Salva ora, agisci dopo", homeDescription: "CarryOver salva link, testo e immagini da iPhone, iPad e Mac, poi li sincronizza con iCloud per rivederli più tardi sui tuoi dispositivi Apple.", homeKeywords: "CarryOver,leggi dopo,salva link,pannello condivisione,sincronizzazione iCloud,cattura idee,produttività iPhone,produttività Mac",
+    eyebrow: "Salva ora, agisci dopo", homeH1: "Porta le scoperte mobili nel lavoro concentrato.", homeLead: "CarryOver è una rete affidabile per link, testo e idee che trovi mentre navighi. Salva da qualsiasi app e torna quando sei pronto a pensare, verificare o agire.", primary: "Vedi su App Store", macDownload: "Scarica DMG per Mac", secondary: "Leggi l’aiuto",
+    captureTitle: "Pensato per catturare in fretta", shareSheetTitle: "Pannello di condivisione di sistema", shareSheetText: "Salva testo e link da Safari, Note, app social e altre app che supportano la condivisione.", urlTitle: "Rilevamento URL intelligente", urlText: "CarryOver trova gli URL nel testo condiviso e conserva il contesto originale.", syncTitle: "Sincronizzazione iCloud", syncText: "Gli elementi salvati si sincronizzano con CloudKit per tenere allineati iPhone, iPad e Mac.",
+    followTitle: "Dalla lettura passiva al vero follow-up", recentTitle: "Lista recente", recentText: "Rivedi le nuove catture in una coda chiara invece di lasciarle sparse tra le app.", historyTitle: "Cronologia", historyText: "Archivia gli elementi gestiti e conserva ciò che hai già rivisto.", favoriteTitle: "Preferiti", favoriteText: "Mantieni visibili gli spunti importanti per riprenderli più facilmente.", feedback: `Domande o feedback? Contatta ${supportEmail}.`,
+    helpTitle: "Aiuto CarryOver - Salva link, testo e idee sui dispositivi Apple", helpDescription: "Scopri come usare CarryOver su iPhone, iPad e Mac: pannello di condivisione, rilevamento URL, sincronizzazione iCloud, cronologia, eliminazione e risoluzione problemi.", helpKeywords: "Aiuto CarryOver,salva link,leggi dopo,pannello condivisione,sincronizzazione iCloud,rilevamento URL,dispositivi Apple", helpEyebrow: "Aiuto e supporto", helpH1: "Come usare CarryOver", helpLead: "CarryOver ti aiuta a catturare ora link, testo e momenti interessanti, poi rivederli e gestirli più tardi dal dispositivo più adatto.",
+    saveGroup: "Salvare contenuti", openAppTitle: "Apri qualsiasi app", openAppText: "Inizia da Safari, Note, un’app social o qualsiasi app che possa condividere testo o URL.", selectTitle: "Seleziona testo o URL", selectText: "Scegli il contenuto da conservare per una revisione successiva.", shareTitle: "Usa Condividi", shareText: "Tocca il pulsante di condivisione di sistema e scegli CarryOver. Se non appare, attivalo da Altro.", confirmTitle: "Conferma il salvataggio", confirmText: "L’elemento viene aggiunto alla lista recente e preparato per la sincronizzazione iCloud.",
+    manageGroup: "Gestire la lista", reviewTitle: "Rivedi le catture recenti", reviewText: "Apri CarryOver per vedere gli ultimi elementi salvati.", openLinkTitle: "Apri i link rilevati", openLinkText: "Quando un elemento contiene un URL, aprilo nel browser.", deleteTitle: "Elimina elementi", deleteText: "Rimuovi dalla lista ciò che non ti serve più.", historyHelpTitle: "Usa la cronologia", historyHelpText: "Torna alla cronologia quando devi controllare contenuti già gestiti.",
+    syncGroup: "Sincronizzazione e problemi", icloudTitle: "Usa lo stesso account iCloud", icloudText: "I dispositivi devono usare lo stesso ID Apple e avere iCloud disponibile.", retryTitle: "Riprova la sincronizzazione", retryText: "Se un elemento mostra un problema, tocca l’icona di stato per riprovare.", storageTitle: "Controlla lo spazio iCloud", storageText: "Se un altro dispositivo non si aggiorna, controlla rete, spazio iCloud e caricamento in background.", faqTitle: "Domande frequenti",
+    faq: [["Perché CarryOver non appare nel pannello di condivisione?", "Attiva CarryOver nella sezione Altro del pannello di condivisione e spostalo più in alto se serve."], ["Perché la sincronizzazione non appare subito su un altro dispositivo?", "Rete, risparmio energetico o spazio iCloud insufficiente possono ritardare la sincronizzazione."], ["CarryOver richiede un account?", "No. Quando disponibile, la sincronizzazione usa i servizi iCloud di Apple."]],
+    helpFooter: `Hai bisogno di aiuto? Contatta ${supportEmail}.`,
+    privacyTitle: "Privacy CarryOver - Cattura locale e iCloud", privacyDescription: "Informativa sulla privacy di CarryOver: nessun account richiesto, archiviazione locale, sincronizzazione iCloud opzionale tramite Apple e nessun SDK pubblicitario.", privacyKeywords: "privacy CarryOver,sincronizzazione iCloud,archiviazione locale,nessun account,nessuna pubblicità", privacyH1: "Informativa sulla privacy", effective: "Data di entrata in vigore: 15 maggio 2026", privacyLead: "CarryOver è progettato per catturare in privato e rivedere più tardi. Non richiede un account CarryOver e non vende informazioni personali.",
+    privacyGlance: "Privacy in breve", noAccountTitle: "Nessun account CarryOver", noAccountText: "Non devi registrarti, accedere o creare un profilo.", controlTitle: "Gli elementi restano sotto il tuo controllo", controlText: "Testo e link salvati sono archiviati sul dispositivo e possono sincronizzarsi con iCloud se abilitato.", noAdsTitle: "Nessun SDK pubblicitario", noAdsText: "L’app non include SDK pubblicitari di terze parti e non vende informazioni personali.", emailTitle: "Supporto via email", emailText: "Se contatti il supporto, la tua email viene usata solo per rispondere.",
+    infoTitle: "Informazioni usate dall’app", sharedContentTitle: "Contenuti condivisi", sharedContentText: "CarryOver archivia testo e URL che scegli di salvare dall’app o dal pannello di condivisione.", localTitle: "Archiviazione locale", localText: "L’app archivia localmente elementi, preferenze, cronologia e stato di sincronizzazione.", icloudPrivacyTitle: "iCloud", icloudPrivacyText: "Quando iCloud è disponibile, gli elementi possono sincronizzarsi tramite CloudKit di Apple.", purchaseTitle: "Stato acquisto", purchaseText: "L’app può verificare lo stato degli acquisti App Store per sbloccare funzioni Pro.",
+    retentionTitle: "Conservazione, eliminazione e modifiche", deletePrivacyTitle: "Eliminare elementi", deletePrivacyText: "Gli elementi eliminati nell’app vengono rimossi dalla lista e seguono il comportamento di sincronizzazione del sistema.", removeTitle: "Rimuovere l’app", removeText: "La rimozione dell’app elimina i dati locali dell’app da quel dispositivo.", changeTitle: "Aggiornamenti", changeText: "Se questa informativa cambia, la versione aggiornata sarà pubblicata qui con una nuova data.", privacyFooter: `Domande sulla privacy: ${supportEmail}.`
+  }),
+  "id": makeLocalizedCopy({
+    nav: { home: "Beranda", help: "Bantuan", support: "Dukungan", privacy: "Privasi", appStore: "App Store" },
+    homeTitle: "CarryOver - Simpan sekarang, lanjut nanti", homeDescription: "CarryOver menyimpan tautan, teks, dan gambar dari iPhone, iPad, dan Mac, lalu menyinkronkannya lewat iCloud untuk ditinjau lagi di perangkat Apple.", homeKeywords: "CarryOver,baca nanti,simpan tautan,Share Sheet,sinkronisasi iCloud,tangkap ide,produktivitas iPhone,produktivitas Mac",
+    eyebrow: "Simpan sekarang, lanjut nanti", homeH1: "Bawa temuan mobile ke kerja yang lebih fokus.", homeLead: "CarryOver adalah jaring andal untuk tautan, teks, dan ide yang kamu temukan saat menjelajah. Simpan dari app apa pun dan kembali saat siap berpikir, memeriksa, atau bertindak.", primary: "Lihat di App Store", macDownload: "Unduh DMG Mac", secondary: "Baca bantuan",
+    captureTitle: "Dibuat untuk menangkap cepat", shareSheetTitle: "Share Sheet sistem", shareSheetText: "Simpan teks dan tautan dari Safari, Catatan, app sosial, dan app lain yang mendukung berbagi.", urlTitle: "Deteksi URL cerdas", urlText: "CarryOver menemukan URL dalam teks yang dibagikan dan menyimpan konteks aslinya.", syncTitle: "Sinkronisasi iCloud", syncText: "Item tersimpan disinkronkan lewat CloudKit agar iPhone, iPad, dan Mac tetap selaras.",
+    followTitle: "Dari baca santai ke tindak lanjut nyata", recentTitle: "Daftar terbaru", recentText: "Tinjau tangkapan baru dalam satu antrean yang rapi, bukan tersebar di banyak app.", historyTitle: "Riwayat", historyText: "Arsipkan item yang sudah ditangani dan simpan catatan yang sudah kamu tinjau.", favoriteTitle: "Favorit", favoriteText: "Biarkan petunjuk penting tetap terlihat agar mudah dibuka lagi.", feedback: `Pertanyaan atau masukan? Hubungi ${supportEmail}.`,
+    helpTitle: "Bantuan CarryOver - Simpan tautan, teks, dan ide di perangkat Apple", helpDescription: "Pelajari cara memakai CarryOver di iPhone, iPad, dan Mac: Share Sheet, deteksi URL, sinkronisasi iCloud, riwayat, penghapusan, dan pemecahan masalah.", helpKeywords: "Bantuan CarryOver,simpan tautan,baca nanti,Share Sheet,sinkronisasi iCloud,deteksi URL,perangkat Apple", helpEyebrow: "Bantuan dan dukungan", helpH1: "Cara menggunakan CarryOver", helpLead: "CarryOver membantumu menangkap tautan, teks, dan momen menarik sekarang, lalu meninjau dan menanganinya nanti dari perangkat yang tepat.",
+    saveGroup: "Simpan konten", openAppTitle: "Buka app apa pun", openAppText: "Mulai dari Safari, Catatan, app sosial, atau app apa pun yang dapat berbagi teks atau URL.", selectTitle: "Pilih teks atau URL", selectText: "Pilih konten yang ingin kamu simpan untuk ditinjau nanti.", shareTitle: "Gunakan Bagikan", shareText: "Ketuk tombol Bagikan sistem dan pilih CarryOver. Jika tidak muncul, buka Lainnya dan aktifkan.", confirmTitle: "Konfirmasi penyimpanan", confirmText: "Item ditambahkan ke daftar terbaru dan disiapkan untuk sinkronisasi iCloud.",
+    manageGroup: "Kelola daftar", reviewTitle: "Tinjau tangkapan terbaru", reviewText: "Buka CarryOver untuk melihat item terbaru yang kamu simpan.", openLinkTitle: "Buka tautan terdeteksi", openLinkText: "Saat item berisi URL, buka tautan itu di browser.", deleteTitle: "Hapus item", deleteText: "Hapus item yang tidak lagi kamu perlukan dari daftar.", historyHelpTitle: "Gunakan riwayat", historyHelpText: "Buka riwayat saat perlu memeriksa konten yang sudah ditangani.",
+    syncGroup: "Sinkronisasi dan pemecahan masalah", icloudTitle: "Gunakan akun iCloud yang sama", icloudText: "Perangkat harus memakai Apple ID yang sama dan iCloud tersedia.", retryTitle: "Coba ulang sinkronisasi", retryText: "Jika item menunjukkan masalah, ketuk ikon status untuk mencoba ulang.", storageTitle: "Periksa penyimpanan iCloud", storageText: "Jika perangkat lain belum diperbarui, periksa jaringan, ruang iCloud, dan unggahan latar belakang.", faqTitle: "Pertanyaan umum",
+    faq: [["Mengapa CarryOver tidak muncul di Share Sheet?", "Aktifkan CarryOver di bagian Lainnya pada Share Sheet dan pindahkan lebih atas jika perlu."], ["Mengapa sinkronisasi tidak langsung muncul di perangkat lain?", "Jaringan, Mode Daya Rendah, atau ruang iCloud yang kurang dapat menunda sinkronisasi."], ["Apakah CarryOver memerlukan akun?", "Tidak. Sinkronisasi menggunakan layanan iCloud Apple saat tersedia."]],
+    helpFooter: `Butuh bantuan? Hubungi ${supportEmail}.`,
+    privacyTitle: "Privasi CarryOver - Penyimpanan lokal dan iCloud", privacyDescription: "Kebijakan privasi CarryOver: tidak perlu akun, penyimpanan lokal, sinkronisasi iCloud opsional lewat Apple, dan tanpa SDK iklan.", privacyKeywords: "privasi CarryOver,sinkronisasi iCloud,penyimpanan lokal,tanpa akun,tanpa iklan", privacyH1: "Kebijakan Privasi", effective: "Tanggal berlaku: 15 Mei 2026", privacyLead: "CarryOver dirancang untuk penyimpanan pribadi dan peninjauan nanti. App ini tidak memerlukan akun CarryOver dan tidak menjual informasi pribadi.",
+    privacyGlance: "Sekilas privasi", noAccountTitle: "Tanpa akun CarryOver", noAccountText: "Kamu tidak perlu mendaftar, masuk, atau membuat profil.", controlTitle: "Item tersimpan tetap dalam kendalimu", controlText: "Teks dan tautan yang disimpan berada di perangkat dan dapat disinkronkan lewat iCloud jika diaktifkan.", noAdsTitle: "Tanpa SDK iklan", noAdsText: "App tidak menyertakan SDK iklan pihak ketiga dan tidak menjual informasi pribadi.", emailTitle: "Dukungan email", emailText: "Jika menghubungi dukungan, email kamu hanya digunakan untuk membalas.",
+    infoTitle: "Informasi yang digunakan app", sharedContentTitle: "Konten yang dibagikan", sharedContentText: "CarryOver menyimpan teks dan URL yang kamu pilih dari app atau Share Sheet sistem.", localTitle: "Penyimpanan lokal", localText: "App menyimpan item, preferensi, riwayat, dan status sinkronisasi secara lokal.", icloudPrivacyTitle: "iCloud", icloudPrivacyText: "Saat sinkronisasi iCloud tersedia, item dapat disinkronkan melalui CloudKit Apple.", purchaseTitle: "Status pembelian", purchaseText: "App dapat memeriksa status pembelian App Store untuk membuka fitur Pro.",
+    retentionTitle: "Retensi, penghapusan, dan perubahan", deletePrivacyTitle: "Menghapus item", deletePrivacyText: "Item yang dihapus dalam app dikeluarkan dari daftar dan mengikuti perilaku sinkronisasi sistem.", removeTitle: "Menghapus app", removeText: "Menghapus app akan menghapus data lokal app dari perangkat tersebut.", changeTitle: "Pembaruan", changeText: "Jika kebijakan ini berubah, versi terbaru akan diposting di halaman ini dengan tanggal baru.", privacyFooter: `Pertanyaan privasi: ${supportEmail}.`
   })
 });
 
@@ -986,6 +1064,9 @@ ${alternateLinks(slug)}
   <meta property="og:type" content="${page.type}">
   <meta property="og:url" content="${pageUrl(lang, slug)}">
   <meta property="og:image" content="${socialImageUrl}">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="${appName}">
   <meta property="og:site_name" content="${appName}">
   <meta property="og:locale" content="${lang.ogLocale}">
 ${alternateOgLocales}
@@ -993,6 +1074,7 @@ ${alternateOgLocales}
   <meta name="twitter:title" content="${escapeHtml(pageCopy.title)}">
   <meta name="twitter:description" content="${escapeHtml(pageCopy.description)}">
   <meta name="twitter:image" content="${socialImageUrl}">
+  <meta name="twitter:image:alt" content="${appName}">
   <script type="application/ld+json">
 ${jsonLd(lang, slug, page, pageCopy)}
   </script>
