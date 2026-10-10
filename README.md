@@ -52,6 +52,11 @@ Legacy `.html` URLs redirect permanently; only canonical HTML URLs belong in the
 sitemap. Root `/` redirects to `/en-US/`. The top-level `404.html` prevents
 Cloudflare's SPA fallback from returning `200` for nonexistent URLs.
 Keep the existing Google verification HTML file.
+Public support email output uses Cloudflare's scoped `email_off` comments so
+support links remain ordinary `mailto:` links without a decoder script. This
+prevents internal links to `/cdn-cgi/l/email-protection`; that utility endpoint
+is not a content page and should not be redirected to the homepage or forced
+into the index. This does not change zone-wide security or crawler settings.
 
 After a deployment, verify all sitemap targets return `200`, legacy paths
 redirect without loops, unknown paths return `404`, and Markdown is served with

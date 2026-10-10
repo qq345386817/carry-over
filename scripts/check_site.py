@@ -36,6 +36,8 @@ class Page(HTMLParser):
         self.in_script = False
         self.script_type = None
         self.script_data = []
+        self.email_excluded = False
+        self.email_scopes = []
         self.feed(content)
 
     def handle_starttag(self, tag, attrs):
@@ -54,6 +56,8 @@ class Page(HTMLParser):
                 self.resources.append(attrs["href"])
         if tag == "a":
             self.resources.append(attrs.get("href", ""))
+            if attrs.get("href", "").startswith("mailto:"):
+                self.email_scopes.append(self.email_excluded)
         if tag == "img":
             self.resources.append(attrs["src"])
         if tag == "script":
@@ -74,6 +78,14 @@ class Page(HTMLParser):
             self.script_data.append(data)
         elif self.in_body:
             self.visible.append(data)
+            if "cameoshell09@gmail.com" in data:
+                self.email_scopes.append(self.email_excluded)
+
+    def handle_comment(self, data):
+        if data.strip() == "email_off":
+            self.email_excluded = True
+        elif data.strip() == "/email_off":
+            self.email_excluded = False
 
 
 def canonical_url(locale, slug):
@@ -102,6 +114,8 @@ def check_pages():
             assert page.h1_count == 1, url
             assert page.meta["robots"] == "index, follow", url
             assert page.meta["description"], url
+            assert page.email_scopes and all(page.email_scopes), (url, "unprotected public support email")
+            assert not page.email_excluded, (url, "unclosed email exclusion")
             canonical = [link["href"] for link in page.links if link.get("rel") == "canonical"]
             assert canonical == [url], url
             alternates = {link["hreflang"]: link["href"] for link in page.links if "hreflang" in link}

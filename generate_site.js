@@ -1160,7 +1160,7 @@ function renderHome(lang) {
 
     <p>${escapeHtml(productCopy[lang.code].faq.at(-1)[1])} <a href="help#faq">${escapeHtml(c.secondary)}</a></p>
 
-    <p class="footer">${escapeHtml(c.footer)}</p>`;
+    <!--email_off--><p class="footer">${escapeHtml(c.footer)}</p><!--/email_off-->`;
 }
 
 function renderHelp(lang) {
@@ -1195,7 +1195,7 @@ function renderHelp(lang) {
       </div>
       <p class="download-note">${escapeHtml(productCopy[lang.code].downloadNote)}</p>
 
-      <p class="footer">${escapeHtml(c.footer)}</p>
+      <!--email_off--><p class="footer">${escapeHtml(c.footer)}</p><!--/email_off-->
     </article>`;
 }
 
@@ -1211,7 +1211,7 @@ function renderSupport(lang) {
       <h1>${escapeHtml(c.h1)}</h1>
       <p class="lead">${escapeHtml(c.lead)}</p>
       <div class="cta-row">
-        <a class="button" href="mailto:${supportEmail}">${escapeHtml(c.emailLabel)}</a>
+        <!--email_off--><a class="button" href="mailto:${supportEmail}">${escapeHtml(c.emailLabel)}</a><!--/email_off-->
         ${appStoreButton(nav.appStore, "secondary")}
       </div>
 
@@ -1247,7 +1247,7 @@ function renderPrivacy(lang) {
         ${macDownloadButton(copy[lang.code].home.macDownload)}
       </div>
 
-      <p class="footer">${escapeHtml(c.footer)}</p>
+      <!--email_off--><p class="footer">${escapeHtml(c.footer)}</p><!--/email_off-->
     </article>`;
 }
 
