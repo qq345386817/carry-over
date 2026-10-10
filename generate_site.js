@@ -9,7 +9,7 @@ const appStoreUrl = `https://apps.apple.com/app/id${appStoreId}`;
 const macDownloadUrl = "https://pub-921ff78698074a30a8b3a65a51a6faa8.r2.dev/carryover/macos/CarryOver.dmg";
 const supportEmail = "cameoshell09@gmail.com";
 const lastmod = "2026-06-06";
-const appIconPath = "../images/app-icon.png";
+const appIconPath = "../images/app-icon-web.png";
 const appStoreIconPath = "../images/app-store-icon.svg";
 const socialImageUrl = `${siteUrl}/images/app-icon.png`;
 
@@ -1067,8 +1067,8 @@ function head(lang, page, pageCopy) {
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#f7faff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#08125d" media="(prefers-color-scheme: dark)">
-  <link rel="apple-touch-icon" href="../images/app-icon.png">
-  <link rel="icon" type="image/png" href="../images/app-icon.png">
+  <link rel="apple-touch-icon" href="${appIconPath}">
+  <link rel="icon" type="image/png" href="${appIconPath}">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="${pageUrl(lang, slug)}">
 ${alternateLinks(slug)}
@@ -1123,14 +1123,14 @@ function renderHome(lang) {
     </section>`).join("\n\n    ");
 
   const workflow = workflowCopy[lang.code];
-  const proofImages = ["01-capture.png", "02-saved.png", "03-mac.png"];
+  const proofImages = ["01-capture.webp", "02-saved.webp", "03-mac.webp"];
   const proof = workflow.stages.slice(0, 3).map((stage, index) => `<figure class="workflow-step">
         <img src="../images/workflow/${lang.code}/${proofImages[index]}" alt="${escapeHtml(stage[0])}" loading="lazy" decoding="async">
         <figcaption><h3>${escapeHtml(stage[0])}</h3><p>${escapeHtml(stage[1])}</p></figcaption>
       </figure>`).join("\n");
 
   return `<section class="hero workflow-hero">
-      <img class="hero-scene" src="../images/workflow/${lang.code}/hero.png" alt="${escapeHtml(workflow.intro)}" fetchpriority="high" decoding="async">
+      <img class="hero-scene" src="../images/workflow/${lang.code}/hero.webp" alt="${escapeHtml(workflow.intro)}" fetchpriority="high" decoding="async">
       <div class="hero-copy">
         <p class="eyebrow">${escapeHtml(c.eyebrow)}</p>
         <h1>${escapeHtml(c.h1)}</h1>
