@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CarryOver - Enregistrer via Partager - Reprendre sur Mac</title>
-  <meta name="description" content="Enregistrez depuis le menu Partager du téléphone. Ouvrez la source sur Mac quand vous êtes prêt.">
+  <title>CarryOver - Enregistrer sur iPhone, reprendre sur Mac</title>
+  <meta name="description" content="Enregistrez publications, liens, images et idées via Partager sur iPhone, puis reprenez sur Mac. Liste persistante, recherche sur Mac, rappels et historique à retrouver.">
   <meta name="keywords" content="CarryOver,lire plus tard,enregistrer liens,feuille de partage,synchronisation iCloud,capturer idées,productivité iPhone,productivité Mac">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/fr-FR/">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/fr-FR/index.md">
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/">
@@ -29,8 +31,8 @@
   <link rel="alternate" hreflang="it" href="https://carryover.luopeike.com/it/">
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/">
-  <meta property="og:title" content="CarryOver - Enregistrer via Partager - Reprendre sur Mac">
-  <meta property="og:description" content="Enregistrez depuis le menu Partager du téléphone. Ouvrez la source sur Mac quand vous êtes prêt.">
+  <meta property="og:title" content="CarryOver - Enregistrer sur iPhone, reprendre sur Mac">
+  <meta property="og:description" content="Enregistrez publications, liens, images et idées via Partager sur iPhone, puis reprenez sur Mac. Liste persistante, recherche sur Mac, rappels et historique à retrouver.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://carryover.luopeike.com/fr-FR/">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -49,8 +51,8 @@
   <meta property="og:locale:alternate" content="it_IT">
   <meta property="og:locale:alternate" content="id_ID">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CarryOver - Enregistrer via Partager - Reprendre sur Mac">
-  <meta name="twitter:description" content="Enregistrez depuis le menu Partager du téléphone. Ouvrez la source sur Mac quand vous êtes prêt.">
+  <meta name="twitter:title" content="CarryOver - Enregistrer sur iPhone, reprendre sur Mac">
+  <meta name="twitter:description" content="Enregistrez publications, liens, images et idées via Partager sur iPhone, puis reprenez sur Mac. Liste persistante, recherche sur Mac, rappels et historique à retrouver.">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -58,40 +60,89 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "fr",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://carryover.luopeike.com/fr-FR/#webpage",
+      "name": "CarryOver - Enregistrer sur iPhone, reprendre sur Mac",
+      "url": "https://carryover.luopeike.com/fr-FR/",
+      "description": "Enregistrez publications, liens, images et idées via Partager sur iPhone, puis reprenez sur Mac. Liste persistante, recherche sur Mac, rappels et historique à retrouver.",
+      "inLanguage": "fr",
+      "dateModified": "2026-10-10",
+      "isPartOf": {
+        "@id": "https://carryover.luopeike.com/#website"
+      },
+      "publisher": {
+        "@id": "https://carryover.luopeike.com/#developer"
+      },
+      "mainEntity": {
+        "@id": "https://carryover.luopeike.com/fr-FR/#app"
       }
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://carryover.luopeike.com/#app",
+      "@id": "https://carryover.luopeike.com/fr-FR/#app",
       "name": "CarryOver",
-      "description": "Enregistrez depuis le menu Partager du téléphone. Ouvrez la source sur Mac quand vous êtes prêt.",
+      "description": "Enregistrez publications, liens, images et idées via Partager sur iPhone, puis reprenez sur Mac. Liste persistante, recherche sur Mac, rappels et historique à retrouver.",
       "url": "https://carryover.luopeike.com/fr-FR/",
       "downloadUrl": "https://apps.apple.com/app/id6755507048",
-      "applicationCategory": "ProductivityApplication",
+      "sameAs": [
+        "https://apps.apple.com/app/id6755507048"
+      ],
+      "image": "https://carryover.luopeike.com/images/app-icon.png",
+      "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "iOS, iPadOS, macOS",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
+      "featureList": [
+        "Partager ou noter soi-même: Enregistrez textes, liens ou images compatibles via le menu Partager d’autres apps. Vous pouvez aussi saisir une idée dans CarryOver.",
+        "Les éléments à traiter restent: Les éléments non terminés restent dans votre liste, quelle que soit leur ancienneté. Marquez-les comme terminés après les avoir traités.",
+        "Rechercher vos contenus sur Mac: Dans la fenêtre principale du Mac, recherchez titres, textes et URL sources, dans la liste à traiter comme dans l’historique.",
+        "Terminé, mais encore accessible: Les éléments terminés vont dans l’historique. Restaurez-les dans la liste à traiter pour reprendre le travail.",
+        "Un rappel pour y revenir: Choisissez une date et une heure et autorisez les notifications système. Touchez le rappel pour ouvrir le contenu enregistré.",
+        "Passer d’un appareil Apple à l’autre: iCloud synchronise iPhone, iPad et Mac connectés au même compte Apple. Le réseau et l’état d’iCloud peuvent retarder la synchronisation."
+      ],
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
       },
-      "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+      "author": {
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -145,6 +196,8 @@
 
     </section>
 
+    <p class="download-note">Pour les fonctionnalités actuelles, téléchargez CarryOver sur l’App Store. Le DMG Mac en téléchargement direct n’a pas encore été mis à jour pour cette version.</p>
+
     <section class="section workflow-proof">
       <h2>Enregistrez maintenant, revenez plus tard</h2>
       <div class="workflow-grid"><figure class="workflow-step">
@@ -162,22 +215,18 @@
     </section>
 
     <section class="section">
-      <h2>Conçu pour capturer vite</h2>
+      <h2>Gardez vos trouvailles, puis passez à l’action</h2>
       <div class="grid">
-        <article class="feature-card"><h3>Feuille de partage système</h3><p>Enregistrez du texte et des liens depuis Safari, Notes, les apps sociales et toute app compatible avec le partage.</p></article>
-        <article class="feature-card"><h3>Détection intelligente des URL</h3><p>CarryOver repère les URL dans le texte partagé et conserve le contexte d'origine.</p></article>
-        <article class="feature-card"><h3>Synchronisation iCloud</h3><p>Les éléments enregistrés se synchronisent via CloudKit pour garder iPhone, iPad et Mac alignés.</p></article>
+        <article class="feature-card"><h3>Partager ou noter soi-même</h3><p>Enregistrez textes, liens ou images compatibles via le menu Partager d’autres apps. Vous pouvez aussi saisir une idée dans CarryOver.</p></article>
+        <article class="feature-card"><h3>Les éléments à traiter restent</h3><p>Les éléments non terminés restent dans votre liste, quelle que soit leur ancienneté. Marquez-les comme terminés après les avoir traités.</p></article>
+        <article class="feature-card"><h3>Rechercher vos contenus sur Mac</h3><p>Dans la fenêtre principale du Mac, recherchez titres, textes et URL sources, dans la liste à traiter comme dans l’historique.</p></article>
+        <article class="feature-card"><h3>Terminé, mais encore accessible</h3><p>Les éléments terminés vont dans l’historique. Restaurez-les dans la liste à traiter pour reprendre le travail.</p></article>
+        <article class="feature-card"><h3>Un rappel pour y revenir</h3><p>Choisissez une date et une heure et autorisez les notifications système. Touchez le rappel pour ouvrir le contenu enregistré.</p></article>
+        <article class="feature-card"><h3>Passer d’un appareil Apple à l’autre</h3><p>iCloud synchronise iPhone, iPad et Mac connectés au même compte Apple. Le réseau et l’état d’iCloud peuvent retarder la synchronisation.</p></article>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Passer de la lecture au suivi réel</h2>
-      <div class="grid">
-        <article class="feature-card"><h3>Gardé pour plus tard</h3><p>Les éléments à traiter restent dans la liste</p></article>
-        <article class="feature-card"><h3>Reprendre sur Mac</h3><p>Ouvrez la source, puis marquez comme terminé</p></article>
-        <article class="feature-card"><h3>Terminé, mais conservé</h3><p>Les éléments terminés restent dans l’historique</p></article>
-      </div>
-    </section>
+    <p>La version gratuite permet jusqu’à trois enregistrements par jour. Un achat unique de Pro supprime cette limite quotidienne. Consultez l’App Store pour le prix dans votre région. <a href="help#faq">Lire l'aide</a></p>
 
     <p class="footer">Questions ou retours ? Contactez cameoshell09@gmail.com.</p>
   </main>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CarryOver 幫助 - 在 Apple 裝置間儲存連結、文字和想法</title>
-  <meta name="description" content="了解如何在 iPhone、iPad 和 Mac 上使用 CarryOver，包括分享選單儲存、連結識別、iCloud 同步、歷史紀錄、刪除和同步問題排查。">
+  <meta name="description" content="從 iPhone 分享選單儲存貼文、連結、圖片和靈感，回到 Mac 接著處理。待處理內容持續保留，支援 Mac 搜尋、定時提醒，以及完成後回看和還原。">
   <meta name="keywords" content="CarryOver幫助,儲存連結,稍後讀指南,分享選單,iCloud同步,連結識別,Apple裝置">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/zh-Hant/help">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/zh-Hant/help.md">
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/help">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/help">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/help">
@@ -30,7 +32,7 @@
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/help">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/help">
   <meta property="og:title" content="CarryOver 幫助 - 在 Apple 裝置間儲存連結、文字和想法">
-  <meta property="og:description" content="了解如何在 iPhone、iPad 和 Mac 上使用 CarryOver，包括分享選單儲存、連結識別、iCloud 同步、歷史紀錄、刪除和同步問題排查。">
+  <meta property="og:description" content="從 iPhone 分享選單儲存貼文、連結、圖片和靈感，回到 Mac 接著處理。待處理內容持續保留，支援 Mac 搜尋、定時提醒，以及完成後回看和還原。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://carryover.luopeike.com/zh-Hant/help">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -50,7 +52,7 @@
   <meta property="og:locale:alternate" content="id_ID">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="CarryOver 幫助 - 在 Apple 裝置間儲存連結、文字和想法">
-  <meta name="twitter:description" content="了解如何在 iPhone、iPad 和 Mac 上使用 CarryOver，包括分享選單儲存、連結識別、iCloud 同步、歷史紀錄、刪除和同步問題排查。">
+  <meta name="twitter:description" content="從 iPhone 分享選單儲存貼文、連結、圖片和靈感，回到 Mac 接著處理。待處理內容持續保留，支援 Mac 搜尋、定時提醒，以及完成後回看和還原。">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -58,22 +60,29 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "zh-Hant",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -81,13 +90,14 @@
       "@id": "https://carryover.luopeike.com/zh-Hant/help#webpage",
       "name": "CarryOver 幫助 - 在 Apple 裝置間儲存連結、文字和想法",
       "url": "https://carryover.luopeike.com/zh-Hant/help",
-      "description": "了解如何在 iPhone、iPad 和 Mac 上使用 CarryOver，包括分享選單儲存、連結識別、iCloud 同步、歷史紀錄、刪除和同步問題排查。",
+      "description": "從 iPhone 分享選單儲存貼文、連結、圖片和靈感，回到 Mac 接著處理。待處理內容持續保留，支援 Mac 搜尋、定時提醒，以及完成後回看和還原。",
       "inLanguage": "zh-Hant",
+      "dateModified": "2026-10-10",
       "isPartOf": {
         "@id": "https://carryover.luopeike.com/#website"
       },
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -97,10 +107,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "為什麼分享選單裡看不到 CarryOver？",
+          "name": "如何分享到 CarryOver？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "開啟分享選單中的「更多」區域並啟用 CarryOver，也可以調整順序以便更快使用。"
+            "text": "在相容的 App 中開啟系統分享選單，選擇 CarryOver。iPhone 和 iPad 上若未顯示，可查看「更多」；Mac 上是否可用還取決於來源 App、內容類型和系統擴充功能設定。"
           }
         },
         {
@@ -117,6 +127,46 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "不需要單獨的 CarryOver 帳號。可用時，同步使用 Apple 的 iCloud 服務。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "未完成的內容會在幾天後消失嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不會。未完成的內容持續留在待處理清單。標記完成後進入歷史記錄，刪除則會移除內容。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "能搜尋儲存過的內容嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以在 Mac 主視窗依標題、文字和來源網址搜尋，也能搜尋歷史記錄中的已完成內容。iPhone 和 iPad 暫不支援搜尋。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "「稍後處理」真的會提醒嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "會。設定未來的日期和時間，並在系統設定中允許 CarryOver 傳送通知。系統會傳送本機通知；專注模式和通知設定可能使提醒靜音。點選通知可開啟對應內容。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "已完成的內容還能繼續處理嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。在歷史記錄中使用記錄旁的還原按鈕，即可放回待處理清單。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "免費版包含什麼？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "免費版每天最多儲存三次。一次性購買 Pro 可解除每日儲存次數限制。當地價格以 App Store 為準。"
           }
         }
       ]
@@ -172,18 +222,20 @@
         <h2>儲存內容</h2>
         <div class="step-list">
           <article class="step"><h3>開啟任意 App</h3><p>可以從 Safari、備忘錄、社群 App 或任何支援分享文字和 URL 的 App 開始。</p></article>
-          <article class="step"><h3>選擇文字或 URL</h3><p>選中你想保留以便稍後回顧的內容。</p></article>
-          <article class="step"><h3>使用分享</h3><p>點擊系統分享按鈕並選擇 CarryOver。如果沒有看到 CarryOver，開啟「更多」並啟用它。</p></article>
-          <article class="step"><h3>已儲存，稍後處理</h3><p>未完成的內容持續留在待處理清單</p></article>
+          <article class="step"><h3>選擇支援分享的內容</h3><p>選擇想保留的文字、連結、圖片或貼文。能分享哪些內容取決於來源 App。</p></article>
+          <article class="step"><h3>使用分享</h3><p>在相容的 App 中開啟系統分享選單，選擇 CarryOver。iPhone 和 iPad 上若未顯示，可查看「更多」；Mac 上是否可用還取決於來源 App、內容類型和系統擴充功能設定。</p></article>
+          <article class="step"><h3>確認內容並儲存</h3><p>在分享表單中檢查內容，也可以修改標題或設定提醒。點選儲存，加入待處理清單。</p></article>
+          <article class="step"><h3>手動新增記錄</h3><p>在 CarryOver 中開啟「新增分享」，記錄想法或貼上內容，儲存至待處理清單。</p></article>
         </div>
       </section>
 
       <section class="section">
         <h2>管理列表</h2>
         <div class="step-list">
-          <article class="step"><h3>已儲存，稍後處理</h3><p>未完成的內容持續留在待處理清單</p></article>
-          <article class="step"><h3>回到 Mac 接著處理</h3><p>打開來源，找到內容，一鍵完成</p></article>
-          <article class="step"><h3>完成後，隨時回看</h3><p>處理完的內容保留在歷史記錄</p></article>
+          <article class="step"><h3>查看內容，開啟來源</h3><p>選擇一筆記錄即可查看或編輯。若包含來源連結，可使用來源操作在瀏覽器中開啟。</p></article>
+          <article class="step"><h3>處理完，標記完成</h3><p>使用完成按鈕將處理過的內容移至歷史記錄。只有已完成的內容會進入歷史，未完成的內容不會過期。</p></article>
+          <article class="step"><h3>從歷史記錄還原</h3><p>在歷史記錄中點選對應記錄旁的還原按鈕，即可重新放回待處理清單。</p></article>
+          <article class="step"><h3>刪除前確認</h3><p>在 iPhone 和 iPad 上向左滑動記錄後選擇刪除；在 Mac 上使用刪除操作。確認後才會移除記錄。</p></article>
         </div>
       </section>
 
@@ -199,9 +251,14 @@
       <section class="section" id="faq">
         <h2>常見問題</h2>
         <div class="policy-list">
-          <article class="policy-item"><h3>為什麼分享選單裡看不到 CarryOver？</h3><p>開啟分享選單中的「更多」區域並啟用 CarryOver，也可以調整順序以便更快使用。</p></article>
+          <article class="policy-item"><h3>如何分享到 CarryOver？</h3><p>在相容的 App 中開啟系統分享選單，選擇 CarryOver。iPhone 和 iPad 上若未顯示，可查看「更多」；Mac 上是否可用還取決於來源 App、內容類型和系統擴充功能設定。</p></article>
           <article class="policy-item"><h3>為什麼另一台裝置沒有馬上同步？</h3><p>iCloud 同步可能受到網路狀態、低耗電模式或 iCloud 儲存空間不足影響。請保持兩台裝置都安裝 App，並給系統一點時間完成背景同步。</p></article>
           <article class="policy-item"><h3>CarryOver 需要註冊帳號嗎？</h3><p>不需要單獨的 CarryOver 帳號。可用時，同步使用 Apple 的 iCloud 服務。</p></article>
+          <article class="policy-item"><h3>未完成的內容會在幾天後消失嗎？</h3><p>不會。未完成的內容持續留在待處理清單。標記完成後進入歷史記錄，刪除則會移除內容。</p></article>
+          <article class="policy-item"><h3>能搜尋儲存過的內容嗎？</h3><p>可以在 Mac 主視窗依標題、文字和來源網址搜尋，也能搜尋歷史記錄中的已完成內容。iPhone 和 iPad 暫不支援搜尋。</p></article>
+          <article class="policy-item"><h3>「稍後處理」真的會提醒嗎？</h3><p>會。設定未來的日期和時間，並在系統設定中允許 CarryOver 傳送通知。系統會傳送本機通知；專注模式和通知設定可能使提醒靜音。點選通知可開啟對應內容。</p></article>
+          <article class="policy-item"><h3>已完成的內容還能繼續處理嗎？</h3><p>可以。在歷史記錄中使用記錄旁的還原按鈕，即可放回待處理清單。</p></article>
+          <article class="policy-item"><h3>免費版包含什麼？</h3><p>免費版每天最多儲存三次。一次性購買 Pro 可解除每日儲存次數限制。當地價格以 App Store 為準。</p></article>
         </div>
       </section>
 
@@ -209,6 +266,7 @@
         <a class="button" href="https://apps.apple.com/app/id6755507048"><img class="store-icon" src="../images/app-store-icon.svg" alt="">App Store</a>
         <a class="button secondary" href="https://pub-921ff78698074a30a8b3a65a51a6faa8.r2.dev/carryover/macos/CarryOver.dmg" download="CarryOver.dmg">下載 Mac DMG</a>
       </div>
+      <p class="download-note">體驗目前的新功能，請從 App Store 取得 CarryOver。Mac 直接下載的 DMG 尚未更新至本次版本。</p>
 
       <p class="footer">需要幫助？請聯絡 cameoshell09@gmail.com。</p>
     </article>

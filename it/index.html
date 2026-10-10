@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CarryOver - Salva da Condividi - Riprendi sul Mac</title>
-  <meta name="description" content="Salva dal menu Condividi del telefono. Apri la fonte sul Mac quando sei pronto.">
+  <title>CarryOver - Salva su iPhone, riprendi sul Mac</title>
+  <meta name="description" content="Salva post, link, immagini e idee da Condividi su iPhone e riprendili sul Mac. Lista persistente, ricerca sul Mac, promemoria e cronologia con ripristino degli elementi.">
   <meta name="keywords" content="CarryOver,leggi dopo,salva link,pannello condivisione,sincronizzazione iCloud,cattura idee,produttività iPhone,produttività Mac">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/it/">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/it/index.md">
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/">
@@ -29,8 +31,8 @@
   <link rel="alternate" hreflang="it" href="https://carryover.luopeike.com/it/">
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/">
-  <meta property="og:title" content="CarryOver - Salva da Condividi - Riprendi sul Mac">
-  <meta property="og:description" content="Salva dal menu Condividi del telefono. Apri la fonte sul Mac quando sei pronto.">
+  <meta property="og:title" content="CarryOver - Salva su iPhone, riprendi sul Mac">
+  <meta property="og:description" content="Salva post, link, immagini e idee da Condividi su iPhone e riprendili sul Mac. Lista persistente, ricerca sul Mac, promemoria e cronologia con ripristino degli elementi.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://carryover.luopeike.com/it/">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -49,8 +51,8 @@
   <meta property="og:locale:alternate" content="es_MX">
   <meta property="og:locale:alternate" content="id_ID">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CarryOver - Salva da Condividi - Riprendi sul Mac">
-  <meta name="twitter:description" content="Salva dal menu Condividi del telefono. Apri la fonte sul Mac quando sei pronto.">
+  <meta name="twitter:title" content="CarryOver - Salva su iPhone, riprendi sul Mac">
+  <meta name="twitter:description" content="Salva post, link, immagini e idee da Condividi su iPhone e riprendili sul Mac. Lista persistente, ricerca sul Mac, promemoria e cronologia con ripristino degli elementi.">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -58,40 +60,89 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "it",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://carryover.luopeike.com/it/#webpage",
+      "name": "CarryOver - Salva su iPhone, riprendi sul Mac",
+      "url": "https://carryover.luopeike.com/it/",
+      "description": "Salva post, link, immagini e idee da Condividi su iPhone e riprendili sul Mac. Lista persistente, ricerca sul Mac, promemoria e cronologia con ripristino degli elementi.",
+      "inLanguage": "it",
+      "dateModified": "2026-10-10",
+      "isPartOf": {
+        "@id": "https://carryover.luopeike.com/#website"
+      },
+      "publisher": {
+        "@id": "https://carryover.luopeike.com/#developer"
+      },
+      "mainEntity": {
+        "@id": "https://carryover.luopeike.com/it/#app"
       }
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://carryover.luopeike.com/#app",
+      "@id": "https://carryover.luopeike.com/it/#app",
       "name": "CarryOver",
-      "description": "Salva dal menu Condividi del telefono. Apri la fonte sul Mac quando sei pronto.",
+      "description": "Salva post, link, immagini e idee da Condividi su iPhone e riprendili sul Mac. Lista persistente, ricerca sul Mac, promemoria e cronologia con ripristino degli elementi.",
       "url": "https://carryover.luopeike.com/it/",
       "downloadUrl": "https://apps.apple.com/app/id6755507048",
-      "applicationCategory": "ProductivityApplication",
+      "sameAs": [
+        "https://apps.apple.com/app/id6755507048"
+      ],
+      "image": "https://carryover.luopeike.com/images/app-icon.png",
+      "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "iOS, iPadOS, macOS",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
+      "featureList": [
+        "Condividi o scrivi a mano: Salva testi, link o immagini compatibili dal menu Condividi di altre app. Puoi anche scrivere un’idea direttamente in CarryOver.",
+        "Gli elementi aperti restano: Gli elementi non completati restano nella lista, indipendentemente dalla loro età. Segnali come completati solo dopo averli gestiti.",
+        "Cerca i contenuti sul Mac: Nella finestra principale del Mac, cerca per titolo, testo e URL di origine, sia nella lista aperta sia nella cronologia.",
+        "Completato, ma non perso: Gli elementi completati passano alla cronologia. Ripristinali nella lista aperta quando vuoi riprenderli.",
+        "Un promemoria per tornarci: Imposta data e ora e consenti le notifiche di sistema. Tocca il promemoria per aprire l’elemento salvato.",
+        "Continua tra dispositivi Apple: iCloud sincronizza iPhone, iPad e Mac con lo stesso Apple Account. La rete e lo stato di iCloud possono ritardare la sincronizzazione."
+      ],
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
       },
-      "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+      "author": {
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -145,6 +196,8 @@
 
     </section>
 
+    <p class="download-note">Per le funzioni attuali, scarica CarryOver dall’App Store. Il DMG per Mac scaricabile direttamente non è ancora stato aggiornato a questa versione.</p>
+
     <section class="section workflow-proof">
       <h2>Salva ora, agisci dopo</h2>
       <div class="workflow-grid"><figure class="workflow-step">
@@ -162,22 +215,18 @@
     </section>
 
     <section class="section">
-      <h2>Pensato per catturare in fretta</h2>
+      <h2>Salva le scoperte e trasformale in azioni</h2>
       <div class="grid">
-        <article class="feature-card"><h3>Pannello di condivisione di sistema</h3><p>Salva testo e link da Safari, Note, app social e altre app che supportano la condivisione.</p></article>
-        <article class="feature-card"><h3>Rilevamento URL intelligente</h3><p>CarryOver trova gli URL nel testo condiviso e conserva il contesto originale.</p></article>
-        <article class="feature-card"><h3>Sincronizzazione iCloud</h3><p>Gli elementi salvati si sincronizzano con CloudKit per tenere allineati iPhone, iPad e Mac.</p></article>
+        <article class="feature-card"><h3>Condividi o scrivi a mano</h3><p>Salva testi, link o immagini compatibili dal menu Condividi di altre app. Puoi anche scrivere un’idea direttamente in CarryOver.</p></article>
+        <article class="feature-card"><h3>Gli elementi aperti restano</h3><p>Gli elementi non completati restano nella lista, indipendentemente dalla loro età. Segnali come completati solo dopo averli gestiti.</p></article>
+        <article class="feature-card"><h3>Cerca i contenuti sul Mac</h3><p>Nella finestra principale del Mac, cerca per titolo, testo e URL di origine, sia nella lista aperta sia nella cronologia.</p></article>
+        <article class="feature-card"><h3>Completato, ma non perso</h3><p>Gli elementi completati passano alla cronologia. Ripristinali nella lista aperta quando vuoi riprenderli.</p></article>
+        <article class="feature-card"><h3>Un promemoria per tornarci</h3><p>Imposta data e ora e consenti le notifiche di sistema. Tocca il promemoria per aprire l’elemento salvato.</p></article>
+        <article class="feature-card"><h3>Continua tra dispositivi Apple</h3><p>iCloud sincronizza iPhone, iPad e Mac con lo stesso Apple Account. La rete e lo stato di iCloud possono ritardare la sincronizzazione.</p></article>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Dalla lettura passiva al vero follow-up</h2>
-      <div class="grid">
-        <article class="feature-card"><h3>Salvato per dopo</h3><p>Gli elementi aperti restano nella tua lista</p></article>
-        <article class="feature-card"><h3>Riprendi sul Mac</h3><p>Apri la fonte e segna l’elemento come completato</p></article>
-        <article class="feature-card"><h3>Completato e conservato</h3><p>Gli elementi completati restano nella cronologia</p></article>
-      </div>
-    </section>
+    <p>La versione gratuita consente fino a tre salvataggi al giorno. Un acquisto una tantum di Pro rimuove il limite giornaliero. Consulta l’App Store per il prezzo nella tua regione. <a href="help#faq">Leggi l’aiuto</a></p>
 
     <p class="footer">Domande o feedback? Contatta cameoshell09@gmail.com.</p>
   </main>

@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CarryOver - 共有メニューから保存 - Mac で続ける</title>
-  <meta name="description" content="スマホの共有メニューから保存。Mac で元のページを開いて、あとで取り組めます。">
+  <title>CarryOver - iPhone で保存、Mac で続ける</title>
+  <meta name="description" content="iPhone の共有メニューから投稿、リンク、画像、アイデアを保存して、Mac で続けましょう。未処理の内容を保管し、Mac で検索。リマインダーや完了後の復元にも対応。">
   <meta name="keywords" content="CarryOver,あとで読む,リンク保存,共有シート,iCloud同期,アイデア保存,iPhone効率化,Mac効率化">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/ja/">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/ja/index.md">
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/">
@@ -29,8 +31,8 @@
   <link rel="alternate" hreflang="it" href="https://carryover.luopeike.com/it/">
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/">
-  <meta property="og:title" content="CarryOver - 共有メニューから保存 - Mac で続ける">
-  <meta property="og:description" content="スマホの共有メニューから保存。Mac で元のページを開いて、あとで取り組めます。">
+  <meta property="og:title" content="CarryOver - iPhone で保存、Mac で続ける">
+  <meta property="og:description" content="iPhone の共有メニューから投稿、リンク、画像、アイデアを保存して、Mac で続けましょう。未処理の内容を保管し、Mac で検索。リマインダーや完了後の復元にも対応。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://carryover.luopeike.com/ja/">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -49,8 +51,8 @@
   <meta property="og:locale:alternate" content="it_IT">
   <meta property="og:locale:alternate" content="id_ID">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CarryOver - 共有メニューから保存 - Mac で続ける">
-  <meta name="twitter:description" content="スマホの共有メニューから保存。Mac で元のページを開いて、あとで取り組めます。">
+  <meta name="twitter:title" content="CarryOver - iPhone で保存、Mac で続ける">
+  <meta name="twitter:description" content="iPhone の共有メニューから投稿、リンク、画像、アイデアを保存して、Mac で続けましょう。未処理の内容を保管し、Mac で検索。リマインダーや完了後の復元にも対応。">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -58,40 +60,89 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "ja",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://carryover.luopeike.com/ja/#webpage",
+      "name": "CarryOver - iPhone で保存、Mac で続ける",
+      "url": "https://carryover.luopeike.com/ja/",
+      "description": "iPhone の共有メニューから投稿、リンク、画像、アイデアを保存して、Mac で続けましょう。未処理の内容を保管し、Mac で検索。リマインダーや完了後の復元にも対応。",
+      "inLanguage": "ja",
+      "dateModified": "2026-10-10",
+      "isPartOf": {
+        "@id": "https://carryover.luopeike.com/#website"
+      },
+      "publisher": {
+        "@id": "https://carryover.luopeike.com/#developer"
+      },
+      "mainEntity": {
+        "@id": "https://carryover.luopeike.com/ja/#app"
       }
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://carryover.luopeike.com/#app",
+      "@id": "https://carryover.luopeike.com/ja/#app",
       "name": "CarryOver",
-      "description": "スマホの共有メニューから保存。Mac で元のページを開いて、あとで取り組めます。",
+      "description": "iPhone の共有メニューから投稿、リンク、画像、アイデアを保存して、Mac で続けましょう。未処理の内容を保管し、Mac で検索。リマインダーや完了後の復元にも対応。",
       "url": "https://carryover.luopeike.com/ja/",
       "downloadUrl": "https://apps.apple.com/app/id6755507048",
-      "applicationCategory": "ProductivityApplication",
+      "sameAs": [
+        "https://apps.apple.com/app/id6755507048"
+      ],
+      "image": "https://carryover.luopeike.com/images/app-icon.png",
+      "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "iOS, iPadOS, macOS",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
+      "featureList": [
+        "共有でも、手入力でも: 対応アプリの共有メニューからテキスト、リンク、画像を保存。CarryOver でアイデアを直接入力することもできます。",
+        "未処理の内容をそのまま保管: 未処理の内容は保存から何日経っても受信トレイに残ります。実際に処理したら完了にしましょう。",
+        "Mac で保存した内容を検索: Mac のメインウインドウでタイトル、本文、元の URL を検索。受信トレイと履歴の両方が対象です。",
+        "完了しても、また取り組める: 完了した内容は履歴へ。必要なときは受信トレイに戻して、続きを進められます。",
+        "あとで取り組むための通知: 日時を設定してシステムの通知を許可。通知をタップすると、保存した内容を開けます。",
+        "Apple デバイス間で引き継ぎ: 同じ Apple Account の iPhone、iPad、Mac 間で iCloud 同期。ネットワークや iCloud の状態によって同期が遅れる場合があります。"
+      ],
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
       },
-      "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+      "author": {
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -145,6 +196,8 @@
 
     </section>
 
+    <p class="download-note">現在の機能を使うには App Store から入手してください。Mac 用の直接ダウンロード DMG は、このリリースにまだ更新されていません。</p>
+
     <section class="section workflow-proof">
       <h2>今すぐ保存、あとで行動</h2>
       <div class="workflow-grid"><figure class="workflow-step">
@@ -162,22 +215,18 @@
     </section>
 
     <section class="section">
-      <h2>すばやい保存のために</h2>
+      <h2>気になったものを保存して、次の行動へ</h2>
       <div class="grid">
-        <article class="feature-card"><h3>システム共有シート</h3><p>Safari、メモ、SNS など共有に対応した App からリンクやテキストを保存できます。</p></article>
-        <article class="feature-card"><h3>スマート URL 検出</h3><p>共有テキスト内の URL を見つけ、元の文脈と一緒に保持します。</p></article>
-        <article class="feature-card"><h3>iCloud 同期</h3><p>保存した項目を CloudKit で同期し、iPhone、iPad、Mac をそろえます。</p></article>
+        <article class="feature-card"><h3>共有でも、手入力でも</h3><p>対応アプリの共有メニューからテキスト、リンク、画像を保存。CarryOver でアイデアを直接入力することもできます。</p></article>
+        <article class="feature-card"><h3>未処理の内容をそのまま保管</h3><p>未処理の内容は保存から何日経っても受信トレイに残ります。実際に処理したら完了にしましょう。</p></article>
+        <article class="feature-card"><h3>Mac で保存した内容を検索</h3><p>Mac のメインウインドウでタイトル、本文、元の URL を検索。受信トレイと履歴の両方が対象です。</p></article>
+        <article class="feature-card"><h3>完了しても、また取り組める</h3><p>完了した内容は履歴へ。必要なときは受信トレイに戻して、続きを進められます。</p></article>
+        <article class="feature-card"><h3>あとで取り組むための通知</h3><p>日時を設定してシステムの通知を許可。通知をタップすると、保存した内容を開けます。</p></article>
+        <article class="feature-card"><h3>Apple デバイス間で引き継ぎ</h3><p>同じ Apple Account の iPhone、iPad、Mac 間で iCloud 同期。ネットワークや iCloud の状態によって同期が遅れる場合があります。</p></article>
       </div>
     </section>
 
-    <section class="section">
-      <h2>見つけたものを実際のフォローアップへ</h2>
-      <div class="grid">
-        <article class="feature-card"><h3>保存して、あとで処理</h3><p>未処理の内容は受信トレイに残ります</p></article>
-        <article class="feature-card"><h3>Mac で続ける</h3><p>元のページを開いて、処理を完了</p></article>
-        <article class="feature-card"><h3>完了しても見返せる</h3><p>処理済みの内容は履歴に残ります</p></article>
-      </div>
-    </section>
+    <p>無料版は1日3回まで保存できます。Pro を買い切りで購入すると、1日の保存回数の制限がなくなります。地域の価格は App Store でご確認ください。 <a href="help#faq">ヘルプを読む</a></p>
 
     <p class="footer">質問やフィードバックは cameoshell09@gmail.com までお送りください。</p>
   </main>

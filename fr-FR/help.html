@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aide CarryOver - Liens, textes et idées sur Apple</title>
-  <meta name="description" content="Apprenez à utiliser CarryOver sur iPhone, iPad et Mac : feuille de partage, détection d'URL, synchronisation iCloud, historique, suppression et dépannage.">
+  <meta name="description" content="Enregistrez publications, liens, images et idées via Partager sur iPhone, puis reprenez sur Mac. Liste persistante, recherche sur Mac, rappels et historique à retrouver.">
   <meta name="keywords" content="Aide CarryOver,enregistrer liens,lire plus tard,feuille de partage,synchronisation iCloud,détection URL,appareils Apple">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/fr-FR/help">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/fr-FR/help.md">
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/help">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/help">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/help">
@@ -30,7 +32,7 @@
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/help">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/help">
   <meta property="og:title" content="Aide CarryOver - Liens, textes et idées sur Apple">
-  <meta property="og:description" content="Apprenez à utiliser CarryOver sur iPhone, iPad et Mac : feuille de partage, détection d'URL, synchronisation iCloud, historique, suppression et dépannage.">
+  <meta property="og:description" content="Enregistrez publications, liens, images et idées via Partager sur iPhone, puis reprenez sur Mac. Liste persistante, recherche sur Mac, rappels et historique à retrouver.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://carryover.luopeike.com/fr-FR/help">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -50,7 +52,7 @@
   <meta property="og:locale:alternate" content="id_ID">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Aide CarryOver - Liens, textes et idées sur Apple">
-  <meta name="twitter:description" content="Apprenez à utiliser CarryOver sur iPhone, iPad et Mac : feuille de partage, détection d'URL, synchronisation iCloud, historique, suppression et dépannage.">
+  <meta name="twitter:description" content="Enregistrez publications, liens, images et idées via Partager sur iPhone, puis reprenez sur Mac. Liste persistante, recherche sur Mac, rappels et historique à retrouver.">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -58,22 +60,29 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "fr",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -81,13 +90,14 @@
       "@id": "https://carryover.luopeike.com/fr-FR/help#webpage",
       "name": "Aide CarryOver - Liens, textes et idées sur Apple",
       "url": "https://carryover.luopeike.com/fr-FR/help",
-      "description": "Apprenez à utiliser CarryOver sur iPhone, iPad et Mac : feuille de partage, détection d'URL, synchronisation iCloud, historique, suppression et dépannage.",
+      "description": "Enregistrez publications, liens, images et idées via Partager sur iPhone, puis reprenez sur Mac. Liste persistante, recherche sur Mac, rappels et historique à retrouver.",
       "inLanguage": "fr",
+      "dateModified": "2026-10-10",
       "isPartOf": {
         "@id": "https://carryover.luopeike.com/#website"
       },
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -97,10 +107,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Pourquoi CarryOver n'apparaît-il pas dans la feuille de partage ?",
+          "name": "Comment partager vers CarryOver ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Activez CarryOver dans la section Plus de la feuille de partage et placez-le plus haut si besoin."
+            "text": "Dans une app compatible, ouvrez le menu Partager du système et choisissez CarryOver. Sur iPhone et iPad, vérifiez Plus s’il n’apparaît pas. Sur Mac, la disponibilité dépend aussi de l’app source, du type de contenu et des réglages d’extensions système."
           }
         },
         {
@@ -117,6 +127,46 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Non. La synchronisation utilise les services iCloud d'Apple lorsqu'ils sont disponibles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Les éléments à traiter disparaissent-ils après quelques jours ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Ils restent dans la liste à traiter. Les marquer comme terminés les déplace vers l’historique ; les supprimer les retire."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puis-je rechercher mes contenus enregistrés ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La fenêtre principale du Mac permet de rechercher titres, textes et URL sources, y compris dans l’historique. La recherche n’est pas actuellement disponible sur iPhone ou iPad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un rappel est-il réellement envoyé ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Choisissez une date et une heure futures et autorisez les notifications de CarryOver dans les réglages système. Le système envoie une notification locale ; Concentration et les réglages de notifications peuvent la rendre silencieuse. La toucher ouvre l’élément correspondant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puis-je reprendre un élément terminé ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Ouvrez l’historique et utilisez le bouton de restauration de l’élément pour le remettre dans la liste à traiter."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que comprend la version gratuite ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La version gratuite permet jusqu’à trois enregistrements par jour. Un achat unique de Pro supprime cette limite quotidienne. Consultez l’App Store pour le prix dans votre région."
           }
         }
       ]
@@ -172,18 +222,20 @@
         <h2>Enregistrer du contenu</h2>
         <div class="step-list">
           <article class="step"><h3>Ouvrir une app</h3><p>Commencez dans Safari, Notes, une app sociale ou toute app capable de partager du texte ou des URL.</p></article>
-          <article class="step"><h3>Sélectionner texte ou URL</h3><p>Choisissez le contenu à garder pour plus tard.</p></article>
-          <article class="step"><h3>Utiliser Partager</h3><p>Touchez le bouton de partage système et choisissez CarryOver. S'il n'apparaît pas, activez-le dans Plus.</p></article>
-          <article class="step"><h3>Gardé pour plus tard</h3><p>Les éléments à traiter restent dans la liste</p></article>
+          <article class="step"><h3>Choisir un contenu compatible</h3><p>Choisissez le texte, le lien, l’image ou la publication à conserver. Les contenus partageables dépendent de l’app source.</p></article>
+          <article class="step"><h3>Utiliser Partager</h3><p>Dans une app compatible, ouvrez le menu Partager du système et choisissez CarryOver. Sur iPhone et iPad, vérifiez Plus s’il n’apparaît pas. Sur Mac, la disponibilité dépend aussi de l’app source, du type de contenu et des réglages d’extensions système.</p></article>
+          <article class="step"><h3>Vérifier et enregistrer</h3><p>Vérifiez le contenu dans le formulaire de partage. Vous pouvez modifier le titre ou définir un rappel. Choisissez Enregistrer pour l’ajouter à la liste à traiter.</p></article>
+          <article class="step"><h3>Ajouter une note manuellement</h3><p>Ouvrez le formulaire d’ajout dans CarryOver pour noter une idée ou coller du contenu, puis enregistrez-le dans la liste à traiter.</p></article>
         </div>
       </section>
 
       <section class="section">
         <h2>Gérer la liste</h2>
         <div class="step-list">
-          <article class="step"><h3>Gardé pour plus tard</h3><p>Les éléments à traiter restent dans la liste</p></article>
-          <article class="step"><h3>Reprendre sur Mac</h3><p>Ouvrez la source, puis marquez comme terminé</p></article>
-          <article class="step"><h3>Terminé, mais conservé</h3><p>Les éléments terminés restent dans l’historique</p></article>
+          <article class="step"><h3>Ouvrir le contenu ou sa source</h3><p>Sélectionnez un élément pour le consulter ou le modifier. Si une URL source existe, utilisez l’action de source pour l’ouvrir dans le navigateur.</p></article>
+          <article class="step"><h3>Marquer comme terminé</h3><p>Utilisez le bouton de fin pour déplacer un élément traité vers l’historique. Seuls les éléments terminés y vont ; les autres n’expirent pas.</p></article>
+          <article class="step"><h3>Restaurer depuis l’historique</h3><p>Utilisez le bouton de restauration à côté d’un élément terminé pour le remettre dans la liste à traiter.</p></article>
+          <article class="step"><h3>Confirmer la suppression</h3><p>Sur iPhone et iPad, balayez un élément vers la gauche et choisissez Supprimer. Sur Mac, utilisez l’action de suppression. Confirmez avant son retrait.</p></article>
         </div>
       </section>
 
@@ -199,9 +251,14 @@
       <section class="section" id="faq">
         <h2>Questions fréquentes</h2>
         <div class="policy-list">
-          <article class="policy-item"><h3>Pourquoi CarryOver n'apparaît-il pas dans la feuille de partage ?</h3><p>Activez CarryOver dans la section Plus de la feuille de partage et placez-le plus haut si besoin.</p></article>
+          <article class="policy-item"><h3>Comment partager vers CarryOver ?</h3><p>Dans une app compatible, ouvrez le menu Partager du système et choisissez CarryOver. Sur iPhone et iPad, vérifiez Plus s’il n’apparaît pas. Sur Mac, la disponibilité dépend aussi de l’app source, du type de contenu et des réglages d’extensions système.</p></article>
           <article class="policy-item"><h3>Pourquoi la synchronisation n'arrive-t-elle pas immédiatement ?</h3><p>Le réseau, le mode économie d'énergie ou un stockage iCloud insuffisant peuvent retarder la synchronisation.</p></article>
           <article class="policy-item"><h3>CarryOver nécessite-t-il un compte ?</h3><p>Non. La synchronisation utilise les services iCloud d'Apple lorsqu'ils sont disponibles.</p></article>
+          <article class="policy-item"><h3>Les éléments à traiter disparaissent-ils après quelques jours ?</h3><p>Non. Ils restent dans la liste à traiter. Les marquer comme terminés les déplace vers l’historique ; les supprimer les retire.</p></article>
+          <article class="policy-item"><h3>Puis-je rechercher mes contenus enregistrés ?</h3><p>La fenêtre principale du Mac permet de rechercher titres, textes et URL sources, y compris dans l’historique. La recherche n’est pas actuellement disponible sur iPhone ou iPad.</p></article>
+          <article class="policy-item"><h3>Un rappel est-il réellement envoyé ?</h3><p>Oui. Choisissez une date et une heure futures et autorisez les notifications de CarryOver dans les réglages système. Le système envoie une notification locale ; Concentration et les réglages de notifications peuvent la rendre silencieuse. La toucher ouvre l’élément correspondant.</p></article>
+          <article class="policy-item"><h3>Puis-je reprendre un élément terminé ?</h3><p>Oui. Ouvrez l’historique et utilisez le bouton de restauration de l’élément pour le remettre dans la liste à traiter.</p></article>
+          <article class="policy-item"><h3>Que comprend la version gratuite ?</h3><p>La version gratuite permet jusqu’à trois enregistrements par jour. Un achat unique de Pro supprime cette limite quotidienne. Consultez l’App Store pour le prix dans votre région.</p></article>
         </div>
       </section>
 
@@ -209,6 +266,7 @@
         <a class="button" href="https://apps.apple.com/app/id6755507048"><img class="store-icon" src="../images/app-store-icon.svg" alt="">App Store</a>
         <a class="button secondary" href="https://pub-921ff78698074a30a8b3a65a51a6faa8.r2.dev/carryover/macos/CarryOver.dmg" download="CarryOver.dmg">Télécharger le DMG Mac</a>
       </div>
+      <p class="download-note">Pour les fonctionnalités actuelles, téléchargez CarryOver sur l’App Store. Le DMG Mac en téléchargement direct n’a pas encore été mis à jour pour cette version.</p>
 
       <p class="footer">Besoin d'aide ? Contactez cameoshell09@gmail.com.</p>
     </article>

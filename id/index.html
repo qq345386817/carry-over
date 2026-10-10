@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CarryOver - Simpan dari Bagikan - Lanjutkan di Mac</title>
-  <meta name="description" content="Simpan dari menu Bagikan di ponsel. Buka sumbernya di Mac saat siap menindaklanjuti.">
+  <title>CarryOver - Simpan di iPhone, lanjutkan di Mac</title>
+  <meta name="description" content="Simpan postingan, tautan, gambar dan ide dari Bagikan di iPhone, lalu lanjutkan di Mac. Kotak masuk yang tetap tersimpan, pencarian di Mac, pengingat dan riwayat.">
   <meta name="keywords" content="CarryOver,baca nanti,simpan tautan,Share Sheet,sinkronisasi iCloud,tangkap ide,produktivitas iPhone,produktivitas Mac">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/id/">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/id/index.md">
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/">
@@ -29,8 +31,8 @@
   <link rel="alternate" hreflang="it" href="https://carryover.luopeike.com/it/">
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/">
-  <meta property="og:title" content="CarryOver - Simpan dari Bagikan - Lanjutkan di Mac">
-  <meta property="og:description" content="Simpan dari menu Bagikan di ponsel. Buka sumbernya di Mac saat siap menindaklanjuti.">
+  <meta property="og:title" content="CarryOver - Simpan di iPhone, lanjutkan di Mac">
+  <meta property="og:description" content="Simpan postingan, tautan, gambar dan ide dari Bagikan di iPhone, lalu lanjutkan di Mac. Kotak masuk yang tetap tersimpan, pencarian di Mac, pengingat dan riwayat.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://carryover.luopeike.com/id/">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -49,8 +51,8 @@
   <meta property="og:locale:alternate" content="es_MX">
   <meta property="og:locale:alternate" content="it_IT">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CarryOver - Simpan dari Bagikan - Lanjutkan di Mac">
-  <meta name="twitter:description" content="Simpan dari menu Bagikan di ponsel. Buka sumbernya di Mac saat siap menindaklanjuti.">
+  <meta name="twitter:title" content="CarryOver - Simpan di iPhone, lanjutkan di Mac">
+  <meta name="twitter:description" content="Simpan postingan, tautan, gambar dan ide dari Bagikan di iPhone, lalu lanjutkan di Mac. Kotak masuk yang tetap tersimpan, pencarian di Mac, pengingat dan riwayat.">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -58,40 +60,89 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "id",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://carryover.luopeike.com/id/#webpage",
+      "name": "CarryOver - Simpan di iPhone, lanjutkan di Mac",
+      "url": "https://carryover.luopeike.com/id/",
+      "description": "Simpan postingan, tautan, gambar dan ide dari Bagikan di iPhone, lalu lanjutkan di Mac. Kotak masuk yang tetap tersimpan, pencarian di Mac, pengingat dan riwayat.",
+      "inLanguage": "id",
+      "dateModified": "2026-10-10",
+      "isPartOf": {
+        "@id": "https://carryover.luopeike.com/#website"
+      },
+      "publisher": {
+        "@id": "https://carryover.luopeike.com/#developer"
+      },
+      "mainEntity": {
+        "@id": "https://carryover.luopeike.com/id/#app"
       }
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://carryover.luopeike.com/#app",
+      "@id": "https://carryover.luopeike.com/id/#app",
       "name": "CarryOver",
-      "description": "Simpan dari menu Bagikan di ponsel. Buka sumbernya di Mac saat siap menindaklanjuti.",
+      "description": "Simpan postingan, tautan, gambar dan ide dari Bagikan di iPhone, lalu lanjutkan di Mac. Kotak masuk yang tetap tersimpan, pencarian di Mac, pengingat dan riwayat.",
       "url": "https://carryover.luopeike.com/id/",
       "downloadUrl": "https://apps.apple.com/app/id6755507048",
-      "applicationCategory": "ProductivityApplication",
+      "sameAs": [
+        "https://apps.apple.com/app/id6755507048"
+      ],
+      "image": "https://carryover.luopeike.com/images/app-icon.png",
+      "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "iOS, iPadOS, macOS",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
+      "featureList": [
+        "Bagikan atau catat sendiri: Simpan teks, tautan atau gambar yang didukung dari menu Bagikan di aplikasi lain. Anda juga bisa menulis ide langsung di CarryOver.",
+        "Yang belum selesai tetap ada: Item yang belum selesai tetap di kotak masuk, berapa pun usianya. Tandai selesai setelah benar-benar ditindaklanjuti.",
+        "Cari konten tersimpan di Mac: Di jendela utama Mac, cari berdasarkan judul, teks dan URL sumber, baik di kotak masuk maupun riwayat.",
+        "Selesai, bukan hilang: Item selesai masuk ke riwayat. Pulihkan ke kotak masuk saat ingin melanjutkannya lagi.",
+        "Pengingat untuk kembali: Atur tanggal dan waktu serta izinkan notifikasi sistem. Ketuk pengingat untuk membuka item tersimpan.",
+        "Lanjutkan antarperangkat Apple: iCloud menyinkronkan iPhone, iPad dan Mac yang menggunakan Akun Apple yang sama. Kondisi jaringan dan iCloud dapat menunda sinkronisasi."
+      ],
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
       },
-      "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+      "author": {
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -145,6 +196,8 @@
 
     </section>
 
+    <p class="download-note">Untuk fitur saat ini, unduh CarryOver dari App Store. DMG Mac yang diunduh langsung belum diperbarui ke rilis ini.</p>
+
     <section class="section workflow-proof">
       <h2>Simpan sekarang, lanjut nanti</h2>
       <div class="workflow-grid"><figure class="workflow-step">
@@ -162,22 +215,18 @@
     </section>
 
     <section class="section">
-      <h2>Dibuat untuk menangkap cepat</h2>
+      <h2>Simpan temuan, lalu wujudkan langkah berikutnya</h2>
       <div class="grid">
-        <article class="feature-card"><h3>Share Sheet sistem</h3><p>Simpan teks dan tautan dari Safari, Catatan, app sosial, dan app lain yang mendukung berbagi.</p></article>
-        <article class="feature-card"><h3>Deteksi URL cerdas</h3><p>CarryOver menemukan URL dalam teks yang dibagikan dan menyimpan konteks aslinya.</p></article>
-        <article class="feature-card"><h3>Sinkronisasi iCloud</h3><p>Item tersimpan disinkronkan lewat CloudKit agar iPhone, iPad, dan Mac tetap selaras.</p></article>
+        <article class="feature-card"><h3>Bagikan atau catat sendiri</h3><p>Simpan teks, tautan atau gambar yang didukung dari menu Bagikan di aplikasi lain. Anda juga bisa menulis ide langsung di CarryOver.</p></article>
+        <article class="feature-card"><h3>Yang belum selesai tetap ada</h3><p>Item yang belum selesai tetap di kotak masuk, berapa pun usianya. Tandai selesai setelah benar-benar ditindaklanjuti.</p></article>
+        <article class="feature-card"><h3>Cari konten tersimpan di Mac</h3><p>Di jendela utama Mac, cari berdasarkan judul, teks dan URL sumber, baik di kotak masuk maupun riwayat.</p></article>
+        <article class="feature-card"><h3>Selesai, bukan hilang</h3><p>Item selesai masuk ke riwayat. Pulihkan ke kotak masuk saat ingin melanjutkannya lagi.</p></article>
+        <article class="feature-card"><h3>Pengingat untuk kembali</h3><p>Atur tanggal dan waktu serta izinkan notifikasi sistem. Ketuk pengingat untuk membuka item tersimpan.</p></article>
+        <article class="feature-card"><h3>Lanjutkan antarperangkat Apple</h3><p>iCloud menyinkronkan iPhone, iPad dan Mac yang menggunakan Akun Apple yang sama. Kondisi jaringan dan iCloud dapat menunda sinkronisasi.</p></article>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Dari baca santai ke tindak lanjut nyata</h2>
-      <div class="grid">
-        <article class="feature-card"><h3>Tersimpan untuk nanti</h3><p>Item yang belum selesai tetap di kotak masuk</p></article>
-        <article class="feature-card"><h3>Lanjutkan di Mac</h3><p>Buka sumbernya lalu tandai sebagai selesai</p></article>
-        <article class="feature-card"><h3>Selesai, tetap tersimpan</h3><p>Item selesai tetap ada dalam riwayat</p></article>
-      </div>
-    </section>
+    <p>Versi gratis memungkinkan hingga tiga penyimpanan per hari. Pembelian Pro satu kali menghapus batas harian. Lihat App Store untuk harga di wilayah Anda. <a href="help#faq">Baca bantuan</a></p>
 
     <p class="footer">Pertanyaan atau masukan? Hubungi cameoshell09@gmail.com.</p>
   </main>

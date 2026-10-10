@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CarryOver - Share to CarryOver - Pick it up on Mac</title>
-  <meta name="description" content="Save from the Share menu on your phone. Open it on Mac when you're ready to act.">
+  <title>CarryOver - Save on iPhone, Continue on Mac</title>
+  <meta name="description" content="Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on Mac, set reminders and revisit completed items.">
   <meta name="keywords" content="CarryOver, read later app, save links, share extension, iCloud sync, capture ideas, iPhone productivity, Mac productivity">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/en-US/">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/en-US/index.md">
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/">
@@ -29,8 +31,8 @@
   <link rel="alternate" hreflang="it" href="https://carryover.luopeike.com/it/">
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/">
-  <meta property="og:title" content="CarryOver - Share to CarryOver - Pick it up on Mac">
-  <meta property="og:description" content="Save from the Share menu on your phone. Open it on Mac when you're ready to act.">
+  <meta property="og:title" content="CarryOver - Save on iPhone, Continue on Mac">
+  <meta property="og:description" content="Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on Mac, set reminders and revisit completed items.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://carryover.luopeike.com/en-US/">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -49,8 +51,8 @@
   <meta property="og:locale:alternate" content="it_IT">
   <meta property="og:locale:alternate" content="id_ID">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CarryOver - Share to CarryOver - Pick it up on Mac">
-  <meta name="twitter:description" content="Save from the Share menu on your phone. Open it on Mac when you're ready to act.">
+  <meta name="twitter:title" content="CarryOver - Save on iPhone, Continue on Mac">
+  <meta name="twitter:description" content="Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on Mac, set reminders and revisit completed items.">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -58,40 +60,89 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "en",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://carryover.luopeike.com/en-US/#webpage",
+      "name": "CarryOver - Save on iPhone, Continue on Mac",
+      "url": "https://carryover.luopeike.com/en-US/",
+      "description": "Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on Mac, set reminders and revisit completed items.",
+      "inLanguage": "en",
+      "dateModified": "2026-10-10",
+      "isPartOf": {
+        "@id": "https://carryover.luopeike.com/#website"
+      },
+      "publisher": {
+        "@id": "https://carryover.luopeike.com/#developer"
+      },
+      "mainEntity": {
+        "@id": "https://carryover.luopeike.com/en-US/#app"
       }
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://carryover.luopeike.com/#app",
+      "@id": "https://carryover.luopeike.com/en-US/#app",
       "name": "CarryOver",
-      "description": "Save from the Share menu on your phone. Open it on Mac when you're ready to act.",
+      "description": "Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on Mac, set reminders and revisit completed items.",
       "url": "https://carryover.luopeike.com/en-US/",
       "downloadUrl": "https://apps.apple.com/app/id6755507048",
-      "applicationCategory": "ProductivityApplication",
+      "sameAs": [
+        "https://apps.apple.com/app/id6755507048"
+      ],
+      "image": "https://carryover.luopeike.com/images/app-icon.png",
+      "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "iOS, iPadOS, macOS",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
+      "featureList": [
+        "Share or write it down: Use the system Share menu in apps that share supported text, links or images. You can also add a note manually in CarryOver.",
+        "An inbox that stays put: Unfinished items stay in your inbox regardless of age. Mark them done when you have actually handled them.",
+        "Search saved content on Mac: Search titles, saved text and source URLs in the Mac main window, in both your inbox and History.",
+        "Done, with a way back: Completed items move to History. Restore an item to the inbox when you need to pick it up again.",
+        "A reminder for later: Set a date and time and allow system notifications. Tap the reminder to open the saved item and continue.",
+        "Your Apple devices, one handover: iCloud sync connects iPhone, iPad and Mac signed in to the same Apple Account. Network and iCloud conditions can delay syncing."
+      ],
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
       },
-      "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+      "author": {
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -145,6 +196,8 @@
 
     </section>
 
+    <p class="download-note">For the current features, get CarryOver from the App Store. The direct Mac DMG has not yet been updated to this release.</p>
+
     <section class="section workflow-proof">
       <h2>Capture now, action later</h2>
       <div class="workflow-grid"><figure class="workflow-step">
@@ -162,22 +215,18 @@
     </section>
 
     <section class="section">
-      <h2>Built for quick capture</h2>
+      <h2>From a quick save to a useful next step</h2>
       <div class="grid">
-        <article class="feature-card"><h3>System Share Sheet</h3><p>Save text and links from Safari, Notes, social apps, and other apps that support sharing.</p></article>
-        <article class="feature-card"><h3>Smart URL detection</h3><p>CarryOver finds URLs inside shared text and keeps the original context with the item.</p></article>
-        <article class="feature-card"><h3>iCloud sync</h3><p>Saved items sync through CloudKit so your iPhone, iPad, and Mac stay in step.</p></article>
+        <article class="feature-card"><h3>Share or write it down</h3><p>Use the system Share menu in apps that share supported text, links or images. You can also add a note manually in CarryOver.</p></article>
+        <article class="feature-card"><h3>An inbox that stays put</h3><p>Unfinished items stay in your inbox regardless of age. Mark them done when you have actually handled them.</p></article>
+        <article class="feature-card"><h3>Search saved content on Mac</h3><p>Search titles, saved text and source URLs in the Mac main window, in both your inbox and History.</p></article>
+        <article class="feature-card"><h3>Done, with a way back</h3><p>Completed items move to History. Restore an item to the inbox when you need to pick it up again.</p></article>
+        <article class="feature-card"><h3>A reminder for later</h3><p>Set a date and time and allow system notifications. Tap the reminder to open the saved item and continue.</p></article>
+        <article class="feature-card"><h3>Your Apple devices, one handover</h3><p>iCloud sync connects iPhone, iPad and Mac signed in to the same Apple Account. Network and iCloud conditions can delay syncing.</p></article>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Move from passive reading to real follow-up</h2>
-      <div class="grid">
-        <article class="feature-card"><h3>Saved for later</h3><p>Unfinished items stay in your inbox</p></article>
-        <article class="feature-card"><h3>Pick it up on Mac</h3><p>Open the source and continue when you're ready</p></article>
-        <article class="feature-card"><h3>Done, not lost</h3><p>Completed items remain in History</p></article>
-      </div>
-    </section>
+    <p>The free version allows up to three saves per day. A one-time Pro purchase removes the daily save limit. Check the App Store for the price in your region. <a href="help#faq">Read help</a></p>
 
     <p class="footer">Questions or feedback? Contact support at cameoshell09@gmail.com.</p>
   </main>

@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CarryOver - Per Teilen-Menü speichern - Am Mac weitermachen</title>
-  <meta name="description" content="Auf dem Handy per Teilen-Menü speichern. Später am Mac die Quelle öffnen und weiterarbeiten.">
+  <title>CarryOver - Auf dem iPhone sichern, am Mac weiterarbeiten</title>
+  <meta name="description" content="Beiträge, Links, Bilder und Ideen per Teilen-Menü auf dem iPhone sichern und am Mac weiterbearbeiten. Mit dauerhaftem Posteingang, Mac-Suche, Erinnerungen und Verlauf.">
   <meta name="keywords" content="CarryOver,später lesen,Links sichern,Share Sheet,iCloud Sync,Ideen erfassen,iPhone Produktivität,Mac Produktivität">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/de-DE/">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/de-DE/index.md">
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/">
@@ -29,8 +31,8 @@
   <link rel="alternate" hreflang="it" href="https://carryover.luopeike.com/it/">
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/">
-  <meta property="og:title" content="CarryOver - Per Teilen-Menü speichern - Am Mac weitermachen">
-  <meta property="og:description" content="Auf dem Handy per Teilen-Menü speichern. Später am Mac die Quelle öffnen und weiterarbeiten.">
+  <meta property="og:title" content="CarryOver - Auf dem iPhone sichern, am Mac weiterarbeiten">
+  <meta property="og:description" content="Beiträge, Links, Bilder und Ideen per Teilen-Menü auf dem iPhone sichern und am Mac weiterbearbeiten. Mit dauerhaftem Posteingang, Mac-Suche, Erinnerungen und Verlauf.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://carryover.luopeike.com/de-DE/">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -49,8 +51,8 @@
   <meta property="og:locale:alternate" content="it_IT">
   <meta property="og:locale:alternate" content="id_ID">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CarryOver - Per Teilen-Menü speichern - Am Mac weitermachen">
-  <meta name="twitter:description" content="Auf dem Handy per Teilen-Menü speichern. Später am Mac die Quelle öffnen und weiterarbeiten.">
+  <meta name="twitter:title" content="CarryOver - Auf dem iPhone sichern, am Mac weiterarbeiten">
+  <meta name="twitter:description" content="Beiträge, Links, Bilder und Ideen per Teilen-Menü auf dem iPhone sichern und am Mac weiterbearbeiten. Mit dauerhaftem Posteingang, Mac-Suche, Erinnerungen und Verlauf.">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -58,40 +60,89 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "de",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://carryover.luopeike.com/de-DE/#webpage",
+      "name": "CarryOver - Auf dem iPhone sichern, am Mac weiterarbeiten",
+      "url": "https://carryover.luopeike.com/de-DE/",
+      "description": "Beiträge, Links, Bilder und Ideen per Teilen-Menü auf dem iPhone sichern und am Mac weiterbearbeiten. Mit dauerhaftem Posteingang, Mac-Suche, Erinnerungen und Verlauf.",
+      "inLanguage": "de",
+      "dateModified": "2026-10-10",
+      "isPartOf": {
+        "@id": "https://carryover.luopeike.com/#website"
+      },
+      "publisher": {
+        "@id": "https://carryover.luopeike.com/#developer"
+      },
+      "mainEntity": {
+        "@id": "https://carryover.luopeike.com/de-DE/#app"
       }
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://carryover.luopeike.com/#app",
+      "@id": "https://carryover.luopeike.com/de-DE/#app",
       "name": "CarryOver",
-      "description": "Auf dem Handy per Teilen-Menü speichern. Später am Mac die Quelle öffnen und weiterarbeiten.",
+      "description": "Beiträge, Links, Bilder und Ideen per Teilen-Menü auf dem iPhone sichern und am Mac weiterbearbeiten. Mit dauerhaftem Posteingang, Mac-Suche, Erinnerungen und Verlauf.",
       "url": "https://carryover.luopeike.com/de-DE/",
       "downloadUrl": "https://apps.apple.com/app/id6755507048",
-      "applicationCategory": "ProductivityApplication",
+      "sameAs": [
+        "https://apps.apple.com/app/id6755507048"
+      ],
+      "image": "https://carryover.luopeike.com/images/app-icon.png",
+      "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "iOS, iPadOS, macOS",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
+      "featureList": [
+        "Teilen oder selbst notieren: Sichere unterstützte Texte, Links oder Bilder über das Teilen-Menü anderer Apps. Ideen kannst du auch direkt in CarryOver eingeben.",
+        "Offenes bleibt im Posteingang: Unerledigte Einträge bleiben unabhängig von ihrem Alter im Posteingang. Markiere sie erst als erledigt, wenn du sie bearbeitet hast.",
+        "Gespeichertes am Mac suchen: Suche im Mac-Hauptfenster nach Titeln, Texten und Quell-URLs, sowohl im Posteingang als auch im Verlauf.",
+        "Erledigt, aber nicht verloren: Erledigte Einträge landen im Verlauf. Hole sie zurück in den Posteingang, wenn du weiterarbeiten möchtest.",
+        "Eine Erinnerung für später: Lege Datum und Uhrzeit fest und erlaube Systemmitteilungen. Ein Klick auf die Erinnerung öffnet den gespeicherten Eintrag.",
+        "Zwischen Apple-Geräten weiterarbeiten: iCloud synchronisiert iPhone, iPad und Mac mit demselben Apple Account. Netzwerk- und iCloud-Bedingungen können die Synchronisierung verzögern."
+      ],
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
       },
-      "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+      "author": {
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -145,6 +196,8 @@
 
     </section>
 
+    <p class="download-note">Die aktuellen Funktionen erhältst du mit CarryOver aus dem App Store. Die direkt herunterladbare Mac-DMG wurde noch nicht auf diese Version aktualisiert.</p>
+
     <section class="section workflow-proof">
       <h2>Jetzt sichern, später handeln</h2>
       <div class="workflow-grid"><figure class="workflow-step">
@@ -162,22 +215,18 @@
     </section>
 
     <section class="section">
-      <h2>Für schnelles Erfassen gebaut</h2>
+      <h2>Schnell sichern, später etwas daraus machen</h2>
       <div class="grid">
-        <article class="feature-card"><h3>System-Share-Sheet</h3><p>Speichere Text und Links aus Safari, Notizen, sozialen Apps und anderen Apps mit Teilen-Funktion.</p></article>
-        <article class="feature-card"><h3>Intelligente URL-Erkennung</h3><p>CarryOver erkennt URLs in geteiltem Text und behält den ursprünglichen Kontext bei.</p></article>
-        <article class="feature-card"><h3>iCloud-Sync</h3><p>Gespeicherte Elemente werden über CloudKit zwischen iPhone, iPad und Mac synchronisiert.</p></article>
+        <article class="feature-card"><h3>Teilen oder selbst notieren</h3><p>Sichere unterstützte Texte, Links oder Bilder über das Teilen-Menü anderer Apps. Ideen kannst du auch direkt in CarryOver eingeben.</p></article>
+        <article class="feature-card"><h3>Offenes bleibt im Posteingang</h3><p>Unerledigte Einträge bleiben unabhängig von ihrem Alter im Posteingang. Markiere sie erst als erledigt, wenn du sie bearbeitet hast.</p></article>
+        <article class="feature-card"><h3>Gespeichertes am Mac suchen</h3><p>Suche im Mac-Hauptfenster nach Titeln, Texten und Quell-URLs, sowohl im Posteingang als auch im Verlauf.</p></article>
+        <article class="feature-card"><h3>Erledigt, aber nicht verloren</h3><p>Erledigte Einträge landen im Verlauf. Hole sie zurück in den Posteingang, wenn du weiterarbeiten möchtest.</p></article>
+        <article class="feature-card"><h3>Eine Erinnerung für später</h3><p>Lege Datum und Uhrzeit fest und erlaube Systemmitteilungen. Ein Klick auf die Erinnerung öffnet den gespeicherten Eintrag.</p></article>
+        <article class="feature-card"><h3>Zwischen Apple-Geräten weiterarbeiten</h3><p>iCloud synchronisiert iPhone, iPad und Mac mit demselben Apple Account. Netzwerk- und iCloud-Bedingungen können die Synchronisierung verzögern.</p></article>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Vom passiven Lesen zur Nacharbeit</h2>
-      <div class="grid">
-        <article class="feature-card"><h3>Gespeichert für später</h3><p>Offene Einträge bleiben im Posteingang</p></article>
-        <article class="feature-card"><h3>Am Mac weitermachen</h3><p>Quelle öffnen, nachsehen und erledigen</p></article>
-        <article class="feature-card"><h3>Erledigt und aufgehoben</h3><p>Erledigte Einträge bleiben im Verlauf</p></article>
-      </div>
-    </section>
+    <p>Die kostenlose Version erlaubt bis zu drei Speichervorgänge pro Tag. Ein einmaliger Pro-Kauf hebt das Tageslimit auf. Den Preis für deine Region findest du im App Store. <a href="help#faq">Hilfe lesen</a></p>
 
     <p class="footer">Fragen oder Feedback? Schreibe an cameoshell09@gmail.com.</p>
   </main>

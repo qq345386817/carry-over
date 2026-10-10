@@ -8,7 +8,8 @@ const appStoreId = "6755507048";
 const appStoreUrl = `https://apps.apple.com/app/id${appStoreId}`;
 const macDownloadUrl = "https://pub-921ff78698074a30a8b3a65a51a6faa8.r2.dev/carryover/macos/CarryOver.dmg";
 const supportEmail = "cameoshell09@gmail.com";
-const lastmod = "2026-06-06";
+// Update only when the corresponding page's substantive content changes.
+const pageDates = require("./content/page-dates.json");
 const appIconPath = "../images/app-icon-web.png";
 const appStoreIconPath = "../images/app-store-icon.svg";
 const socialImageUrl = `${siteUrl}/images/app-icon.png`;
@@ -885,16 +886,28 @@ const pages = [
 ];
 
 const workflowCopy = require("./content/workflow.json");
+const productCopy = require("./content/product.json");
 for (const language of languages) {
   const story = workflowCopy[language.code];
+  const product = productCopy[language.code];
   const c = copy[language.code];
   c.home.h1 = appName;
   c.home.lead = story.intro;
-  c.home.description = story.intro;
-  c.home.title = `${appName} - ${story.stages[0][0]} - ${story.stages[2][0]}`;
-  c.home.sections[1].items = story.stages.slice(1).map(stage => [stage[0], stage[1]]);
-  c.help.groups[0].steps[3] = [story.stages[1][0], story.stages[1][1]];
-  c.help.groups[1].steps = story.stages.slice(1).map(stage => [stage[0], stage[1]]);
+  c.home.description = product.description;
+  c.home.title = product.title;
+  c.home.sections = [{ title: product.heading, items: product.features }];
+  c.help.groups[0].steps[1] = product.selection;
+  c.help.groups[0].steps[2][1] = product.shareFaq[1];
+  c.help.groups[0].steps[3] = product.confirm;
+  c.help.groups[0].steps.push(product.manual);
+  c.help.groups[1].steps = product.manage;
+  c.help.faq = [product.shareFaq, ...c.help.faq.slice(1), ...product.faq];
+  c.help.description = product.description;
+}
+for (const page of pages) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(pageDates[page.key])) {
+    throw new Error(`Missing content modification date for ${page.key}`);
+  }
 }
 
 function escapeHtml(value) {
@@ -959,46 +972,50 @@ function header(activeLang, slug, nav) {
 function jsonLd(lang, slug, page, pageCopy) {
   const graph = [
     {
-      "@type": "Organization",
-      "@id": `${siteUrl}/#organization`,
-      "name": appName,
-      "url": `${siteUrl}/`,
-      "sameAs": [appStoreUrl]
+      "@type": "Person",
+      "@id": `${siteUrl}/#developer`,
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": `${siteUrl}/#website`,
       "name": appName,
       "url": `${siteUrl}/`,
-      "inLanguage": lang.hreflang,
-      "publisher": { "@id": `${siteUrl}/#organization` }
-    }
-  ];
-
-  if (page.key === "home") {
-    graph.push({
-      "@type": "SoftwareApplication",
-      "@id": `${siteUrl}/#app`,
-      "name": appName,
-      "description": pageCopy.description,
-      "url": pageUrl(lang, slug),
-      "downloadUrl": appStoreUrl,
-      "applicationCategory": "ProductivityApplication",
-      "operatingSystem": "iOS, iPadOS, macOS",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-      "publisher": { "@id": `${siteUrl}/#organization` }
-    });
-  } else if (page.key === "help" || page.key === "support") {
-    graph.push({
+      "inLanguage": languages.map(item => item.hreflang),
+      "publisher": { "@id": `${siteUrl}/#developer` }
+    },
+    {
       "@type": "WebPage",
       "@id": `${pageUrl(lang, slug)}#webpage`,
       "name": pageCopy.title,
       "url": pageUrl(lang, slug),
       "description": pageCopy.description,
       "inLanguage": lang.hreflang,
+      "dateModified": pageDates[page.key],
       "isPartOf": { "@id": `${siteUrl}/#website` },
-      "publisher": { "@id": `${siteUrl}/#organization` }
+      "publisher": { "@id": `${siteUrl}/#developer` },
+      ...(page.key === "home" ? { "mainEntity": { "@id": `${pageUrl(lang, "")}#app` } } : {})
+    }
+  ];
+
+  if (page.key === "home") {
+    graph.push({
+      "@type": "SoftwareApplication",
+      "@id": `${pageUrl(lang, "")}#app`,
+      "name": appName,
+      "description": pageCopy.description,
+      "url": pageUrl(lang, slug),
+      "downloadUrl": appStoreUrl,
+      "sameAs": [appStoreUrl],
+      "image": socialImageUrl,
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "iOS, iPadOS, macOS",
+      "inLanguage": languages.map(item => item.hreflang),
+      "featureList": productCopy[lang.code].features.map(([title, text]) => `${title}: ${text}`),
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@id": `${siteUrl}/#developer` }
     });
+  } else if (page.key === "help" || page.key === "support") {
     if (page.key === "help") {
       graph.push({
         "@type": "FAQPage",
@@ -1011,18 +1028,6 @@ function jsonLd(lang, slug, page, pageCopy) {
         }))
       });
     }
-  } else if (page.key === "privacy") {
-    graph.push({
-      "@type": "PrivacyPolicy",
-      "@id": `${pageUrl(lang, slug)}#privacy-policy`,
-      "name": pageCopy.title,
-      "description": pageCopy.description,
-      "url": pageUrl(lang, slug),
-      "inLanguage": lang.hreflang,
-      "dateModified": lastmod,
-      "isPartOf": { "@id": `${siteUrl}/#website` },
-      "publisher": { "@id": `${siteUrl}/#organization` }
-    });
   }
 
   graph.push({
@@ -1071,6 +1076,8 @@ function head(lang, page, pageCopy) {
   <link rel="icon" type="image/png" href="${appIconPath}">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="${pageUrl(lang, slug)}">
+  <link rel="describedby" href="${siteUrl}/llms.txt">
+${["home", "help"].includes(page.key) ? `  <link rel="alternate" type="text/markdown" href="${pageUrl(lang, page.key === "home" ? "index.md" : "help.md")}">` : ""}
 ${alternateLinks(slug)}
   <meta property="og:title" content="${escapeHtml(pageCopy.title)}">
   <meta property="og:description" content="${escapeHtml(pageCopy.description)}">
@@ -1144,12 +1151,16 @@ function renderHome(lang) {
 
     </section>
 
+    <p class="download-note">${escapeHtml(productCopy[lang.code].downloadNote)}</p>
+
     <section class="section workflow-proof">
       <h2>${escapeHtml(c.eyebrow)}</h2>
       <div class="workflow-grid">${proof}</div>
     </section>
 
     ${sections}
+
+    <p>${escapeHtml(productCopy[lang.code].faq.at(-1)[1])} <a href="help#faq">${escapeHtml(c.secondary)}</a></p>
 
     <p class="footer">${escapeHtml(c.footer)}</p>`;
 }
@@ -1184,6 +1195,7 @@ function renderHelp(lang) {
         ${appStoreButton(nav.appStore)}
         ${macDownloadButton(copy[lang.code].home.macDownload)}
       </div>
+      <p class="download-note">${escapeHtml(productCopy[lang.code].downloadNote)}</p>
 
       <p class="footer">${escapeHtml(c.footer)}</p>
     </article>`;
@@ -1282,8 +1294,11 @@ function writeRedirects() {
     "# Cloudflare Pages redirects",
     "/ /en-US/ 301",
     "/index.html /en-US/ 301",
+    "/help /en-US/help 301",
     "/help.html /en-US/help 301",
+    "/support /en-US/support 301",
     "/support.html /en-US/support 301",
+    "/privacy-policy /en-US/privacy-policy 301",
     "/privacy-policy.html /en-US/privacy-policy 301"
   ];
 
@@ -1295,6 +1310,26 @@ function writeRedirects() {
   }
 
   write(path.join(root, "_redirects"), `${lines.join("\n")}\n`);
+  // A top-level 404 disables Cloudflare Pages' implicit SPA fallback.
+  write(path.join(root, "404.html"), `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>Page not found - ${appName}</title>
+  <link rel="stylesheet" href="/style/base.css">
+  <link rel="icon" href="/images/app-icon-web.png">
+</head>
+<body><main class="site-shell">
+  <a class="brand" href="/en-US/"><img class="brand-icon" src="/images/app-icon-web.png" alt=""><span>${appName}</span></a>
+  <section class="section"><h1>Page not found</h1><p>This page may have moved or no longer exists.</p>
+    <div class="cta-row"><a class="button" href="/en-US/">Home</a><a class="button secondary" href="/en-US/help">Help</a></div>
+  </section>
+  <nav class="section language-noscript" aria-label="Language">${languages.map(lang => `<a href="/${lang.code}/">${lang.label}</a>`).join(" ")}</nav>
+</main></body>
+</html>
+`);
 }
 
 function writeSitemap() {
@@ -1308,9 +1343,8 @@ function writeSitemap() {
     for (const lang of languages) {
       urls.push(`  <url>
     <loc>${pageUrl(lang, page.slug)}</loc>
-    <lastmod>${lastmod}</lastmod>
+    <lastmod>${pageDates[page.key]}</lastmod>
 ${alternates(page.slug)}
-    <priority>${page.priority}</priority>
   </url>`);
     }
   }
@@ -1328,6 +1362,34 @@ Allow: /
 
 Sitemap: ${siteUrl}/sitemap.xml
 `);
+}
+
+function markdownSections(sections) {
+  return sections.map(({ title, items }) => `## ${title}\n\n${items.map(([heading, text]) => `### ${heading}\n\n${text}`).join("\n\n")}`).join("\n\n");
+}
+
+function writeMachineReadableContent() {
+  const headers = ["/llms.txt\n  X-Robots-Tag: noindex"];
+  const links = [];
+  for (const lang of languages) {
+    const c = copy[lang.code];
+    const story = workflowCopy[lang.code];
+    const home = `# ${c.home.title}\n\n${c.home.description}\n\n${c.home.lead}\n\n${markdownSections([
+      { title: c.home.eyebrow, items: story.stages.map(stage => stage.slice(0, 2)) },
+      ...c.home.sections
+    ])}\n\n${productCopy[lang.code].faq.at(-1)[1]}\n\n${productCopy[lang.code].downloadNote}\n\n[${c.home.primary}](${appStoreUrl})\n\n[${c.nav.help}](${pageUrl(lang, "help")})\n\n[${c.nav.privacy}](${pageUrl(lang, "privacy-policy")})\n`;
+    const help = `# ${c.help.h1}\n\n${c.help.lead}\n\n${markdownSections([
+      ...c.help.groups.map(group => ({ title: group.title, items: group.steps })),
+      { title: c.help.faqTitle, items: c.help.faq }
+    ])}\n\n${productCopy[lang.code].downloadNote}\n\n[${c.nav.appStore}](${appStoreUrl})\n\n[${c.nav.support}](${pageUrl(lang, "support")})\n`;
+    for (const [file, content, slug] of [["index.md", home, ""], ["help.md", help, "help"]]) {
+      write(path.join(root, lang.code, file), content);
+      headers.push(`/${lang.code}/${file}\n  Content-Type: text/markdown; charset=utf-8\n  X-Robots-Tag: noindex\n  Link: <${pageUrl(lang, slug)}>; rel="canonical"`);
+    }
+    links.push(`- [${lang.label}: ${c.home.title}](${pageUrl(lang, "index.md")})\n- [${lang.label}: ${c.help.h1}](${pageUrl(lang, "help.md")})`);
+  }
+  write(path.join(root, "llms.txt"), `# ${appName}\n\n> ${copy["en-US"].home.description}\n\nOfficial product and help content for CarryOver, developed by Peike Luo. The localized Markdown documents below are generated from the same content as the public HTML pages. Search is currently Mac-only. Sync requires the same Apple Account and available iCloud services; it is not guaranteed to be immediate.\n\n## Product and help by language\n\n${links.join("\n")}\n\n## Official links\n\n- [App Store](${appStoreUrl})\n- [Support](${pageUrl(languages[0], "support")})\n- [Privacy policy](${pageUrl(languages[0], "privacy-policy")})\n`);
+  write(path.join(root, "_headers"), `${headers.join("\n\n")}\n`);
 }
 
 function writeStyles() {
@@ -1582,8 +1644,10 @@ a {
 
 .content-card h1 {
   margin: 0;
-  font-size: clamp(2rem, 5vw, 4rem);
-  line-height: 1.05;
+  font-size: 32px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+  hyphens: auto;
   letter-spacing: 0;
 }
 
@@ -1593,8 +1657,9 @@ a {
 
 .section h2 {
   margin: 0 0 16px;
-  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-size: 24px;
   line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .grid,
@@ -1613,6 +1678,8 @@ a {
 .feature-card,
 .step,
 .policy-item {
+  min-width: 0;
+  overflow-wrap: anywhere;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface);
@@ -1653,7 +1720,16 @@ a {
 .download-strip {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-top: 34px;
+}
+
+.download-note {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 @media (max-width: 800px) {
@@ -1689,6 +1765,7 @@ writeLocalizedPages();
 writeRedirects();
 writeSitemap();
 writeRobots();
+writeMachineReadableContent();
 writeStyles();
 
 fs.appendFileSync(path.join(root, "style", "base.css"), `

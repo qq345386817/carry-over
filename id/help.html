@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bantuan CarryOver - Simpan tautan, teks, dan ide di perangkat Apple</title>
-  <meta name="description" content="Pelajari cara memakai CarryOver di iPhone, iPad, dan Mac: Share Sheet, deteksi URL, sinkronisasi iCloud, riwayat, penghapusan, dan pemecahan masalah.">
+  <meta name="description" content="Simpan postingan, tautan, gambar dan ide dari Bagikan di iPhone, lalu lanjutkan di Mac. Kotak masuk yang tetap tersimpan, pencarian di Mac, pengingat dan riwayat.">
   <meta name="keywords" content="Bantuan CarryOver,simpan tautan,baca nanti,Share Sheet,sinkronisasi iCloud,deteksi URL,perangkat Apple">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/id/help">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/id/help.md">
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/help">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/help">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/help">
@@ -30,7 +32,7 @@
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/help">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/help">
   <meta property="og:title" content="Bantuan CarryOver - Simpan tautan, teks, dan ide di perangkat Apple">
-  <meta property="og:description" content="Pelajari cara memakai CarryOver di iPhone, iPad, dan Mac: Share Sheet, deteksi URL, sinkronisasi iCloud, riwayat, penghapusan, dan pemecahan masalah.">
+  <meta property="og:description" content="Simpan postingan, tautan, gambar dan ide dari Bagikan di iPhone, lalu lanjutkan di Mac. Kotak masuk yang tetap tersimpan, pencarian di Mac, pengingat dan riwayat.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://carryover.luopeike.com/id/help">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -50,7 +52,7 @@
   <meta property="og:locale:alternate" content="it_IT">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Bantuan CarryOver - Simpan tautan, teks, dan ide di perangkat Apple">
-  <meta name="twitter:description" content="Pelajari cara memakai CarryOver di iPhone, iPad, dan Mac: Share Sheet, deteksi URL, sinkronisasi iCloud, riwayat, penghapusan, dan pemecahan masalah.">
+  <meta name="twitter:description" content="Simpan postingan, tautan, gambar dan ide dari Bagikan di iPhone, lalu lanjutkan di Mac. Kotak masuk yang tetap tersimpan, pencarian di Mac, pengingat dan riwayat.">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -58,22 +60,29 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "id",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -81,13 +90,14 @@
       "@id": "https://carryover.luopeike.com/id/help#webpage",
       "name": "Bantuan CarryOver - Simpan tautan, teks, dan ide di perangkat Apple",
       "url": "https://carryover.luopeike.com/id/help",
-      "description": "Pelajari cara memakai CarryOver di iPhone, iPad, dan Mac: Share Sheet, deteksi URL, sinkronisasi iCloud, riwayat, penghapusan, dan pemecahan masalah.",
+      "description": "Simpan postingan, tautan, gambar dan ide dari Bagikan di iPhone, lalu lanjutkan di Mac. Kotak masuk yang tetap tersimpan, pencarian di Mac, pengingat dan riwayat.",
       "inLanguage": "id",
+      "dateModified": "2026-10-10",
       "isPartOf": {
         "@id": "https://carryover.luopeike.com/#website"
       },
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -97,10 +107,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Mengapa CarryOver tidak muncul di Share Sheet?",
+          "name": "Bagaimana cara berbagi ke CarryOver?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Aktifkan CarryOver di bagian Lainnya pada Share Sheet dan pindahkan lebih atas jika perlu."
+            "text": "Di aplikasi yang kompatibel, buka menu Bagikan sistem dan pilih CarryOver. Di iPhone dan iPad, periksa Lainnya jika tidak terlihat. Di Mac, ketersediaan juga bergantung pada aplikasi sumber, jenis konten dan pengaturan ekstensi sistem."
           }
         },
         {
@@ -117,6 +127,46 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Tidak. Sinkronisasi menggunakan layanan iCloud Apple saat tersedia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah item belum selesai hilang setelah beberapa hari?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tidak. Item belum selesai tetap di kotak masuk. Menandainya selesai memindahkannya ke riwayat; menghapus akan membuangnya."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bisakah saya mencari konten tersimpan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Di jendela utama Mac, Anda dapat mencari judul, teks dan URL sumber, termasuk item dalam riwayat. Pencarian belum tersedia di iPhone atau iPad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah pengingat benar-benar dikirim?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ya. Atur tanggal dan waktu mendatang dan izinkan notifikasi CarryOver di pengaturan sistem. Sistem mengirim notifikasi lokal; Fokus dan pengaturan notifikasi dapat membisukannya. Mengetuk notifikasi membuka item yang sesuai."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bisakah saya melanjutkan item yang sudah selesai?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ya. Buka riwayat dan gunakan tombol pulihkan pada item untuk mengembalikannya ke kotak masuk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa yang termasuk dalam versi gratis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Versi gratis memungkinkan hingga tiga penyimpanan per hari. Pembelian Pro satu kali menghapus batas harian. Lihat App Store untuk harga di wilayah Anda."
           }
         }
       ]
@@ -172,18 +222,20 @@
         <h2>Simpan konten</h2>
         <div class="step-list">
           <article class="step"><h3>Buka app apa pun</h3><p>Mulai dari Safari, Catatan, app sosial, atau app apa pun yang dapat berbagi teks atau URL.</p></article>
-          <article class="step"><h3>Pilih teks atau URL</h3><p>Pilih konten yang ingin kamu simpan untuk ditinjau nanti.</p></article>
-          <article class="step"><h3>Gunakan Bagikan</h3><p>Ketuk tombol Bagikan sistem dan pilih CarryOver. Jika tidak muncul, buka Lainnya dan aktifkan.</p></article>
-          <article class="step"><h3>Tersimpan untuk nanti</h3><p>Item yang belum selesai tetap di kotak masuk</p></article>
+          <article class="step"><h3>Pilih konten yang didukung</h3><p>Pilih teks, tautan, gambar atau postingan yang ingin disimpan. Konten yang bisa dibagikan bergantung pada aplikasi sumber.</p></article>
+          <article class="step"><h3>Gunakan Bagikan</h3><p>Di aplikasi yang kompatibel, buka menu Bagikan sistem dan pilih CarryOver. Di iPhone dan iPad, periksa Lainnya jika tidak terlihat. Di Mac, ketersediaan juga bergantung pada aplikasi sumber, jenis konten dan pengaturan ekstensi sistem.</p></article>
+          <article class="step"><h3>Periksa dan simpan</h3><p>Periksa konten di formulir berbagi. Anda dapat mengubah judul atau mengatur pengingat. Pilih Simpan untuk menambahkannya ke kotak masuk.</p></article>
+          <article class="step"><h3>Tambah catatan secara manual</h3><p>Buka formulir tambah di CarryOver, catat ide atau tempel konten, lalu simpan ke kotak masuk.</p></article>
         </div>
       </section>
 
       <section class="section">
         <h2>Kelola daftar</h2>
         <div class="step-list">
-          <article class="step"><h3>Tersimpan untuk nanti</h3><p>Item yang belum selesai tetap di kotak masuk</p></article>
-          <article class="step"><h3>Lanjutkan di Mac</h3><p>Buka sumbernya lalu tandai sebagai selesai</p></article>
-          <article class="step"><h3>Selesai, tetap tersimpan</h3><p>Item selesai tetap ada dalam riwayat</p></article>
+          <article class="step"><h3>Buka item atau sumbernya</h3><p>Pilih item untuk melihat atau mengeditnya. Jika ada URL sumber, gunakan tindakan sumber untuk membukanya di browser.</p></article>
+          <article class="step"><h3>Tandai sebagai selesai</h3><p>Gunakan tombol selesai untuk memindahkan item yang sudah ditangani ke riwayat. Hanya item selesai yang dipindahkan; item belum selesai tidak kedaluwarsa.</p></article>
+          <article class="step"><h3>Pulihkan dari riwayat</h3><p>Gunakan tombol pulihkan di samping item selesai untuk mengembalikannya ke kotak masuk.</p></article>
+          <article class="step"><h3>Konfirmasi sebelum menghapus</h3><p>Di iPhone dan iPad, geser item ke kiri lalu pilih Hapus. Di Mac, gunakan tindakan hapus. Item dihapus setelah Anda mengonfirmasi.</p></article>
         </div>
       </section>
 
@@ -199,9 +251,14 @@
       <section class="section" id="faq">
         <h2>Pertanyaan umum</h2>
         <div class="policy-list">
-          <article class="policy-item"><h3>Mengapa CarryOver tidak muncul di Share Sheet?</h3><p>Aktifkan CarryOver di bagian Lainnya pada Share Sheet dan pindahkan lebih atas jika perlu.</p></article>
+          <article class="policy-item"><h3>Bagaimana cara berbagi ke CarryOver?</h3><p>Di aplikasi yang kompatibel, buka menu Bagikan sistem dan pilih CarryOver. Di iPhone dan iPad, periksa Lainnya jika tidak terlihat. Di Mac, ketersediaan juga bergantung pada aplikasi sumber, jenis konten dan pengaturan ekstensi sistem.</p></article>
           <article class="policy-item"><h3>Mengapa sinkronisasi tidak langsung muncul di perangkat lain?</h3><p>Jaringan, Mode Daya Rendah, atau ruang iCloud yang kurang dapat menunda sinkronisasi.</p></article>
           <article class="policy-item"><h3>Apakah CarryOver memerlukan akun?</h3><p>Tidak. Sinkronisasi menggunakan layanan iCloud Apple saat tersedia.</p></article>
+          <article class="policy-item"><h3>Apakah item belum selesai hilang setelah beberapa hari?</h3><p>Tidak. Item belum selesai tetap di kotak masuk. Menandainya selesai memindahkannya ke riwayat; menghapus akan membuangnya.</p></article>
+          <article class="policy-item"><h3>Bisakah saya mencari konten tersimpan?</h3><p>Di jendela utama Mac, Anda dapat mencari judul, teks dan URL sumber, termasuk item dalam riwayat. Pencarian belum tersedia di iPhone atau iPad.</p></article>
+          <article class="policy-item"><h3>Apakah pengingat benar-benar dikirim?</h3><p>Ya. Atur tanggal dan waktu mendatang dan izinkan notifikasi CarryOver di pengaturan sistem. Sistem mengirim notifikasi lokal; Fokus dan pengaturan notifikasi dapat membisukannya. Mengetuk notifikasi membuka item yang sesuai.</p></article>
+          <article class="policy-item"><h3>Bisakah saya melanjutkan item yang sudah selesai?</h3><p>Ya. Buka riwayat dan gunakan tombol pulihkan pada item untuk mengembalikannya ke kotak masuk.</p></article>
+          <article class="policy-item"><h3>Apa yang termasuk dalam versi gratis?</h3><p>Versi gratis memungkinkan hingga tiga penyimpanan per hari. Pembelian Pro satu kali menghapus batas harian. Lihat App Store untuk harga di wilayah Anda.</p></article>
         </div>
       </section>
 
@@ -209,6 +266,7 @@
         <a class="button" href="https://apps.apple.com/app/id6755507048"><img class="store-icon" src="../images/app-store-icon.svg" alt="">App Store</a>
         <a class="button secondary" href="https://pub-921ff78698074a30a8b3a65a51a6faa8.r2.dev/carryover/macos/CarryOver.dmg" download="CarryOver.dmg">Unduh DMG Mac</a>
       </div>
+      <p class="download-note">Untuk fitur saat ini, unduh CarryOver dari App Store. DMG Mac yang diunduh langsung belum diperbarui ke rilis ini.</p>
 
       <p class="footer">Butuh bantuan? Hubungi cameoshell09@gmail.com.</p>
     </article>

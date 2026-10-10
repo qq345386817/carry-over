@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CarryOver 도움말 - Apple 기기 간 링크, 텍스트, 아이디어 저장</title>
-  <meta name="description" content="iPhone, iPad, Mac에서 CarryOver를 사용하는 방법. 공유 시트, URL 감지, iCloud 동기화, 기록, 삭제, 동기화 문제 해결을 안내합니다.">
+  <meta name="description" content="iPhone 공유 메뉴에서 게시물, 링크, 이미지와 아이디어를 저장하고 Mac에서 이어서 처리하세요. 미완료 항목 보관, Mac 검색, 알림과 완료 항목 복원을 지원합니다.">
   <meta name="keywords" content="CarryOver 도움말,링크 저장,나중에 읽기,공유 시트,iCloud 동기화,URL 감지,Apple 기기">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/ko/help">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/ko/help.md">
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/help">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/help">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/help">
@@ -30,7 +32,7 @@
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/help">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/help">
   <meta property="og:title" content="CarryOver 도움말 - Apple 기기 간 링크, 텍스트, 아이디어 저장">
-  <meta property="og:description" content="iPhone, iPad, Mac에서 CarryOver를 사용하는 방법. 공유 시트, URL 감지, iCloud 동기화, 기록, 삭제, 동기화 문제 해결을 안내합니다.">
+  <meta property="og:description" content="iPhone 공유 메뉴에서 게시물, 링크, 이미지와 아이디어를 저장하고 Mac에서 이어서 처리하세요. 미완료 항목 보관, Mac 검색, 알림과 완료 항목 복원을 지원합니다.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://carryover.luopeike.com/ko/help">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -50,7 +52,7 @@
   <meta property="og:locale:alternate" content="id_ID">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="CarryOver 도움말 - Apple 기기 간 링크, 텍스트, 아이디어 저장">
-  <meta name="twitter:description" content="iPhone, iPad, Mac에서 CarryOver를 사용하는 방법. 공유 시트, URL 감지, iCloud 동기화, 기록, 삭제, 동기화 문제 해결을 안내합니다.">
+  <meta name="twitter:description" content="iPhone 공유 메뉴에서 게시물, 링크, 이미지와 아이디어를 저장하고 Mac에서 이어서 처리하세요. 미완료 항목 보관, Mac 검색, 알림과 완료 항목 복원을 지원합니다.">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -58,22 +60,29 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "ko",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -81,13 +90,14 @@
       "@id": "https://carryover.luopeike.com/ko/help#webpage",
       "name": "CarryOver 도움말 - Apple 기기 간 링크, 텍스트, 아이디어 저장",
       "url": "https://carryover.luopeike.com/ko/help",
-      "description": "iPhone, iPad, Mac에서 CarryOver를 사용하는 방법. 공유 시트, URL 감지, iCloud 동기화, 기록, 삭제, 동기화 문제 해결을 안내합니다.",
+      "description": "iPhone 공유 메뉴에서 게시물, 링크, 이미지와 아이디어를 저장하고 Mac에서 이어서 처리하세요. 미완료 항목 보관, Mac 검색, 알림과 완료 항목 복원을 지원합니다.",
       "inLanguage": "ko",
+      "dateModified": "2026-10-10",
       "isPartOf": {
         "@id": "https://carryover.luopeike.com/#website"
       },
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -97,10 +107,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "공유 시트에 CarryOver가 보이지 않아요.",
+          "name": "CarryOver로 공유하려면 어떻게 하나요?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "공유 시트의 더보기에서 CarryOver를 활성화하고 필요하면 순서를 조정하세요."
+            "text": "지원하는 앱의 시스템 공유 메뉴에서 CarryOver를 선택하세요. iPhone과 iPad에 표시되지 않으면 더 보기를 확인하세요. Mac에서는 원본 앱, 콘텐츠 유형과 시스템 확장 설정에 따라 사용 가능 여부가 달라집니다."
           }
         },
         {
@@ -117,6 +127,46 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "아니요. 가능한 경우 Apple의 iCloud 서비스로 동기화합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "미완료 항목은 며칠 뒤 사라지나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아니요. 미완료 항목은 계속 목록에 남습니다. 완료로 표시하면 기록으로 이동하고 삭제하면 제거됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "저장한 내용을 검색할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mac 기본 창에서 제목, 본문과 출처 URL을 검색할 수 있습니다. 기록의 완료 항목도 포함합니다. iPhone과 iPad에는 현재 검색 기능이 없습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "나중에 처리하도록 실제 알림이 오나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네. 미래의 날짜와 시간을 설정하고 시스템 설정에서 CarryOver 알림을 허용하세요. 로컬 알림이 전달되지만 집중 모드나 알림 설정으로 소리가 나지 않을 수 있습니다. 알림을 누르면 해당 항목이 열립니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "완료한 항목을 다시 처리할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네. 기록에서 항목 옆의 복원 버튼을 누르면 미완료 목록으로 돌아옵니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "무료 버전에는 무엇이 포함되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "무료 버전은 하루 최대 세 번 저장할 수 있습니다. Pro를 한 번 구매하면 일일 저장 제한이 해제됩니다. 지역별 가격은 App Store에서 확인하세요."
           }
         }
       ]
@@ -172,18 +222,20 @@
         <h2>콘텐츠 저장</h2>
         <div class="step-list">
           <article class="step"><h3>아무 앱이나 열기</h3><p>Safari, 메모, 소셜 앱처럼 텍스트나 URL을 공유할 수 있는 앱에서 시작하세요.</p></article>
-          <article class="step"><h3>텍스트 또는 URL 선택</h3><p>나중에 검토할 내용을 선택합니다.</p></article>
-          <article class="step"><h3>공유 사용</h3><p>시스템 공유 버튼을 누르고 CarryOver를 선택하세요. 보이지 않으면 더보기에서 활성화합니다.</p></article>
-          <article class="step"><h3>저장하고 나중에 처리</h3><p>미완료 항목은 계속 목록에 남아요</p></article>
+          <article class="step"><h3>공유 가능한 내용 선택</h3><p>보관할 텍스트, 링크, 이미지 또는 게시물을 선택하세요. 공유할 수 있는 내용은 원본 앱에 따라 다릅니다.</p></article>
+          <article class="step"><h3>공유 사용</h3><p>지원하는 앱의 시스템 공유 메뉴에서 CarryOver를 선택하세요. iPhone과 iPad에 표시되지 않으면 더 보기를 확인하세요. Mac에서는 원본 앱, 콘텐츠 유형과 시스템 확장 설정에 따라 사용 가능 여부가 달라집니다.</p></article>
+          <article class="step"><h3>확인하고 저장</h3><p>공유 화면에서 내용을 확인하고 필요하면 제목을 수정하거나 알림을 설정하세요. 저장을 누르면 미완료 목록에 추가됩니다.</p></article>
+          <article class="step"><h3>직접 기록 추가</h3><p>CarryOver의 공유 추가 화면에서 아이디어를 기록하거나 내용을 붙여 넣은 뒤 미완료 목록에 저장하세요.</p></article>
         </div>
       </section>
 
       <section class="section">
         <h2>목록 관리</h2>
         <div class="step-list">
-          <article class="step"><h3>저장하고 나중에 처리</h3><p>미완료 항목은 계속 목록에 남아요</p></article>
-          <article class="step"><h3>Mac에서 이어서 처리</h3><p>출처를 열고 확인한 뒤 완료하세요</p></article>
-          <article class="step"><h3>완료해도 다시 확인</h3><p>완료한 항목은 기록에 남아요</p></article>
+          <article class="step"><h3>내용이나 출처 열기</h3><p>항목을 선택해 보거나 편집하세요. 출처 URL이 있으면 출처 열기 동작으로 브라우저에서 열 수 있습니다.</p></article>
+          <article class="step"><h3>처리 후 완료 표시</h3><p>완료 버튼으로 처리한 항목을 기록으로 옮기세요. 완료한 항목만 기록으로 이동하며 미완료 항목은 만료되지 않습니다.</p></article>
+          <article class="step"><h3>기록에서 복원</h3><p>기록에서 항목 옆의 복원 버튼을 누르면 미완료 목록으로 돌아옵니다.</p></article>
+          <article class="step"><h3>확인 후 삭제</h3><p>iPhone과 iPad에서는 항목을 왼쪽으로 밀고 삭제를 선택하세요. Mac에서는 삭제 동작을 사용하세요. 확인한 뒤 삭제됩니다.</p></article>
         </div>
       </section>
 
@@ -199,9 +251,14 @@
       <section class="section" id="faq">
         <h2>자주 묻는 질문</h2>
         <div class="policy-list">
-          <article class="policy-item"><h3>공유 시트에 CarryOver가 보이지 않아요.</h3><p>공유 시트의 더보기에서 CarryOver를 활성화하고 필요하면 순서를 조정하세요.</p></article>
+          <article class="policy-item"><h3>CarryOver로 공유하려면 어떻게 하나요?</h3><p>지원하는 앱의 시스템 공유 메뉴에서 CarryOver를 선택하세요. iPhone과 iPad에 표시되지 않으면 더 보기를 확인하세요. Mac에서는 원본 앱, 콘텐츠 유형과 시스템 확장 설정에 따라 사용 가능 여부가 달라집니다.</p></article>
           <article class="policy-item"><h3>다른 기기에 바로 동기화되지 않아요.</h3><p>네트워크, 저전력 모드, iCloud 저장 공간 부족으로 지연될 수 있습니다.</p></article>
           <article class="policy-item"><h3>CarryOver 계정이 필요한가요?</h3><p>아니요. 가능한 경우 Apple의 iCloud 서비스로 동기화합니다.</p></article>
+          <article class="policy-item"><h3>미완료 항목은 며칠 뒤 사라지나요?</h3><p>아니요. 미완료 항목은 계속 목록에 남습니다. 완료로 표시하면 기록으로 이동하고 삭제하면 제거됩니다.</p></article>
+          <article class="policy-item"><h3>저장한 내용을 검색할 수 있나요?</h3><p>Mac 기본 창에서 제목, 본문과 출처 URL을 검색할 수 있습니다. 기록의 완료 항목도 포함합니다. iPhone과 iPad에는 현재 검색 기능이 없습니다.</p></article>
+          <article class="policy-item"><h3>나중에 처리하도록 실제 알림이 오나요?</h3><p>네. 미래의 날짜와 시간을 설정하고 시스템 설정에서 CarryOver 알림을 허용하세요. 로컬 알림이 전달되지만 집중 모드나 알림 설정으로 소리가 나지 않을 수 있습니다. 알림을 누르면 해당 항목이 열립니다.</p></article>
+          <article class="policy-item"><h3>완료한 항목을 다시 처리할 수 있나요?</h3><p>네. 기록에서 항목 옆의 복원 버튼을 누르면 미완료 목록으로 돌아옵니다.</p></article>
+          <article class="policy-item"><h3>무료 버전에는 무엇이 포함되나요?</h3><p>무료 버전은 하루 최대 세 번 저장할 수 있습니다. Pro를 한 번 구매하면 일일 저장 제한이 해제됩니다. 지역별 가격은 App Store에서 확인하세요.</p></article>
         </div>
       </section>
 
@@ -209,6 +266,7 @@
         <a class="button" href="https://apps.apple.com/app/id6755507048"><img class="store-icon" src="../images/app-store-icon.svg" alt="">App Store</a>
         <a class="button secondary" href="https://pub-921ff78698074a30a8b3a65a51a6faa8.r2.dev/carryover/macos/CarryOver.dmg" download="CarryOver.dmg">Mac DMG 다운로드</a>
       </div>
+      <p class="download-note">현재 기능을 사용하려면 App Store에서 받으세요. Mac 직접 다운로드 DMG는 아직 이번 버전으로 업데이트되지 않았습니다.</p>
 
       <p class="footer">도움이 필요하면 cameoshell09@gmail.com로 연락해 주세요.</p>
     </article>

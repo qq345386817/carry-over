@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CarryOver ヘルプ - Apple デバイス間でリンク、テキスト、アイデアを保存</title>
-  <meta name="description" content="iPhone、iPad、Mac で CarryOver を使う方法。共有シート、URL 検出、iCloud 同期、履歴、削除、同期のトラブルシューティングを説明します。">
+  <meta name="description" content="iPhone の共有メニューから投稿、リンク、画像、アイデアを保存して、Mac で続けましょう。未処理の内容を保管し、Mac で検索。リマインダーや完了後の復元にも対応。">
   <meta name="keywords" content="CarryOver ヘルプ,リンク保存,あとで読む,共有シート,iCloud同期,URL検出,Appleデバイス">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/ja/help">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/ja/help.md">
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/help">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/help">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/help">
@@ -30,7 +32,7 @@
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/help">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/help">
   <meta property="og:title" content="CarryOver ヘルプ - Apple デバイス間でリンク、テキスト、アイデアを保存">
-  <meta property="og:description" content="iPhone、iPad、Mac で CarryOver を使う方法。共有シート、URL 検出、iCloud 同期、履歴、削除、同期のトラブルシューティングを説明します。">
+  <meta property="og:description" content="iPhone の共有メニューから投稿、リンク、画像、アイデアを保存して、Mac で続けましょう。未処理の内容を保管し、Mac で検索。リマインダーや完了後の復元にも対応。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://carryover.luopeike.com/ja/help">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -50,7 +52,7 @@
   <meta property="og:locale:alternate" content="id_ID">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="CarryOver ヘルプ - Apple デバイス間でリンク、テキスト、アイデアを保存">
-  <meta name="twitter:description" content="iPhone、iPad、Mac で CarryOver を使う方法。共有シート、URL 検出、iCloud 同期、履歴、削除、同期のトラブルシューティングを説明します。">
+  <meta name="twitter:description" content="iPhone の共有メニューから投稿、リンク、画像、アイデアを保存して、Mac で続けましょう。未処理の内容を保管し、Mac で検索。リマインダーや完了後の復元にも対応。">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -58,22 +60,29 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "ja",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -81,13 +90,14 @@
       "@id": "https://carryover.luopeike.com/ja/help#webpage",
       "name": "CarryOver ヘルプ - Apple デバイス間でリンク、テキスト、アイデアを保存",
       "url": "https://carryover.luopeike.com/ja/help",
-      "description": "iPhone、iPad、Mac で CarryOver を使う方法。共有シート、URL 検出、iCloud 同期、履歴、削除、同期のトラブルシューティングを説明します。",
+      "description": "iPhone の共有メニューから投稿、リンク、画像、アイデアを保存して、Mac で続けましょう。未処理の内容を保管し、Mac で検索。リマインダーや完了後の復元にも対応。",
       "inLanguage": "ja",
+      "dateModified": "2026-10-10",
       "isPartOf": {
         "@id": "https://carryover.luopeike.com/#website"
       },
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -97,10 +107,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "共有シートに CarryOver が表示されないのはなぜですか？",
+          "name": "CarryOver に共有するには？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "共有シートの「その他」から CarryOver を有効にし、必要に応じて順序を調整してください。"
+            "text": "対応アプリのシステム共有メニューから CarryOver を選択します。iPhone と iPad で表示されない場合は「その他」を確認。Mac では元のアプリ、内容の種類、システムの機能拡張設定によって利用できるかが異なります。"
           }
         },
         {
@@ -117,6 +127,46 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "いいえ。利用可能な場合は Apple の iCloud サービスで同期します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "未処理の内容は数日で消えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ。未処理の内容は受信トレイに残ります。完了にすると履歴へ移動し、削除すると取り除かれます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "保存した内容を検索できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mac のメインウインドウでタイトル、本文、元の URL を検索できます。履歴の完了済み項目も対象です。iPhone と iPad には現在検索機能はありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "あとで処理するための通知は届きますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。未来の日時を設定し、システム設定で CarryOver の通知を許可してください。ローカル通知が届きますが、集中モードや通知設定で音が鳴らない場合があります。通知をタップすると該当項目が開きます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "完了した内容を再び処理できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。履歴で項目の横にある復元ボタンを使うと、受信トレイに戻せます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "無料版では何ができますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "無料版は1日3回まで保存できます。Pro を買い切りで購入すると、1日の保存回数の制限がなくなります。地域の価格は App Store でご確認ください。"
           }
         }
       ]
@@ -172,18 +222,20 @@
         <h2>保存する</h2>
         <div class="step-list">
           <article class="step"><h3>任意の App を開く</h3><p>Safari、メモ、SNS など、テキストや URL を共有できる App から始めます。</p></article>
-          <article class="step"><h3>テキストまたは URL を選択</h3><p>あとで見直したい内容を選びます。</p></article>
-          <article class="step"><h3>共有を使う</h3><p>システムの共有ボタンをタップして CarryOver を選びます。表示されない場合は「その他」から有効にします。</p></article>
-          <article class="step"><h3>保存して、あとで処理</h3><p>未処理の内容は受信トレイに残ります</p></article>
+          <article class="step"><h3>共有できる内容を選ぶ</h3><p>残したいテキスト、リンク、画像、投稿を選びます。共有できる内容は元のアプリによって異なります。</p></article>
+          <article class="step"><h3>共有を使う</h3><p>対応アプリのシステム共有メニューから CarryOver を選択します。iPhone と iPad で表示されない場合は「その他」を確認。Mac では元のアプリ、内容の種類、システムの機能拡張設定によって利用できるかが異なります。</p></article>
+          <article class="step"><h3>確認して保存</h3><p>共有画面で内容を確認し、必要に応じてタイトルやリマインダーを設定。保存を選ぶと受信トレイに追加されます。</p></article>
+          <article class="step"><h3>手入力で記録する</h3><p>CarryOver の共有追加画面でアイデアを入力したり、内容を貼り付けたりして、受信トレイに保存できます。</p></article>
         </div>
       </section>
 
       <section class="section">
         <h2>リストを管理</h2>
         <div class="step-list">
-          <article class="step"><h3>保存して、あとで処理</h3><p>未処理の内容は受信トレイに残ります</p></article>
-          <article class="step"><h3>Mac で続ける</h3><p>元のページを開いて、処理を完了</p></article>
-          <article class="step"><h3>完了しても見返せる</h3><p>処理済みの内容は履歴に残ります</p></article>
+          <article class="step"><h3>内容や元のページを開く</h3><p>項目を選択して内容を確認・編集。元の URL があれば、ソースを開く操作でブラウザに移動できます。</p></article>
+          <article class="step"><h3>処理したら完了にする</h3><p>完了ボタンで処理済みの項目を履歴へ移動。未処理の項目は期限切れになりません。</p></article>
+          <article class="step"><h3>履歴から戻す</h3><p>履歴の項目の横にある復元ボタンで、受信トレイに戻せます。</p></article>
+          <article class="step"><h3>確認してから削除</h3><p>iPhone と iPad では項目を左にスワイプして削除を選択。Mac では削除操作を使います。確認後に削除されます。</p></article>
         </div>
       </section>
 
@@ -199,9 +251,14 @@
       <section class="section" id="faq">
         <h2>よくある質問</h2>
         <div class="policy-list">
-          <article class="policy-item"><h3>共有シートに CarryOver が表示されないのはなぜですか？</h3><p>共有シートの「その他」から CarryOver を有効にし、必要に応じて順序を調整してください。</p></article>
+          <article class="policy-item"><h3>CarryOver に共有するには？</h3><p>対応アプリのシステム共有メニューから CarryOver を選択します。iPhone と iPad で表示されない場合は「その他」を確認。Mac では元のアプリ、内容の種類、システムの機能拡張設定によって利用できるかが異なります。</p></article>
           <article class="policy-item"><h3>別のデバイスにすぐ同期されないのはなぜですか？</h3><p>ネットワーク、低電力モード、iCloud 容量不足により同期が遅れることがあります。</p></article>
           <article class="policy-item"><h3>CarryOver のアカウントは必要ですか？</h3><p>いいえ。利用可能な場合は Apple の iCloud サービスで同期します。</p></article>
+          <article class="policy-item"><h3>未処理の内容は数日で消えますか？</h3><p>いいえ。未処理の内容は受信トレイに残ります。完了にすると履歴へ移動し、削除すると取り除かれます。</p></article>
+          <article class="policy-item"><h3>保存した内容を検索できますか？</h3><p>Mac のメインウインドウでタイトル、本文、元の URL を検索できます。履歴の完了済み項目も対象です。iPhone と iPad には現在検索機能はありません。</p></article>
+          <article class="policy-item"><h3>あとで処理するための通知は届きますか？</h3><p>はい。未来の日時を設定し、システム設定で CarryOver の通知を許可してください。ローカル通知が届きますが、集中モードや通知設定で音が鳴らない場合があります。通知をタップすると該当項目が開きます。</p></article>
+          <article class="policy-item"><h3>完了した内容を再び処理できますか？</h3><p>はい。履歴で項目の横にある復元ボタンを使うと、受信トレイに戻せます。</p></article>
+          <article class="policy-item"><h3>無料版では何ができますか？</h3><p>無料版は1日3回まで保存できます。Pro を買い切りで購入すると、1日の保存回数の制限がなくなります。地域の価格は App Store でご確認ください。</p></article>
         </div>
       </section>
 
@@ -209,6 +266,7 @@
         <a class="button" href="https://apps.apple.com/app/id6755507048"><img class="store-icon" src="../images/app-store-icon.svg" alt="">App Store</a>
         <a class="button secondary" href="https://pub-921ff78698074a30a8b3a65a51a6faa8.r2.dev/carryover/macos/CarryOver.dmg" download="CarryOver.dmg">Mac DMG をダウンロード</a>
       </div>
+      <p class="download-note">現在の機能を使うには App Store から入手してください。Mac 用の直接ダウンロード DMG は、このリリースにまだ更新されていません。</p>
 
       <p class="footer">サポートが必要な場合は cameoshell09@gmail.com までご連絡ください。</p>
     </article>

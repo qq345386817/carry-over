@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CarryOver Help - Save Links, Text, and Ideas Across Apple Devices</title>
-  <meta name="description" content="Learn how to use CarryOver on iPhone, iPad, and Mac, including Share Sheet capture, URL detection, iCloud sync, history, deletion, and sync troubleshooting.">
+  <meta name="description" content="Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on Mac, set reminders and revisit completed items.">
   <meta name="keywords" content="CarryOver help, save links, read later guide, Share Sheet, iCloud sync, URL detection, Apple devices">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/en-US/help">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/en-US/help.md">
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/help">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/help">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/help">
@@ -30,7 +32,7 @@
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/help">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/help">
   <meta property="og:title" content="CarryOver Help - Save Links, Text, and Ideas Across Apple Devices">
-  <meta property="og:description" content="Learn how to use CarryOver on iPhone, iPad, and Mac, including Share Sheet capture, URL detection, iCloud sync, history, deletion, and sync troubleshooting.">
+  <meta property="og:description" content="Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on Mac, set reminders and revisit completed items.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://carryover.luopeike.com/en-US/help">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -50,7 +52,7 @@
   <meta property="og:locale:alternate" content="id_ID">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="CarryOver Help - Save Links, Text, and Ideas Across Apple Devices">
-  <meta name="twitter:description" content="Learn how to use CarryOver on iPhone, iPad, and Mac, including Share Sheet capture, URL detection, iCloud sync, history, deletion, and sync troubleshooting.">
+  <meta name="twitter:description" content="Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on Mac, set reminders and revisit completed items.">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -58,22 +60,29 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "en",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -81,13 +90,14 @@
       "@id": "https://carryover.luopeike.com/en-US/help#webpage",
       "name": "CarryOver Help - Save Links, Text, and Ideas Across Apple Devices",
       "url": "https://carryover.luopeike.com/en-US/help",
-      "description": "Learn how to use CarryOver on iPhone, iPad, and Mac, including Share Sheet capture, URL detection, iCloud sync, history, deletion, and sync troubleshooting.",
+      "description": "Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on Mac, set reminders and revisit completed items.",
       "inLanguage": "en",
+      "dateModified": "2026-10-10",
       "isPartOf": {
         "@id": "https://carryover.luopeike.com/#website"
       },
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -97,10 +107,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Why do I not see CarryOver in the Share Sheet?",
+          "name": "How do I share to CarryOver?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Open the More section in the Share Sheet and enable CarryOver. You can also reorder it for faster access."
+            "text": "In a compatible app, open the system Share menu and choose CarryOver. On iPhone and iPad, check More if it is not visible. On Mac, availability also depends on the source app, content type and system extension settings."
           }
         },
         {
@@ -117,6 +127,46 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "No separate CarryOver account is required. Sync uses Apple's iCloud services when available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do unfinished items disappear after a few days?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Unfinished items remain in the inbox regardless of age. Marking an item done moves it to History; deleting removes it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I search my saved content?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Search is available in the Mac main window for titles, saved text and source URLs, including completed items in History. Search is not currently available on iPhone or iPad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will Later actually remind me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Set a future date and time and allow notifications for CarryOver in system settings. The system delivers a local notification; Focus and notification settings may silence it. Tapping it opens the matching item."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I continue a completed item?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Open History and use the item's restore button to return it to the inbox."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is included for free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The free version allows up to three saves per day. A one-time Pro purchase removes the daily save limit. Check the App Store for the price in your region."
           }
         }
       ]
@@ -172,18 +222,20 @@
         <h2>Save content</h2>
         <div class="step-list">
           <article class="step"><h3>Open any app</h3><p>Start in Safari, Notes, a social app, or any app that can share text or URLs.</p></article>
-          <article class="step"><h3>Select text or a URL</h3><p>Choose the content you want to keep for later review.</p></article>
-          <article class="step"><h3>Use Share</h3><p>Tap the system Share button and choose CarryOver. If CarryOver is not visible, open More and enable it.</p></article>
-          <article class="step"><h3>Saved for later</h3><p>Unfinished items stay in your inbox</p></article>
+          <article class="step"><h3>Choose supported content</h3><p>Choose the text, link, image or post you want to keep. What can be shared depends on the source app.</p></article>
+          <article class="step"><h3>Use Share</h3><p>In a compatible app, open the system Share menu and choose CarryOver. On iPhone and iPad, check More if it is not visible. On Mac, availability also depends on the source app, content type and system extension settings.</p></article>
+          <article class="step"><h3>Review and save</h3><p>In the share form, review the content and optionally edit the title or set a reminder. Choose Save to add it to your inbox.</p></article>
+          <article class="step"><h3>Add a note manually</h3><p>Open Add Share in CarryOver to record an idea or paste content, then save it to your inbox.</p></article>
         </div>
       </section>
 
       <section class="section">
         <h2>Manage your list</h2>
         <div class="step-list">
-          <article class="step"><h3>Saved for later</h3><p>Unfinished items stay in your inbox</p></article>
-          <article class="step"><h3>Pick it up on Mac</h3><p>Open the source and continue when you're ready</p></article>
-          <article class="step"><h3>Done, not lost</h3><p>Completed items remain in History</p></article>
+          <article class="step"><h3>Open the item or its source</h3><p>Select an item to view or edit it. If a source URL is available, use the source action to open it in the browser.</p></article>
+          <article class="step"><h3>Mark it done</h3><p>Use the completion button after handling an item. Only completed items move to History; unfinished items do not expire.</p></article>
+          <article class="step"><h3>Restore from History</h3><p>Use the restore button beside a completed item to return it to the inbox.</p></article>
+          <article class="step"><h3>Delete with confirmation</h3><p>On iPhone and iPad, swipe left on an item and choose Delete. On Mac, use the delete action. Confirm before the item is removed.</p></article>
         </div>
       </section>
 
@@ -199,9 +251,14 @@
       <section class="section" id="faq">
         <h2>Frequently asked questions</h2>
         <div class="policy-list">
-          <article class="policy-item"><h3>Why do I not see CarryOver in the Share Sheet?</h3><p>Open the More section in the Share Sheet and enable CarryOver. You can also reorder it for faster access.</p></article>
+          <article class="policy-item"><h3>How do I share to CarryOver?</h3><p>In a compatible app, open the system Share menu and choose CarryOver. On iPhone and iPad, check More if it is not visible. On Mac, availability also depends on the source app, content type and system extension settings.</p></article>
           <article class="policy-item"><h3>Why did sync not appear on another device immediately?</h3><p>iCloud sync can be delayed by network status, Low Power Mode, or insufficient iCloud storage. Keep the app installed on both devices and allow the system time to finish background sync.</p></article>
           <article class="policy-item"><h3>Does CarryOver require an account?</h3><p>No separate CarryOver account is required. Sync uses Apple's iCloud services when available.</p></article>
+          <article class="policy-item"><h3>Do unfinished items disappear after a few days?</h3><p>No. Unfinished items remain in the inbox regardless of age. Marking an item done moves it to History; deleting removes it.</p></article>
+          <article class="policy-item"><h3>Can I search my saved content?</h3><p>Search is available in the Mac main window for titles, saved text and source URLs, including completed items in History. Search is not currently available on iPhone or iPad.</p></article>
+          <article class="policy-item"><h3>Will Later actually remind me?</h3><p>Yes. Set a future date and time and allow notifications for CarryOver in system settings. The system delivers a local notification; Focus and notification settings may silence it. Tapping it opens the matching item.</p></article>
+          <article class="policy-item"><h3>Can I continue a completed item?</h3><p>Yes. Open History and use the item's restore button to return it to the inbox.</p></article>
+          <article class="policy-item"><h3>What is included for free?</h3><p>The free version allows up to three saves per day. A one-time Pro purchase removes the daily save limit. Check the App Store for the price in your region.</p></article>
         </div>
       </section>
 
@@ -209,6 +266,7 @@
         <a class="button" href="https://apps.apple.com/app/id6755507048"><img class="store-icon" src="../images/app-store-icon.svg" alt="">App Store</a>
         <a class="button secondary" href="https://pub-921ff78698074a30a8b3a65a51a6faa8.r2.dev/carryover/macos/CarryOver.dmg" download="CarryOver.dmg">Download Mac DMG</a>
       </div>
+      <p class="download-note">For the current features, get CarryOver from the App Store. The direct Mac DMG has not yet been updated to this release.</p>
 
       <p class="footer">Need help? Contact cameoshell09@gmail.com.</p>
     </article>

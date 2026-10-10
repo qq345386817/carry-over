@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/zh-Hans/privacy-policy">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/privacy-policy">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/privacy-policy">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/privacy-policy">
@@ -58,37 +60,44 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "zh-Hans",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
-      "@type": "PrivacyPolicy",
-      "@id": "https://carryover.luopeike.com/zh-Hans/privacy-policy#privacy-policy",
+      "@type": "WebPage",
+      "@id": "https://carryover.luopeike.com/zh-Hans/privacy-policy#webpage",
       "name": "CarryOver 隐私政策 - 本地保存与 iCloud 同步",
-      "description": "CarryOver 隐私政策：无需 CarryOver 账号，保存内容存储在本地，可通过 Apple 服务进行 iCloud 同步，不含广告 SDK，仅在你主动联系时使用支持邮件。",
       "url": "https://carryover.luopeike.com/zh-Hans/privacy-policy",
+      "description": "CarryOver 隐私政策：无需 CarryOver 账号，保存内容存储在本地，可通过 Apple 服务进行 iCloud 同步，不含广告 SDK，仅在你主动联系时使用支持邮件。",
       "inLanguage": "zh-Hans",
-      "dateModified": "2026-06-06",
+      "dateModified": "2026-06-07",
       "isPartOf": {
         "@id": "https://carryover.luopeike.com/#website"
       },
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {

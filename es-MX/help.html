@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayuda CarryOver - Enlaces, texto e ideas en Apple</title>
-  <meta name="description" content="Aprende a usar CarryOver en iPhone, iPad y Mac: hoja de compartir, detección de URL, sincronización iCloud, historial, borrado y solución de problemas.">
+  <meta name="description" content="Guarda publicaciones, enlaces, imágenes e ideas desde Compartir en iPhone y retómalos en Mac. Con pendientes que permanecen, búsqueda en Mac, recordatorios e historial.">
   <meta name="keywords" content="Ayuda CarryOver,guardar enlaces,leer después,hoja compartir,sincronización iCloud,detección URL,dispositivos Apple">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/es-MX/help">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/es-MX/help.md">
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/help">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/help">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/help">
@@ -30,7 +32,7 @@
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/help">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/help">
   <meta property="og:title" content="Ayuda CarryOver - Enlaces, texto e ideas en Apple">
-  <meta property="og:description" content="Aprende a usar CarryOver en iPhone, iPad y Mac: hoja de compartir, detección de URL, sincronización iCloud, historial, borrado y solución de problemas.">
+  <meta property="og:description" content="Guarda publicaciones, enlaces, imágenes e ideas desde Compartir en iPhone y retómalos en Mac. Con pendientes que permanecen, búsqueda en Mac, recordatorios e historial.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://carryover.luopeike.com/es-MX/help">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -50,7 +52,7 @@
   <meta property="og:locale:alternate" content="id_ID">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ayuda CarryOver - Enlaces, texto e ideas en Apple">
-  <meta name="twitter:description" content="Aprende a usar CarryOver en iPhone, iPad y Mac: hoja de compartir, detección de URL, sincronización iCloud, historial, borrado y solución de problemas.">
+  <meta name="twitter:description" content="Guarda publicaciones, enlaces, imágenes e ideas desde Compartir en iPhone y retómalos en Mac. Con pendientes que permanecen, búsqueda en Mac, recordatorios e historial.">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -58,22 +60,29 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "es-MX",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -81,13 +90,14 @@
       "@id": "https://carryover.luopeike.com/es-MX/help#webpage",
       "name": "Ayuda CarryOver - Enlaces, texto e ideas en Apple",
       "url": "https://carryover.luopeike.com/es-MX/help",
-      "description": "Aprende a usar CarryOver en iPhone, iPad y Mac: hoja de compartir, detección de URL, sincronización iCloud, historial, borrado y solución de problemas.",
+      "description": "Guarda publicaciones, enlaces, imágenes e ideas desde Compartir en iPhone y retómalos en Mac. Con pendientes que permanecen, búsqueda en Mac, recordatorios e historial.",
       "inLanguage": "es-MX",
+      "dateModified": "2026-10-10",
       "isPartOf": {
         "@id": "https://carryover.luopeike.com/#website"
       },
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -97,10 +107,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "¿Por qué no veo CarryOver en la hoja de compartir?",
+          "name": "¿Cómo comparto a CarryOver?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Activa CarryOver en la sección Más de la hoja de compartir y ordénalo arriba si lo necesitas."
+            "text": "En una app compatible, abre el menú Compartir del sistema y elige CarryOver. En iPhone y iPad, revisa Más si no aparece. En Mac, la disponibilidad también depende de la app de origen, del tipo de contenido y de los ajustes de extensiones del sistema."
           }
         },
         {
@@ -117,6 +127,46 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "No. La sincronización usa los servicios iCloud de Apple cuando están disponibles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Los pendientes desaparecen después de unos días?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Los pendientes permanecen en tu bandeja. Al marcarlos como listos pasan al historial; al eliminarlos se quitan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo buscar el contenido guardado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En la ventana principal de Mac puedes buscar títulos, textos y URL de origen, incluidos los elementos del historial. La búsqueda no está disponible actualmente en iPhone ni iPad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Recibiré un recordatorio de verdad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Elige una fecha y hora futuras y permite las notificaciones de CarryOver en los ajustes del sistema. El sistema envía una notificación local; los modos de enfoque y los ajustes pueden silenciarla. Al tocarla se abre el elemento correspondiente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo retomar un elemento completado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Abre el historial y usa el botón de restaurar del elemento para devolverlo a pendientes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué incluye la versión gratuita?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La versión gratuita permite guardar hasta tres veces al día. Una compra única de Pro elimina el límite diario. Consulta el precio de tu región en App Store."
           }
         }
       ]
@@ -172,18 +222,20 @@
         <h2>Guardar contenido</h2>
         <div class="step-list">
           <article class="step"><h3>Abre cualquier app</h3><p>Empieza en Safari, Notas, una app social o cualquier app que pueda compartir texto o URL.</p></article>
-          <article class="step"><h3>Selecciona texto o URL</h3><p>Elige el contenido que quieres conservar para revisarlo después.</p></article>
-          <article class="step"><h3>Usa Compartir</h3><p>Toca el botón de compartir del sistema y elige CarryOver. Si no aparece, actívalo en Más.</p></article>
-          <article class="step"><h3>Guardado para después</h3><p>Los pendientes permanecen en tu bandeja</p></article>
+          <article class="step"><h3>Elige contenido compatible</h3><p>Selecciona el texto, enlace, imagen o publicación que quieres conservar. Lo que se puede compartir depende de la app de origen.</p></article>
+          <article class="step"><h3>Usa Compartir</h3><p>En una app compatible, abre el menú Compartir del sistema y elige CarryOver. En iPhone y iPad, revisa Más si no aparece. En Mac, la disponibilidad también depende de la app de origen, del tipo de contenido y de los ajustes de extensiones del sistema.</p></article>
+          <article class="step"><h3>Revisa y guarda</h3><p>Revisa el contenido en el formulario de compartir. Puedes cambiar el título o poner un recordatorio. Elige Guardar para agregarlo a pendientes.</p></article>
+          <article class="step"><h3>Agrega una nota manualmente</h3><p>Abre el formulario para agregar en CarryOver, anota una idea o pega contenido y guárdalo en pendientes.</p></article>
         </div>
       </section>
 
       <section class="section">
         <h2>Gestionar la lista</h2>
         <div class="step-list">
-          <article class="step"><h3>Guardado para después</h3><p>Los pendientes permanecen en tu bandeja</p></article>
-          <article class="step"><h3>Continuar en Mac</h3><p>Abre la fuente y marca el elemento como listo</p></article>
-          <article class="step"><h3>Listo y conservado</h3><p>Los elementos completados quedan en el historial</p></article>
+          <article class="step"><h3>Abre el elemento o su fuente</h3><p>Selecciona un elemento para verlo o editarlo. Si tiene una URL de origen, usa la acción de fuente para abrirla en el navegador.</p></article>
+          <article class="step"><h3>Márcalo como listo</h3><p>Usa el botón de completar para mover lo atendido al historial. Solo los elementos completados pasan ahí; los pendientes no caducan.</p></article>
+          <article class="step"><h3>Restaura desde el historial</h3><p>Usa el botón de restaurar junto a un elemento completado para devolverlo a pendientes.</p></article>
+          <article class="step"><h3>Confirma antes de eliminar</h3><p>En iPhone y iPad, desliza un elemento a la izquierda y elige Eliminar. En Mac, usa la acción de eliminar. Confirma antes de quitarlo.</p></article>
         </div>
       </section>
 
@@ -199,9 +251,14 @@
       <section class="section" id="faq">
         <h2>Preguntas frecuentes</h2>
         <div class="policy-list">
-          <article class="policy-item"><h3>¿Por qué no veo CarryOver en la hoja de compartir?</h3><p>Activa CarryOver en la sección Más de la hoja de compartir y ordénalo arriba si lo necesitas.</p></article>
+          <article class="policy-item"><h3>¿Cómo comparto a CarryOver?</h3><p>En una app compatible, abre el menú Compartir del sistema y elige CarryOver. En iPhone y iPad, revisa Más si no aparece. En Mac, la disponibilidad también depende de la app de origen, del tipo de contenido y de los ajustes de extensiones del sistema.</p></article>
           <article class="policy-item"><h3>¿Por qué no aparece de inmediato en otro dispositivo?</h3><p>La red, el modo de bajo consumo o poco espacio en iCloud pueden retrasar la sincronización.</p></article>
           <article class="policy-item"><h3>¿CarryOver requiere una cuenta?</h3><p>No. La sincronización usa los servicios iCloud de Apple cuando están disponibles.</p></article>
+          <article class="policy-item"><h3>¿Los pendientes desaparecen después de unos días?</h3><p>No. Los pendientes permanecen en tu bandeja. Al marcarlos como listos pasan al historial; al eliminarlos se quitan.</p></article>
+          <article class="policy-item"><h3>¿Puedo buscar el contenido guardado?</h3><p>En la ventana principal de Mac puedes buscar títulos, textos y URL de origen, incluidos los elementos del historial. La búsqueda no está disponible actualmente en iPhone ni iPad.</p></article>
+          <article class="policy-item"><h3>¿Recibiré un recordatorio de verdad?</h3><p>Sí. Elige una fecha y hora futuras y permite las notificaciones de CarryOver en los ajustes del sistema. El sistema envía una notificación local; los modos de enfoque y los ajustes pueden silenciarla. Al tocarla se abre el elemento correspondiente.</p></article>
+          <article class="policy-item"><h3>¿Puedo retomar un elemento completado?</h3><p>Sí. Abre el historial y usa el botón de restaurar del elemento para devolverlo a pendientes.</p></article>
+          <article class="policy-item"><h3>¿Qué incluye la versión gratuita?</h3><p>La versión gratuita permite guardar hasta tres veces al día. Una compra única de Pro elimina el límite diario. Consulta el precio de tu región en App Store.</p></article>
         </div>
       </section>
 
@@ -209,6 +266,7 @@
         <a class="button" href="https://apps.apple.com/app/id6755507048"><img class="store-icon" src="../images/app-store-icon.svg" alt="">App Store</a>
         <a class="button secondary" href="https://pub-921ff78698074a30a8b3a65a51a6faa8.r2.dev/carryover/macos/CarryOver.dmg" download="CarryOver.dmg">Descargar DMG para Mac</a>
       </div>
+      <p class="download-note">Para usar las funciones actuales, descarga CarryOver desde App Store. El DMG de Mac de descarga directa aún no se ha actualizado a esta versión.</p>
 
       <p class="footer">¿Necesitas ayuda? Contacta a cameoshell09@gmail.com.</p>
     </article>

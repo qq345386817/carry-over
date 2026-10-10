@@ -249,8 +249,10 @@ a {
 
 .content-card h1 {
   margin: 0;
-  font-size: clamp(2rem, 5vw, 4rem);
-  line-height: 1.05;
+  font-size: 32px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+  hyphens: auto;
   letter-spacing: 0;
 }
 
@@ -260,8 +262,9 @@ a {
 
 .section h2 {
   margin: 0 0 16px;
-  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-size: 24px;
   line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .grid,
@@ -280,6 +283,8 @@ a {
 .feature-card,
 .step,
 .policy-item {
+  min-width: 0;
+  overflow-wrap: anywhere;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface);
@@ -320,7 +325,16 @@ a {
 .download-strip {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-top: 34px;
+}
+
+.download-note {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 @media (max-width: 800px) {

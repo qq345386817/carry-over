@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CarryOver Hilfe - Links, Texte und Ideen auf Apple-Geräten sichern</title>
-  <meta name="description" content="So nutzt du CarryOver auf iPhone, iPad und Mac: Share Sheet, URL-Erkennung, iCloud-Sync, Verlauf, Löschen und Sync-Fehlerbehebung.">
+  <meta name="description" content="Beiträge, Links, Bilder und Ideen per Teilen-Menü auf dem iPhone sichern und am Mac weiterbearbeiten. Mit dauerhaftem Posteingang, Mac-Suche, Erinnerungen und Verlauf.">
   <meta name="keywords" content="CarryOver Hilfe,Links sichern,später lesen,Share Sheet,iCloud Sync,URL Erkennung,Apple Geräte">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/de-DE/help">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/de-DE/help.md">
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/help">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/help">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/help">
@@ -30,7 +32,7 @@
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/help">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/help">
   <meta property="og:title" content="CarryOver Hilfe - Links, Texte und Ideen auf Apple-Geräten sichern">
-  <meta property="og:description" content="So nutzt du CarryOver auf iPhone, iPad und Mac: Share Sheet, URL-Erkennung, iCloud-Sync, Verlauf, Löschen und Sync-Fehlerbehebung.">
+  <meta property="og:description" content="Beiträge, Links, Bilder und Ideen per Teilen-Menü auf dem iPhone sichern und am Mac weiterbearbeiten. Mit dauerhaftem Posteingang, Mac-Suche, Erinnerungen und Verlauf.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://carryover.luopeike.com/de-DE/help">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -50,7 +52,7 @@
   <meta property="og:locale:alternate" content="id_ID">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="CarryOver Hilfe - Links, Texte und Ideen auf Apple-Geräten sichern">
-  <meta name="twitter:description" content="So nutzt du CarryOver auf iPhone, iPad und Mac: Share Sheet, URL-Erkennung, iCloud-Sync, Verlauf, Löschen und Sync-Fehlerbehebung.">
+  <meta name="twitter:description" content="Beiträge, Links, Bilder und Ideen per Teilen-Menü auf dem iPhone sichern und am Mac weiterbearbeiten. Mit dauerhaftem Posteingang, Mac-Suche, Erinnerungen und Verlauf.">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -58,22 +60,29 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "de",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -81,13 +90,14 @@
       "@id": "https://carryover.luopeike.com/de-DE/help#webpage",
       "name": "CarryOver Hilfe - Links, Texte und Ideen auf Apple-Geräten sichern",
       "url": "https://carryover.luopeike.com/de-DE/help",
-      "description": "So nutzt du CarryOver auf iPhone, iPad und Mac: Share Sheet, URL-Erkennung, iCloud-Sync, Verlauf, Löschen und Sync-Fehlerbehebung.",
+      "description": "Beiträge, Links, Bilder und Ideen per Teilen-Menü auf dem iPhone sichern und am Mac weiterbearbeiten. Mit dauerhaftem Posteingang, Mac-Suche, Erinnerungen und Verlauf.",
       "inLanguage": "de",
+      "dateModified": "2026-10-10",
       "isPartOf": {
         "@id": "https://carryover.luopeike.com/#website"
       },
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -97,10 +107,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Warum sehe ich CarryOver nicht im Share Sheet?",
+          "name": "Wie teile ich Inhalte mit CarryOver?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Aktiviere CarryOver im Bereich Mehr und ordne es bei Bedarf weiter oben ein."
+            "text": "Öffne in einer kompatiblen App das Teilen-Menü und wähle CarryOver. Auf iPhone und iPad findest du es gegebenenfalls unter Mehr. Am Mac hängt die Verfügbarkeit auch von der Quell-App, dem Inhaltstyp und den Systemeinstellungen für Erweiterungen ab."
           }
         },
         {
@@ -117,6 +127,46 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Nein. Sync läuft, wenn verfügbar, über Apples iCloud-Dienste."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Verschwinden offene Einträge nach einigen Tagen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Offene Einträge bleiben im Posteingang. Als erledigt markierte Einträge wechseln in den Verlauf; Löschen entfernt sie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ich gespeicherte Inhalte durchsuchen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Im Mac-Hauptfenster kannst du Titel, Texte und Quell-URLs durchsuchen, auch erledigte Einträge im Verlauf. Auf iPhone und iPad gibt es derzeit keine Suche."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Erinnert mich Später tatsächlich?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Wähle ein zukünftiges Datum mit Uhrzeit und erlaube CarryOver-Mitteilungen in den Systemeinstellungen. Das System sendet eine lokale Mitteilung; Fokus- und Mitteilungseinstellungen können sie stummschalten. Ein Klick öffnet den zugehörigen Eintrag."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ich einen erledigten Eintrag erneut bearbeiten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Öffne den Verlauf und hole ihn mit der Wiederherstellen-Schaltfläche zurück in den Posteingang."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was ist kostenlos enthalten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die kostenlose Version erlaubt bis zu drei Speichervorgänge pro Tag. Ein einmaliger Pro-Kauf hebt das Tageslimit auf. Den Preis für deine Region findest du im App Store."
           }
         }
       ]
@@ -172,18 +222,20 @@
         <h2>Inhalte sichern</h2>
         <div class="step-list">
           <article class="step"><h3>Eine beliebige App öffnen</h3><p>Starte in Safari, Notizen, einer Social-App oder jeder App, die Text oder URLs teilen kann.</p></article>
-          <article class="step"><h3>Text oder URL wählen</h3><p>Wähle den Inhalt aus, den du später prüfen möchtest.</p></article>
-          <article class="step"><h3>Teilen verwenden</h3><p>Tippe auf Teilen und wähle CarryOver. Falls es fehlt, aktiviere es unter Mehr.</p></article>
-          <article class="step"><h3>Gespeichert für später</h3><p>Offene Einträge bleiben im Posteingang</p></article>
+          <article class="step"><h3>Teilbare Inhalte wählen</h3><p>Wähle den Text, Link, das Bild oder den Beitrag, den du behalten möchtest. Welche Inhalte teilbar sind, hängt von der Quell-App ab.</p></article>
+          <article class="step"><h3>Teilen verwenden</h3><p>Öffne in einer kompatiblen App das Teilen-Menü und wähle CarryOver. Auf iPhone und iPad findest du es gegebenenfalls unter Mehr. Am Mac hängt die Verfügbarkeit auch von der Quell-App, dem Inhaltstyp und den Systemeinstellungen für Erweiterungen ab.</p></article>
+          <article class="step"><h3>Prüfen und speichern</h3><p>Prüfe den Inhalt im Teilen-Formular. Du kannst den Titel ändern oder eine Erinnerung einstellen. Wähle Speichern, um den Eintrag hinzuzufügen.</p></article>
+          <article class="step"><h3>Eine Notiz selbst hinzufügen</h3><p>Öffne in CarryOver das Formular zum Hinzufügen, notiere eine Idee oder füge Inhalte ein und speichere sie im Posteingang.</p></article>
         </div>
       </section>
 
       <section class="section">
         <h2>Liste verwalten</h2>
         <div class="step-list">
-          <article class="step"><h3>Gespeichert für später</h3><p>Offene Einträge bleiben im Posteingang</p></article>
-          <article class="step"><h3>Am Mac weitermachen</h3><p>Quelle öffnen, nachsehen und erledigen</p></article>
-          <article class="step"><h3>Erledigt und aufgehoben</h3><p>Erledigte Einträge bleiben im Verlauf</p></article>
+          <article class="step"><h3>Eintrag oder Quelle öffnen</h3><p>Wähle einen Eintrag zum Anzeigen oder Bearbeiten aus. Ist eine Quell-URL vorhanden, kannst du sie über die Quellenaktion im Browser öffnen.</p></article>
+          <article class="step"><h3>Als erledigt markieren</h3><p>Verschiebe bearbeitete Einträge mit der Erledigt-Schaltfläche in den Verlauf. Nur erledigte Einträge wechseln dorthin; offene laufen nicht ab.</p></article>
+          <article class="step"><h3>Aus dem Verlauf zurückholen</h3><p>Mit der Wiederherstellen-Schaltfläche neben einem erledigten Eintrag kommt er zurück in den Posteingang.</p></article>
+          <article class="step"><h3>Löschen mit Bestätigung</h3><p>Wische auf iPhone und iPad einen Eintrag nach links und wähle Löschen. Nutze am Mac die Löschaktion. Erst nach Bestätigung wird er entfernt.</p></article>
         </div>
       </section>
 
@@ -199,9 +251,14 @@
       <section class="section" id="faq">
         <h2>Häufige Fragen</h2>
         <div class="policy-list">
-          <article class="policy-item"><h3>Warum sehe ich CarryOver nicht im Share Sheet?</h3><p>Aktiviere CarryOver im Bereich Mehr und ordne es bei Bedarf weiter oben ein.</p></article>
+          <article class="policy-item"><h3>Wie teile ich Inhalte mit CarryOver?</h3><p>Öffne in einer kompatiblen App das Teilen-Menü und wähle CarryOver. Auf iPhone und iPad findest du es gegebenenfalls unter Mehr. Am Mac hängt die Verfügbarkeit auch von der Quell-App, dem Inhaltstyp und den Systemeinstellungen für Erweiterungen ab.</p></article>
           <article class="policy-item"><h3>Warum erscheint der Sync nicht sofort auf einem anderen Gerät?</h3><p>Netzwerk, Stromsparmodus oder voller iCloud-Speicher können Sync verzögern.</p></article>
           <article class="policy-item"><h3>Braucht CarryOver ein Konto?</h3><p>Nein. Sync läuft, wenn verfügbar, über Apples iCloud-Dienste.</p></article>
+          <article class="policy-item"><h3>Verschwinden offene Einträge nach einigen Tagen?</h3><p>Nein. Offene Einträge bleiben im Posteingang. Als erledigt markierte Einträge wechseln in den Verlauf; Löschen entfernt sie.</p></article>
+          <article class="policy-item"><h3>Kann ich gespeicherte Inhalte durchsuchen?</h3><p>Im Mac-Hauptfenster kannst du Titel, Texte und Quell-URLs durchsuchen, auch erledigte Einträge im Verlauf. Auf iPhone und iPad gibt es derzeit keine Suche.</p></article>
+          <article class="policy-item"><h3>Erinnert mich Später tatsächlich?</h3><p>Ja. Wähle ein zukünftiges Datum mit Uhrzeit und erlaube CarryOver-Mitteilungen in den Systemeinstellungen. Das System sendet eine lokale Mitteilung; Fokus- und Mitteilungseinstellungen können sie stummschalten. Ein Klick öffnet den zugehörigen Eintrag.</p></article>
+          <article class="policy-item"><h3>Kann ich einen erledigten Eintrag erneut bearbeiten?</h3><p>Ja. Öffne den Verlauf und hole ihn mit der Wiederherstellen-Schaltfläche zurück in den Posteingang.</p></article>
+          <article class="policy-item"><h3>Was ist kostenlos enthalten?</h3><p>Die kostenlose Version erlaubt bis zu drei Speichervorgänge pro Tag. Ein einmaliger Pro-Kauf hebt das Tageslimit auf. Den Preis für deine Region findest du im App Store.</p></article>
         </div>
       </section>
 
@@ -209,6 +266,7 @@
         <a class="button" href="https://apps.apple.com/app/id6755507048"><img class="store-icon" src="../images/app-store-icon.svg" alt="">App Store</a>
         <a class="button secondary" href="https://pub-921ff78698074a30a8b3a65a51a6faa8.r2.dev/carryover/macos/CarryOver.dmg" download="CarryOver.dmg">Mac-DMG laden</a>
       </div>
+      <p class="download-note">Die aktuellen Funktionen erhältst du mit CarryOver aus dem App Store. Die direkt herunterladbare Mac-DMG wurde noch nicht auf diese Version aktualisiert.</p>
 
       <p class="footer">Brauchst du Hilfe? Schreibe an cameoshell09@gmail.com.</p>
     </article>

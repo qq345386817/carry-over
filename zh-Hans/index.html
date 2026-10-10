@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CarryOver - 从分享菜单保存 - 回到 Mac 接着处理</title>
-  <meta name="description" content="手机上从分享菜单先存下来，回到 Mac 再打开来源、继续处理。">
+  <title>CarryOver｜iPhone 分享保存，Mac 接着处理</title>
+  <meta name="description" content="从 iPhone 分享菜单保存帖子、链接、图片和灵感，回到 Mac 接着处理。待处理内容持续保留，支持 Mac 搜索、定时提醒，以及完成后回看和恢复。">
   <meta name="keywords" content="CarryOver,稍后读,保存链接,分享扩展,iCloud同步,灵感收集,iPhone效率,Mac效率">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
   <link rel="stylesheet" href="../style/base.css">
   <link rel="canonical" href="https://carryover.luopeike.com/zh-Hans/">
+  <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/zh-Hans/index.md">
   <link rel="alternate" hreflang="en" href="https://carryover.luopeike.com/en-US/">
   <link rel="alternate" hreflang="zh-Hans" href="https://carryover.luopeike.com/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://carryover.luopeike.com/zh-Hant/">
@@ -29,8 +31,8 @@
   <link rel="alternate" hreflang="it" href="https://carryover.luopeike.com/it/">
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/">
-  <meta property="og:title" content="CarryOver - 从分享菜单保存 - 回到 Mac 接着处理">
-  <meta property="og:description" content="手机上从分享菜单先存下来，回到 Mac 再打开来源、继续处理。">
+  <meta property="og:title" content="CarryOver｜iPhone 分享保存，Mac 接着处理">
+  <meta property="og:description" content="从 iPhone 分享菜单保存帖子、链接、图片和灵感，回到 Mac 接着处理。待处理内容持续保留，支持 Mac 搜索、定时提醒，以及完成后回看和恢复。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://carryover.luopeike.com/zh-Hans/">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -49,8 +51,8 @@
   <meta property="og:locale:alternate" content="it_IT">
   <meta property="og:locale:alternate" content="id_ID">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CarryOver - 从分享菜单保存 - 回到 Mac 接着处理">
-  <meta name="twitter:description" content="手机上从分享菜单先存下来，回到 Mac 再打开来源、继续处理。">
+  <meta name="twitter:title" content="CarryOver｜iPhone 分享保存，Mac 接着处理">
+  <meta name="twitter:description" content="从 iPhone 分享菜单保存帖子、链接、图片和灵感，回到 Mac 接着处理。待处理内容持续保留，支持 Mac 搜索、定时提醒，以及完成后回看和恢复。">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -58,40 +60,89 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://carryover.luopeike.com/#organization",
-      "name": "CarryOver",
-      "url": "https://carryover.luopeike.com/",
-      "sameAs": [
-        "https://apps.apple.com/app/id6755507048"
-      ]
+      "@type": "Person",
+      "@id": "https://carryover.luopeike.com/#developer",
+      "name": "Peike Luo"
     },
     {
       "@type": "WebSite",
       "@id": "https://carryover.luopeike.com/#website",
       "name": "CarryOver",
       "url": "https://carryover.luopeike.com/",
-      "inLanguage": "zh-Hans",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
       "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+        "@id": "https://carryover.luopeike.com/#developer"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://carryover.luopeike.com/zh-Hans/#webpage",
+      "name": "CarryOver｜iPhone 分享保存，Mac 接着处理",
+      "url": "https://carryover.luopeike.com/zh-Hans/",
+      "description": "从 iPhone 分享菜单保存帖子、链接、图片和灵感，回到 Mac 接着处理。待处理内容持续保留，支持 Mac 搜索、定时提醒，以及完成后回看和恢复。",
+      "inLanguage": "zh-Hans",
+      "dateModified": "2026-10-10",
+      "isPartOf": {
+        "@id": "https://carryover.luopeike.com/#website"
+      },
+      "publisher": {
+        "@id": "https://carryover.luopeike.com/#developer"
+      },
+      "mainEntity": {
+        "@id": "https://carryover.luopeike.com/zh-Hans/#app"
       }
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://carryover.luopeike.com/#app",
+      "@id": "https://carryover.luopeike.com/zh-Hans/#app",
       "name": "CarryOver",
-      "description": "手机上从分享菜单先存下来，回到 Mac 再打开来源、继续处理。",
+      "description": "从 iPhone 分享菜单保存帖子、链接、图片和灵感，回到 Mac 接着处理。待处理内容持续保留，支持 Mac 搜索、定时提醒，以及完成后回看和恢复。",
       "url": "https://carryover.luopeike.com/zh-Hans/",
       "downloadUrl": "https://apps.apple.com/app/id6755507048",
-      "applicationCategory": "ProductivityApplication",
+      "sameAs": [
+        "https://apps.apple.com/app/id6755507048"
+      ],
+      "image": "https://carryover.luopeike.com/images/app-icon.png",
+      "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "iOS, iPadOS, macOS",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es-MX",
+        "it",
+        "id"
+      ],
+      "featureList": [
+        "分享保存，也能手动记录: 从支持系统分享的 App 保存可分享的文字、链接或图片，也可以在 CarryOver 中手动记录想法。",
+        "待处理内容持续保留: 未完成的内容不会因为保存时间久而离开待处理列表。真正处理完，再标记完成。",
+        "在 Mac 搜索已保存内容: 在 Mac 主窗口按标题、文字和来源网址搜索，待处理列表和历史记录都能查找。",
+        "完成后，还能接着处理: 完成的内容进入历史记录。需要继续处理时，可以恢复到待处理列表。",
+        "到时间，提醒你回来: 设置日期和时间，并允许系统通知。点击提醒即可打开对应内容，继续处理。",
+        "在 Apple 设备间接力: 通过 iCloud 在登录同一 Apple 账户的 iPhone、iPad 和 Mac 间同步。网络和 iCloud 状态可能影响同步速度。"
+      ],
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
       },
-      "publisher": {
-        "@id": "https://carryover.luopeike.com/#organization"
+      "author": {
+        "@id": "https://carryover.luopeike.com/#developer"
       }
     },
     {
@@ -145,6 +196,8 @@
 
     </section>
 
+    <p class="download-note">体验当前新功能，请从 App Store 获取 CarryOver。Mac 直接下载的 DMG 尚未更新到本次版本。</p>
+
     <section class="section workflow-proof">
       <h2>现在捕捉，稍后行动</h2>
       <div class="workflow-grid"><figure class="workflow-step">
@@ -162,22 +215,18 @@
     </section>
 
     <section class="section">
-      <h2>为快速捕捉而设计</h2>
+      <h2>先存下来，再把发现变成行动</h2>
       <div class="grid">
-        <article class="feature-card"><h3>系统分享菜单</h3><p>从 Safari、备忘录、社交 App 以及其他支持分享的 App 保存文字和链接。</p></article>
-        <article class="feature-card"><h3>智能链接识别</h3><p>CarryOver 会识别分享文本中的 URL，并保留原始上下文。</p></article>
-        <article class="feature-card"><h3>iCloud 同步</h3><p>保存的内容通过 CloudKit 同步，让 iPhone、iPad 和 Mac 保持一致。</p></article>
+        <article class="feature-card"><h3>分享保存，也能手动记录</h3><p>从支持系统分享的 App 保存可分享的文字、链接或图片，也可以在 CarryOver 中手动记录想法。</p></article>
+        <article class="feature-card"><h3>待处理内容持续保留</h3><p>未完成的内容不会因为保存时间久而离开待处理列表。真正处理完，再标记完成。</p></article>
+        <article class="feature-card"><h3>在 Mac 搜索已保存内容</h3><p>在 Mac 主窗口按标题、文字和来源网址搜索，待处理列表和历史记录都能查找。</p></article>
+        <article class="feature-card"><h3>完成后，还能接着处理</h3><p>完成的内容进入历史记录。需要继续处理时，可以恢复到待处理列表。</p></article>
+        <article class="feature-card"><h3>到时间，提醒你回来</h3><p>设置日期和时间，并允许系统通知。点击提醒即可打开对应内容，继续处理。</p></article>
+        <article class="feature-card"><h3>在 Apple 设备间接力</h3><p>通过 iCloud 在登录同一 Apple 账户的 iPhone、iPad 和 Mac 间同步。网络和 iCloud 状态可能影响同步速度。</p></article>
       </div>
     </section>
 
-    <section class="section">
-      <h2>从被动浏览过渡到真正跟进</h2>
-      <div class="grid">
-        <article class="feature-card"><h3>已保存，稍后处理</h3><p>未完成的内容持续留在待处理列表</p></article>
-        <article class="feature-card"><h3>回到 Mac 接着处理</h3><p>打开来源，找到内容，一键完成</p></article>
-        <article class="feature-card"><h3>完成后，随时回看</h3><p>处理完的内容保留在历史记录</p></article>
-      </div>
-    </section>
+    <p>免费版每天最多保存三次。一次性购买 Pro 可解除每日保存次数限制。当地价格以 App Store 为准。 <a href="help#faq">阅读帮助</a></p>
 
     <p class="footer">如有问题或反馈，请联系 cameoshell09@gmail.com。</p>
   </main>
