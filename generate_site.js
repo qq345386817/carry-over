@@ -884,6 +884,19 @@ const pages = [
   { key: "privacy", slug: "privacy-policy", file: "privacy-policy.html", type: "article", priority: "0.7" }
 ];
 
+const workflowCopy = require("./content/workflow.json");
+for (const language of languages) {
+  const story = workflowCopy[language.code];
+  const c = copy[language.code];
+  c.home.h1 = appName;
+  c.home.lead = story.intro;
+  c.home.description = story.intro;
+  c.home.title = `${appName} - ${story.stages[0][0]} - ${story.stages[2][0]}`;
+  c.home.sections[1].items = story.stages.slice(1).map(stage => [stage[0], stage[1]]);
+  c.help.groups[0].steps[3] = [story.stages[1][0], story.stages[1][1]];
+  c.help.groups[1].steps = story.stages.slice(1).map(stage => [stage[0], stage[1]]);
+}
+
 function escapeHtml(value) {
   return String(value)
     .replace(/&/g, "&amp;")
@@ -1109,7 +1122,15 @@ function renderHome(lang) {
       </div>
     </section>`).join("\n\n    ");
 
-  return `<section class="hero">
+  const workflow = workflowCopy[lang.code];
+  const proofImages = ["01-capture.png", "02-saved.png", "03-mac.png"];
+  const proof = workflow.stages.slice(0, 3).map((stage, index) => `<figure class="workflow-step">
+        <img src="../images/workflow/${lang.code}/${proofImages[index]}" alt="${escapeHtml(stage[0])}" loading="lazy" decoding="async">
+        <figcaption><h3>${escapeHtml(stage[0])}</h3><p>${escapeHtml(stage[1])}</p></figcaption>
+      </figure>`).join("\n");
+
+  return `<section class="hero workflow-hero">
+      <img class="hero-scene" src="../images/workflow/${lang.code}/hero.png" alt="${escapeHtml(workflow.intro)}" fetchpriority="high" decoding="async">
       <div class="hero-copy">
         <p class="eyebrow">${escapeHtml(c.eyebrow)}</p>
         <h1>${escapeHtml(c.h1)}</h1>
@@ -1121,18 +1142,11 @@ function renderHome(lang) {
         </div>
       </div>
 
-      <aside class="preview-panel" aria-label="${escapeHtml(appName)}">
-        <article class="capture-card">
-          <img class="preview-app-icon" src="${appIconPath}" alt="">
-          <h2>${appName}</h2>
-          <p>${escapeHtml(c.eyebrow)}</p>
-          <div class="capture-list">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </article>
-      </aside>
+    </section>
+
+    <section class="section workflow-proof">
+      <h2>${escapeHtml(c.eyebrow)}</h2>
+      <div class="workflow-grid">${proof}</div>
     </section>
 
     ${sections}
@@ -1676,3 +1690,24 @@ writeRedirects();
 writeSitemap();
 writeRobots();
 writeStyles();
+
+fs.appendFileSync(path.join(root, "style", "base.css"), `
+.workflow-hero { display: block; position: relative; min-height: 620px; overflow: hidden; }
+.workflow-hero .hero-scene { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
+.workflow-hero .hero-copy { position: relative; z-index: 1; width: min(420px, 100%); padding: 20px 0; }
+.workflow-hero h1 { font-size: 54px; letter-spacing: 0; }
+.workflow-hero .lead { font-size: 20px; line-height: 1.6; }
+.workflow-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; align-items: start; }
+.workflow-step { margin: 0; min-width: 0; }
+.workflow-step img { display: block; width: 100%; height: 400px; object-fit: contain; }
+.workflow-step h3 { font-size: 20px; margin: 18px 0 8px; letter-spacing: 0; }
+.workflow-step p { line-height: 1.6; color: var(--muted); margin: 0; }
+@media (max-width: 760px) {
+  .workflow-hero { min-height: 0; padding-bottom: 0; }
+  .workflow-hero .hero-copy { width: 100%; padding: 0; }
+  .workflow-hero h1 { font-size: 42px; }
+  .workflow-hero .hero-scene { position: relative; display: block; height: auto; width: 100%; margin-top: 12px; }
+  .workflow-grid { grid-template-columns: 1fr; gap: 36px; }
+  .workflow-step img { height: 460px; }
+}
+`, "utf8");
