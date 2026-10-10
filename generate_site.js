@@ -999,20 +999,18 @@ function jsonLd(lang, slug, page, pageCopy) {
   ];
 
   if (page.key === "home") {
+    // Software rich results require verified reviews; do not invent ratings.
     graph.push({
-      "@type": "SoftwareApplication",
+      "@type": "CreativeWork",
       "@id": `${pageUrl(lang, "")}#app`,
       "name": appName,
       "description": pageCopy.description,
       "url": pageUrl(lang, slug),
-      "downloadUrl": appStoreUrl,
       "sameAs": [appStoreUrl],
       "image": socialImageUrl,
-      "applicationCategory": "UtilitiesApplication",
-      "operatingSystem": "iOS, iPadOS, macOS",
+      "genre": "Productivity",
       "inLanguage": languages.map(item => item.hreflang),
-      "featureList": productCopy[lang.code].features.map(([title, text]) => `${title}: ${text}`),
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "abstract": productCopy[lang.code].features.map(([title, text]) => `${title}: ${text}`).join("\n"),
       "author": { "@id": `${siteUrl}/#developer` }
     });
   } else if (page.key === "help" || page.key === "support") {

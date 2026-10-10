@@ -33,6 +33,9 @@ History and can be restored. Reminders are system-delivered local notifications
 and require permission. Sync requires the same Apple Account and available
 iCloud services. Do not claim instant sync, AI summaries or full offline articles.
 Do not invent reviews or aggregate ratings to satisfy a rich-result validator.
+The app uses a general `CreativeWork` entity, not incomplete software rich-result
+markup. Only add `SoftwareApplication` rich-result markup when real, verifiable
+reviews are available and displayed consistently on the page.
 The download note identifies the currently older direct DMG. Update all localized
 notes when a matching DMG is actually published; do not describe an old package
 as the latest release.

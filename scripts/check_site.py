@@ -110,7 +110,7 @@ def check_pages():
             assert alternates == expected, url
             assert page.meta["og:url"] == url, url
             assert {node["@type"] for node in page.schema} <= {
-                "Person", "WebSite", "WebPage", "SoftwareApplication", "FAQPage", "BreadcrumbList"
+                "Person", "WebSite", "WebPage", "CreativeWork", "FAQPage", "BreadcrumbList"
             }, url
             assert len({node["@id"] for node in page.schema}) == len(page.schema), url
             web_page = next(node for node in page.schema if node["@type"] == "WebPage")
@@ -126,11 +126,11 @@ def check_pages():
                 markdown_path = ROOT / locale / ("index.md" if key == "home" else "help.md")
                 assert product["downloadNote"] in markdown_path.read_text(), url
             if key == "home":
-                app = next(node for node in page.schema if node["@type"] == "SoftwareApplication")
+                app = next(node for node in page.schema if node["@type"] == "CreativeWork")
                 assert app["description"] == product["description"]
                 assert app["inLanguage"] == list(LOCALES.values())
-                assert app["downloadUrl"] == "https://apps.apple.com/app/id6755507048"
-                assert app["featureList"] == [f"{heading}: {text}" for heading, text in product["features"]]
+                assert app["sameAs"] == ["https://apps.apple.com/app/id6755507048"]
+                assert app["abstract"] == "\n".join(f"{heading}: {text}" for heading, text in product["features"])
                 assert "aggregateRating" not in app and "review" not in app
                 markdown = (ROOT / locale / "index.md").read_text()
                 for heading, text in product["features"]:
