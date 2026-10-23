@@ -48,9 +48,9 @@ Set a date and time and allow system notifications. Tap the reminder to open the
 
 iCloud sync connects iPhone, iPad and Mac signed in to the same Apple Account. Network and iCloud conditions can delay syncing.
 
-The free version allows up to three saves per day. A one-time Pro purchase removes the daily save limit. Check the App Store for the price in your region.
+The current version has no daily save limit and does not require a separate Pro upgrade. Check the App Store for availability and pricing in your region.
 
-For the current features, get CarryOver from the App Store. The direct Mac DMG has not yet been updated to this release.
+Get CarryOver for iPhone, iPad and Mac on the App Store.
 
 [View on App Store](https://apps.apple.com/app/id6755507048)
 

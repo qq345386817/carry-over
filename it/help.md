@@ -86,11 +86,11 @@ Sì. Imposta una data e un’ora future e consenti le notifiche di CarryOver nel
 
 Sì. Apri la cronologia e usa il pulsante di ripristino dell’elemento per riportarlo nella lista aperta.
 
-### Cosa include la versione gratuita?
+### Esiste un limite giornaliero di salvataggi?
 
-La versione gratuita consente fino a tre salvataggi al giorno. Un acquisto una tantum di Pro rimuove il limite giornaliero. Consulta l’App Store per il prezzo nella tua regione.
+La versione attuale non ha limiti giornalieri di salvataggio e non richiede un aggiornamento Pro separato. Consulta l’App Store per disponibilità e prezzo nella tua regione.
 
-Per le funzioni attuali, scarica CarryOver dall’App Store. Il DMG per Mac scaricabile direttamente non è ancora stato aggiornato a questa versione.
+Scarica CarryOver per iPhone, iPad e Mac dall’App Store.
 
 [App Store](https://apps.apple.com/app/id6755507048)
 

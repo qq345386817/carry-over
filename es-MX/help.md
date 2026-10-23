@@ -86,11 +86,11 @@ Sí. Elige una fecha y hora futuras y permite las notificaciones de CarryOver en
 
 Sí. Abre el historial y usa el botón de restaurar del elemento para devolverlo a pendientes.
 
-### ¿Qué incluye la versión gratuita?
+### ¿Hay un límite diario para guardar contenido?
 
-La versión gratuita permite guardar hasta tres veces al día. Una compra única de Pro elimina el límite diario. Consulta el precio de tu región en App Store.
+La versión actual no tiene límite diario ni requiere una actualización Pro por separado. Consulta la disponibilidad y el precio de tu región en App Store.
 
-Para usar las funciones actuales, descarga CarryOver desde App Store. El DMG de Mac de descarga directa aún no se ha actualizado a esta versión.
+Obtén CarryOver para iPhone, iPad y Mac en App Store.
 
 [App Store](https://apps.apple.com/app/id6755507048)
 

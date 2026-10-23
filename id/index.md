@@ -48,9 +48,9 @@ Atur tanggal dan waktu serta izinkan notifikasi sistem. Ketuk pengingat untuk me
 
 iCloud menyinkronkan iPhone, iPad dan Mac yang menggunakan Akun Apple yang sama. Kondisi jaringan dan iCloud dapat menunda sinkronisasi.
 
-Versi gratis memungkinkan hingga tiga penyimpanan per hari. Pembelian Pro satu kali menghapus batas harian. Lihat App Store untuk harga di wilayah Anda.
+Versi saat ini tidak membatasi jumlah penyimpanan per hari dan tidak memerlukan peningkatan Pro terpisah. Lihat App Store untuk ketersediaan dan harga di wilayah Anda.
 
-Untuk fitur saat ini, unduh CarryOver dari App Store. DMG Mac yang diunduh langsung belum diperbarui ke rilis ini.
+Dapatkan CarryOver untuk iPhone, iPad, dan Mac di App Store.
 
 [Lihat di App Store](https://apps.apple.com/app/id6755507048)
 

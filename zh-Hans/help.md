@@ -86,11 +86,11 @@ iCloud 同步可能受到网络状态、低电量模式或 iCloud 存储空间�
 
 可以。在历史记录中使用记录旁的恢复按钮，即可放回待处理列表。
 
-### 免费版包含什么？
+### 每天保存有次数限制吗？
 
-免费版每天最多保存三次。一次性购买 Pro 可解除每日保存次数限制。当地价格以 App Store 为准。
+当前版本没有每日保存次数限制，也无需另购 Pro 升级。当地上架情况和价格以 App Store 为准。
 
-体验当前新功能，请从 App Store 获取 CarryOver。Mac 直接下载的 DMG 尚未更新到本次版本。
+从 App Store 获取适用于 iPhone、iPad 和 Mac 的 CarryOver。
 
 [App Store](https://apps.apple.com/app/id6755507048)
 

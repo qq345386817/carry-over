@@ -48,9 +48,9 @@ Mac 기본 창에서 제목, 본문과 출처 URL을 검색하세요. 미완료 
 
 같은 Apple 계정으로 로그인한 iPhone, iPad와 Mac 사이에서 iCloud로 동기화합니다. 네트워크와 iCloud 상태에 따라 지연될 수 있습니다.
 
-무료 버전은 하루 최대 세 번 저장할 수 있습니다. Pro를 한 번 구매하면 일일 저장 제한이 해제됩니다. 지역별 가격은 App Store에서 확인하세요.
+현재 버전은 하루 저장 횟수에 제한이 없으며 별도의 Pro 업그레이드가 필요하지 않습니다. 지역별 제공 여부와 가격은 App Store에서 확인하세요.
 
-현재 기능을 사용하려면 App Store에서 받으세요. Mac 직접 다운로드 DMG는 아직 이번 버전으로 업데이트되지 않았습니다.
+iPhone, iPad, Mac용 CarryOver를 App Store에서 받으세요.
 
 [App Store에서 보기](https://apps.apple.com/app/id6755507048)
 

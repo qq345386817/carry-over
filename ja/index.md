@@ -48,9 +48,9 @@ Mac のメインウインドウでタイトル、本文、元の URL を検索�
 
 同じ Apple Account の iPhone、iPad、Mac 間で iCloud 同期。ネットワークや iCloud の状態によって同期が遅れる場合があります。
 
-無料版は1日3回まで保存できます。Pro を買い切りで購入すると、1日の保存回数の制限がなくなります。地域の価格は App Store でご確認ください。
+現在のバージョンには1日の保存回数の制限はなく、別途 Pro にアップグレードする必要もありません。お住まいの地域での提供状況と価格は App Store でご確認ください。
 
-現在の機能を使うには App Store から入手してください。Mac 用の直接ダウンロード DMG は、このリリースにまだ更新されていません。
+iPhone、iPad、Mac 用の CarryOver は App Store から入手できます。
 
 [App Store で見る](https://apps.apple.com/app/id6755507048)
 

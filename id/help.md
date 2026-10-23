@@ -86,11 +86,11 @@ Ya. Atur tanggal dan waktu mendatang dan izinkan notifikasi CarryOver di pengatu
 
 Ya. Buka riwayat dan gunakan tombol pulihkan pada item untuk mengembalikannya ke kotak masuk.
 
-### Apa yang termasuk dalam versi gratis?
+### Apakah ada batas penyimpanan harian?
 
-Versi gratis memungkinkan hingga tiga penyimpanan per hari. Pembelian Pro satu kali menghapus batas harian. Lihat App Store untuk harga di wilayah Anda.
+Versi saat ini tidak membatasi jumlah penyimpanan per hari dan tidak memerlukan peningkatan Pro terpisah. Lihat App Store untuk ketersediaan dan harga di wilayah Anda.
 
-Untuk fitur saat ini, unduh CarryOver dari App Store. DMG Mac yang diunduh langsung belum diperbarui ke rilis ini.
+Dapatkan CarryOver untuk iPhone, iPad, dan Mac di App Store.
 
 [App Store](https://apps.apple.com/app/id6755507048)
 

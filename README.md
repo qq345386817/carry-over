@@ -53,9 +53,14 @@ Do not invent reviews or aggregate ratings to satisfy a rich-result validator.
 The app uses a general `CreativeWork` entity, not incomplete software rich-result
 markup. Only add `SoftwareApplication` rich-result markup when real, verifiable
 reviews are available and displayed consistently on the page.
-The download note identifies the currently older direct DMG. Update all localized
-notes when a matching DMG is actually published; do not describe an old package
-as the latest release.
+App downloads link only to the App Store for iPhone, iPad and Mac. Do not add
+direct DMG links or promote the older R2 package. Removing website links does not
+delete that package from R2 or invalidate an existing direct link.
+The current app configuration enables premium features for all users; there is
+no daily save limit or separate Pro upgrade. Do not describe a free tier limited
+to three saves per day. Regional availability and pricing remain the App Store's
+source of truth. StoreKit compatibility code still checks purchase status, so the
+privacy policy retains that disclosure without claiming a required Pro purchase.
 
 `llms.txt` is a discovery aid, not a ranking guarantee or a substitute for SEO.
 Markdown mirrors remain crawlable but use `X-Robots-Tag: noindex` and an HTTP

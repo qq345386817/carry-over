@@ -48,9 +48,9 @@
 
 透過 iCloud 在登入同一 Apple 帳號的 iPhone、iPad 和 Mac 間同步。網路和 iCloud 狀態可能影響同步速度。
 
-免費版每天最多儲存三次。一次性購買 Pro 可解除每日儲存次數限制。當地價格以 App Store 為準。
+目前版本沒有每日儲存次數限制，也無需另購 Pro 升級。當地上架情況和價格以 App Store 為準。
 
-體驗目前的新功能，請從 App Store 取得 CarryOver。Mac 直接下載的 DMG 尚未更新至本次版本。
+從 App Store 取得適用於 iPhone、iPad 和 Mac 的 CarryOver。
 
 [在 App Store 查看](https://apps.apple.com/app/id6755507048)
 

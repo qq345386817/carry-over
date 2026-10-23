@@ -48,9 +48,9 @@ Choisissez une date et une heure et autorisez les notifications système. Touche
 
 iCloud synchronise iPhone, iPad et Mac connectés au même compte Apple. Le réseau et l’état d’iCloud peuvent retarder la synchronisation.
 
-La version gratuite permet jusqu’à trois enregistrements par jour. Un achat unique de Pro supprime cette limite quotidienne. Consultez l’App Store pour le prix dans votre région.
+La version actuelle n’impose aucune limite quotidienne d’enregistrements et ne nécessite pas de mise à niveau Pro séparée. Consultez l’App Store pour la disponibilité et le prix dans votre région.
 
-Pour les fonctionnalités actuelles, téléchargez CarryOver sur l’App Store. Le DMG Mac en téléchargement direct n’a pas encore été mis à jour pour cette version.
+Retrouvez CarryOver pour iPhone, iPad et Mac sur l’App Store.
 
 [Voir sur l'App Store](https://apps.apple.com/app/id6755507048)
 

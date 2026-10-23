@@ -86,11 +86,11 @@ Oui. Choisissez une date et une heure futures et autorisez les notifications de 
 
 Oui. Ouvrez l’historique et utilisez le bouton de restauration de l’élément pour le remettre dans la liste à traiter.
 
-### Que comprend la version gratuite ?
+### Y a-t-il une limite quotidienne d’enregistrements ?
 
-La version gratuite permet jusqu’à trois enregistrements par jour. Un achat unique de Pro supprime cette limite quotidienne. Consultez l’App Store pour le prix dans votre région.
+La version actuelle n’impose aucune limite quotidienne d’enregistrements et ne nécessite pas de mise à niveau Pro séparée. Consultez l’App Store pour la disponibilité et le prix dans votre région.
 
-Pour les fonctionnalités actuelles, téléchargez CarryOver sur l’App Store. Le DMG Mac en téléchargement direct n’a pas encore été mis à jour pour cette version.
+Retrouvez CarryOver pour iPhone, iPad et Mac sur l’App Store.
 
 [App Store](https://apps.apple.com/app/id6755507048)
 

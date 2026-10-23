@@ -20,6 +20,13 @@ LOCALES = {
     "es-MX": "es-MX", "it": "it", "id": "id",
 }
 PAGES = {"home": "", "help": "help", "support": "support", "privacy": "privacy-policy"}
+APP_STORE_URL = "https://apps.apple.com/app/id6755507048"
+OBSOLETE_LIMIT_CLAIMS = (
+    "up to three saves per day", "每天最多保存三次", "每天最多儲存三次",
+    "1日3回まで保存", "하루 최대 세 번", "bis zu drei Speichervorgänge pro Tag",
+    "jusqu’à trois enregistrements par jour", "hasta tres veces al día",
+    "fino a tre salvataggi al giorno", "hingga tiga penyimpanan per hari",
+)
 
 
 class Page(HTMLParser):
@@ -28,6 +35,7 @@ class Page(HTMLParser):
         self.lang = None
         self.links = []
         self.resources = []
+        self.anchors = []
         self.meta = {}
         self.h1_count = 0
         self.visible = []
@@ -55,6 +63,7 @@ class Page(HTMLParser):
             if attrs.get("rel") in {"stylesheet", "icon", "apple-touch-icon"}:
                 self.resources.append(attrs["href"])
         if tag == "a":
+            self.anchors.append(attrs)
             self.resources.append(attrs.get("href", ""))
             if attrs.get("href", "").startswith("mailto:"):
                 self.email_scopes.append(self.email_excluded)
@@ -109,7 +118,11 @@ def check_pages():
         for key, slug in PAGES.items():
             url = canonical_url(locale, slug)
             urls.add(url)
-            page = Page(local_path(url).read_text())
+            content = local_path(url).read_text()
+            page = Page(content)
+            assert any(link.get("href") == APP_STORE_URL for link in page.anchors), url
+            assert all("download" not in link for link in page.anchors), url
+            assert_current_distribution(content, url)
             assert page.lang == lang, url
             assert page.h1_count == 1, url
             assert page.meta["robots"] == "index, follow", url
@@ -143,7 +156,7 @@ def check_pages():
                 app = next(node for node in page.schema if node["@type"] == "CreativeWork")
                 assert app["description"] == product["description"]
                 assert app["inLanguage"] == list(LOCALES.values())
-                assert app["sameAs"] == ["https://apps.apple.com/app/id6755507048"]
+                assert app["sameAs"] == [APP_STORE_URL]
                 assert app["abstract"] == "\n".join(f"{heading}: {text}" for heading, text in product["features"])
                 assert "aggregateRating" not in app and "review" not in app
                 markdown = (ROOT / locale / "index.md").read_text()
@@ -159,13 +172,25 @@ def check_pages():
                     answer = question["acceptedAnswer"]["text"]
                     assert question["name"] in visible and answer in visible, url
                     assert question["name"] in markdown and answer in markdown, url
+                assert any(question["name"] == product["faq"][-1][0]
+                           and question["acceptedAnswer"]["text"] == product["faq"][-1][1]
+                           for question in faq["mainEntity"]), url
                 for heading, text in [product["selection"], product["confirm"], product["manual"], *product["manage"]]:
                     assert heading in visible and text in visible, (url, heading)
                     assert heading in markdown and text in markdown, (url, heading)
             if key in {"home", "help"}:
                 alternate = next(link for link in page.links if link.get("type") == "text/markdown")
                 assert local_path(alternate["href"]).is_file(), url
+                markdown = local_path(alternate["href"]).read_text()
+                assert APP_STORE_URL in markdown, url
+                assert_current_distribution(markdown, url + " (Markdown)")
     return urls
+
+
+def assert_current_distribution(content, label):
+    assert "dmg" not in content.lower() and "r2.dev" not in content, (label, "direct download remains")
+    for claim in OBSOLETE_LIMIT_CLAIMS:
+        assert claim not in content, (label, "obsolete daily save limit", claim)
 
 
 def check_sitemap(urls):
@@ -203,6 +228,7 @@ def check_routing():
     assert "http-equiv" not in (ROOT / "404.html").read_text()
     assert (ROOT / "google8bdd3bd447b6e703.html").is_file()
     llms = (ROOT / "llms.txt").read_text()
+    assert_current_distribution(llms, "llms.txt")
     headers = (ROOT / "_headers").read_text()
     for locale in LOCALES:
         for file, slug in [("index.md", ""), ("help.md", "help")]:

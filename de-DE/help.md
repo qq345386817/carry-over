@@ -86,11 +86,11 @@ Ja. Wähle ein zukünftiges Datum mit Uhrzeit und erlaube CarryOver-Mitteilungen
 
 Ja. Öffne den Verlauf und hole ihn mit der Wiederherstellen-Schaltfläche zurück in den Posteingang.
 
-### Was ist kostenlos enthalten?
+### Gibt es ein tägliches Speicherlimit?
 
-Die kostenlose Version erlaubt bis zu drei Speichervorgänge pro Tag. Ein einmaliger Pro-Kauf hebt das Tageslimit auf. Den Preis für deine Region findest du im App Store.
+Die aktuelle Version hat kein tägliches Speicherlimit und erfordert kein separates Pro-Upgrade. Verfügbarkeit und Preis für deine Region findest du im App Store.
 
-Die aktuellen Funktionen erhältst du mit CarryOver aus dem App Store. Die direkt herunterladbare Mac-DMG wurde noch nicht auf diese Version aktualisiert.
+CarryOver für iPhone, iPad und Mac erhältst du im App Store.
 
 [App Store](https://apps.apple.com/app/id6755507048)
 

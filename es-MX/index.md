@@ -48,9 +48,9 @@ Elige fecha y hora y permite las notificaciones del sistema. Toca el recordatori
 
 iCloud sincroniza iPhone, iPad y Mac con la misma cuenta de Apple. La red y el estado de iCloud pueden retrasar la sincronización.
 
-La versión gratuita permite guardar hasta tres veces al día. Una compra única de Pro elimina el límite diario. Consulta el precio de tu región en App Store.
+La versión actual no tiene límite diario ni requiere una actualización Pro por separado. Consulta la disponibilidad y el precio de tu región en App Store.
 
-Para usar las funciones actuales, descarga CarryOver desde App Store. El DMG de Mac de descarga directa aún no se ha actualizado a esta versión.
+Obtén CarryOver para iPhone, iPad y Mac en App Store.
 
 [Ver en App Store](https://apps.apple.com/app/id6755507048)
 
