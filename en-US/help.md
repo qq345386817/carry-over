@@ -76,7 +76,7 @@ No. Unfinished items remain in the inbox regardless of age. Marking an item done
 
 ### Can I search my saved content?
 
-Search is available in the Mac main window for titles, saved text and source URLs, including completed items in History. Search is not currently available on iPhone or iPad.
+Yes. Search titles, saved text and source URLs on iPhone, iPad and Mac, including completed items in History.
 
 ### Will Later actually remind me?
 

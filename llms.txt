@@ -1,8 +1,8 @@
 # CarryOver
 
-> Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on Mac, set reminders and revisit completed items.
+> Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on iPhone, iPad and Mac, set reminders and revisit completed items.
 
-Official product and help content for CarryOver, developed by Peike Luo. The localized Markdown documents below are generated from the same content as the public HTML pages. Search is currently Mac-only. Sync requires the same Apple Account and available iCloud services; it is not guaranteed to be immediate.
+Official product and help content for CarryOver, developed by Peike Luo. The localized Markdown documents below are generated from the same content as the public HTML pages. Search covers saved titles, text and source URLs on iPhone, iPad and Mac. Sync requires the same Apple Account and available iCloud services; it is not guaranteed to be immediate.
 
 ## Product and help by language
 

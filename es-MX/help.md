@@ -76,7 +76,7 @@ No. Los pendientes permanecen en tu bandeja. Al marcarlos como listos pasan al h
 
 ### ¿Puedo buscar el contenido guardado?
 
-En la ventana principal de Mac puedes buscar títulos, textos y URL de origen, incluidos los elementos del historial. La búsqueda no está disponible actualmente en iPhone ni iPad.
+Sí. Busca títulos, textos y URL de origen en iPhone, iPad y Mac, incluidos los elementos del historial.
 
 ### ¿Recibiré un recordatorio de verdad?
 

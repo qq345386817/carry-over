@@ -1,6 +1,6 @@
 # CarryOver - Enregistrer sur iPhone, reprendre sur Mac
 
-Enregistrez publications, liens, images et idées via Partager sur iPhone, puis reprenez sur Mac. Liste persistante, recherche sur Mac, rappels et historique à retrouver.
+Enregistrez publications, liens, images et idées via Partager sur iPhone, puis reprenez sur Mac. Liste persistante, recherche sur iPhone, iPad et Mac, rappels et historique à retrouver.
 
 Enregistrez depuis le menu Partager du téléphone. Ouvrez la source sur Mac quand vous êtes prêt.
 
@@ -32,9 +32,9 @@ Enregistrez textes, liens ou images compatibles via le menu Partager d’autres 
 
 Les éléments non terminés restent dans votre liste, quelle que soit leur ancienneté. Marquez-les comme terminés après les avoir traités.
 
-### Rechercher vos contenus sur Mac
+### Rechercher vos contenus partout
 
-Dans la fenêtre principale du Mac, recherchez titres, textes et URL sources, dans la liste à traiter comme dans l’historique.
+Sur iPhone, iPad et Mac, recherchez titres, textes et URL sources, dans la liste à traiter comme dans l’historique.
 
 ### Terminé, mais encore accessible
 

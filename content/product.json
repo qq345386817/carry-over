@@ -1,7 +1,7 @@
 {
   "en-US": {
     "title": "CarryOver - Save on iPhone, Continue on Mac",
-    "description": "Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on Mac, set reminders and revisit completed items.",
+    "description": "Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on iPhone, iPad and Mac, set reminders and revisit completed items.",
     "heading": "From a quick save to a useful next step",
     "downloadNote": "Get CarryOver for iPhone, iPad and Mac on the App Store.",
     "selection": ["Choose supported content", "Choose the text, link, image or post you want to keep. What can be shared depends on the source app."],
@@ -9,7 +9,7 @@
     "features": [
       ["Share or write it down", "Use the system Share menu in apps that share supported text, links or images. You can also add a note manually in CarryOver."],
       ["An inbox that stays put", "Unfinished items stay in your inbox regardless of age. Mark them done when you have actually handled them."],
-      ["Search saved content on Mac", "Search titles, saved text and source URLs in the Mac main window, in both your inbox and History."],
+      ["Search saved content on any device", "Search titles, saved text and source URLs on iPhone, iPad and Mac, across your inbox and History."],
       ["Done, with a way back", "Completed items move to History. Restore an item to the inbox when you need to pick it up again."],
       ["A reminder for later", "Set a date and time and allow system notifications. Tap the reminder to open the saved item and continue."],
       ["Your Apple devices, one handover", "iCloud sync connects iPhone, iPad and Mac signed in to the same Apple Account. Network and iCloud conditions can delay syncing."]
@@ -24,7 +24,7 @@
     "shareFaq": ["How do I share to CarryOver?", "In a compatible app, open the system Share menu and choose CarryOver. On iPhone and iPad, check More if it is not visible. On Mac, availability also depends on the source app, content type and system extension settings."],
     "faq": [
       ["Do unfinished items disappear after a few days?", "No. Unfinished items remain in the inbox regardless of age. Marking an item done moves it to History; deleting removes it."],
-      ["Can I search my saved content?", "Search is available in the Mac main window for titles, saved text and source URLs, including completed items in History. Search is not currently available on iPhone or iPad."],
+      ["Can I search my saved content?", "Yes. Search titles, saved text and source URLs on iPhone, iPad and Mac, including completed items in History."],
       ["Will Later actually remind me?", "Yes. Set a future date and time and allow notifications for CarryOver in system settings. The system delivers a local notification; Focus and notification settings may silence it. Tapping it opens the matching item."],
       ["Can I continue a completed item?", "Yes. Open History and use the item's restore button to return it to the inbox."],
       ["Is there a daily save limit?", "The current version has no daily save limit and does not require a separate Pro upgrade. Check the App Store for availability and pricing in your region."]
@@ -32,7 +32,7 @@
   },
   "zh-Hans": {
     "title": "CarryOver｜iPhone 分享保存，Mac 接着处理",
-    "description": "从 iPhone 分享菜单保存帖子、链接、图片和灵感，回到 Mac 接着处理。待处理内容持续保留，支持 Mac 搜索、定时提醒，以及完成后回看和恢复。",
+    "description": "从 iPhone 分享菜单保存帖子、链接、图片和灵感，回到 Mac 接着处理。待处理内容持续保留，支持 iPhone、iPad 和 Mac 搜索、定时提醒，以及完成后回看和恢复。",
     "heading": "先存下来，再把发现变成行动",
     "downloadNote": "从 App Store 获取适用于 iPhone、iPad 和 Mac 的 CarryOver。",
     "selection": ["选择支持分享的内容", "选择想保留的文字、链接、图片或帖子。能分享哪些内容取决于来源 App。"],
@@ -40,7 +40,7 @@
     "features": [
       ["分享保存，也能手动记录", "从支持系统分享的 App 保存可分享的文字、链接或图片，也可以在 CarryOver 中手动记录想法。"],
       ["待处理内容持续保留", "未完成的内容不会因为保存时间久而离开待处理列表。真正处理完，再标记完成。"],
-      ["在 Mac 搜索已保存内容", "在 Mac 主窗口按标题、文字和来源网址搜索，待处理列表和历史记录都能查找。"],
+      ["随时搜索已保存内容", "在 iPhone、iPad 和 Mac 上按标题、文字和来源网址搜索，待处理列表和历史记录都能查找。"],
       ["完成后，还能接着处理", "完成的内容进入历史记录。需要继续处理时，可以恢复到待处理列表。"],
       ["到时间，提醒你回来", "设置日期和时间，并允许系统通知。点击提醒即可打开对应内容，继续处理。"],
       ["在 Apple 设备间接力", "通过 iCloud 在登录同一 Apple 账户的 iPhone、iPad 和 Mac 间同步。网络和 iCloud 状态可能影响同步速度。"]
@@ -55,7 +55,7 @@
     "shareFaq": ["如何分享到 CarryOver？", "在兼容的 App 中打开系统分享菜单，选择 CarryOver。iPhone 和 iPad 上若未显示，可查看“更多”；Mac 上是否可用还取决于来源 App、内容类型和系统扩展设置。"],
     "faq": [
       ["未完成的内容会在几天后消失吗？", "不会。未完成的内容持续留在待处理列表。标记完成后进入历史记录，删除则会移除内容。"],
-      ["能搜索保存过的内容吗？", "可以在 Mac 主窗口按标题、文字和来源网址搜索，也能搜索历史记录中的已完成内容。iPhone 和 iPad 暂不支持搜索。"],
+      ["能搜索保存过的内容吗？", "可以。在 iPhone、iPad 和 Mac 上按标题、文字和来源网址搜索，也能搜索历史记录中的已完成内容。"],
       ["“稍后处理”真的会提醒吗？", "会。设置未来的日期和时间，并在系统设置中允许 CarryOver 发送通知。系统会发送本地通知；专注模式和通知设置可能使提醒静音。点击通知可打开对应内容。"],
       ["已完成的内容还能继续处理吗？", "可以。在历史记录中使用记录旁的恢复按钮，即可放回待处理列表。"],
       ["每天保存有次数限制吗？", "当前版本没有每日保存次数限制，也无需另购 Pro 升级。当地上架情况和价格以 App Store 为准。"]
@@ -63,7 +63,7 @@
   },
   "zh-Hant": {
     "title": "CarryOver｜iPhone 分享儲存，Mac 接著處理",
-    "description": "從 iPhone 分享選單儲存貼文、連結、圖片和靈感，回到 Mac 接著處理。待處理內容持續保留，支援 Mac 搜尋、定時提醒，以及完成後回看和還原。",
+    "description": "從 iPhone 分享選單儲存貼文、連結、圖片和靈感，回到 Mac 接著處理。待處理內容持續保留，支援 iPhone、iPad 和 Mac 搜尋、定時提醒，以及完成後回看和還原。",
     "heading": "先存下來，再將發現化為行動",
     "downloadNote": "從 App Store 取得適用於 iPhone、iPad 和 Mac 的 CarryOver。",
     "selection": ["選擇支援分享的內容", "選擇想保留的文字、連結、圖片或貼文。能分享哪些內容取決於來源 App。"],
@@ -71,7 +71,7 @@
     "features": [
       ["分享儲存，也能手動記錄", "從支援系統分享的 App 儲存可分享的文字、連結或圖片，也可以在 CarryOver 中手動記錄想法。"],
       ["待處理內容持續保留", "未完成的內容不會因為儲存時間久而離開待處理清單。真正處理完，再標記完成。"],
-      ["在 Mac 搜尋已儲存內容", "在 Mac 主視窗依標題、文字和來源網址搜尋，待處理清單和歷史記錄都能查找。"],
+      ["隨時搜尋已儲存內容", "在 iPhone、iPad 和 Mac 上依標題、文字和來源網址搜尋，待處理清單和歷史記錄都能查找。"],
       ["完成後，還能接著處理", "完成的內容進入歷史記錄。需要繼續處理時，可以還原至待處理清單。"],
       ["到時間，提醒你回來", "設定日期和時間，並允許系統通知。點選提醒即可開啟對應內容，繼續處理。"],
       ["在 Apple 裝置間接力", "透過 iCloud 在登入同一 Apple 帳號的 iPhone、iPad 和 Mac 間同步。網路和 iCloud 狀態可能影響同步速度。"]
@@ -86,7 +86,7 @@
     "shareFaq": ["如何分享到 CarryOver？", "在相容的 App 中開啟系統分享選單，選擇 CarryOver。iPhone 和 iPad 上若未顯示，可查看「更多」；Mac 上是否可用還取決於來源 App、內容類型和系統擴充功能設定。"],
     "faq": [
       ["未完成的內容會在幾天後消失嗎？", "不會。未完成的內容持續留在待處理清單。標記完成後進入歷史記錄，刪除則會移除內容。"],
-      ["能搜尋儲存過的內容嗎？", "可以在 Mac 主視窗依標題、文字和來源網址搜尋，也能搜尋歷史記錄中的已完成內容。iPhone 和 iPad 暫不支援搜尋。"],
+      ["能搜尋儲存過的內容嗎？", "可以。在 iPhone、iPad 和 Mac 上依標題、文字和來源網址搜尋，也能搜尋歷史記錄中的已完成內容。"],
       ["「稍後處理」真的會提醒嗎？", "會。設定未來的日期和時間，並在系統設定中允許 CarryOver 傳送通知。系統會傳送本機通知；專注模式和通知設定可能使提醒靜音。點選通知可開啟對應內容。"],
       ["已完成的內容還能繼續處理嗎？", "可以。在歷史記錄中使用記錄旁的還原按鈕，即可放回待處理清單。"],
       ["每天儲存有次數限制嗎？", "目前版本沒有每日儲存次數限制，也無需另購 Pro 升級。當地上架情況和價格以 App Store 為準。"]
@@ -94,7 +94,7 @@
   },
   "ja": {
     "title": "CarryOver - iPhone で保存、Mac で続ける",
-    "description": "iPhone の共有メニューから投稿、リンク、画像、アイデアを保存して、Mac で続けましょう。未処理の内容を保管し、Mac で検索。リマインダーや完了後の復元にも対応。",
+    "description": "iPhone の共有メニューから投稿、リンク、画像、アイデアを保存して、Mac で続けましょう。未処理の内容を保管し、iPhone、iPad、Mac で検索。リマインダーや完了後の復元にも対応。",
     "heading": "気になったものを保存して、次の行動へ",
     "downloadNote": "iPhone、iPad、Mac 用の CarryOver は App Store から入手できます。",
     "selection": ["共有できる内容を選ぶ", "残したいテキスト、リンク、画像、投稿を選びます。共有できる内容は元のアプリによって異なります。"],
@@ -102,7 +102,7 @@
     "features": [
       ["共有でも、手入力でも", "対応アプリの共有メニューからテキスト、リンク、画像を保存。CarryOver でアイデアを直接入力することもできます。"],
       ["未処理の内容をそのまま保管", "未処理の内容は保存から何日経っても受信トレイに残ります。実際に処理したら完了にしましょう。"],
-      ["Mac で保存した内容を検索", "Mac のメインウインドウでタイトル、本文、元の URL を検索。受信トレイと履歴の両方が対象です。"],
+      ["保存した内容をいつでも検索", "iPhone、iPad、Mac でタイトル、本文、元の URL を検索。受信トレイと履歴の両方が対象です。"],
       ["完了しても、また取り組める", "完了した内容は履歴へ。必要なときは受信トレイに戻して、続きを進められます。"],
       ["あとで取り組むための通知", "日時を設定してシステムの通知を許可。通知をタップすると、保存した内容を開けます。"],
       ["Apple デバイス間で引き継ぎ", "同じ Apple Account の iPhone、iPad、Mac 間で iCloud 同期。ネットワークや iCloud の状態によって同期が遅れる場合があります。"]
@@ -117,7 +117,7 @@
     "shareFaq": ["CarryOver に共有するには？", "対応アプリのシステム共有メニューから CarryOver を選択します。iPhone と iPad で表示されない場合は「その他」を確認。Mac では元のアプリ、内容の種類、システムの機能拡張設定によって利用できるかが異なります。"],
     "faq": [
       ["未処理の内容は数日で消えますか？", "いいえ。未処理の内容は受信トレイに残ります。完了にすると履歴へ移動し、削除すると取り除かれます。"],
-      ["保存した内容を検索できますか？", "Mac のメインウインドウでタイトル、本文、元の URL を検索できます。履歴の完了済み項目も対象です。iPhone と iPad には現在検索機能はありません。"],
+      ["保存した内容を検索できますか？", "はい。iPhone、iPad、Mac でタイトル、本文、元の URL を検索できます。履歴の完了済み項目も対象です。"],
       ["あとで処理するための通知は届きますか？", "はい。未来の日時を設定し、システム設定で CarryOver の通知を許可してください。ローカル通知が届きますが、集中モードや通知設定で音が鳴らない場合があります。通知をタップすると該当項目が開きます。"],
       ["完了した内容を再び処理できますか？", "はい。履歴で項目の横にある復元ボタンを使うと、受信トレイに戻せます。"],
       ["1日の保存回数に制限はありますか？", "現在のバージョンには1日の保存回数の制限はなく、別途 Pro にアップグレードする必要もありません。お住まいの地域での提供状況と価格は App Store でご確認ください。"]
@@ -125,7 +125,7 @@
   },
   "ko": {
     "title": "CarryOver - iPhone에서 저장, Mac에서 이어서",
-    "description": "iPhone 공유 메뉴에서 게시물, 링크, 이미지와 아이디어를 저장하고 Mac에서 이어서 처리하세요. 미완료 항목 보관, Mac 검색, 알림과 완료 항목 복원을 지원합니다.",
+    "description": "iPhone 공유 메뉴에서 게시물, 링크, 이미지와 아이디어를 저장하고 Mac에서 이어서 처리하세요. 미완료 항목 보관, iPhone·iPad·Mac 검색, 알림과 완료 항목 복원을 지원합니다.",
     "heading": "빠르게 저장하고, 다음 행동으로 이어가세요",
     "downloadNote": "iPhone, iPad, Mac용 CarryOver를 App Store에서 받으세요.",
     "selection": ["공유 가능한 내용 선택", "보관할 텍스트, 링크, 이미지 또는 게시물을 선택하세요. 공유할 수 있는 내용은 원본 앱에 따라 다릅니다."],
@@ -133,7 +133,7 @@
     "features": [
       ["공유하거나 직접 기록", "지원하는 앱의 시스템 공유 메뉴에서 텍스트, 링크 또는 이미지를 저장하세요. CarryOver에서 아이디어를 직접 기록할 수도 있습니다."],
       ["미완료 항목을 계속 보관", "미완료 항목은 저장한 지 오래되어도 목록에 남습니다. 실제로 처리한 뒤 완료로 표시하세요."],
-      ["Mac에서 저장한 내용 검색", "Mac 기본 창에서 제목, 본문과 출처 URL을 검색하세요. 미완료 목록과 기록 모두 검색할 수 있습니다."],
+      ["저장한 내용은 어디서나 검색", "iPhone, iPad와 Mac에서 제목, 본문과 출처 URL을 검색하세요. 미완료 목록과 기록 모두 검색할 수 있습니다."],
       ["완료한 항목도 다시 처리", "완료한 항목은 기록으로 이동합니다. 다시 처리하려면 미완료 목록으로 복원하세요."],
       ["나중에 돌아오도록 알림", "날짜와 시간을 정하고 시스템 알림을 허용하세요. 알림을 누르면 저장한 항목이 열립니다."],
       ["Apple 기기 사이에서 이어서", "같은 Apple 계정으로 로그인한 iPhone, iPad와 Mac 사이에서 iCloud로 동기화합니다. 네트워크와 iCloud 상태에 따라 지연될 수 있습니다."]
@@ -148,7 +148,7 @@
     "shareFaq": ["CarryOver로 공유하려면 어떻게 하나요?", "지원하는 앱의 시스템 공유 메뉴에서 CarryOver를 선택하세요. iPhone과 iPad에 표시되지 않으면 더 보기를 확인하세요. Mac에서는 원본 앱, 콘텐츠 유형과 시스템 확장 설정에 따라 사용 가능 여부가 달라집니다."],
     "faq": [
       ["미완료 항목은 며칠 뒤 사라지나요?", "아니요. 미완료 항목은 계속 목록에 남습니다. 완료로 표시하면 기록으로 이동하고 삭제하면 제거됩니다."],
-      ["저장한 내용을 검색할 수 있나요?", "Mac 기본 창에서 제목, 본문과 출처 URL을 검색할 수 있습니다. 기록의 완료 항목도 포함합니다. iPhone과 iPad에는 현재 검색 기능이 없습니다."],
+      ["저장한 내용을 검색할 수 있나요?", "네. iPhone, iPad와 Mac에서 제목, 본문과 출처 URL을 검색할 수 있습니다. 기록의 완료 항목도 포함합니다."],
       ["나중에 처리하도록 실제 알림이 오나요?", "네. 미래의 날짜와 시간을 설정하고 시스템 설정에서 CarryOver 알림을 허용하세요. 로컬 알림이 전달되지만 집중 모드나 알림 설정으로 소리가 나지 않을 수 있습니다. 알림을 누르면 해당 항목이 열립니다."],
       ["완료한 항목을 다시 처리할 수 있나요?", "네. 기록에서 항목 옆의 복원 버튼을 누르면 미완료 목록으로 돌아옵니다."],
       ["하루 저장 횟수에 제한이 있나요?", "현재 버전은 하루 저장 횟수에 제한이 없으며 별도의 Pro 업그레이드가 필요하지 않습니다. 지역별 제공 여부와 가격은 App Store에서 확인하세요."]
@@ -156,7 +156,7 @@
   },
   "de-DE": {
     "title": "CarryOver - Auf dem iPhone sichern, am Mac weiterarbeiten",
-    "description": "Beiträge, Links, Bilder und Ideen per Teilen-Menü auf dem iPhone sichern und am Mac weiterbearbeiten. Mit dauerhaftem Posteingang, Mac-Suche, Erinnerungen und Verlauf.",
+    "description": "Beiträge, Links, Bilder und Ideen per Teilen-Menü auf dem iPhone sichern und am Mac weiterbearbeiten. Mit dauerhaftem Posteingang, Suche auf iPhone, iPad und Mac, Erinnerungen und Verlauf.",
     "heading": "Schnell sichern, später etwas daraus machen",
     "downloadNote": "CarryOver für iPhone, iPad und Mac erhältst du im App Store.",
     "selection": ["Teilbare Inhalte wählen", "Wähle den Text, Link, das Bild oder den Beitrag, den du behalten möchtest. Welche Inhalte teilbar sind, hängt von der Quell-App ab."],
@@ -164,7 +164,7 @@
     "features": [
       ["Teilen oder selbst notieren", "Sichere unterstützte Texte, Links oder Bilder über das Teilen-Menü anderer Apps. Ideen kannst du auch direkt in CarryOver eingeben."],
       ["Offenes bleibt im Posteingang", "Unerledigte Einträge bleiben unabhängig von ihrem Alter im Posteingang. Markiere sie erst als erledigt, wenn du sie bearbeitet hast."],
-      ["Gespeichertes am Mac suchen", "Suche im Mac-Hauptfenster nach Titeln, Texten und Quell-URLs, sowohl im Posteingang als auch im Verlauf."],
+      ["Gespeichertes überall durchsuchen", "Suche auf iPhone, iPad und Mac nach Titeln, Texten und Quell-URLs, im Posteingang und im Verlauf."],
       ["Erledigt, aber nicht verloren", "Erledigte Einträge landen im Verlauf. Hole sie zurück in den Posteingang, wenn du weiterarbeiten möchtest."],
       ["Eine Erinnerung für später", "Lege Datum und Uhrzeit fest und erlaube Systemmitteilungen. Ein Klick auf die Erinnerung öffnet den gespeicherten Eintrag."],
       ["Zwischen Apple-Geräten weiterarbeiten", "iCloud synchronisiert iPhone, iPad und Mac mit demselben Apple Account. Netzwerk- und iCloud-Bedingungen können die Synchronisierung verzögern."]
@@ -179,7 +179,7 @@
     "shareFaq": ["Wie teile ich Inhalte mit CarryOver?", "Öffne in einer kompatiblen App das Teilen-Menü und wähle CarryOver. Auf iPhone und iPad findest du es gegebenenfalls unter Mehr. Am Mac hängt die Verfügbarkeit auch von der Quell-App, dem Inhaltstyp und den Systemeinstellungen für Erweiterungen ab."],
     "faq": [
       ["Verschwinden offene Einträge nach einigen Tagen?", "Nein. Offene Einträge bleiben im Posteingang. Als erledigt markierte Einträge wechseln in den Verlauf; Löschen entfernt sie."],
-      ["Kann ich gespeicherte Inhalte durchsuchen?", "Im Mac-Hauptfenster kannst du Titel, Texte und Quell-URLs durchsuchen, auch erledigte Einträge im Verlauf. Auf iPhone und iPad gibt es derzeit keine Suche."],
+      ["Kann ich gespeicherte Inhalte durchsuchen?", "Ja. Durchsuche Titel, Texte und Quell-URLs auf iPhone, iPad und Mac, auch erledigte Einträge im Verlauf."],
       ["Erinnert mich Später tatsächlich?", "Ja. Wähle ein zukünftiges Datum mit Uhrzeit und erlaube CarryOver-Mitteilungen in den Systemeinstellungen. Das System sendet eine lokale Mitteilung; Fokus- und Mitteilungseinstellungen können sie stummschalten. Ein Klick öffnet den zugehörigen Eintrag."],
       ["Kann ich einen erledigten Eintrag erneut bearbeiten?", "Ja. Öffne den Verlauf und hole ihn mit der Wiederherstellen-Schaltfläche zurück in den Posteingang."],
       ["Gibt es ein tägliches Speicherlimit?", "Die aktuelle Version hat kein tägliches Speicherlimit und erfordert kein separates Pro-Upgrade. Verfügbarkeit und Preis für deine Region findest du im App Store."]
@@ -187,7 +187,7 @@
   },
   "fr-FR": {
     "title": "CarryOver - Enregistrer sur iPhone, reprendre sur Mac",
-    "description": "Enregistrez publications, liens, images et idées via Partager sur iPhone, puis reprenez sur Mac. Liste persistante, recherche sur Mac, rappels et historique à retrouver.",
+    "description": "Enregistrez publications, liens, images et idées via Partager sur iPhone, puis reprenez sur Mac. Liste persistante, recherche sur iPhone, iPad et Mac, rappels et historique à retrouver.",
     "heading": "Gardez vos trouvailles, puis passez à l’action",
     "downloadNote": "Retrouvez CarryOver pour iPhone, iPad et Mac sur l’App Store.",
     "selection": ["Choisir un contenu compatible", "Choisissez le texte, le lien, l’image ou la publication à conserver. Les contenus partageables dépendent de l’app source."],
@@ -195,7 +195,7 @@
     "features": [
       ["Partager ou noter soi-même", "Enregistrez textes, liens ou images compatibles via le menu Partager d’autres apps. Vous pouvez aussi saisir une idée dans CarryOver."],
       ["Les éléments à traiter restent", "Les éléments non terminés restent dans votre liste, quelle que soit leur ancienneté. Marquez-les comme terminés après les avoir traités."],
-      ["Rechercher vos contenus sur Mac", "Dans la fenêtre principale du Mac, recherchez titres, textes et URL sources, dans la liste à traiter comme dans l’historique."],
+      ["Rechercher vos contenus partout", "Sur iPhone, iPad et Mac, recherchez titres, textes et URL sources, dans la liste à traiter comme dans l’historique."],
       ["Terminé, mais encore accessible", "Les éléments terminés vont dans l’historique. Restaurez-les dans la liste à traiter pour reprendre le travail."],
       ["Un rappel pour y revenir", "Choisissez une date et une heure et autorisez les notifications système. Touchez le rappel pour ouvrir le contenu enregistré."],
       ["Passer d’un appareil Apple à l’autre", "iCloud synchronise iPhone, iPad et Mac connectés au même compte Apple. Le réseau et l’état d’iCloud peuvent retarder la synchronisation."]
@@ -210,7 +210,7 @@
     "shareFaq": ["Comment partager vers CarryOver ?", "Dans une app compatible, ouvrez le menu Partager du système et choisissez CarryOver. Sur iPhone et iPad, vérifiez Plus s’il n’apparaît pas. Sur Mac, la disponibilité dépend aussi de l’app source, du type de contenu et des réglages d’extensions système."],
     "faq": [
       ["Les éléments à traiter disparaissent-ils après quelques jours ?", "Non. Ils restent dans la liste à traiter. Les marquer comme terminés les déplace vers l’historique ; les supprimer les retire."],
-      ["Puis-je rechercher mes contenus enregistrés ?", "La fenêtre principale du Mac permet de rechercher titres, textes et URL sources, y compris dans l’historique. La recherche n’est pas actuellement disponible sur iPhone ou iPad."],
+      ["Puis-je rechercher mes contenus enregistrés ?", "Oui. Recherchez titres, textes et URL sources sur iPhone, iPad et Mac, y compris dans l’historique."],
       ["Un rappel est-il réellement envoyé ?", "Oui. Choisissez une date et une heure futures et autorisez les notifications de CarryOver dans les réglages système. Le système envoie une notification locale ; Concentration et les réglages de notifications peuvent la rendre silencieuse. La toucher ouvre l’élément correspondant."],
       ["Puis-je reprendre un élément terminé ?", "Oui. Ouvrez l’historique et utilisez le bouton de restauration de l’élément pour le remettre dans la liste à traiter."],
       ["Y a-t-il une limite quotidienne d’enregistrements ?", "La version actuelle n’impose aucune limite quotidienne d’enregistrements et ne nécessite pas de mise à niveau Pro séparée. Consultez l’App Store pour la disponibilité et le prix dans votre région."]
@@ -218,7 +218,7 @@
   },
   "es-MX": {
     "title": "CarryOver - Guarda en iPhone, continúa en Mac",
-    "description": "Guarda publicaciones, enlaces, imágenes e ideas desde Compartir en iPhone y retómalos en Mac. Con pendientes que permanecen, búsqueda en Mac, recordatorios e historial.",
+    "description": "Guarda publicaciones, enlaces, imágenes e ideas desde Compartir en iPhone y retómalos en Mac. Con pendientes que permanecen, búsqueda en iPhone, iPad y Mac, recordatorios e historial.",
     "heading": "Guarda lo que encuentras y dale seguimiento después",
     "downloadNote": "Obtén CarryOver para iPhone, iPad y Mac en App Store.",
     "selection": ["Elige contenido compatible", "Selecciona el texto, enlace, imagen o publicación que quieres conservar. Lo que se puede compartir depende de la app de origen."],
@@ -226,7 +226,7 @@
     "features": [
       ["Comparte o anota a mano", "Guarda textos, enlaces o imágenes compatibles desde el menú Compartir de otras apps. También puedes escribir una idea en CarryOver."],
       ["Tus pendientes permanecen", "Los elementos sin completar permanecen en tu bandeja sin importar su antigüedad. Márcalos como listos cuando realmente los hayas atendido."],
-      ["Busca lo guardado en Mac", "En la ventana principal de Mac, busca por título, texto y URL de origen, tanto en pendientes como en el historial."],
+      ["Busca lo guardado en cualquier dispositivo", "En iPhone, iPad y Mac, busca por título, texto y URL de origen, tanto en pendientes como en el historial."],
       ["Listo, pero no perdido", "Los elementos completados pasan al historial. Restáuralos a pendientes cuando necesites retomarlos."],
       ["Un recordatorio para volver", "Elige fecha y hora y permite las notificaciones del sistema. Toca el recordatorio para abrir el elemento guardado."],
       ["Continúa entre dispositivos Apple", "iCloud sincroniza iPhone, iPad y Mac con la misma cuenta de Apple. La red y el estado de iCloud pueden retrasar la sincronización."]
@@ -241,7 +241,7 @@
     "shareFaq": ["¿Cómo comparto a CarryOver?", "En una app compatible, abre el menú Compartir del sistema y elige CarryOver. En iPhone y iPad, revisa Más si no aparece. En Mac, la disponibilidad también depende de la app de origen, del tipo de contenido y de los ajustes de extensiones del sistema."],
     "faq": [
       ["¿Los pendientes desaparecen después de unos días?", "No. Los pendientes permanecen en tu bandeja. Al marcarlos como listos pasan al historial; al eliminarlos se quitan."],
-      ["¿Puedo buscar el contenido guardado?", "En la ventana principal de Mac puedes buscar títulos, textos y URL de origen, incluidos los elementos del historial. La búsqueda no está disponible actualmente en iPhone ni iPad."],
+      ["¿Puedo buscar el contenido guardado?", "Sí. Busca títulos, textos y URL de origen en iPhone, iPad y Mac, incluidos los elementos del historial."],
       ["¿Recibiré un recordatorio de verdad?", "Sí. Elige una fecha y hora futuras y permite las notificaciones de CarryOver en los ajustes del sistema. El sistema envía una notificación local; los modos de enfoque y los ajustes pueden silenciarla. Al tocarla se abre el elemento correspondiente."],
       ["¿Puedo retomar un elemento completado?", "Sí. Abre el historial y usa el botón de restaurar del elemento para devolverlo a pendientes."],
       ["¿Hay un límite diario para guardar contenido?", "La versión actual no tiene límite diario ni requiere una actualización Pro por separado. Consulta la disponibilidad y el precio de tu región en App Store."]
@@ -249,7 +249,7 @@
   },
   "it": {
     "title": "CarryOver - Salva su iPhone, riprendi sul Mac",
-    "description": "Salva post, link, immagini e idee da Condividi su iPhone e riprendili sul Mac. Lista persistente, ricerca sul Mac, promemoria e cronologia con ripristino degli elementi.",
+    "description": "Salva post, link, immagini e idee da Condividi su iPhone e riprendili sul Mac. Lista persistente, ricerca su iPhone, iPad e Mac, promemoria e cronologia con ripristino degli elementi.",
     "heading": "Salva le scoperte e trasformale in azioni",
     "downloadNote": "Scarica CarryOver per iPhone, iPad e Mac dall’App Store.",
     "selection": ["Scegli contenuti compatibili", "Scegli il testo, link, immagine o post da conservare. I contenuti condivisibili dipendono dall’app di origine."],
@@ -257,7 +257,7 @@
     "features": [
       ["Condividi o scrivi a mano", "Salva testi, link o immagini compatibili dal menu Condividi di altre app. Puoi anche scrivere un’idea direttamente in CarryOver."],
       ["Gli elementi aperti restano", "Gli elementi non completati restano nella lista, indipendentemente dalla loro età. Segnali come completati solo dopo averli gestiti."],
-      ["Cerca i contenuti sul Mac", "Nella finestra principale del Mac, cerca per titolo, testo e URL di origine, sia nella lista aperta sia nella cronologia."],
+      ["Cerca i contenuti su ogni dispositivo", "Su iPhone, iPad e Mac, cerca per titolo, testo e URL di origine, sia nella lista aperta sia nella cronologia."],
       ["Completato, ma non perso", "Gli elementi completati passano alla cronologia. Ripristinali nella lista aperta quando vuoi riprenderli."],
       ["Un promemoria per tornarci", "Imposta data e ora e consenti le notifiche di sistema. Tocca il promemoria per aprire l’elemento salvato."],
       ["Continua tra dispositivi Apple", "iCloud sincronizza iPhone, iPad e Mac con lo stesso Apple Account. La rete e lo stato di iCloud possono ritardare la sincronizzazione."]
@@ -272,7 +272,7 @@
     "shareFaq": ["Come condivido con CarryOver?", "In un’app compatibile, apri il menu Condividi di sistema e scegli CarryOver. Su iPhone e iPad, controlla Altro se non compare. Sul Mac, la disponibilità dipende anche dall’app di origine, dal tipo di contenuto e dalle impostazioni delle estensioni di sistema."],
     "faq": [
       ["Gli elementi aperti spariscono dopo alcuni giorni?", "No. Restano nella lista aperta. Segnarli come completati li sposta nella cronologia; eliminarli li rimuove."],
-      ["Posso cercare i contenuti salvati?", "Nella finestra principale del Mac puoi cercare titoli, testi e URL di origine, anche nella cronologia. La ricerca non è attualmente disponibile su iPhone o iPad."],
+      ["Posso cercare i contenuti salvati?", "Sì. Cerca titoli, testi e URL di origine su iPhone, iPad e Mac, anche nella cronologia."],
       ["Riceverò davvero un promemoria?", "Sì. Imposta una data e un’ora future e consenti le notifiche di CarryOver nelle impostazioni di sistema. Il sistema invia una notifica locale; Full immersion e le impostazioni delle notifiche possono silenziarla. Toccandola si apre l’elemento corrispondente."],
       ["Posso riprendere un elemento completato?", "Sì. Apri la cronologia e usa il pulsante di ripristino dell’elemento per riportarlo nella lista aperta."],
       ["Esiste un limite giornaliero di salvataggi?", "La versione attuale non ha limiti giornalieri di salvataggio e non richiede un aggiornamento Pro separato. Consulta l’App Store per disponibilità e prezzo nella tua regione."]
@@ -280,7 +280,7 @@
   },
   "id": {
     "title": "CarryOver - Simpan di iPhone, lanjutkan di Mac",
-    "description": "Simpan postingan, tautan, gambar dan ide dari Bagikan di iPhone, lalu lanjutkan di Mac. Kotak masuk yang tetap tersimpan, pencarian di Mac, pengingat dan riwayat.",
+    "description": "Simpan postingan, tautan, gambar dan ide dari Bagikan di iPhone, lalu lanjutkan di Mac. Kotak masuk yang tetap tersimpan, pencarian di iPhone, iPad dan Mac, pengingat dan riwayat.",
     "heading": "Simpan temuan, lalu wujudkan langkah berikutnya",
     "downloadNote": "Dapatkan CarryOver untuk iPhone, iPad, dan Mac di App Store.",
     "selection": ["Pilih konten yang didukung", "Pilih teks, tautan, gambar atau postingan yang ingin disimpan. Konten yang bisa dibagikan bergantung pada aplikasi sumber."],
@@ -288,7 +288,7 @@
     "features": [
       ["Bagikan atau catat sendiri", "Simpan teks, tautan atau gambar yang didukung dari menu Bagikan di aplikasi lain. Anda juga bisa menulis ide langsung di CarryOver."],
       ["Yang belum selesai tetap ada", "Item yang belum selesai tetap di kotak masuk, berapa pun usianya. Tandai selesai setelah benar-benar ditindaklanjuti."],
-      ["Cari konten tersimpan di Mac", "Di jendela utama Mac, cari berdasarkan judul, teks dan URL sumber, baik di kotak masuk maupun riwayat."],
+      ["Cari konten tersimpan di semua perangkat", "Di iPhone, iPad dan Mac, cari berdasarkan judul, teks dan URL sumber, baik di kotak masuk maupun riwayat."],
       ["Selesai, bukan hilang", "Item selesai masuk ke riwayat. Pulihkan ke kotak masuk saat ingin melanjutkannya lagi."],
       ["Pengingat untuk kembali", "Atur tanggal dan waktu serta izinkan notifikasi sistem. Ketuk pengingat untuk membuka item tersimpan."],
       ["Lanjutkan antarperangkat Apple", "iCloud menyinkronkan iPhone, iPad dan Mac yang menggunakan Akun Apple yang sama. Kondisi jaringan dan iCloud dapat menunda sinkronisasi."]
@@ -303,7 +303,7 @@
     "shareFaq": ["Bagaimana cara berbagi ke CarryOver?", "Di aplikasi yang kompatibel, buka menu Bagikan sistem dan pilih CarryOver. Di iPhone dan iPad, periksa Lainnya jika tidak terlihat. Di Mac, ketersediaan juga bergantung pada aplikasi sumber, jenis konten dan pengaturan ekstensi sistem."],
     "faq": [
       ["Apakah item belum selesai hilang setelah beberapa hari?", "Tidak. Item belum selesai tetap di kotak masuk. Menandainya selesai memindahkannya ke riwayat; menghapus akan membuangnya."],
-      ["Bisakah saya mencari konten tersimpan?", "Di jendela utama Mac, Anda dapat mencari judul, teks dan URL sumber, termasuk item dalam riwayat. Pencarian belum tersedia di iPhone atau iPad."],
+      ["Bisakah saya mencari konten tersimpan?", "Ya. Cari judul, teks dan URL sumber di iPhone, iPad dan Mac, termasuk item dalam riwayat."],
       ["Apakah pengingat benar-benar dikirim?", "Ya. Atur tanggal dan waktu mendatang dan izinkan notifikasi CarryOver di pengaturan sistem. Sistem mengirim notifikasi lokal; Fokus dan pengaturan notifikasi dapat membisukannya. Mengetuk notifikasi membuka item yang sesuai."],
       ["Bisakah saya melanjutkan item yang sudah selesai?", "Ya. Buka riwayat dan gunakan tombol pulihkan pada item untuk mengembalikannya ke kotak masuk."],
       ["Apakah ada batas penyimpanan harian?", "Versi saat ini tidak membatasi jumlah penyimpanan per hari dan tidak memerlukan peningkatan Pro terpisah. Lihat App Store untuk ketersediaan dan harga di wilayah Anda."]

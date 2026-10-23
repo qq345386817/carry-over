@@ -1,6 +1,6 @@
 # CarryOver - Salva su iPhone, riprendi sul Mac
 
-Salva post, link, immagini e idee da Condividi su iPhone e riprendili sul Mac. Lista persistente, ricerca sul Mac, promemoria e cronologia con ripristino degli elementi.
+Salva post, link, immagini e idee da Condividi su iPhone e riprendili sul Mac. Lista persistente, ricerca su iPhone, iPad e Mac, promemoria e cronologia con ripristino degli elementi.
 
 Salva dal menu Condividi del telefono. Apri la fonte sul Mac quando sei pronto.
 
@@ -32,9 +32,9 @@ Salva testi, link o immagini compatibili dal menu Condividi di altre app. Puoi a
 
 Gli elementi non completati restano nella lista, indipendentemente dalla loro età. Segnali come completati solo dopo averli gestiti.
 
-### Cerca i contenuti sul Mac
+### Cerca i contenuti su ogni dispositivo
 
-Nella finestra principale del Mac, cerca per titolo, testo e URL di origine, sia nella lista aperta sia nella cronologia.
+Su iPhone, iPad e Mac, cerca per titolo, testo e URL di origine, sia nella lista aperta sia nella cronologia.
 
 ### Completato, ma non perso
 

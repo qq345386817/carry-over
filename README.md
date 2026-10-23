@@ -45,8 +45,9 @@ were added for the design refresh.
   The privacy policy's displayed effective date is separate and is not changed
   by a rebuild or a metadata-only edit.
 
-Search is Mac-only. Unfinished items stay in the inbox; completed items go to
-History and can be restored. Reminders are system-delivered local notifications
+Search covers saved titles, text and source URLs on iPhone, iPad and Mac.
+Unfinished items stay in the inbox; completed items go to History and can be
+restored. Reminders are system-delivered local notifications
 and require permission. Sync requires the same Apple Account and available
 iCloud services. Do not claim instant sync, AI summaries or full offline articles.
 Do not invent reviews or aggregate ratings to satisfy a rich-result validator.

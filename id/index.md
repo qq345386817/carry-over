@@ -1,6 +1,6 @@
 # CarryOver - Simpan di iPhone, lanjutkan di Mac
 
-Simpan postingan, tautan, gambar dan ide dari Bagikan di iPhone, lalu lanjutkan di Mac. Kotak masuk yang tetap tersimpan, pencarian di Mac, pengingat dan riwayat.
+Simpan postingan, tautan, gambar dan ide dari Bagikan di iPhone, lalu lanjutkan di Mac. Kotak masuk yang tetap tersimpan, pencarian di iPhone, iPad dan Mac, pengingat dan riwayat.
 
 Simpan dari menu Bagikan di ponsel. Buka sumbernya di Mac saat siap menindaklanjuti.
 
@@ -32,9 +32,9 @@ Simpan teks, tautan atau gambar yang didukung dari menu Bagikan di aplikasi lain
 
 Item yang belum selesai tetap di kotak masuk, berapa pun usianya. Tandai selesai setelah benar-benar ditindaklanjuti.
 
-### Cari konten tersimpan di Mac
+### Cari konten tersimpan di semua perangkat
 
-Di jendela utama Mac, cari berdasarkan judul, teks dan URL sumber, baik di kotak masuk maupun riwayat.
+Di iPhone, iPad dan Mac, cari berdasarkan judul, teks dan URL sumber, baik di kotak masuk maupun riwayat.
 
 ### Selesai, bukan hilang
 

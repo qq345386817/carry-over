@@ -1,6 +1,6 @@
 # CarryOver - Save on iPhone, Continue on Mac
 
-Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on Mac, set reminders and revisit completed items.
+Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on iPhone, iPad and Mac, set reminders and revisit completed items.
 
 Save from the Share menu on your phone. Open it on Mac when you're ready to act.
 
@@ -32,9 +32,9 @@ Use the system Share menu in apps that share supported text, links or images. Yo
 
 Unfinished items stay in your inbox regardless of age. Mark them done when you have actually handled them.
 
-### Search saved content on Mac
+### Search saved content on any device
 
-Search titles, saved text and source URLs in the Mac main window, in both your inbox and History.
+Search titles, saved text and source URLs on iPhone, iPad and Mac, across your inbox and History.
 
 ### Done, with a way back
 

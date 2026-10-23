@@ -76,7 +76,7 @@ Tidak. Item belum selesai tetap di kotak masuk. Menandainya selesai memindahkann
 
 ### Bisakah saya mencari konten tersimpan?
 
-Di jendela utama Mac, Anda dapat mencari judul, teks dan URL sumber, termasuk item dalam riwayat. Pencarian belum tersedia di iPhone atau iPad.
+Ya. Cari judul, teks dan URL sumber di iPhone, iPad dan Mac, termasuk item dalam riwayat.
 
 ### Apakah pengingat benar-benar dikirim?
 

@@ -76,7 +76,7 @@ Nein. Offene Einträge bleiben im Posteingang. Als erledigt markierte Einträge 
 
 ### Kann ich gespeicherte Inhalte durchsuchen?
 
-Im Mac-Hauptfenster kannst du Titel, Texte und Quell-URLs durchsuchen, auch erledigte Einträge im Verlauf. Auf iPhone und iPad gibt es derzeit keine Suche.
+Ja. Durchsuche Titel, Texte und Quell-URLs auf iPhone, iPad und Mac, auch erledigte Einträge im Verlauf.
 
 ### Erinnert mich Später tatsächlich?
 

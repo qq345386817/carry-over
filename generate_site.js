@@ -1385,7 +1385,7 @@ function writeMachineReadableContent() {
     }
     links.push(`- [${lang.label}: ${c.home.title}](${pageUrl(lang, "index.md")})\n- [${lang.label}: ${c.help.h1}](${pageUrl(lang, "help.md")})`);
   }
-  write(path.join(root, "llms.txt"), `# ${appName}\n\n> ${copy["en-US"].home.description}\n\nOfficial product and help content for CarryOver, developed by Peike Luo. The localized Markdown documents below are generated from the same content as the public HTML pages. Search is currently Mac-only. Sync requires the same Apple Account and available iCloud services; it is not guaranteed to be immediate.\n\n## Product and help by language\n\n${links.join("\n")}\n\n## Official links\n\n- [App Store](${appStoreUrl})\n- [Support](${pageUrl(languages[0], "support")})\n- [Privacy policy](${pageUrl(languages[0], "privacy-policy")})\n`);
+  write(path.join(root, "llms.txt"), `# ${appName}\n\n> ${copy["en-US"].home.description}\n\nOfficial product and help content for CarryOver, developed by Peike Luo. The localized Markdown documents below are generated from the same content as the public HTML pages. Search covers saved titles, text and source URLs on iPhone, iPad and Mac. Sync requires the same Apple Account and available iCloud services; it is not guaranteed to be immediate.\n\n## Product and help by language\n\n${links.join("\n")}\n\n## Official links\n\n- [App Store](${appStoreUrl})\n- [Support](${pageUrl(languages[0], "support")})\n- [Privacy policy](${pageUrl(languages[0], "privacy-policy")})\n`);
   write(path.join(root, "_headers"), `${headers.join("\n\n")}\n`);
 }
 

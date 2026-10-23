@@ -1,6 +1,6 @@
 # CarryOver - Guarda en iPhone, continúa en Mac
 
-Guarda publicaciones, enlaces, imágenes e ideas desde Compartir en iPhone y retómalos en Mac. Con pendientes que permanecen, búsqueda en Mac, recordatorios e historial.
+Guarda publicaciones, enlaces, imágenes e ideas desde Compartir en iPhone y retómalos en Mac. Con pendientes que permanecen, búsqueda en iPhone, iPad y Mac, recordatorios e historial.
 
 Guarda desde el menú Compartir del teléfono. Abre la fuente en Mac cuando estés listo.
 
@@ -32,9 +32,9 @@ Guarda textos, enlaces o imágenes compatibles desde el menú Compartir de otras
 
 Los elementos sin completar permanecen en tu bandeja sin importar su antigüedad. Márcalos como listos cuando realmente los hayas atendido.
 
-### Busca lo guardado en Mac
+### Busca lo guardado en cualquier dispositivo
 
-En la ventana principal de Mac, busca por título, texto y URL de origen, tanto en pendientes como en el historial.
+En iPhone, iPad y Mac, busca por título, texto y URL de origen, tanto en pendientes como en el historial.
 
 ### Listo, pero no perdido
 

@@ -76,7 +76,7 @@ Non. Ils restent dans la liste à traiter. Les marquer comme terminés les dépl
 
 ### Puis-je rechercher mes contenus enregistrés ?
 
-La fenêtre principale du Mac permet de rechercher titres, textes et URL sources, y compris dans l’historique. La recherche n’est pas actuellement disponible sur iPhone ou iPad.
+Oui. Recherchez titres, textes et URL sources sur iPhone, iPad et Mac, y compris dans l’historique.
 
 ### Un rappel est-il réellement envoyé ?
 

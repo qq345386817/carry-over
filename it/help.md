@@ -76,7 +76,7 @@ No. Restano nella lista aperta. Segnarli come completati li sposta nella cronolo
 
 ### Posso cercare i contenuti salvati?
 
-Nella finestra principale del Mac puoi cercare titoli, testi e URL di origine, anche nella cronologia. La ricerca non è attualmente disponibile su iPhone o iPad.
+Sì. Cerca titoli, testi e URL di origine su iPhone, iPad e Mac, anche nella cronologia.
 
 ### Riceverò davvero un promemoria?
 

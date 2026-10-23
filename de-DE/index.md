@@ -1,6 +1,6 @@
 # CarryOver - Auf dem iPhone sichern, am Mac weiterarbeiten
 
-Beiträge, Links, Bilder und Ideen per Teilen-Menü auf dem iPhone sichern und am Mac weiterbearbeiten. Mit dauerhaftem Posteingang, Mac-Suche, Erinnerungen und Verlauf.
+Beiträge, Links, Bilder und Ideen per Teilen-Menü auf dem iPhone sichern und am Mac weiterbearbeiten. Mit dauerhaftem Posteingang, Suche auf iPhone, iPad und Mac, Erinnerungen und Verlauf.
 
 Auf dem Handy per Teilen-Menü speichern. Später am Mac die Quelle öffnen und weiterarbeiten.
 
@@ -32,9 +32,9 @@ Sichere unterstützte Texte, Links oder Bilder über das Teilen-Menü anderer Ap
 
 Unerledigte Einträge bleiben unabhängig von ihrem Alter im Posteingang. Markiere sie erst als erledigt, wenn du sie bearbeitet hast.
 
-### Gespeichertes am Mac suchen
+### Gespeichertes überall durchsuchen
 
-Suche im Mac-Hauptfenster nach Titeln, Texten und Quell-URLs, sowohl im Posteingang als auch im Verlauf.
+Suche auf iPhone, iPad und Mac nach Titeln, Texten und Quell-URLs, im Posteingang und im Verlauf.
 
 ### Erledigt, aber nicht verloren
 
