@@ -957,7 +957,7 @@ function header(activeLang, slug, nav) {
         <span>${appName}</span>
       </a>
       <div class="header-actions">
-        <nav class="nav-links" aria-label="Primary">
+        <nav class="nav-links" aria-label="${escapeHtml(appName)}">
           ${slug ? `<a href="./">${escapeHtml(nav.home)}</a>` : ""}
           ${slug === "help" ? "" : `<a href="${helpHref}">${escapeHtml(nav.help)}</a>`}
           ${slug === "support" ? "" : `<a href="${supportHref}">${escapeHtml(nav.support || "Support")}</a>`}
@@ -1042,12 +1042,26 @@ function jsonLd(lang, slug, page, pageCopy) {
 
 function appStoreButton(label, extraClass = "") {
   const className = extraClass ? `button ${extraClass}` : "button";
-  return `<a class="${className}" href="${appStoreUrl}"><img class="store-icon" src="${appStoreIconPath}" alt="">${escapeHtml(label)}</a>`;
+  return `<a class="${className}" href="${appStoreUrl}" aria-label="${escapeHtml(label)}"><img class="store-icon" src="${appStoreIconPath}" alt=""><span class="button-label">${escapeHtml(label)}</span><span class="button-label-short" aria-hidden="true">App Store</span></a>`;
 }
 
 function macDownloadButton(label, extraClass = "secondary") {
   const className = extraClass ? `button ${extraClass}` : "button";
-  return `<a class="${className}" href="${macDownloadUrl}" download="CarryOver.dmg">${escapeHtml(label)}</a>`;
+  return `<a class="${className}" href="${macDownloadUrl}" download="CarryOver.dmg" aria-label="${escapeHtml(label)}"><span class="icon icon-download" aria-hidden="true"></span><span class="button-label">${escapeHtml(label)}</span><span class="button-label-short" aria-hidden="true">Mac DMG</span></a>`;
+}
+
+function phoneProduct(lang, scene = "capture", eager = false) {
+  return `<div class="device-phone">
+    <div class="phone-display"><img src="../images/product/${lang.code}/phone-${scene}.webp" width="600" height="1304" alt="${escapeHtml(workflowCopy[lang.code].stages[scene === "capture" ? 0 : 1][0])}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></div>
+    <img class="device-frame" src="../images/product/iphone-frame.webp" width="480" height="980" alt="" aria-hidden="true" decoding="async">
+  </div>`;
+}
+
+function macProduct(lang, eager = false) {
+  return `<div class="device-mac">
+    <div class="mac-display"><img src="../images/product/${lang.code}/mac-inbox.webp" width="1072" height="842" alt="${escapeHtml(workflowCopy[lang.code].stages[2][0])}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></div>
+    <img class="device-frame" src="../images/product/macbook-frame.webp" width="1600" height="1067" alt="" aria-hidden="true" decoding="async">
+  </div>`;
 }
 
 function head(lang, page, pageCopy) {
@@ -1068,11 +1082,12 @@ function head(lang, page, pageCopy) {
   <meta name="apple-mobile-web-app-title" content="${appName}">
   <meta name="apple-itunes-app" content="app-id=${appStoreId}">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#f7faff" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#08125d" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#061b19" media="(prefers-color-scheme: dark)">
   <link rel="apple-touch-icon" href="${appIconPath}">
   <link rel="icon" type="image/png" href="${appIconPath}">
-  <link rel="stylesheet" href="../style/base.css">
+  <link rel="stylesheet" href="../style/tokens.css">
+  <link rel="stylesheet" href="../style/site.css">
   <link rel="canonical" href="${pageUrl(lang, slug)}">
   <link rel="describedby" href="${siteUrl}/llms.txt">
 ${["home", "help"].includes(page.key) ? `  <link rel="alternate" type="text/markdown" href="${pageUrl(lang, page.key === "home" ? "index.md" : "help.md")}">` : ""}
@@ -1120,47 +1135,44 @@ ${body}
 
 function renderHome(lang) {
   const c = copy[lang.code].home;
-  const sections = c.sections.map((section) => `<section class="section">
+  const icons = ["share-2", "inbox", "search", "undo-2", "bell", "cloud"];
+  const sections = c.sections.map((section) => `<section class="section features-section">
       <h2>${escapeHtml(section.title)}</h2>
       <div class="grid">
-        ${section.items.map(([title, text]) => `<article class="feature-card"><h3>${escapeHtml(title)}</h3><p>${escapeHtml(text)}</p></article>`).join("\n        ")}
+        ${section.items.map(([title, text], index) => `<article class="feature-card"><span class="icon icon-${icons[index]}" aria-hidden="true"></span><div><h3>${escapeHtml(title)}</h3><p>${escapeHtml(text)}</p></div></article>`).join("\n        ")}
       </div>
     </section>`).join("\n\n    ");
 
   const workflow = workflowCopy[lang.code];
-  const proofImages = ["01-capture.webp", "02-saved.webp", "03-mac.webp"];
   const proof = workflow.stages.slice(0, 3).map((stage, index) => `<figure class="workflow-step">
-        <img src="../images/workflow/${lang.code}/${proofImages[index]}" alt="${escapeHtml(stage[0])}" loading="lazy" decoding="async">
-        <figcaption><h3>${escapeHtml(stage[0])}</h3><p>${escapeHtml(stage[1])}</p></figcaption>
+        <figcaption><span class="step-number" aria-hidden="true">0${index + 1}</span><h3>${escapeHtml(stage[0])}</h3><p>${escapeHtml(stage[1])}</p></figcaption>
+        <div class="workflow-media">${index === 2 ? macProduct(lang) : phoneProduct(lang, index === 0 ? "capture" : "inbox")}</div>
       </figure>`).join("\n");
 
   return `<section class="hero workflow-hero">
-      <img class="hero-scene" src="../images/workflow/${lang.code}/hero.webp" alt="${escapeHtml(workflow.intro)}" fetchpriority="high" decoding="async">
       <div class="hero-copy">
-        <p class="eyebrow">${escapeHtml(c.eyebrow)}</p>
         <h1>${escapeHtml(c.h1)}</h1>
         <p class="lead">${escapeHtml(c.lead)}</p>
         <div class="cta-row">
           ${appStoreButton(c.primary)}
           ${macDownloadButton(c.macDownload)}
-          <a class="button secondary" href="help">${escapeHtml(c.secondary)}</a>
         </div>
+        <p class="download-note">${escapeHtml(productCopy[lang.code].downloadNote)}</p>
       </div>
-
+      <div class="product-scene">${macProduct(lang, true)}${phoneProduct(lang, "capture", true)}</div>
+      <p class="platform-line"><span>iPhone</span><span>iPad</span><span>Mac</span></p>
     </section>
 
-    <p class="download-note">${escapeHtml(productCopy[lang.code].downloadNote)}</p>
-
     <section class="section workflow-proof">
-      <h2>${escapeHtml(c.eyebrow)}</h2>
+      <div class="section-heading"><h2>${escapeHtml(c.eyebrow)}</h2><a class="text-link" href="help">${escapeHtml(c.secondary)}<span class="icon icon-arrow-right" aria-hidden="true"></span></a></div>
       <div class="workflow-grid">${proof}</div>
     </section>
 
     ${sections}
 
-    <p>${escapeHtml(productCopy[lang.code].faq.at(-1)[1])} <a href="help#faq">${escapeHtml(c.secondary)}</a></p>
+    <section class="section download-section"><p>${escapeHtml(productCopy[lang.code].faq.at(-1)[1])} <a href="help#faq">${escapeHtml(c.secondary)}</a></p><div class="cta-row">${appStoreButton(c.primary)}</div></section>
 
-    <!--email_off--><p class="footer">${escapeHtml(c.footer)}</p><!--/email_off-->`;
+    <footer class="footer"><span class="footer-brand">${appName}</span><!--email_off--><p>${escapeHtml(c.footer)}</p><!--/email_off--></footer>`;
 }
 
 function renderHelp(lang) {
@@ -1316,7 +1328,8 @@ function writeRedirects() {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, follow">
   <title>Page not found - ${appName}</title>
-  <link rel="stylesheet" href="/style/base.css">
+  <link rel="stylesheet" href="/style/tokens.css">
+  <link rel="stylesheet" href="/style/site.css">
   <link rel="icon" href="/images/app-icon-web.png">
 </head>
 <body><main class="site-shell">

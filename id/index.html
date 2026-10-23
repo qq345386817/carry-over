@@ -12,11 +12,12 @@
   <meta name="apple-mobile-web-app-title" content="CarryOver">
   <meta name="apple-itunes-app" content="app-id=6755507048">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#f7faff" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#08125d" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#061b19" media="(prefers-color-scheme: dark)">
   <link rel="apple-touch-icon" href="../images/app-icon-web.png">
   <link rel="icon" type="image/png" href="../images/app-icon-web.png">
-  <link rel="stylesheet" href="../style/base.css">
+  <link rel="stylesheet" href="../style/tokens.css">
+  <link rel="stylesheet" href="../style/site.css">
   <link rel="canonical" href="https://carryover.luopeike.com/id/">
   <link rel="describedby" href="https://carryover.luopeike.com/llms.txt">
   <link rel="alternate" type="text/markdown" href="https://carryover.luopeike.com/id/index.md">
@@ -92,7 +93,7 @@
       "url": "https://carryover.luopeike.com/id/",
       "description": "Simpan postingan, tautan, gambar dan ide dari Bagikan di iPhone, lalu lanjutkan di Mac. Kotak masuk yang tetap tersimpan, pencarian di Mac, pengingat dan riwayat.",
       "inLanguage": "id",
-      "dateModified": "2026-10-10",
+      "dateModified": "2026-10-24",
       "isPartOf": {
         "@id": "https://carryover.luopeike.com/#website"
       },
@@ -156,7 +157,7 @@
         <span>CarryOver</span>
       </a>
       <div class="header-actions">
-        <nav class="nav-links" aria-label="Primary">
+        <nav class="nav-links" aria-label="CarryOver">
           
           <a href="help">Bantuan</a>
           <a href="support">Dukungan</a>
@@ -168,53 +169,65 @@
     </header>
 
 <section class="hero workflow-hero">
-      <img class="hero-scene" src="../images/workflow/id/hero.webp" alt="Simpan dari menu Bagikan di ponsel. Buka sumbernya di Mac saat siap menindaklanjuti." fetchpriority="high" decoding="async">
       <div class="hero-copy">
-        <p class="eyebrow">Simpan sekarang, lanjut nanti</p>
         <h1>CarryOver</h1>
         <p class="lead">Simpan dari menu Bagikan di ponsel. Buka sumbernya di Mac saat siap menindaklanjuti.</p>
         <div class="cta-row">
-          <a class="button" href="https://apps.apple.com/app/id6755507048"><img class="store-icon" src="../images/app-store-icon.svg" alt="">Lihat di App Store</a>
-          <a class="button secondary" href="https://pub-921ff78698074a30a8b3a65a51a6faa8.r2.dev/carryover/macos/CarryOver.dmg" download="CarryOver.dmg">Unduh DMG Mac</a>
-          <a class="button secondary" href="help">Baca bantuan</a>
+          <a class="button" href="https://apps.apple.com/app/id6755507048" aria-label="Lihat di App Store"><img class="store-icon" src="../images/app-store-icon.svg" alt=""><span class="button-label">Lihat di App Store</span><span class="button-label-short" aria-hidden="true">App Store</span></a>
+          <a class="button secondary" href="https://pub-921ff78698074a30a8b3a65a51a6faa8.r2.dev/carryover/macos/CarryOver.dmg" download="CarryOver.dmg" aria-label="Unduh DMG Mac"><span class="icon icon-download" aria-hidden="true"></span><span class="button-label">Unduh DMG Mac</span><span class="button-label-short" aria-hidden="true">Mac DMG</span></a>
         </div>
+        <p class="download-note">Untuk fitur saat ini, unduh CarryOver dari App Store. DMG Mac yang diunduh langsung belum diperbarui ke rilis ini.</p>
       </div>
-
+      <div class="product-scene"><div class="device-mac">
+    <div class="mac-display"><img src="../images/product/id/mac-inbox.webp" width="1072" height="842" alt="Lanjutkan di Mac" fetchpriority="high" decoding="async"></div>
+    <img class="device-frame" src="../images/product/macbook-frame.webp" width="1600" height="1067" alt="" aria-hidden="true" decoding="async">
+  </div><div class="device-phone">
+    <div class="phone-display"><img src="../images/product/id/phone-capture.webp" width="600" height="1304" alt="Simpan dari Bagikan" fetchpriority="high" decoding="async"></div>
+    <img class="device-frame" src="../images/product/iphone-frame.webp" width="480" height="980" alt="" aria-hidden="true" decoding="async">
+  </div></div>
+      <p class="platform-line"><span>iPhone</span><span>iPad</span><span>Mac</span></p>
     </section>
 
-    <p class="download-note">Untuk fitur saat ini, unduh CarryOver dari App Store. DMG Mac yang diunduh langsung belum diperbarui ke rilis ini.</p>
-
     <section class="section workflow-proof">
-      <h2>Simpan sekarang, lanjut nanti</h2>
+      <div class="section-heading"><h2>Simpan sekarang, lanjut nanti</h2><a class="text-link" href="help">Baca bantuan<span class="icon icon-arrow-right" aria-hidden="true"></span></a></div>
       <div class="workflow-grid"><figure class="workflow-step">
-        <img src="../images/workflow/id/01-capture.webp" alt="Simpan dari Bagikan" loading="lazy" decoding="async">
-        <figcaption><h3>Simpan dari Bagikan</h3><p>Kirim tautan, postingan, dan ide ke CarryOver</p></figcaption>
+        <figcaption><span class="step-number" aria-hidden="true">01</span><h3>Simpan dari Bagikan</h3><p>Kirim tautan, postingan, dan ide ke CarryOver</p></figcaption>
+        <div class="workflow-media"><div class="device-phone">
+    <div class="phone-display"><img src="../images/product/id/phone-capture.webp" width="600" height="1304" alt="Simpan dari Bagikan" loading="lazy" decoding="async"></div>
+    <img class="device-frame" src="../images/product/iphone-frame.webp" width="480" height="980" alt="" aria-hidden="true" decoding="async">
+  </div></div>
       </figure>
 <figure class="workflow-step">
-        <img src="../images/workflow/id/02-saved.webp" alt="Tersimpan untuk nanti" loading="lazy" decoding="async">
-        <figcaption><h3>Tersimpan untuk nanti</h3><p>Item yang belum selesai tetap di kotak masuk</p></figcaption>
+        <figcaption><span class="step-number" aria-hidden="true">02</span><h3>Tersimpan untuk nanti</h3><p>Item yang belum selesai tetap di kotak masuk</p></figcaption>
+        <div class="workflow-media"><div class="device-phone">
+    <div class="phone-display"><img src="../images/product/id/phone-inbox.webp" width="600" height="1304" alt="Tersimpan untuk nanti" loading="lazy" decoding="async"></div>
+    <img class="device-frame" src="../images/product/iphone-frame.webp" width="480" height="980" alt="" aria-hidden="true" decoding="async">
+  </div></div>
       </figure>
 <figure class="workflow-step">
-        <img src="../images/workflow/id/03-mac.webp" alt="Lanjutkan di Mac" loading="lazy" decoding="async">
-        <figcaption><h3>Lanjutkan di Mac</h3><p>Buka sumbernya lalu tandai sebagai selesai</p></figcaption>
+        <figcaption><span class="step-number" aria-hidden="true">03</span><h3>Lanjutkan di Mac</h3><p>Buka sumbernya lalu tandai sebagai selesai</p></figcaption>
+        <div class="workflow-media"><div class="device-mac">
+    <div class="mac-display"><img src="../images/product/id/mac-inbox.webp" width="1072" height="842" alt="Lanjutkan di Mac" loading="lazy" decoding="async"></div>
+    <img class="device-frame" src="../images/product/macbook-frame.webp" width="1600" height="1067" alt="" aria-hidden="true" decoding="async">
+  </div></div>
       </figure></div>
     </section>
 
-    <section class="section">
+    <section class="section features-section">
       <h2>Simpan temuan, lalu wujudkan langkah berikutnya</h2>
       <div class="grid">
-        <article class="feature-card"><h3>Bagikan atau catat sendiri</h3><p>Simpan teks, tautan atau gambar yang didukung dari menu Bagikan di aplikasi lain. Anda juga bisa menulis ide langsung di CarryOver.</p></article>
-        <article class="feature-card"><h3>Yang belum selesai tetap ada</h3><p>Item yang belum selesai tetap di kotak masuk, berapa pun usianya. Tandai selesai setelah benar-benar ditindaklanjuti.</p></article>
-        <article class="feature-card"><h3>Cari konten tersimpan di Mac</h3><p>Di jendela utama Mac, cari berdasarkan judul, teks dan URL sumber, baik di kotak masuk maupun riwayat.</p></article>
-        <article class="feature-card"><h3>Selesai, bukan hilang</h3><p>Item selesai masuk ke riwayat. Pulihkan ke kotak masuk saat ingin melanjutkannya lagi.</p></article>
-        <article class="feature-card"><h3>Pengingat untuk kembali</h3><p>Atur tanggal dan waktu serta izinkan notifikasi sistem. Ketuk pengingat untuk membuka item tersimpan.</p></article>
-        <article class="feature-card"><h3>Lanjutkan antarperangkat Apple</h3><p>iCloud menyinkronkan iPhone, iPad dan Mac yang menggunakan Akun Apple yang sama. Kondisi jaringan dan iCloud dapat menunda sinkronisasi.</p></article>
+        <article class="feature-card"><span class="icon icon-share-2" aria-hidden="true"></span><div><h3>Bagikan atau catat sendiri</h3><p>Simpan teks, tautan atau gambar yang didukung dari menu Bagikan di aplikasi lain. Anda juga bisa menulis ide langsung di CarryOver.</p></div></article>
+        <article class="feature-card"><span class="icon icon-inbox" aria-hidden="true"></span><div><h3>Yang belum selesai tetap ada</h3><p>Item yang belum selesai tetap di kotak masuk, berapa pun usianya. Tandai selesai setelah benar-benar ditindaklanjuti.</p></div></article>
+        <article class="feature-card"><span class="icon icon-search" aria-hidden="true"></span><div><h3>Cari konten tersimpan di Mac</h3><p>Di jendela utama Mac, cari berdasarkan judul, teks dan URL sumber, baik di kotak masuk maupun riwayat.</p></div></article>
+        <article class="feature-card"><span class="icon icon-undo-2" aria-hidden="true"></span><div><h3>Selesai, bukan hilang</h3><p>Item selesai masuk ke riwayat. Pulihkan ke kotak masuk saat ingin melanjutkannya lagi.</p></div></article>
+        <article class="feature-card"><span class="icon icon-bell" aria-hidden="true"></span><div><h3>Pengingat untuk kembali</h3><p>Atur tanggal dan waktu serta izinkan notifikasi sistem. Ketuk pengingat untuk membuka item tersimpan.</p></div></article>
+        <article class="feature-card"><span class="icon icon-cloud" aria-hidden="true"></span><div><h3>Lanjutkan antarperangkat Apple</h3><p>iCloud menyinkronkan iPhone, iPad dan Mac yang menggunakan Akun Apple yang sama. Kondisi jaringan dan iCloud dapat menunda sinkronisasi.</p></div></article>
       </div>
     </section>
 
-    <p>Versi gratis memungkinkan hingga tiga penyimpanan per hari. Pembelian Pro satu kali menghapus batas harian. Lihat App Store untuk harga di wilayah Anda. <a href="help#faq">Baca bantuan</a></p>
+    <section class="section download-section"><p>Versi gratis memungkinkan hingga tiga penyimpanan per hari. Pembelian Pro satu kali menghapus batas harian. Lihat App Store untuk harga di wilayah Anda. <a href="help#faq">Baca bantuan</a></p><div class="cta-row"><a class="button" href="https://apps.apple.com/app/id6755507048" aria-label="Lihat di App Store"><img class="store-icon" src="../images/app-store-icon.svg" alt=""><span class="button-label">Lihat di App Store</span><span class="button-label-short" aria-hidden="true">App Store</span></a></div></section>
 
-    <!--email_off--><p class="footer">Pertanyaan atau masukan? Hubungi cameoshell09@gmail.com.</p><!--/email_off-->
+    <footer class="footer"><span class="footer-brand">CarryOver</span><!--email_off--><p>Pertanyaan atau masukan? Hubungi cameoshell09@gmail.com.</p><!--/email_off--></footer>
   </main>
 </body>
 

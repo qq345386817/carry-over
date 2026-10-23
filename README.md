@@ -15,6 +15,23 @@ headers, `llms.txt` and localized Markdown product/help mirrors. Commit generate
 public files with their sources: Cloudflare Pages publishes this static directory.
 Pushes to `main` trigger deployment; check the public website after deployment.
 
+## Website design
+
+`style/tokens.css` holds the shared light/dark palette, based on the app's
+`Color+PK.swift`: action teal `#087f73`, dark-mode mint `#30e3d5`, dark background
+`#061b19`, and dark surface `#102622`. `style/site.css` is the hand-maintained
+stylesheet for all current pages; it is not overwritten by site generation.
+The generated `style/base.css` is retained for legacy references only.
+
+The home page uses real localized captures and the existing device artwork,
+layered in CSS so screenshots are not tied to a baked light background. The
+image exporter in `scripts/export_product_images.js` refreshes the small WebP
+files from the main app repository; see `images/product/README.md`. The committed
+images let this website build independently without Xcode or the app repository.
+UI icons in `images/icons/` are Lucide Static 0.468.0, with the upstream license.
+No web fonts, analytics scripts, additional framework, or runtime dependencies
+were added for the design refresh.
+
 ## Content sources
 
 - `content/workflow.json`: capture-to-Mac workflow and screenshot captions.

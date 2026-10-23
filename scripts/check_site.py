@@ -214,7 +214,7 @@ def check_routing():
 
 def snapshot():
     files = [ROOT / locale / file for locale in LOCALES for file in ["index.html", "help.html", "support.html", "privacy-policy.html", "index.md", "help.md"]]
-    files += [ROOT / file for file in ["sitemap.xml", "robots.txt", "llms.txt", "_headers", "_redirects", "404.html", "style/base.css"]]
+    files += [ROOT / file for file in ["sitemap.xml", "robots.txt", "llms.txt", "_headers", "_redirects", "404.html", "style/base.css", "style/site.css", "style/tokens.css"]]
     return {str(file): hashlib.sha256(file.read_bytes()).hexdigest() for file in files}
 
 
