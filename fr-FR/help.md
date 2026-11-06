@@ -1,12 +1,8 @@
 # Comment utiliser CarryOver
 
-CarryOver vous aide à capturer maintenant les liens, textes et moments intéressants, puis à les revoir plus tard depuis l'appareil adapté au travail.
+CarryOver est une boîte de réception pour ce que vous voulez traiter plus tard, sur iPhone, iPad et Mac. Gardez une publication, une référence ou une idée au fil de votre navigation, puis reprenez sur Mac pour vérifier, rechercher et donner suite.
 
 ## Enregistrer du contenu
-
-### Ouvrir une app
-
-Commencez dans Safari, Notes, une app sociale ou toute app capable de partager du texte ou des URL.
 
 ### Choisir un contenu compatible
 
@@ -30,6 +26,10 @@ Ouvrez le formulaire d’ajout dans CarryOver pour noter une idée ou coller du 
 
 Sélectionnez un élément pour le consulter ou le modifier. Si une URL source existe, utilisez l’action de source pour l’ouvrir dans le navigateur.
 
+### Garder l’essentiel dans les favoris
+
+Ajoutez un élément à traiter aux favoris pour le retrouver avec ce filtre. Il reste dans la boîte de réception jusqu’à ce que vous le marquiez comme terminé.
+
 ### Marquer comme terminé
 
 Utilisez le bouton de fin pour déplacer un élément traité vers l’historique. Seuls les éléments terminés y vont ; les autres n’expirent pas.
@@ -44,17 +44,17 @@ Sur iPhone et iPad, balayez un élément vers la gauche et choisissez Supprimer.
 
 ## Synchronisation et dépannage
 
-### Utiliser le même compte iCloud
+### Utiliser le même compte Apple
 
-Les appareils doivent utiliser le même identifiant Apple avec iCloud disponible.
+Connectez iPhone, iPad et Mac au même compte Apple, activez iCloud et connectez les appareils à Internet pour synchroniser les éléments.
 
-### Réessayer la synchronisation
+### Enregistrer d’abord sur l’appareil
 
-Si un élément signale un problème, touchez l'icône d'état pour réessayer.
+L’élément apparaît sur cet appareil avant la fin de la synchronisation. S’il manque ailleurs, vérifiez l’état de synchronisation, le réseau et l’espace iCloud disponible.
 
-### Vérifier le stockage iCloud
+### Réessayer au besoin
 
-Si un autre appareil ne se met pas à jour, vérifiez le réseau, le stockage iCloud et l'envoi en arrière-plan.
+Utilisez l’action de nouvelle tentative sur l’élément en échec. Ouvrez CarryOver sur l’autre appareil et actualisez depuis iCloud. Le réseau et iCloud peuvent retarder les mises à jour.
 
 ## Questions fréquentes
 
@@ -69,6 +69,14 @@ Le réseau, le mode économie d'énergie ou un stockage iCloud insuffisant peuve
 ### CarryOver nécessite-t-il un compte ?
 
 Non. La synchronisation utilise les services iCloud d'Apple lorsqu'ils sont disponibles.
+
+### Que peut enregistrer CarryOver depuis d’autres apps ?
+
+L’app enregistre les textes, liens ou images réellement partagés par l’app source. Une publication sociale peut être partagée sous forme de lien, sans son contenu complet. Les liens web ouvrent la page d’origine, pas une copie intégrale hors ligne ; une connexion ou une identification peut être nécessaire.
+
+### Puis-je enregistrer maintenant et synchroniser plus tard ?
+
+Les éléments sont d’abord enregistrés sur l’appareil. La synchronisation nécessite le même compte Apple, iCloud activé et une connexion Internet. Consultez son état et réessayez au besoin ; elle peut prendre du temps.
 
 ### Les éléments à traiter disparaissent-ils après quelques jours ?
 

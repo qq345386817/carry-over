@@ -1,8 +1,8 @@
-# CarryOver - Save on iPhone, Continue on Mac
+# CarryOver - Save Links & Notes on iPhone, Continue on Mac
 
-Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on iPhone, iPad and Mac, set reminders and revisit completed items.
+Save links, text and images from the Share menu on iPhone or iPad. Review and research on Mac, with manual notes, favorites, search, reminders and iCloud sync.
 
-Save from the Share menu on your phone. Open it on Mac when you're ready to act.
+Save links, text and images from the Share menu on iPhone or iPad. Pick them up on Mac when you're ready to act.
 
 ## Capture now, action later
 
@@ -16,11 +16,27 @@ Unfinished items stay in your inbox
 
 ### Pick it up on Mac
 
-Open the source and continue when you're ready
+Open the source, research and follow up when you're ready
 
 ### Done, not lost
 
 Completed items remain in History
+
+## A place for the things you want to come back to
+
+CarryOver is a save-for-later inbox for iPhone, iPad and Mac. Capture a post, a reference or an idea while browsing, then return on Mac when you have time to review, research and follow up.
+
+### A post during your commute
+
+Share a useful post from a compatible social app. Open its source on Mac when you are ready to check the details.
+
+### A reference for your next project
+
+Save a link from Safari for later research, whether it is an AI announcement or a design reference. Favorite it and find the saved title, text or URL later.
+
+### An idea you do not want to lose
+
+Add a note manually after a conversation. Set a reminder, pick it up later and mark it done when you have followed through.
 
 ## From a quick save to a useful next step
 
@@ -30,7 +46,7 @@ Use the system Share menu in apps that share supported text, links or images. Yo
 
 ### An inbox that stays put
 
-Unfinished items stay in your inbox regardless of age. Mark them done when you have actually handled them.
+Unfinished items stay in your inbox regardless of age. Favorite important finds, then mark them done when you have handled them.
 
 ### Search saved content on any device
 
@@ -47,6 +63,16 @@ Set a date and time and allow system notifications. Tap the reminder to open the
 ### Your Apple devices, one handover
 
 iCloud sync connects iPhone, iPad and Mac signed in to the same Apple Account. Network and iCloud conditions can delay syncing.
+
+## Frequently asked questions
+
+### What does CarryOver save from other apps?
+
+It saves the text, links or images that the source app actually shares. A social post may be shared as a link rather than its full content. Web links open the original page, not a full-text offline copy; internet access or a login may be required.
+
+### Can I save now and sync later?
+
+Items are saved locally first. Cross-device sync needs the same Apple Account, iCloud enabled and an internet connection. Check the sync status and retry if needed; syncing is not guaranteed to be immediate.
 
 The current version has no daily save limit and does not require a separate Pro upgrade. Check the App Store for availability and pricing in your region.
 

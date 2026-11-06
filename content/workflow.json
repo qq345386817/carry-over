@@ -1,6 +1,6 @@
 {
   "en-US": {
-    "intro": "Save from the Share menu on your phone. Open it on Mac when you're ready to act.",
+    "intro": "Save links, text and images from the Share menu on iPhone or iPad. Pick them up on Mac when you're ready to act.",
     "stages": [
       [
         "Share to CarryOver",
@@ -16,7 +16,7 @@
       ],
       [
         "Pick it up on Mac",
-        "Open the source and continue when you're ready",
+        "Open the source, research and follow up when you're ready",
         "Continue on Mac",
         "Find it, open it and mark it done"
       ],
@@ -29,7 +29,7 @@
     ]
   },
   "zh-Hans": {
-    "intro": "手机上从分享菜单先存下来，回到 Mac 再打开来源、继续处理。",
+    "intro": "在 iPhone、iPad 上，从分享菜单收下链接、文字和图片。回到 Mac，再查看、调研和跟进。",
     "stages": [
       [
         "从分享菜单保存",
@@ -45,7 +45,7 @@
       ],
       [
         "回到 Mac 接着处理",
-        "打开来源，找到内容，一键完成",
+        "打开来源，专注调研和跟进，处理完再标记完成",
         "在 Mac 继续",
         "把手机上的发现变成实际行动"
       ],
@@ -58,7 +58,7 @@
     ]
   },
   "zh-Hant": {
-    "intro": "手機上從分享選單先存下來，回到 Mac 再打開來源、繼續處理。",
+    "intro": "在 iPhone、iPad 上，從分享選單留下連結、文字和圖片。回到 Mac，再查看、研究與跟進。",
     "stages": [
       [
         "從分享選單儲存",
@@ -74,7 +74,7 @@
       ],
       [
         "回到 Mac 接著處理",
-        "打開來源，找到內容，一鍵完成",
+        "開啟來源，專心研究與跟進，處理完再標記完成",
         "在 Mac 繼續",
         "將手機上的發現變成實際行動"
       ],
@@ -87,7 +87,7 @@
     ]
   },
   "ja": {
-    "intro": "スマホの共有メニューから保存。Mac で元のページを開いて、あとで取り組めます。",
+    "intro": "iPhone・iPad の共有メニューからリンク、テキスト、画像を保存。時間ができたら、Mac で確認や調査を続けられます。",
     "stages": [
       [
         "共有メニューから保存",
@@ -103,7 +103,7 @@
       ],
       [
         "Mac で続ける",
-        "元のページを開いて、処理を完了",
+        "元のページを開いて調べ、取り組んだら完了に",
         "Mac で取り組む",
         "スマホでの発見を次の行動へ"
       ],
@@ -116,7 +116,7 @@
     ]
   },
   "ko": {
-    "intro": "휴대폰 공유 메뉴에서 저장하고, Mac에서 원문을 열어 이어서 처리하세요.",
+    "intro": "iPhone·iPad 공유 메뉴로 링크, 텍스트, 이미지를 저장하세요. 시간이 날 때 Mac에서 확인하고 이어서 처리하세요.",
     "stages": [
       [
         "공유 메뉴에서 저장",
@@ -145,7 +145,7 @@
     ]
   },
   "de-DE": {
-    "intro": "Auf dem Handy per Teilen-Menü speichern. Später am Mac die Quelle öffnen und weiterarbeiten.",
+    "intro": "Links, Texte und Bilder per Teilen-Menü auf iPhone oder iPad sichern. Am Mac prüfen, recherchieren und weiterarbeiten, wenn du Zeit hast.",
     "stages": [
       [
         "Per Teilen-Menü speichern",
@@ -174,7 +174,7 @@
     ]
   },
   "fr-FR": {
-    "intro": "Enregistrez depuis le menu Partager du téléphone. Ouvrez la source sur Mac quand vous êtes prêt.",
+    "intro": "Enregistrez liens, textes et images via Partager sur iPhone ou iPad. Reprenez sur Mac pour vérifier, rechercher et donner suite.",
     "stages": [
       [
         "Enregistrer via Partager",
@@ -190,7 +190,7 @@
       ],
       [
         "Reprendre sur Mac",
-        "Ouvrez la source, puis marquez comme terminé",
+        "Ouvrez la source, vérifiez et donnez suite avant de terminer",
         "Continuer sur Mac",
         "Transformez vos trouvailles en actions"
       ],
@@ -203,7 +203,7 @@
     ]
   },
   "es-MX": {
-    "intro": "Guarda desde el menú Compartir del teléfono. Abre la fuente en Mac cuando estés listo.",
+    "intro": "Guarda enlaces, textos e imágenes desde Compartir en iPhone o iPad. Retómalos en Mac para revisar, investigar y dar seguimiento.",
     "stages": [
       [
         "Guardar desde Compartir",
@@ -219,7 +219,7 @@
       ],
       [
         "Continuar en Mac",
-        "Abre la fuente y marca el elemento como listo",
+        "Abre la fuente, investiga y da seguimiento antes de terminar",
         "Seguir en Mac",
         "Convierte lo que encontraste en acciones"
       ],
@@ -232,7 +232,7 @@
     ]
   },
   "it": {
-    "intro": "Salva dal menu Condividi del telefono. Apri la fonte sul Mac quando sei pronto.",
+    "intro": "Salva link, testi e immagini da Condividi su iPhone o iPad. Riprendi sul Mac per verificare, fare ricerche e dare seguito.",
     "stages": [
       [
         "Salva da Condividi",
@@ -248,7 +248,7 @@
       ],
       [
         "Riprendi sul Mac",
-        "Apri la fonte e segna l’elemento come completato",
+        "Apri la fonte, approfondisci e poi segna come completato",
         "Continua sul Mac",
         "Trasforma le scoperte in azioni"
       ],
@@ -261,7 +261,7 @@
     ]
   },
   "id": {
-    "intro": "Simpan dari menu Bagikan di ponsel. Buka sumbernya di Mac saat siap menindaklanjuti.",
+    "intro": "Simpan tautan, teks, dan gambar lewat Bagikan di iPhone atau iPad. Lanjutkan di Mac saat siap memeriksa, meneliti, dan menindaklanjuti.",
     "stages": [
       [
         "Simpan dari Bagikan",
@@ -277,7 +277,7 @@
       ],
       [
         "Lanjutkan di Mac",
-        "Buka sumbernya lalu tandai sebagai selesai",
+        "Buka sumber, teliti, dan tindak lanjuti sebelum menandai selesai",
         "Lanjut di Mac",
         "Ubah temuan di ponsel menjadi tindakan"
       ],

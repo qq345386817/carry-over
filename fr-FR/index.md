@@ -1,8 +1,8 @@
-# CarryOver - Enregistrer sur iPhone, reprendre sur Mac
+# CarryOver - Liens sur iPhone, à retrouver sur Mac
 
-Enregistrez publications, liens, images et idées via Partager sur iPhone, puis reprenez sur Mac. Liste persistante, recherche sur iPhone, iPad et Mac, rappels et historique à retrouver.
+Enregistrez liens, textes et images via Partager sur iPhone ou iPad, puis reprenez sur Mac. Notes, favoris, recherche, rappels et synchronisation iCloud.
 
-Enregistrez depuis le menu Partager du téléphone. Ouvrez la source sur Mac quand vous êtes prêt.
+Enregistrez liens, textes et images via Partager sur iPhone ou iPad. Reprenez sur Mac pour vérifier, rechercher et donner suite.
 
 ## Enregistrez maintenant, revenez plus tard
 
@@ -16,11 +16,27 @@ Les éléments à traiter restent dans la liste
 
 ### Reprendre sur Mac
 
-Ouvrez la source, puis marquez comme terminé
+Ouvrez la source, vérifiez et donnez suite avant de terminer
 
 ### Terminé, mais conservé
 
 Les éléments terminés restent dans l’historique
+
+## Une place pour les découvertes à reprendre plus tard
+
+CarryOver est une boîte de réception pour ce que vous voulez traiter plus tard, sur iPhone, iPad et Mac. Gardez une publication, une référence ou une idée au fil de votre navigation, puis reprenez sur Mac pour vérifier, rechercher et donner suite.
+
+### Une publication pendant un trajet
+
+Partagez une publication utile depuis une app sociale compatible. Ouvrez sa source sur Mac lorsque vous êtes prêt à en vérifier les détails.
+
+### Une référence pour votre prochain projet
+
+Gardez dans Safari un lien à étudier, une annonce sur l’IA ou une référence de design. Ajoutez les éléments importants aux favoris et retrouvez-les par leur titre, texte ou URL enregistrés.
+
+### Une idée après une conversation
+
+Notez votre idée manuellement et programmez un rappel. Reprenez-la quand vous avez le temps et marquez-la comme terminée une fois traitée.
 
 ## Gardez vos trouvailles, puis passez à l’action
 
@@ -47,6 +63,16 @@ Choisissez une date et une heure et autorisez les notifications système. Touche
 ### Passer d’un appareil Apple à l’autre
 
 iCloud synchronise iPhone, iPad et Mac connectés au même compte Apple. Le réseau et l’état d’iCloud peuvent retarder la synchronisation.
+
+## Questions fréquentes
+
+### Que peut enregistrer CarryOver depuis d’autres apps ?
+
+L’app enregistre les textes, liens ou images réellement partagés par l’app source. Une publication sociale peut être partagée sous forme de lien, sans son contenu complet. Les liens web ouvrent la page d’origine, pas une copie intégrale hors ligne ; une connexion ou une identification peut être nécessaire.
+
+### Puis-je enregistrer maintenant et synchroniser plus tard ?
+
+Les éléments sont d’abord enregistrés sur l’appareil. La synchronisation nécessite le même compte Apple, iCloud activé et une connexion Internet. Consultez son état et réessayez au besoin ; elle peut prendre du temps.
 
 La version actuelle n’impose aucune limite quotidienne d’enregistrements et ne nécessite pas de mise à niveau Pro séparée. Consultez l’App Store pour la disponibilité et le prix dans votre région.
 

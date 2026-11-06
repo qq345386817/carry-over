@@ -1,12 +1,8 @@
 # Cómo usar CarryOver
 
-CarryOver te ayuda a capturar ahora enlaces, texto y momentos de interés, para revisarlos y actuar después desde el dispositivo adecuado.
+CarryOver es una bandeja para lo que quieres retomar después en iPhone, iPad y Mac. Guarda una publicación, una referencia o una idea mientras navegas y vuelve en Mac cuando tengas tiempo de revisar, investigar y darle seguimiento.
 
 ## Guardar contenido
-
-### Abre cualquier app
-
-Empieza en Safari, Notas, una app social o cualquier app que pueda compartir texto o URL.
 
 ### Elige contenido compatible
 
@@ -30,6 +26,10 @@ Abre el formulario para agregar en CarryOver, anota una idea o pega contenido y 
 
 Selecciona un elemento para verlo o editarlo. Si tiene una URL de origen, usa la acción de fuente para abrirla en el navegador.
 
+### Guarda lo importante en favoritos
+
+Marca un pendiente como favorito para encontrarlo con el filtro de favoritos. Permanece en tu bandeja hasta que lo marques como listo.
+
 ### Márcalo como listo
 
 Usa el botón de completar para mover lo atendido al historial. Solo los elementos completados pasan ahí; los pendientes no caducan.
@@ -44,17 +44,17 @@ En iPhone y iPad, desliza un elemento a la izquierda y elige Eliminar. En Mac, u
 
 ## Sincronización y solución de problemas
 
-### Usa la misma cuenta de iCloud
+### Usa la misma Cuenta de Apple
 
-Los dispositivos deben usar el mismo Apple ID y tener iCloud disponible.
+Inicia sesión con la misma Cuenta de Apple en iPhone, iPad y Mac, activa iCloud y conecta los dispositivos a Internet para sincronizar.
 
-### Reintenta la sincronización
+### Primero se guarda en el dispositivo
 
-Si un elemento muestra un problema, toca el icono de estado para reintentar.
+El elemento aparece en este dispositivo antes de que termine la sincronización. Si aún no aparece en otro, revisa el estado, la red y el espacio disponible en iCloud.
 
-### Revisa el almacenamiento de iCloud
+### Vuelve a intentarlo si hace falta
 
-Si otro dispositivo no se actualiza, revisa red, espacio de iCloud y carga en segundo plano.
+Usa la acción de reintentar en el elemento con error. Abre CarryOver en el otro dispositivo y actualiza desde iCloud. La red y iCloud pueden retrasar las actualizaciones.
 
 ## Preguntas frecuentes
 
@@ -69,6 +69,14 @@ La red, el modo de bajo consumo o poco espacio en iCloud pueden retrasar la sinc
 ### ¿CarryOver requiere una cuenta?
 
 No. La sincronización usa los servicios iCloud de Apple cuando están disponibles.
+
+### ¿Qué guarda CarryOver desde otras apps?
+
+Guarda los textos, enlaces o imágenes que la app de origen realmente comparte. Una publicación social puede compartirse como enlace y no con todo su contenido. Los enlaces web abren la página original, no una copia completa sin conexión; podría requerirse Internet o iniciar sesión.
+
+### ¿Puedo guardar ahora y sincronizar después?
+
+Los elementos se guardan primero en el dispositivo. La sincronización requiere la misma Cuenta de Apple, iCloud activado y conexión a Internet. Revisa el estado y vuelve a intentarlo si hace falta; no se garantiza que sea inmediata.
 
 ### ¿Los pendientes desaparecen después de unos días?
 

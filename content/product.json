@@ -1,14 +1,33 @@
 {
   "en-US": {
-    "title": "CarryOver - Save on iPhone, Continue on Mac",
-    "description": "Save posts, links, images and ideas from the iPhone Share menu, then pick them up on Mac. Keep an inbox, search on iPhone, iPad and Mac, set reminders and revisit completed items.",
+    "title": "CarryOver - Save Links & Notes on iPhone, Continue on Mac",
+    "description": "Save links, text and images from the Share menu on iPhone or iPad. Review and research on Mac, with manual notes, favorites, search, reminders and iCloud sync.",
+    "summary": "CarryOver is a save-for-later inbox for iPhone, iPad and Mac. Capture a post, a reference or an idea while browsing, then return on Mac when you have time to review, research and follow up.",
+    "helpTitle": "CarryOver Help - Share, Sync, Search & Reminders",
+    "helpDescription": "Learn to save with the CarryOver share extension, add notes, find favorites, sync with iCloud and set reminders on iPhone, iPad and Mac.",
+    "useCasesHeading": "A place for the things you want to come back to",
+    "useCases": [
+      ["A post during your commute", "Share a useful post from a compatible social app. Open its source on Mac when you are ready to check the details."],
+      ["A reference for your next project", "Save a link from Safari for later research, whether it is an AI announcement or a design reference. Favorite it and find the saved title, text or URL later."],
+      ["An idea you do not want to lose", "Add a note manually after a conversation. Set a reminder, pick it up later and mark it done when you have followed through."]
+    ],
+    "favorite": ["Keep important items in Favorites", "Favorite an unfinished item to find it in the Favorites filter. It stays in your inbox until you mark it complete."],
+    "boundaries": [
+      ["What does CarryOver save from other apps?", "It saves the text, links or images that the source app actually shares. A social post may be shared as a link rather than its full content. Web links open the original page, not a full-text offline copy; internet access or a login may be required."],
+      ["Can I save now and sync later?", "Items are saved locally first. Cross-device sync needs the same Apple Account, iCloud enabled and an internet connection. Check the sync status and retry if needed; syncing is not guaranteed to be immediate."]
+    ],
+    "sync": [
+      ["Use the same Apple Account", "Sign in to the same Apple Account on iPhone, iPad and Mac, enable iCloud and connect to the internet to sync saved items."],
+      ["Save locally first", "Saving adds the item to this device before cross-device sync finishes. If it has not arrived elsewhere, check the sync status, network and available iCloud storage."],
+      ["Retry when needed", "Use the retry action on a failed item. On the other device, open CarryOver and refresh from iCloud. Network and iCloud conditions can delay updates."]
+    ],
     "heading": "From a quick save to a useful next step",
     "downloadNote": "Get CarryOver for iPhone, iPad and Mac on the App Store.",
     "selection": ["Choose supported content", "Choose the text, link, image or post you want to keep. What can be shared depends on the source app."],
     "confirm": ["Review and save", "In the share form, review the content and optionally edit the title or set a reminder. Choose Save to add it to your inbox."],
     "features": [
       ["Share or write it down", "Use the system Share menu in apps that share supported text, links or images. You can also add a note manually in CarryOver."],
-      ["An inbox that stays put", "Unfinished items stay in your inbox regardless of age. Mark them done when you have actually handled them."],
+      ["An inbox that stays put", "Unfinished items stay in your inbox regardless of age. Favorite important finds, then mark them done when you have handled them."],
       ["Search saved content on any device", "Search titles, saved text and source URLs on iPhone, iPad and Mac, across your inbox and History."],
       ["Done, with a way back", "Completed items move to History. Restore an item to the inbox when you need to pick it up again."],
       ["A reminder for later", "Set a date and time and allow system notifications. Tap the reminder to open the saved item and continue."],
@@ -31,15 +50,34 @@
     ]
   },
   "zh-Hans": {
-    "title": "CarryOver｜iPhone 分享保存，Mac 接着处理",
-    "description": "从 iPhone 分享菜单保存帖子、链接、图片和灵感，回到 Mac 接着处理。待处理内容持续保留，支持 iPhone、iPad 和 Mac 搜索、定时提醒，以及完成后回看和恢复。",
+    "title": "CarryOver｜iPhone 保存链接与笔记，Mac 接着处理",
+    "description": "在 iPhone、iPad 上通过系统分享菜单保存链接、文字和图片，回到 Mac 再查看、调研和跟进。支持手动记录、收藏、搜索、定时提醒和 iCloud 同步。",
+    "summary": "CarryOver 是适用于 iPhone、iPad 和 Mac 的稍后处理收件箱。刷到帖子、待查证的资料或聊天中的灵感时，先接住内容，等回到 Mac，再专注查看、调研和跟进。",
+    "helpTitle": "CarryOver 使用帮助｜分享保存、iCloud 同步与提醒",
+    "helpDescription": "了解如何使用 CarryOver 分享扩展保存内容、手动记录、查找收藏、通过 iCloud 同步和设置提醒，在 iPhone、iPad 与 Mac 间继续处理。",
+    "useCasesHeading": "为值得回来的发现，留一个位置",
+    "useCases": [
+      ["通勤时刷到的帖子", "从支持系统分享的社交 App 保存值得跟进的帖子，回到 Mac 再打开来源，核对细节。"],
+      ["下一个项目的参考资料", "在 Safari 收下待调研的链接、AI 新动态或设计参考。收藏重要内容，稍后按已保存的标题、文字或网址查找。"],
+      ["聊天后冒出的想法", "手动记下一条灵感，设好提醒，等有时间再继续。真正处理完，再标记完成。"]
+    ],
+    "favorite": ["把重要内容加入收藏", "收藏尚未完成的记录后，可以在“收藏”筛选中找到。内容仍留在收件箱，直到标记完成。"],
+    "boundaries": [
+      ["能从其他 App 保存哪些内容？", "保存内容以来源 App 实际分享的文字、链接或图片为准。社交帖子可能只分享链接，而非全部内容。网页链接打开原始页面，不是全文离线副本；访问来源可能需要联网或登录。"],
+      ["可以先保存，稍后再同步吗？", "内容先保存在本地。跨设备同步需要使用同一 Apple 账户、启用 iCloud 并连接互联网。可查看同步状态，需要时重试；同步不保证即时完成。"]
+    ],
+    "sync": [
+      ["使用同一 Apple 账户", "在 iPhone、iPad 和 Mac 上登录同一 Apple 账户，启用 iCloud 并连接互联网，以同步已保存内容。"],
+      ["先保存到当前设备", "保存后内容先出现在本机，不必等待跨设备同步完成。其他设备尚未出现时，检查同步状态、网络和 iCloud 可用空间。"],
+      ["需要时重新尝试", "对同步失败的条目使用重试操作。在另一台设备打开 CarryOver，并从 iCloud 刷新内容。网络和 iCloud 状态可能影响更新速度。"]
+    ],
     "heading": "先存下来，再把发现变成行动",
     "downloadNote": "从 App Store 获取适用于 iPhone、iPad 和 Mac 的 CarryOver。",
     "selection": ["选择支持分享的内容", "选择想保留的文字、链接、图片或帖子。能分享哪些内容取决于来源 App。"],
     "confirm": ["确认内容并保存", "在分享表单中检查内容，也可以修改标题或设置提醒。点击保存，加入待处理列表。"],
     "features": [
       ["分享保存，也能手动记录", "从支持系统分享的 App 保存可分享的文字、链接或图片，也可以在 CarryOver 中手动记录想法。"],
-      ["待处理内容持续保留", "未完成的内容不会因为保存时间久而离开待处理列表。真正处理完，再标记完成。"],
+      ["待处理内容持续保留", "未完成的内容不会因为保存时间久而离开待处理列表。重要发现可以收藏，真正处理完再标记完成。"],
       ["随时搜索已保存内容", "在 iPhone、iPad 和 Mac 上按标题、文字和来源网址搜索，待处理列表和历史记录都能查找。"],
       ["完成后，还能接着处理", "完成的内容进入历史记录。需要继续处理时，可以恢复到待处理列表。"],
       ["到时间，提醒你回来", "设置日期和时间，并允许系统通知。点击提醒即可打开对应内容，继续处理。"],
@@ -62,15 +100,34 @@
     ]
   },
   "zh-Hant": {
-    "title": "CarryOver｜iPhone 分享儲存，Mac 接著處理",
-    "description": "從 iPhone 分享選單儲存貼文、連結、圖片和靈感，回到 Mac 接著處理。待處理內容持續保留，支援 iPhone、iPad 和 Mac 搜尋、定時提醒，以及完成後回看和還原。",
+    "title": "CarryOver｜iPhone 儲存連結與筆記，Mac 接著處理",
+    "description": "在 iPhone、iPad 透過系統分享選單儲存連結、文字和圖片，回到 Mac 再查看、研究與跟進。支援手動記錄、收藏、搜尋、定時提醒與 iCloud 同步。",
+    "summary": "CarryOver 是適用於 iPhone、iPad 和 Mac 的待處理收件匣。瀏覽貼文、待查證的資料或聊天中的靈感時，先把內容留下來，回到 Mac 再專心查看、研究與跟進。",
+    "helpTitle": "CarryOver 使用說明｜分享儲存、iCloud 同步與提醒",
+    "helpDescription": "了解如何使用 CarryOver 分享延伸功能儲存內容、手動記錄、尋找收藏、透過 iCloud 同步及設定提醒，在 iPhone、iPad 與 Mac 間接著處理。",
+    "useCasesHeading": "為值得再看的發現，留一個位置",
+    "useCases": [
+      ["通勤時看到的貼文", "從支援系統分享的社群 App 儲存值得跟進的貼文，回到 Mac 再開啟來源、確認細節。"],
+      ["下一個專案的參考資料", "在 Safari 留下待研究的連結、AI 新動態或設計參考。收藏重要內容，稍後依已儲存的標題、文字或網址尋找。"],
+      ["聊天後想到的點子", "手動記下一個靈感、設定提醒，等有時間再繼續。真正處理完，再標記完成。"]
+    ],
+    "favorite": ["將重要內容加入收藏", "收藏尚未完成的記錄後，可以在「收藏」篩選中找到。內容仍留在收件匣，直到標記完成。"],
+    "boundaries": [
+      ["能從其他 App 儲存哪些內容？", "儲存內容以來源 App 實際分享的文字、連結或圖片為準。社群貼文可能只分享連結，而非全部內容。網頁連結會開啟原始頁面，不是全文離線副本；存取來源可能需要連線或登入。"],
+      ["可以先儲存，稍後再同步嗎？", "內容先儲存在本機。跨裝置同步需要使用同一 Apple 帳號、啟用 iCloud 並連上網路。可查看同步狀態，需要時重試；同步不保證立即完成。"]
+    ],
+    "sync": [
+      ["使用同一 Apple 帳號", "在 iPhone、iPad 和 Mac 上登入同一 Apple 帳號，啟用 iCloud 並連上網路，以同步已儲存內容。"],
+      ["先儲存至目前裝置", "儲存後內容先出現在本機，不必等待跨裝置同步完成。其他裝置尚未出現時，請檢查同步狀態、網路及 iCloud 可用空間。"],
+      ["需要時重新嘗試", "對同步失敗的項目使用重試操作。在另一部裝置開啟 CarryOver，並從 iCloud 重新整理內容。網路和 iCloud 狀態可能影響更新速度。"]
+    ],
     "heading": "先存下來，再將發現化為行動",
     "downloadNote": "從 App Store 取得適用於 iPhone、iPad 和 Mac 的 CarryOver。",
     "selection": ["選擇支援分享的內容", "選擇想保留的文字、連結、圖片或貼文。能分享哪些內容取決於來源 App。"],
     "confirm": ["確認內容並儲存", "在分享表單中檢查內容，也可以修改標題或設定提醒。點選儲存，加入待處理清單。"],
     "features": [
       ["分享儲存，也能手動記錄", "從支援系統分享的 App 儲存可分享的文字、連結或圖片，也可以在 CarryOver 中手動記錄想法。"],
-      ["待處理內容持續保留", "未完成的內容不會因為儲存時間久而離開待處理清單。真正處理完，再標記完成。"],
+      ["待處理內容持續保留", "未完成的內容不會因為儲存時間久而離開待處理清單。重要發現可以收藏，真正處理完再標記完成。"],
       ["隨時搜尋已儲存內容", "在 iPhone、iPad 和 Mac 上依標題、文字和來源網址搜尋，待處理清單和歷史記錄都能查找。"],
       ["完成後，還能接著處理", "完成的內容進入歷史記錄。需要繼續處理時，可以還原至待處理清單。"],
       ["到時間，提醒你回來", "設定日期和時間，並允許系統通知。點選提醒即可開啟對應內容，繼續處理。"],
@@ -93,15 +150,34 @@
     ]
   },
   "ja": {
-    "title": "CarryOver - iPhone で保存、Mac で続ける",
-    "description": "iPhone の共有メニューから投稿、リンク、画像、アイデアを保存して、Mac で続けましょう。未処理の内容を保管し、iPhone、iPad、Mac で検索。リマインダーや完了後の復元にも対応。",
+    "title": "CarryOver - iPhone でリンクやメモを保存、Mac で続ける",
+    "description": "iPhone・iPad の共有メニューからリンク、テキスト、画像を保存。Mac で確認・調査・フォローアップ。手動メモ、お気に入り、検索、リマインダー、iCloud 同期に対応。",
+    "summary": "CarryOver は iPhone、iPad、Mac で使える、あとで取り組むための受信トレイです。閲覧中に見つけた投稿、参考資料、会話から浮かんだアイデアを保存し、時間ができたら Mac で確認・調査を続けられます。",
+    "helpTitle": "CarryOver ヘルプ - 共有保存・iCloud 同期・リマインダー",
+    "helpDescription": "共有拡張機能での保存、手動メモ、お気に入り、iCloud 同期、リマインダーの使い方を紹介。iPhone、iPad、Mac で続きを進めましょう。",
+    "useCasesHeading": "あとで取り組みたい発見を、ひとつの場所に",
+    "useCases": [
+      ["通勤中に見つけた投稿", "システム共有に対応した SNS アプリから、気になる投稿を保存。Mac に戻ってから元のページを開き、詳しく確認できます。"],
+      ["次のプロジェクトの参考資料", "Safari で調べたいリンク、AI の発表、デザインの参考資料を保存。大切なものはお気に入りにして、保存したタイトル・本文・URL から検索できます。"],
+      ["会話のあとに浮かんだアイデア", "アイデアを手動でメモし、リマインダーを設定。時間ができたら取り組み、終わったら完了にします。"]
+    ],
+    "favorite": ["大切な項目をお気に入りに", "未完了の項目をお気に入りにすると、お気に入りフィルタで見つけられます。完了にするまでは受信トレイにも残ります。"],
+    "boundaries": [
+      ["ほかのアプリから何を保存できますか？", "元のアプリが実際に共有したテキスト、リンク、画像を保存します。SNS の投稿は全文ではなくリンクとして共有される場合があります。ウェブリンクは元のページを開くもので、全文のオフラインコピーではありません。閲覧には通信やログインが必要な場合があります。"],
+      ["先に保存して、あとで同期できますか？", "内容はまず本体に保存されます。デバイス間の同期には、同じ Apple Account、iCloud の有効化、インターネット接続が必要です。同期状況を確認し、必要に応じて再試行できます。すぐに同期されるとは限りません。"]
+    ],
+    "sync": [
+      ["同じ Apple Account を使う", "iPhone、iPad、Mac で同じ Apple Account にサインインし、iCloud を有効にしてインターネットに接続してください。"],
+      ["まず本体に保存", "デバイス間の同期が終わる前に、内容は保存したデバイスに表示されます。ほかのデバイスに届かない場合は、同期状況、通信、iCloud の空き容量を確認してください。"],
+      ["必要に応じて再試行", "同期に失敗した項目の再試行操作を使います。もう一方のデバイスで CarryOver を開き、iCloud から更新してください。通信や iCloud の状況で遅れる場合があります。"]
+    ],
     "heading": "気になったものを保存して、次の行動へ",
     "downloadNote": "iPhone、iPad、Mac 用の CarryOver は App Store から入手できます。",
     "selection": ["共有できる内容を選ぶ", "残したいテキスト、リンク、画像、投稿を選びます。共有できる内容は元のアプリによって異なります。"],
     "confirm": ["確認して保存", "共有画面で内容を確認し、必要に応じてタイトルやリマインダーを設定。保存を選ぶと受信トレイに追加されます。"],
     "features": [
       ["共有でも、手入力でも", "対応アプリの共有メニューからテキスト、リンク、画像を保存。CarryOver でアイデアを直接入力することもできます。"],
-      ["未処理の内容をそのまま保管", "未処理の内容は保存から何日経っても受信トレイに残ります。実際に処理したら完了にしましょう。"],
+      ["未処理の内容をそのまま保管", "未処理の内容は保存から何日経っても受信トレイに残ります。大切な発見はお気に入りにして、実際に処理したら完了にしましょう。"],
       ["保存した内容をいつでも検索", "iPhone、iPad、Mac でタイトル、本文、元の URL を検索。受信トレイと履歴の両方が対象です。"],
       ["完了しても、また取り組める", "完了した内容は履歴へ。必要なときは受信トレイに戻して、続きを進められます。"],
       ["あとで取り組むための通知", "日時を設定してシステムの通知を許可。通知をタップすると、保存した内容を開けます。"],
@@ -124,15 +200,34 @@
     ]
   },
   "ko": {
-    "title": "CarryOver - iPhone에서 저장, Mac에서 이어서",
-    "description": "iPhone 공유 메뉴에서 게시물, 링크, 이미지와 아이디어를 저장하고 Mac에서 이어서 처리하세요. 미완료 항목 보관, iPhone·iPad·Mac 검색, 알림과 완료 항목 복원을 지원합니다.",
+    "title": "CarryOver - iPhone에서 링크·메모 저장, Mac에서 이어서",
+    "description": "iPhone·iPad 공유 메뉴로 링크, 텍스트, 이미지를 저장하고 Mac에서 확인·조사·후속 작업을 이어가세요. 직접 메모, 즐겨찾기, 검색, 알림과 iCloud 동기화를 지원합니다.",
+    "summary": "CarryOver는 iPhone, iPad와 Mac에서 쓰는 나중에 처리할 콘텐츠의 보관함입니다. 둘러보다 발견한 게시물, 참고 자료나 대화 중 떠오른 아이디어를 저장하고, 시간이 날 때 Mac에서 확인과 조사를 이어가세요.",
+    "helpTitle": "CarryOver 도움말 - 공유 저장, iCloud 동기화와 알림",
+    "helpDescription": "공유 확장으로 저장하기, 직접 메모, 즐겨찾기, iCloud 동기화와 알림 설정을 알아보세요. iPhone, iPad와 Mac에서 이어서 처리할 수 있습니다.",
+    "useCasesHeading": "다시 돌아오고 싶은 발견을 한곳에",
+    "useCases": [
+      ["출퇴근길에 발견한 게시물", "시스템 공유를 지원하는 소셜 앱에서 유용한 게시물을 저장하세요. Mac으로 돌아와 출처를 열고 자세히 확인할 수 있습니다."],
+      ["다음 프로젝트를 위한 참고 자료", "Safari에서 조사할 링크, AI 발표나 디자인 참고 자료를 저장하세요. 중요한 내용은 즐겨찾기하고, 저장된 제목·본문·URL로 찾아보세요."],
+      ["대화 뒤에 떠오른 아이디어", "아이디어를 직접 메모하고 알림을 설정하세요. 시간이 날 때 이어서 처리하고, 끝나면 완료로 표시하세요."]
+    ],
+    "favorite": ["중요한 항목을 즐겨찾기에", "미완료 항목을 즐겨찾기하면 즐겨찾기 필터에서 찾을 수 있습니다. 완료로 표시할 때까지 미완료 목록에도 남습니다."],
+    "boundaries": [
+      ["다른 앱에서 어떤 내용을 저장할 수 있나요?", "출처 앱이 실제로 공유하는 텍스트, 링크 또는 이미지를 저장합니다. 소셜 게시물은 전체 내용 대신 링크로 공유될 수 있습니다. 웹 링크는 전체 글의 오프라인 사본이 아니라 원본 페이지를 엽니다. 인터넷 연결이나 로그인이 필요할 수 있습니다."],
+      ["먼저 저장하고 나중에 동기화할 수 있나요?", "내용은 먼저 기기에 저장됩니다. 기기 간 동기화에는 동일한 Apple 계정, iCloud 활성화와 인터넷 연결이 필요합니다. 동기화 상태를 확인하고 필요하면 다시 시도하세요. 즉시 동기화가 보장되지는 않습니다."]
+    ],
+    "sync": [
+      ["동일한 Apple 계정 사용", "iPhone, iPad와 Mac에서 동일한 Apple 계정으로 로그인하고 iCloud를 활성화한 뒤 인터넷에 연결하세요."],
+      ["먼저 현재 기기에 저장", "기기 간 동기화가 끝나기 전에 저장한 기기에 내용이 표시됩니다. 다른 기기에 나타나지 않으면 동기화 상태, 네트워크와 iCloud 여유 공간을 확인하세요."],
+      ["필요하면 다시 시도", "동기화에 실패한 항목에서 재시도 동작을 사용하세요. 다른 기기에서 CarryOver를 열고 iCloud에서 새로고침하세요. 네트워크와 iCloud 상태에 따라 지연될 수 있습니다."]
+    ],
     "heading": "빠르게 저장하고, 다음 행동으로 이어가세요",
     "downloadNote": "iPhone, iPad, Mac용 CarryOver를 App Store에서 받으세요.",
     "selection": ["공유 가능한 내용 선택", "보관할 텍스트, 링크, 이미지 또는 게시물을 선택하세요. 공유할 수 있는 내용은 원본 앱에 따라 다릅니다."],
     "confirm": ["확인하고 저장", "공유 화면에서 내용을 확인하고 필요하면 제목을 수정하거나 알림을 설정하세요. 저장을 누르면 미완료 목록에 추가됩니다."],
     "features": [
       ["공유하거나 직접 기록", "지원하는 앱의 시스템 공유 메뉴에서 텍스트, 링크 또는 이미지를 저장하세요. CarryOver에서 아이디어를 직접 기록할 수도 있습니다."],
-      ["미완료 항목을 계속 보관", "미완료 항목은 저장한 지 오래되어도 목록에 남습니다. 실제로 처리한 뒤 완료로 표시하세요."],
+      ["미완료 항목을 계속 보관", "미완료 항목은 저장한 지 오래되어도 목록에 남습니다. 중요한 발견은 즐겨찾기하고, 실제로 처리한 뒤 완료로 표시하세요."],
       ["저장한 내용은 어디서나 검색", "iPhone, iPad와 Mac에서 제목, 본문과 출처 URL을 검색하세요. 미완료 목록과 기록 모두 검색할 수 있습니다."],
       ["완료한 항목도 다시 처리", "완료한 항목은 기록으로 이동합니다. 다시 처리하려면 미완료 목록으로 복원하세요."],
       ["나중에 돌아오도록 알림", "날짜와 시간을 정하고 시스템 알림을 허용하세요. 알림을 누르면 저장한 항목이 열립니다."],
@@ -155,15 +250,34 @@
     ]
   },
   "de-DE": {
-    "title": "CarryOver - Auf dem iPhone sichern, am Mac weiterarbeiten",
-    "description": "Beiträge, Links, Bilder und Ideen per Teilen-Menü auf dem iPhone sichern und am Mac weiterbearbeiten. Mit dauerhaftem Posteingang, Suche auf iPhone, iPad und Mac, Erinnerungen und Verlauf.",
+    "title": "CarryOver - Links auf dem iPhone sichern, am Mac fortsetzen",
+    "description": "Links, Texte und Bilder per Teilen-Menü auf iPhone oder iPad sichern, am Mac weiterbearbeiten. Mit Notizen, Favoriten, Suche, Erinnerungen und iCloud-Sync.",
+    "summary": "CarryOver ist ein Posteingang für Dinge, die du später bearbeiten möchtest, auf iPhone, iPad und Mac. Sichere beim Stöbern einen Beitrag, eine Quelle oder eine Idee und kehre am Mac zurück, wenn du Zeit zum Prüfen, Recherchieren und Nachfassen hast.",
+    "helpTitle": "CarryOver Hilfe - Teilen, iCloud-Sync und Erinnerungen",
+    "helpDescription": "So sicherst du Inhalte mit der Teilen-Erweiterung, schreibst Notizen, findest Favoriten und nutzt iCloud-Sync und Erinnerungen auf iPhone, iPad und Mac.",
+    "useCasesHeading": "Ein Platz für Entdeckungen, auf die du zurückkommen willst",
+    "useCases": [
+      ["Ein Beitrag auf dem Arbeitsweg", "Teile einen nützlichen Beitrag aus einer kompatiblen Social-App. Öffne die Quelle später am Mac, um die Details zu prüfen."],
+      ["Material für dein nächstes Projekt", "Sichere in Safari einen Recherche-Link, eine KI-Ankündigung oder eine Designreferenz. Markiere Wichtiges als Favorit und suche später nach gespeichertem Titel, Text oder URL."],
+      ["Eine Idee nach einem Gespräch", "Notiere die Idee von Hand und stelle eine Erinnerung ein. Mach weiter, wenn du Zeit hast, und markiere sie danach als erledigt."]
+    ],
+    "favorite": ["Wichtiges als Favorit behalten", "Markiere einen offenen Eintrag als Favorit, um ihn im Favoritenfilter zu finden. Er bleibt im Posteingang, bis du ihn als erledigt markierst."],
+    "boundaries": [
+      ["Was speichert CarryOver aus anderen Apps?", "Gespeichert werden Texte, Links oder Bilder, die die Quell-App tatsächlich teilt. Ein Social-Media-Beitrag wird möglicherweise nur als Link geteilt. Weblinks öffnen die Originalseite, keine vollständige Offline-Kopie; Internetzugang oder eine Anmeldung können nötig sein."],
+      ["Kann ich jetzt sichern und später synchronisieren?", "Einträge werden zuerst lokal gespeichert. Die Synchronisierung zwischen Geräten erfordert denselben Apple Account, aktiviertes iCloud und eine Internetverbindung. Prüfe den Sync-Status und versuche es bei Bedarf erneut; die Synchronisierung kann Zeit benötigen."]
+    ],
+    "sync": [
+      ["Denselben Apple Account verwenden", "Melde dich auf iPhone, iPad und Mac mit demselben Apple Account an, aktiviere iCloud und verbinde die Geräte mit dem Internet."],
+      ["Zuerst lokal speichern", "Der Eintrag erscheint auf diesem Gerät, bevor der Gerätesync abgeschlossen ist. Fehlt er auf einem anderen Gerät, prüfe Sync-Status, Netzwerk und freien iCloud-Speicher."],
+      ["Bei Bedarf erneut versuchen", "Nutze bei einem fehlgeschlagenen Eintrag die Wiederholungsaktion. Öffne CarryOver auf dem anderen Gerät und aktualisiere aus iCloud. Netzwerk und iCloud können Aktualisierungen verzögern."]
+    ],
     "heading": "Schnell sichern, später etwas daraus machen",
     "downloadNote": "CarryOver für iPhone, iPad und Mac erhältst du im App Store.",
     "selection": ["Teilbare Inhalte wählen", "Wähle den Text, Link, das Bild oder den Beitrag, den du behalten möchtest. Welche Inhalte teilbar sind, hängt von der Quell-App ab."],
     "confirm": ["Prüfen und speichern", "Prüfe den Inhalt im Teilen-Formular. Du kannst den Titel ändern oder eine Erinnerung einstellen. Wähle Speichern, um den Eintrag hinzuzufügen."],
     "features": [
       ["Teilen oder selbst notieren", "Sichere unterstützte Texte, Links oder Bilder über das Teilen-Menü anderer Apps. Ideen kannst du auch direkt in CarryOver eingeben."],
-      ["Offenes bleibt im Posteingang", "Unerledigte Einträge bleiben unabhängig von ihrem Alter im Posteingang. Markiere sie erst als erledigt, wenn du sie bearbeitet hast."],
+      ["Offenes bleibt im Posteingang", "Unerledigte Einträge bleiben unabhängig von ihrem Alter im Posteingang. Markiere Wichtiges als Favorit und Einträge erst nach dem Bearbeiten als erledigt."],
       ["Gespeichertes überall durchsuchen", "Suche auf iPhone, iPad und Mac nach Titeln, Texten und Quell-URLs, im Posteingang und im Verlauf."],
       ["Erledigt, aber nicht verloren", "Erledigte Einträge landen im Verlauf. Hole sie zurück in den Posteingang, wenn du weiterarbeiten möchtest."],
       ["Eine Erinnerung für später", "Lege Datum und Uhrzeit fest und erlaube Systemmitteilungen. Ein Klick auf die Erinnerung öffnet den gespeicherten Eintrag."],
@@ -186,8 +300,27 @@
     ]
   },
   "fr-FR": {
-    "title": "CarryOver - Enregistrer sur iPhone, reprendre sur Mac",
-    "description": "Enregistrez publications, liens, images et idées via Partager sur iPhone, puis reprenez sur Mac. Liste persistante, recherche sur iPhone, iPad et Mac, rappels et historique à retrouver.",
+    "title": "CarryOver - Liens sur iPhone, à retrouver sur Mac",
+    "description": "Enregistrez liens, textes et images via Partager sur iPhone ou iPad, puis reprenez sur Mac. Notes, favoris, recherche, rappels et synchronisation iCloud.",
+    "summary": "CarryOver est une boîte de réception pour ce que vous voulez traiter plus tard, sur iPhone, iPad et Mac. Gardez une publication, une référence ou une idée au fil de votre navigation, puis reprenez sur Mac pour vérifier, rechercher et donner suite.",
+    "helpTitle": "Aide CarryOver - Partage, iCloud et rappels",
+    "helpDescription": "Découvrez comment enregistrer avec l’extension de partage, ajouter des notes, retrouver les favoris et utiliser iCloud et les rappels sur iPhone, iPad et Mac.",
+    "useCasesHeading": "Une place pour les découvertes à reprendre plus tard",
+    "useCases": [
+      ["Une publication pendant un trajet", "Partagez une publication utile depuis une app sociale compatible. Ouvrez sa source sur Mac lorsque vous êtes prêt à en vérifier les détails."],
+      ["Une référence pour votre prochain projet", "Gardez dans Safari un lien à étudier, une annonce sur l’IA ou une référence de design. Ajoutez les éléments importants aux favoris et retrouvez-les par leur titre, texte ou URL enregistrés."],
+      ["Une idée après une conversation", "Notez votre idée manuellement et programmez un rappel. Reprenez-la quand vous avez le temps et marquez-la comme terminée une fois traitée."]
+    ],
+    "favorite": ["Garder l’essentiel dans les favoris", "Ajoutez un élément à traiter aux favoris pour le retrouver avec ce filtre. Il reste dans la boîte de réception jusqu’à ce que vous le marquiez comme terminé."],
+    "boundaries": [
+      ["Que peut enregistrer CarryOver depuis d’autres apps ?", "L’app enregistre les textes, liens ou images réellement partagés par l’app source. Une publication sociale peut être partagée sous forme de lien, sans son contenu complet. Les liens web ouvrent la page d’origine, pas une copie intégrale hors ligne ; une connexion ou une identification peut être nécessaire."],
+      ["Puis-je enregistrer maintenant et synchroniser plus tard ?", "Les éléments sont d’abord enregistrés sur l’appareil. La synchronisation nécessite le même compte Apple, iCloud activé et une connexion Internet. Consultez son état et réessayez au besoin ; elle peut prendre du temps."]
+    ],
+    "sync": [
+      ["Utiliser le même compte Apple", "Connectez iPhone, iPad et Mac au même compte Apple, activez iCloud et connectez les appareils à Internet pour synchroniser les éléments."],
+      ["Enregistrer d’abord sur l’appareil", "L’élément apparaît sur cet appareil avant la fin de la synchronisation. S’il manque ailleurs, vérifiez l’état de synchronisation, le réseau et l’espace iCloud disponible."],
+      ["Réessayer au besoin", "Utilisez l’action de nouvelle tentative sur l’élément en échec. Ouvrez CarryOver sur l’autre appareil et actualisez depuis iCloud. Le réseau et iCloud peuvent retarder les mises à jour."]
+    ],
     "heading": "Gardez vos trouvailles, puis passez à l’action",
     "downloadNote": "Retrouvez CarryOver pour iPhone, iPad et Mac sur l’App Store.",
     "selection": ["Choisir un contenu compatible", "Choisissez le texte, le lien, l’image ou la publication à conserver. Les contenus partageables dépendent de l’app source."],
@@ -217,8 +350,27 @@
     ]
   },
   "es-MX": {
-    "title": "CarryOver - Guarda en iPhone, continúa en Mac",
-    "description": "Guarda publicaciones, enlaces, imágenes e ideas desde Compartir en iPhone y retómalos en Mac. Con pendientes que permanecen, búsqueda en iPhone, iPad y Mac, recordatorios e historial.",
+    "title": "CarryOver - Guarda enlaces en iPhone, retómalos en Mac",
+    "description": "Guarda enlaces, textos e imágenes desde Compartir en iPhone o iPad y retómalos en Mac. Con notas, favoritos, búsqueda, recordatorios y sincronización iCloud.",
+    "summary": "CarryOver es una bandeja para lo que quieres retomar después en iPhone, iPad y Mac. Guarda una publicación, una referencia o una idea mientras navegas y vuelve en Mac cuando tengas tiempo de revisar, investigar y darle seguimiento.",
+    "helpTitle": "Ayuda de CarryOver - Compartir, iCloud y recordatorios",
+    "helpDescription": "Aprende a guardar con la extensión de compartir, agregar notas, encontrar favoritos y usar iCloud y recordatorios en iPhone, iPad y Mac.",
+    "useCasesHeading": "Un lugar para lo que vale la pena retomar",
+    "useCases": [
+      ["Una publicación durante el trayecto", "Comparte una publicación útil desde una app social compatible. Abre su fuente en Mac cuando puedas revisar los detalles."],
+      ["Una referencia para tu próximo proyecto", "Guarda en Safari un enlace por investigar, un anuncio de IA o una referencia de diseño. Agrega lo importante a favoritos y búscalo por su título, texto o URL guardados."],
+      ["Una idea después de una conversación", "Anota la idea manualmente y programa un recordatorio. Retómala cuando tengas tiempo y márcala como lista cuando termines."]
+    ],
+    "favorite": ["Guarda lo importante en favoritos", "Marca un pendiente como favorito para encontrarlo con el filtro de favoritos. Permanece en tu bandeja hasta que lo marques como listo."],
+    "boundaries": [
+      ["¿Qué guarda CarryOver desde otras apps?", "Guarda los textos, enlaces o imágenes que la app de origen realmente comparte. Una publicación social puede compartirse como enlace y no con todo su contenido. Los enlaces web abren la página original, no una copia completa sin conexión; podría requerirse Internet o iniciar sesión."],
+      ["¿Puedo guardar ahora y sincronizar después?", "Los elementos se guardan primero en el dispositivo. La sincronización requiere la misma Cuenta de Apple, iCloud activado y conexión a Internet. Revisa el estado y vuelve a intentarlo si hace falta; no se garantiza que sea inmediata."]
+    ],
+    "sync": [
+      ["Usa la misma Cuenta de Apple", "Inicia sesión con la misma Cuenta de Apple en iPhone, iPad y Mac, activa iCloud y conecta los dispositivos a Internet para sincronizar."],
+      ["Primero se guarda en el dispositivo", "El elemento aparece en este dispositivo antes de que termine la sincronización. Si aún no aparece en otro, revisa el estado, la red y el espacio disponible en iCloud."],
+      ["Vuelve a intentarlo si hace falta", "Usa la acción de reintentar en el elemento con error. Abre CarryOver en el otro dispositivo y actualiza desde iCloud. La red y iCloud pueden retrasar las actualizaciones."]
+    ],
     "heading": "Guarda lo que encuentras y dale seguimiento después",
     "downloadNote": "Obtén CarryOver para iPhone, iPad y Mac en App Store.",
     "selection": ["Elige contenido compatible", "Selecciona el texto, enlace, imagen o publicación que quieres conservar. Lo que se puede compartir depende de la app de origen."],
@@ -248,8 +400,27 @@
     ]
   },
   "it": {
-    "title": "CarryOver - Salva su iPhone, riprendi sul Mac",
-    "description": "Salva post, link, immagini e idee da Condividi su iPhone e riprendili sul Mac. Lista persistente, ricerca su iPhone, iPad e Mac, promemoria e cronologia con ripristino degli elementi.",
+    "title": "CarryOver - Salva link su iPhone, riprendi sul Mac",
+    "description": "Salva link, testi e immagini da Condividi su iPhone o iPad e riprendi sul Mac. Con note manuali, preferiti, ricerca, promemoria e sincronizzazione iCloud.",
+    "summary": "CarryOver raccoglie ciò che vuoi riprendere più tardi su iPhone, iPad e Mac. Salva un post, un riferimento o un’idea mentre navighi e torna sul Mac quando hai tempo per verificare, fare ricerche e dare seguito.",
+    "helpTitle": "Guida CarryOver - Condivisione, iCloud e promemoria",
+    "helpDescription": "Scopri come salvare con l’estensione di condivisione, aggiungere note, trovare i preferiti e usare iCloud e i promemoria su iPhone, iPad e Mac.",
+    "useCasesHeading": "Un posto per le scoperte da riprendere",
+    "useCases": [
+      ["Un post durante il tragitto", "Condividi un post utile da un’app social compatibile. Apri la fonte sul Mac quando puoi verificarne i dettagli."],
+      ["Un riferimento per il prossimo progetto", "Salva in Safari un link da approfondire, un annuncio sull’IA o uno spunto di design. Aggiungi ciò che conta ai preferiti e ritrovalo per titolo, testo o URL salvati."],
+      ["Un’idea dopo una conversazione", "Annota l’idea manualmente e imposta un promemoria. Riprendila quando hai tempo. Quando hai finito, segna l’elemento come completato."]
+    ],
+    "favorite": ["Tieni le cose importanti nei preferiti", "Aggiungi un elemento aperto ai preferiti per ritrovarlo con il filtro dedicato. Resta nella lista aperta finché non lo segni come completato."],
+    "boundaries": [
+      ["Che cosa salva CarryOver dalle altre app?", "Salva testi, link o immagini che l’app di origine condivide effettivamente. Un post social può essere condiviso come link, senza tutto il contenuto. I link web aprono la pagina originale, non una copia integrale offline; potrebbero servire Internet o l’accesso a un account."],
+      ["Posso salvare ora e sincronizzare più tardi?", "Gli elementi vengono prima salvati sul dispositivo. La sincronizzazione richiede lo stesso Apple Account, iCloud attivo e una connessione Internet. Controlla lo stato e riprova se necessario; la sincronizzazione potrebbe non essere immediata."]
+    ],
+    "sync": [
+      ["Usa lo stesso Apple Account", "Accedi allo stesso Apple Account su iPhone, iPad e Mac, attiva iCloud e connetti i dispositivi a Internet per sincronizzare gli elementi."],
+      ["Prima il salvataggio locale", "L’elemento compare su questo dispositivo prima che la sincronizzazione sia terminata. Se manca altrove, controlla lo stato, la rete e lo spazio disponibile su iCloud."],
+      ["Riprova se necessario", "Usa l’azione per riprovare sull’elemento con errore. Apri CarryOver sull’altro dispositivo e aggiorna da iCloud. La rete e lo stato di iCloud possono ritardare gli aggiornamenti."]
+    ],
     "heading": "Salva le scoperte e trasformale in azioni",
     "downloadNote": "Scarica CarryOver per iPhone, iPad e Mac dall’App Store.",
     "selection": ["Scegli contenuti compatibili", "Scegli il testo, link, immagine o post da conservare. I contenuti condivisibili dipendono dall’app di origine."],
@@ -279,8 +450,27 @@
     ]
   },
   "id": {
-    "title": "CarryOver - Simpan di iPhone, lanjutkan di Mac",
-    "description": "Simpan postingan, tautan, gambar dan ide dari Bagikan di iPhone, lalu lanjutkan di Mac. Kotak masuk yang tetap tersimpan, pencarian di iPhone, iPad dan Mac, pengingat dan riwayat.",
+    "title": "CarryOver - Simpan tautan di iPhone, lanjutkan di Mac",
+    "description": "Simpan tautan, teks, dan gambar lewat Bagikan di iPhone atau iPad, lalu lanjutkan di Mac. Dengan catatan, favorit, pencarian, pengingat, dan sinkronisasi iCloud.",
+    "summary": "CarryOver adalah kotak masuk untuk hal yang ingin Anda tangani nanti di iPhone, iPad, dan Mac. Simpan postingan, referensi, atau ide saat menjelajah, lalu kembali di Mac saat ada waktu untuk memeriksa, meneliti, dan menindaklanjuti.",
+    "helpTitle": "Bantuan CarryOver - Berbagi, iCloud, dan pengingat",
+    "helpDescription": "Pelajari cara menyimpan lewat ekstensi berbagi, menambah catatan, menemukan favorit, serta memakai iCloud dan pengingat di iPhone, iPad, dan Mac.",
+    "useCasesHeading": "Tempat untuk temuan yang ingin Anda lanjutkan",
+    "useCases": [
+      ["Postingan saat perjalanan", "Bagikan postingan berguna dari aplikasi sosial yang kompatibel. Buka sumbernya di Mac saat Anda siap memeriksa detailnya."],
+      ["Referensi untuk proyek berikutnya", "Simpan tautan riset, pengumuman AI, atau referensi desain dari Safari. Tandai yang penting sebagai favorit dan cari lewat judul, teks, atau URL yang tersimpan."],
+      ["Ide setelah percakapan", "Catat ide secara manual dan atur pengingat. Lanjutkan saat ada waktu dan tandai selesai setelah ditindaklanjuti."]
+    ],
+    "favorite": ["Simpan yang penting di favorit", "Tandai item belum selesai sebagai favorit untuk menemukannya lewat filter favorit. Item tetap di kotak masuk sampai ditandai selesai."],
+    "boundaries": [
+      ["Apa yang disimpan CarryOver dari aplikasi lain?", "CarryOver menyimpan teks, tautan, atau gambar yang benar-benar dibagikan oleh aplikasi sumber. Postingan sosial mungkin dibagikan sebagai tautan, bukan seluruh isinya. Tautan web membuka halaman asli, bukan salinan artikel lengkap secara offline; akses Internet atau login mungkin diperlukan."],
+      ["Bisakah saya menyimpan sekarang dan menyinkronkan nanti?", "Item disimpan di perangkat terlebih dahulu. Sinkronisasi antarperangkat memerlukan Akun Apple yang sama, iCloud aktif, dan koneksi Internet. Periksa status dan coba lagi jika perlu; sinkronisasi tidak dijamin langsung selesai."]
+    ],
+    "sync": [
+      ["Gunakan Akun Apple yang sama", "Masuk dengan Akun Apple yang sama di iPhone, iPad, dan Mac, aktifkan iCloud, lalu hubungkan perangkat ke Internet untuk menyinkronkan item."],
+      ["Simpan di perangkat terlebih dahulu", "Item muncul di perangkat ini sebelum sinkronisasi selesai. Jika belum muncul di perangkat lain, periksa status, jaringan, dan ruang iCloud yang tersedia."],
+      ["Coba lagi jika perlu", "Gunakan tindakan coba lagi pada item yang gagal disinkronkan. Buka CarryOver di perangkat lain dan segarkan dari iCloud. Kondisi jaringan dan iCloud dapat menunda pembaruan."]
+    ],
     "heading": "Simpan temuan, lalu wujudkan langkah berikutnya",
     "downloadNote": "Dapatkan CarryOver untuk iPhone, iPad, dan Mac di App Store.",
     "selection": ["Pilih konten yang didukung", "Pilih teks, tautan, gambar atau postingan yang ingin disimpan. Konten yang bisa dibagikan bergantung pada aplikasi sumber."],

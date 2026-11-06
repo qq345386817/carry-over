@@ -1,8 +1,8 @@
-# CarryOver - Salva su iPhone, riprendi sul Mac
+# CarryOver - Salva link su iPhone, riprendi sul Mac
 
-Salva post, link, immagini e idee da Condividi su iPhone e riprendili sul Mac. Lista persistente, ricerca su iPhone, iPad e Mac, promemoria e cronologia con ripristino degli elementi.
+Salva link, testi e immagini da Condividi su iPhone o iPad e riprendi sul Mac. Con note manuali, preferiti, ricerca, promemoria e sincronizzazione iCloud.
 
-Salva dal menu Condividi del telefono. Apri la fonte sul Mac quando sei pronto.
+Salva link, testi e immagini da Condividi su iPhone o iPad. Riprendi sul Mac per verificare, fare ricerche e dare seguito.
 
 ## Salva ora, agisci dopo
 
@@ -16,11 +16,27 @@ Gli elementi aperti restano nella tua lista
 
 ### Riprendi sul Mac
 
-Apri la fonte e segna l’elemento come completato
+Apri la fonte, approfondisci e poi segna come completato
 
 ### Completato e conservato
 
 Gli elementi completati restano nella cronologia
+
+## Un posto per le scoperte da riprendere
+
+CarryOver raccoglie ciò che vuoi riprendere più tardi su iPhone, iPad e Mac. Salva un post, un riferimento o un’idea mentre navighi e torna sul Mac quando hai tempo per verificare, fare ricerche e dare seguito.
+
+### Un post durante il tragitto
+
+Condividi un post utile da un’app social compatibile. Apri la fonte sul Mac quando puoi verificarne i dettagli.
+
+### Un riferimento per il prossimo progetto
+
+Salva in Safari un link da approfondire, un annuncio sull’IA o uno spunto di design. Aggiungi ciò che conta ai preferiti e ritrovalo per titolo, testo o URL salvati.
+
+### Un’idea dopo una conversazione
+
+Annota l’idea manualmente e imposta un promemoria. Riprendila quando hai tempo. Quando hai finito, segna l’elemento come completato.
 
 ## Salva le scoperte e trasformale in azioni
 
@@ -47,6 +63,16 @@ Imposta data e ora e consenti le notifiche di sistema. Tocca il promemoria per a
 ### Continua tra dispositivi Apple
 
 iCloud sincronizza iPhone, iPad e Mac con lo stesso Apple Account. La rete e lo stato di iCloud possono ritardare la sincronizzazione.
+
+## Domande frequenti
+
+### Che cosa salva CarryOver dalle altre app?
+
+Salva testi, link o immagini che l’app di origine condivide effettivamente. Un post social può essere condiviso come link, senza tutto il contenuto. I link web aprono la pagina originale, non una copia integrale offline; potrebbero servire Internet o l’accesso a un account.
+
+### Posso salvare ora e sincronizzare più tardi?
+
+Gli elementi vengono prima salvati sul dispositivo. La sincronizzazione richiede lo stesso Apple Account, iCloud attivo e una connessione Internet. Controlla lo stato e riprova se necessario; la sincronizzazione potrebbe non essere immediata.
 
 La versione attuale non ha limiti giornalieri di salvataggio e non richiede un aggiornamento Pro separato. Consulta l’App Store per disponibilità e prezzo nella tua regione.
 

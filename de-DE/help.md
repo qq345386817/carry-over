@@ -1,12 +1,8 @@
 # So nutzt du CarryOver
 
-CarryOver hilft dir, Links, Texte und interessante Momente jetzt zu erfassen und später auf dem passenden Gerät zu bearbeiten.
+CarryOver ist ein Posteingang für Dinge, die du später bearbeiten möchtest, auf iPhone, iPad und Mac. Sichere beim Stöbern einen Beitrag, eine Quelle oder eine Idee und kehre am Mac zurück, wenn du Zeit zum Prüfen, Recherchieren und Nachfassen hast.
 
 ## Inhalte sichern
-
-### Eine beliebige App öffnen
-
-Starte in Safari, Notizen, einer Social-App oder jeder App, die Text oder URLs teilen kann.
 
 ### Teilbare Inhalte wählen
 
@@ -30,6 +26,10 @@ Prüfe den Inhalt im Teilen-Formular. Du kannst den Titel ändern oder eine Erin
 
 Wähle einen Eintrag zum Anzeigen oder Bearbeiten aus. Ist eine Quell-URL vorhanden, kannst du sie über die Quellenaktion im Browser öffnen.
 
+### Wichtiges als Favorit behalten
+
+Markiere einen offenen Eintrag als Favorit, um ihn im Favoritenfilter zu finden. Er bleibt im Posteingang, bis du ihn als erledigt markierst.
+
 ### Als erledigt markieren
 
 Verschiebe bearbeitete Einträge mit der Erledigt-Schaltfläche in den Verlauf. Nur erledigte Einträge wechseln dorthin; offene laufen nicht ab.
@@ -44,17 +44,17 @@ Wische auf iPhone und iPad einen Eintrag nach links und wähle Löschen. Nutze a
 
 ## Sync und Fehlerbehebung
 
-### Dasselbe iCloud-Konto nutzen
+### Denselben Apple Account verwenden
 
-Alle Geräte müssen mit derselben Apple-ID angemeldet sein und iCloud nutzen können.
+Melde dich auf iPhone, iPad und Mac mit demselben Apple Account an, aktiviere iCloud und verbinde die Geräte mit dem Internet.
 
-### Sync erneut versuchen
+### Zuerst lokal speichern
 
-Bei Sync-Problemen kannst du über das Statussymbol erneut versuchen.
+Der Eintrag erscheint auf diesem Gerät, bevor der Gerätesync abgeschlossen ist. Fehlt er auf einem anderen Gerät, prüfe Sync-Status, Netzwerk und freien iCloud-Speicher.
 
-### iCloud-Speicher prüfen
+### Bei Bedarf erneut versuchen
 
-Wenn ein anderes Gerät nicht aktualisiert wird, prüfe Speicher, Netzwerk und Hintergrund-Upload.
+Nutze bei einem fehlgeschlagenen Eintrag die Wiederholungsaktion. Öffne CarryOver auf dem anderen Gerät und aktualisiere aus iCloud. Netzwerk und iCloud können Aktualisierungen verzögern.
 
 ## Häufige Fragen
 
@@ -69,6 +69,14 @@ Netzwerk, Stromsparmodus oder voller iCloud-Speicher können Sync verzögern.
 ### Braucht CarryOver ein Konto?
 
 Nein. Sync läuft, wenn verfügbar, über Apples iCloud-Dienste.
+
+### Was speichert CarryOver aus anderen Apps?
+
+Gespeichert werden Texte, Links oder Bilder, die die Quell-App tatsächlich teilt. Ein Social-Media-Beitrag wird möglicherweise nur als Link geteilt. Weblinks öffnen die Originalseite, keine vollständige Offline-Kopie; Internetzugang oder eine Anmeldung können nötig sein.
+
+### Kann ich jetzt sichern und später synchronisieren?
+
+Einträge werden zuerst lokal gespeichert. Die Synchronisierung zwischen Geräten erfordert denselben Apple Account, aktiviertes iCloud und eine Internetverbindung. Prüfe den Sync-Status und versuche es bei Bedarf erneut; die Synchronisierung kann Zeit benötigen.
 
 ### Verschwinden offene Einträge nach einigen Tagen?
 

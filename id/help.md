@@ -1,12 +1,8 @@
 # Cara menggunakan CarryOver
 
-CarryOver membantumu menangkap tautan, teks, dan momen menarik sekarang, lalu meninjau dan menanganinya nanti dari perangkat yang tepat.
+CarryOver adalah kotak masuk untuk hal yang ingin Anda tangani nanti di iPhone, iPad, dan Mac. Simpan postingan, referensi, atau ide saat menjelajah, lalu kembali di Mac saat ada waktu untuk memeriksa, meneliti, dan menindaklanjuti.
 
 ## Simpan konten
-
-### Buka app apa pun
-
-Mulai dari Safari, Catatan, app sosial, atau app apa pun yang dapat berbagi teks atau URL.
 
 ### Pilih konten yang didukung
 
@@ -30,6 +26,10 @@ Buka formulir tambah di CarryOver, catat ide atau tempel konten, lalu simpan ke 
 
 Pilih item untuk melihat atau mengeditnya. Jika ada URL sumber, gunakan tindakan sumber untuk membukanya di browser.
 
+### Simpan yang penting di favorit
+
+Tandai item belum selesai sebagai favorit untuk menemukannya lewat filter favorit. Item tetap di kotak masuk sampai ditandai selesai.
+
 ### Tandai sebagai selesai
 
 Gunakan tombol selesai untuk memindahkan item yang sudah ditangani ke riwayat. Hanya item selesai yang dipindahkan; item belum selesai tidak kedaluwarsa.
@@ -44,17 +44,17 @@ Di iPhone dan iPad, geser item ke kiri lalu pilih Hapus. Di Mac, gunakan tindaka
 
 ## Sinkronisasi dan pemecahan masalah
 
-### Gunakan akun iCloud yang sama
+### Gunakan Akun Apple yang sama
 
-Perangkat harus memakai Apple ID yang sama dan iCloud tersedia.
+Masuk dengan Akun Apple yang sama di iPhone, iPad, dan Mac, aktifkan iCloud, lalu hubungkan perangkat ke Internet untuk menyinkronkan item.
 
-### Coba ulang sinkronisasi
+### Simpan di perangkat terlebih dahulu
 
-Jika item menunjukkan masalah, ketuk ikon status untuk mencoba ulang.
+Item muncul di perangkat ini sebelum sinkronisasi selesai. Jika belum muncul di perangkat lain, periksa status, jaringan, dan ruang iCloud yang tersedia.
 
-### Periksa penyimpanan iCloud
+### Coba lagi jika perlu
 
-Jika perangkat lain belum diperbarui, periksa jaringan, ruang iCloud, dan unggahan latar belakang.
+Gunakan tindakan coba lagi pada item yang gagal disinkronkan. Buka CarryOver di perangkat lain dan segarkan dari iCloud. Kondisi jaringan dan iCloud dapat menunda pembaruan.
 
 ## Pertanyaan umum
 
@@ -69,6 +69,14 @@ Jaringan, Mode Daya Rendah, atau ruang iCloud yang kurang dapat menunda sinkroni
 ### Apakah CarryOver memerlukan akun?
 
 Tidak. Sinkronisasi menggunakan layanan iCloud Apple saat tersedia.
+
+### Apa yang disimpan CarryOver dari aplikasi lain?
+
+CarryOver menyimpan teks, tautan, atau gambar yang benar-benar dibagikan oleh aplikasi sumber. Postingan sosial mungkin dibagikan sebagai tautan, bukan seluruh isinya. Tautan web membuka halaman asli, bukan salinan artikel lengkap secara offline; akses Internet atau login mungkin diperlukan.
+
+### Bisakah saya menyimpan sekarang dan menyinkronkan nanti?
+
+Item disimpan di perangkat terlebih dahulu. Sinkronisasi antarperangkat memerlukan Akun Apple yang sama, iCloud aktif, dan koneksi Internet. Periksa status dan coba lagi jika perlu; sinkronisasi tidak dijamin langsung selesai.
 
 ### Apakah item belum selesai hilang setelah beberapa hari?
 

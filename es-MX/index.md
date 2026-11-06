@@ -1,8 +1,8 @@
-# CarryOver - Guarda en iPhone, continúa en Mac
+# CarryOver - Guarda enlaces en iPhone, retómalos en Mac
 
-Guarda publicaciones, enlaces, imágenes e ideas desde Compartir en iPhone y retómalos en Mac. Con pendientes que permanecen, búsqueda en iPhone, iPad y Mac, recordatorios e historial.
+Guarda enlaces, textos e imágenes desde Compartir en iPhone o iPad y retómalos en Mac. Con notas, favoritos, búsqueda, recordatorios y sincronización iCloud.
 
-Guarda desde el menú Compartir del teléfono. Abre la fuente en Mac cuando estés listo.
+Guarda enlaces, textos e imágenes desde Compartir en iPhone o iPad. Retómalos en Mac para revisar, investigar y dar seguimiento.
 
 ## Guarda ahora, vuelve después
 
@@ -16,11 +16,27 @@ Los pendientes permanecen en tu bandeja
 
 ### Continuar en Mac
 
-Abre la fuente y marca el elemento como listo
+Abre la fuente, investiga y da seguimiento antes de terminar
 
 ### Listo y conservado
 
 Los elementos completados quedan en el historial
+
+## Un lugar para lo que vale la pena retomar
+
+CarryOver es una bandeja para lo que quieres retomar después en iPhone, iPad y Mac. Guarda una publicación, una referencia o una idea mientras navegas y vuelve en Mac cuando tengas tiempo de revisar, investigar y darle seguimiento.
+
+### Una publicación durante el trayecto
+
+Comparte una publicación útil desde una app social compatible. Abre su fuente en Mac cuando puedas revisar los detalles.
+
+### Una referencia para tu próximo proyecto
+
+Guarda en Safari un enlace por investigar, un anuncio de IA o una referencia de diseño. Agrega lo importante a favoritos y búscalo por su título, texto o URL guardados.
+
+### Una idea después de una conversación
+
+Anota la idea manualmente y programa un recordatorio. Retómala cuando tengas tiempo y márcala como lista cuando termines.
 
 ## Guarda lo que encuentras y dale seguimiento después
 
@@ -47,6 +63,16 @@ Elige fecha y hora y permite las notificaciones del sistema. Toca el recordatori
 ### Continúa entre dispositivos Apple
 
 iCloud sincroniza iPhone, iPad y Mac con la misma cuenta de Apple. La red y el estado de iCloud pueden retrasar la sincronización.
+
+## Preguntas frecuentes
+
+### ¿Qué guarda CarryOver desde otras apps?
+
+Guarda los textos, enlaces o imágenes que la app de origen realmente comparte. Una publicación social puede compartirse como enlace y no con todo su contenido. Los enlaces web abren la página original, no una copia completa sin conexión; podría requerirse Internet o iniciar sesión.
+
+### ¿Puedo guardar ahora y sincronizar después?
+
+Los elementos se guardan primero en el dispositivo. La sincronización requiere la misma Cuenta de Apple, iCloud activado y conexión a Internet. Revisa el estado y vuelve a intentarlo si hace falta; no se garantiza que sea inmediata.
 
 La versión actual no tiene límite diario ni requiere una actualización Pro por separado. Consulta la disponibilidad y el precio de tu región en App Store.
 

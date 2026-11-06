@@ -885,18 +885,35 @@ for (const language of languages) {
   const story = workflowCopy[language.code];
   const product = productCopy[language.code];
   const c = copy[language.code];
+  for (const key of ["summary", "helpTitle", "helpDescription", "useCasesHeading"]) {
+    if (typeof product[key] !== "string" || !product[key].trim()) {
+      throw new Error(`Missing ${language.code} product field: ${key}`);
+    }
+  }
+  for (const key of ["useCases", "boundaries", "sync"]) {
+    if (!Array.isArray(product[key]) || product[key].length === 0 ||
+        product[key].some(pair => !Array.isArray(pair) || pair.length !== 2 ||
+          pair.some(text => typeof text !== "string" || !text.trim()))) {
+      throw new Error(`Invalid ${language.code} product field: ${key}`);
+    }
+  }
   c.home.h1 = appName;
   c.home.lead = story.intro;
   c.home.description = product.description;
   c.home.title = product.title;
   c.home.sections = [{ title: product.heading, items: product.features }];
-  c.help.groups[0].steps[1] = product.selection;
-  c.help.groups[0].steps[2][1] = product.shareFaq[1];
-  c.help.groups[0].steps[3] = product.confirm;
-  c.help.groups[0].steps.push(product.manual);
-  c.help.groups[1].steps = product.manage;
-  c.help.faq = [product.shareFaq, ...c.help.faq.slice(1), ...product.faq];
-  c.help.description = product.description;
+  c.help.groups[0].steps = [
+    product.selection,
+    [c.help.groups[0].steps[2][0], product.shareFaq[1]],
+    product.confirm,
+    product.manual
+  ];
+  c.help.groups[1].steps = [product.manage[0], product.favorite, ...product.manage.slice(1)];
+  c.help.groups[2].steps = product.sync;
+  c.help.faq = [product.shareFaq, ...c.help.faq.slice(1), ...product.boundaries, ...product.faq];
+  c.help.title = product.helpTitle;
+  c.help.description = product.helpDescription;
+  c.help.lead = product.summary;
 }
 for (const page of pages) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(pageDates[page.key])) {
@@ -1007,19 +1024,19 @@ function jsonLd(lang, slug, page, pageCopy) {
       "abstract": productCopy[lang.code].features.map(([title, text]) => `${title}: ${text}`).join("\n"),
       "author": { "@id": `${siteUrl}/#developer` }
     });
-  } else if (page.key === "help" || page.key === "support") {
-    if (page.key === "help") {
-      graph.push({
-        "@type": "FAQPage",
-        "@id": `${pageUrl(lang, slug)}#faq`,
-        "inLanguage": lang.hreflang,
-        "mainEntity": pageCopy.faq.map(([question, answer]) => ({
-          "@type": "Question",
-          "name": question,
-          "acceptedAnswer": { "@type": "Answer", "text": answer }
-        }))
-      });
-    }
+  }
+  if (page.key === "home" || page.key === "help") {
+    const faq = page.key === "home" ? productCopy[lang.code].boundaries : pageCopy.faq;
+    graph.push({
+      "@type": "FAQPage",
+      "@id": `${pageUrl(lang, slug)}#faq`,
+      "inLanguage": lang.hreflang,
+      "mainEntity": faq.map(([question, answer]) => ({
+        "@type": "Question",
+        "name": question,
+        "acceptedAnswer": { "@type": "Answer", "text": answer }
+      }))
+    });
   }
 
   graph.push({
@@ -1124,6 +1141,7 @@ ${body}
 
 function renderHome(lang) {
   const c = copy[lang.code].home;
+  const product = productCopy[lang.code];
   const icons = ["share-2", "inbox", "search", "undo-2", "bell", "cloud"];
   const sections = c.sections.map((section) => `<section class="section features-section">
       <h2>${escapeHtml(section.title)}</h2>
@@ -1156,7 +1174,19 @@ function renderHome(lang) {
       <div class="workflow-grid">${proof}</div>
     </section>
 
+    <section class="section use-cases-section" id="use-cases">
+      <h2>${escapeHtml(product.useCasesHeading)}</h2>
+      <p class="section-intro">${escapeHtml(product.summary)}</p>
+      <div class="use-case-grid">${product.useCases.map(([title, text]) => `<article class="policy-item"><h3>${escapeHtml(title)}</h3><p>${escapeHtml(text)}</p></article>`).join("\n        ")}</div>
+    </section>
+
     ${sections}
+
+    <section class="section" id="faq">
+      <h2>${escapeHtml(copy[lang.code].help.faqTitle)}</h2>
+      <div class="policy-list">${product.boundaries.map(([question, answer]) => `<article class="policy-item"><h3>${escapeHtml(question)}</h3><p>${escapeHtml(answer)}</p></article>`).join("\n        ")}</div>
+      <a class="text-link" href="help#faq">${escapeHtml(c.secondary)}<span class="icon icon-arrow-right" aria-hidden="true"></span></a>
+    </section>
 
     <section class="section download-section"><p>${escapeHtml(productCopy[lang.code].faq.at(-1)[1])} <a href="help#faq">${escapeHtml(c.secondary)}</a></p><div class="cta-row">${appStoreButton(c.primary)}</div></section>
 
@@ -1166,7 +1196,7 @@ function renderHome(lang) {
 function renderHelp(lang) {
   const c = copy[lang.code].help;
   const nav = copy[lang.code].nav;
-  const groups = c.groups.map((group) => `<section class="section">
+  const groups = c.groups.map((group, index) => `<section class="section" id="${["save", "manage", "sync"][index]}">
         <h2>${escapeHtml(group.title)}</h2>
         <div class="step-list">
           ${group.steps.map(([title, text]) => `<article class="step"><h3>${escapeHtml(title)}</h3><p>${escapeHtml(text)}</p></article>`).join("\n          ")}
@@ -1362,7 +1392,7 @@ Sitemap: ${siteUrl}/sitemap.xml
 }
 
 function markdownSections(sections) {
-  return sections.map(({ title, items }) => `## ${title}\n\n${items.map(([heading, text]) => `### ${heading}\n\n${text}`).join("\n\n")}`).join("\n\n");
+  return sections.map(({ title, intro, items }) => `## ${title}\n\n${intro ? `${intro}\n\n` : ""}${items.map(([heading, text]) => `### ${heading}\n\n${text}`).join("\n\n")}`).join("\n\n");
 }
 
 function writeMachineReadableContent() {
@@ -1371,9 +1401,12 @@ function writeMachineReadableContent() {
   for (const lang of languages) {
     const c = copy[lang.code];
     const story = workflowCopy[lang.code];
+    const product = productCopy[lang.code];
     const home = `# ${c.home.title}\n\n${c.home.description}\n\n${c.home.lead}\n\n${markdownSections([
       { title: c.home.eyebrow, items: story.stages.map(stage => stage.slice(0, 2)) },
-      ...c.home.sections
+      { title: product.useCasesHeading, intro: product.summary, items: product.useCases },
+      ...c.home.sections,
+      { title: c.help.faqTitle, items: product.boundaries }
     ])}\n\n${productCopy[lang.code].faq.at(-1)[1]}\n\n${productCopy[lang.code].downloadNote}\n\n[${c.home.primary}](${appStoreUrl})\n\n[${c.nav.help}](${pageUrl(lang, "help")})\n\n[${c.nav.privacy}](${pageUrl(lang, "privacy-policy")})\n`;
     const help = `# ${c.help.h1}\n\n${c.help.lead}\n\n${markdownSections([
       ...c.help.groups.map(group => ({ title: group.title, items: group.steps })),
@@ -1385,7 +1418,11 @@ function writeMachineReadableContent() {
     }
     links.push(`- [${lang.label}: ${c.home.title}](${pageUrl(lang, "index.md")})\n- [${lang.label}: ${c.help.h1}](${pageUrl(lang, "help.md")})`);
   }
-  write(path.join(root, "llms.txt"), `# ${appName}\n\n> ${copy["en-US"].home.description}\n\nOfficial product and help content for CarryOver, developed by Peike Luo. The localized Markdown documents below are generated from the same content as the public HTML pages. Search covers saved titles, text and source URLs on iPhone, iPad and Mac. Sync requires the same Apple Account and available iCloud services; it is not guaranteed to be immediate.\n\n## Product and help by language\n\n${links.join("\n")}\n\n## Official links\n\n- [App Store](${appStoreUrl})\n- [Support](${pageUrl(languages[0], "support")})\n- [Privacy policy](${pageUrl(languages[0], "privacy-policy")})\n`);
+  const english = productCopy["en-US"];
+  write(path.join(root, "llms.txt"), `# ${appName}\n\n> ${english.summary}\n\nOfficial product and help content for CarryOver, developed by Peike Luo. The localized Markdown documents below are generated from the same content as the public HTML pages.\n\n${markdownSections([
+    { title: "Features", items: english.features },
+    { title: "Content and sync boundaries", items: english.boundaries }
+  ])}\n\n${english.faq.at(-1)[1]}\n\n${english.downloadNote}\n\n## Product and help by language\n\n${links.join("\n")}\n\n## Official links\n\n- [Product website](${pageUrl(languages[0], "")})\n- [Help](${pageUrl(languages[0], "help")})\n- [App Store](${appStoreUrl})\n- [Support](${pageUrl(languages[0], "support")})\n- [Privacy policy](${pageUrl(languages[0], "privacy-policy")})\n`);
   write(path.join(root, "_headers"), `${headers.join("\n\n")}\n`);
 }
 

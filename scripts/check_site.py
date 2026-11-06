@@ -13,6 +13,7 @@ from xml.etree import ElementTree
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://carryover.luopeike.com"
 PRODUCT = json.loads((ROOT / "content/product.json").read_text())
+WORKFLOW = json.loads((ROOT / "content/workflow.json").read_text())
 DATES = json.loads((ROOT / "content/page-dates.json").read_text())
 LOCALES = {
     "en-US": "en", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant",
@@ -38,6 +39,9 @@ class Page(HTMLParser):
         self.anchors = []
         self.meta = {}
         self.h1_count = 0
+        self.ids = []
+        self.title = ""
+        self.in_title = False
         self.visible = []
         self.schema = []
         self.in_body = False
@@ -50,6 +54,10 @@ class Page(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if "id" in attrs:
+            self.ids.append(attrs["id"])
+        if tag == "title":
+            self.in_title = True
         if tag == "html":
             self.lang = attrs.get("lang")
         if tag == "body":
@@ -75,6 +83,8 @@ class Page(HTMLParser):
             self.script_data = []
 
     def handle_endtag(self, tag):
+        if tag == "title":
+            self.in_title = False
         if tag == "body":
             self.in_body = False
         if tag == "script":
@@ -83,6 +93,8 @@ class Page(HTMLParser):
             self.in_script = False
 
     def handle_data(self, data):
+        if self.in_title:
+            self.title += data
         if self.in_script:
             self.script_data.append(data)
         elif self.in_body:
@@ -112,6 +124,7 @@ def local_path(url):
 
 
 def check_pages():
+    assert set(PRODUCT) == set(WORKFLOW) == set(LOCALES), "Locale sources differ"
     urls = set()
     for locale, lang in LOCALES.items():
         product = PRODUCT[locale]
@@ -136,6 +149,8 @@ def check_pages():
             expected["x-default"] = canonical_url("en-US", slug)
             assert alternates == expected, url
             assert page.meta["og:url"] == url, url
+            assert page.meta["og:title"] == page.meta["twitter:title"] == page.title, url
+            assert page.meta["og:description"] == page.meta["twitter:description"] == page.meta["description"], url
             assert {node["@type"] for node in page.schema} <= {
                 "Person", "WebSite", "WebPage", "CreativeWork", "FAQPage", "BreadcrumbList"
             }, url
@@ -152,7 +167,19 @@ def check_pages():
                 assert product["downloadNote"] in visible, url
                 markdown_path = ROOT / locale / ("index.md" if key == "home" else "help.md")
                 assert product["downloadNote"] in markdown_path.read_text(), url
+                assert product["summary"] in visible and product["summary"] in markdown_path.read_text(), url
+                expected_faq = product["boundaries"] if key == "home" else [product["shareFaq"], *product["boundaries"], *product["faq"]]
+                faq = next(node for node in page.schema if node["@type"] == "FAQPage")
+                for question, answer in expected_faq:
+                    assert any(node["name"] == question and node["acceptedAnswer"]["text"] == answer
+                               for node in faq["mainEntity"]), (url, question)
+                for node in faq["mainEntity"]:
+                    for text in [node["name"], node["acceptedAnswer"]["text"]]:
+                        assert text in visible and text in markdown_path.read_text(), (url, text)
             if key == "home":
+                assert page.title == product["title"], url
+                assert page.meta["description"] == product["description"], url
+                assert len(faq["mainEntity"]) == len(product["boundaries"]), url
                 app = next(node for node in page.schema if node["@type"] == "CreativeWork")
                 assert app["description"] == product["description"]
                 assert app["inLanguage"] == list(LOCALES.values())
@@ -163,11 +190,20 @@ def check_pages():
                 for heading, text in product["features"]:
                     assert heading in visible and text in visible, (url, heading)
                     assert heading in markdown and text in markdown, (url, heading)
+                for heading, text in product["useCases"]:
+                    assert heading in visible and text in visible, (url, heading)
+                    assert heading in markdown and text in markdown, (url, heading)
+                for stage in WORKFLOW[locale]["stages"][:3]:
+                    assert stage[0] in visible and stage[1] in visible, (url, stage[0])
+                assert WORKFLOW[locale]["intro"] in visible, url
                 assert product["faq"][-1][1] in visible, url
             if key == "help":
+                assert page.title == product["helpTitle"] and page.title != product["title"], url
+                assert page.meta["description"] == product["helpDescription"], url
                 faq = next(node for node in page.schema if node["@type"] == "FAQPage")
                 markdown = (ROOT / locale / "help.md").read_text()
-                assert len(faq["mainEntity"]) == 8, url
+                assert len(faq["mainEntity"]) == 3 + len(product["boundaries"]) + len(product["faq"]), url
+                assert {"save", "manage", "sync", "faq"} <= set(page.ids), url
                 for question in faq["mainEntity"]:
                     answer = question["acceptedAnswer"]["text"]
                     assert question["name"] in visible and answer in visible, url
@@ -175,7 +211,7 @@ def check_pages():
                 assert any(question["name"] == product["faq"][-1][0]
                            and question["acceptedAnswer"]["text"] == product["faq"][-1][1]
                            for question in faq["mainEntity"]), url
-                for heading, text in [product["selection"], product["confirm"], product["manual"], *product["manage"]]:
+                for heading, text in [product["selection"], product["confirm"], product["manual"], product["favorite"], *product["manage"], *product["sync"]]:
                     assert heading in visible and text in visible, (url, heading)
                     assert heading in markdown and text in markdown, (url, heading)
             if key in {"home", "help"}:
@@ -229,6 +265,9 @@ def check_routing():
     assert (ROOT / "google8bdd3bd447b6e703.html").is_file()
     llms = (ROOT / "llms.txt").read_text()
     assert_current_distribution(llms, "llms.txt")
+    assert PRODUCT["en-US"]["summary"] in llms
+    for heading, text in PRODUCT["en-US"]["features"] + PRODUCT["en-US"]["boundaries"]:
+        assert heading in llms and text in llms, ("llms.txt", heading)
     headers = (ROOT / "_headers").read_text()
     for locale in LOCALES:
         for file, slug in [("index.md", ""), ("help.md", "help")]:

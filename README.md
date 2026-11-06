@@ -36,8 +36,10 @@ were added for the design refresh.
 
 - `content/workflow.json`: capture-to-Mac workflow and screenshot captions.
 - `content/product.json`: localized SEO titles, descriptions, feature facts,
-  instructions and FAQs. Shared by HTML, JSON-LD and Markdown; edit this source,
-  not the generated mirrors.
+  product summaries, use cases, instructions and FAQs. Shared by HTML, JSON-LD
+  and Markdown; edit this source, not the generated mirrors. Home and help pages
+  have distinct search titles and descriptions. `boundaries` explains the source
+  app's shared payload, original-page access and local-first sync on both pages.
 - `generate_site.js`: navigation, existing help/sync/support/privacy content,
   layouts and generation logic.
 - `content/page-dates.json`: dates of substantive page changes. Advance only the
@@ -64,6 +66,10 @@ source of truth. StoreKit compatibility code still checks purchase status, so th
 privacy policy retains that disclosure without claiming a required Pro purchase.
 
 `llms.txt` is a discovery aid, not a ranking guarantee or a substitute for SEO.
+Its feature and scope summaries reuse the visible English product content.
+Google Search does not use `llms.txt` for ranking or its generative AI features;
+prioritize accurate, crawlable human-facing content instead:
+https://developers.google.com/search/docs/fundamentals/ai-optimization-guide.
 Markdown mirrors remain crawlable but use `X-Robots-Tag: noindex` and an HTTP
 canonical link to keep the human-facing HTML pages as the search results.
 Crawler training permissions and Cloudflare security rules are not changed here.

@@ -1,12 +1,8 @@
 # How to use CarryOver
 
-CarryOver helps you capture links, text, and moments of interest now, then review and act on them later from the device that fits the work.
+CarryOver is a save-for-later inbox for iPhone, iPad and Mac. Capture a post, a reference or an idea while browsing, then return on Mac when you have time to review, research and follow up.
 
 ## Save content
-
-### Open any app
-
-Start in Safari, Notes, a social app, or any app that can share text or URLs.
 
 ### Choose supported content
 
@@ -30,6 +26,10 @@ Open Add Share in CarryOver to record an idea or paste content, then save it to 
 
 Select an item to view or edit it. If a source URL is available, use the source action to open it in the browser.
 
+### Keep important items in Favorites
+
+Favorite an unfinished item to find it in the Favorites filter. It stays in your inbox until you mark it complete.
+
 ### Mark it done
 
 Use the completion button after handling an item. Only completed items move to History; unfinished items do not expire.
@@ -44,17 +44,17 @@ On iPhone and iPad, swipe left on an item and choose Delete. On Mac, use the del
 
 ## Sync and troubleshooting
 
-### Use the same iCloud account
+### Use the same Apple Account
 
-Sync works across devices signed in to the same Apple ID with iCloud available.
+Sign in to the same Apple Account on iPhone, iPad and Mac, enable iCloud and connect to the internet to sync saved items.
 
-### Retry failed sync
+### Save locally first
 
-If an item shows a sync issue, tap the status icon to retry.
+Saving adds the item to this device before cross-device sync finishes. If it has not arrived elsewhere, check the sync status, network and available iCloud storage.
 
-### Check iCloud storage
+### Retry when needed
 
-If the app reports sync success but another device does not update, iCloud may be out of storage or waiting for background upload.
+Use the retry action on a failed item. On the other device, open CarryOver and refresh from iCloud. Network and iCloud conditions can delay updates.
 
 ## Frequently asked questions
 
@@ -69,6 +69,14 @@ iCloud sync can be delayed by network status, Low Power Mode, or insufficient iC
 ### Does CarryOver require an account?
 
 No separate CarryOver account is required. Sync uses Apple's iCloud services when available.
+
+### What does CarryOver save from other apps?
+
+It saves the text, links or images that the source app actually shares. A social post may be shared as a link rather than its full content. Web links open the original page, not a full-text offline copy; internet access or a login may be required.
+
+### Can I save now and sync later?
+
+Items are saved locally first. Cross-device sync needs the same Apple Account, iCloud enabled and an internet connection. Check the sync status and retry if needed; syncing is not guaranteed to be immediate.
 
 ### Do unfinished items disappear after a few days?
 
