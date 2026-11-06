@@ -21,7 +21,7 @@ Pushes to `main` trigger deployment; check the public website after deployment.
 `Color+PK.swift`: action teal `#087f73`, dark-mode mint `#30e3d5`, dark background
 `#061b19`, and dark surface `#102622`. `style/site.css` is the hand-maintained
 stylesheet for all current pages; it is not overwritten by site generation.
-The generated `style/base.css` is retained for legacy references only.
+The unused legacy `style/base.css` and its generator have been removed.
 
 The home page uses real localized captures and the existing device artwork,
 layered in CSS so screenshots are not tied to a baked light background. The
