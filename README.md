@@ -120,3 +120,14 @@ The separate Bing recommendation about quality inbound links requires genuine
 editorial references from other sites. Internal links and repeated URL
 submission do not satisfy it. When maintaining an actual product listing
 elsewhere, link to the matching language's canonical homepage or help page.
+
+**Last checked 2026-11-23 (Asia/Shanghai).** Bing reported the sitemap as
+Success with 40 URLs discovered (last crawl: 2026-11-18). The first IndexNow
+batch compared the sitemap before and after the capture-and-recall update
+(`c3d4dfd` to `0cc1dea`): ten homepages and ten help pages. Production key
+and sitemap were verified, and IndexNow returned HTTP 202. Both recommendations
+were still visible immediately afterwards; the Backlinks report had no data
+available. This is not a count of zero referring domains. Recheck
+[IndexNow](https://www.bing.com/webmasters/indexnow?siteUrl=https://carryover.luopeike.com/)
+and [Backlinks](https://www.bing.com/webmasters/backlinks?siteUrl=https://carryover.luopeike.com/)
+after Bing refreshes; do not resend the same batch solely to clear the warning.
