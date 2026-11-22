@@ -1056,16 +1056,16 @@ function appStoreButton(label, extraClass = "") {
   return `<a class="${className}" href="${appStoreUrl}" aria-label="${escapeHtml(label)}"><img class="store-icon" src="${appStoreIconPath}" alt=""><span class="button-label">${escapeHtml(label)}</span><span class="button-label-short" aria-hidden="true">App Store</span></a>`;
 }
 
-function phoneProduct(lang, scene = "capture", eager = false) {
+function phoneProduct(lang, eager = false) {
   return `<div class="device-phone">
-    <div class="phone-display"><img src="../images/product/${lang.code}/phone-${scene}.webp" width="600" height="1304" alt="${escapeHtml(workflowCopy[lang.code].stages[scene === "capture" ? 0 : 1][0])}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></div>
+    <div class="phone-display"><img src="../images/product/${lang.code}/phone-share.webp" width="600" height="1304" alt="${escapeHtml(workflowCopy[lang.code].stages[0][0])}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></div>
     <img class="device-frame" src="../images/product/iphone-frame.webp" width="480" height="980" alt="" aria-hidden="true" decoding="async">
   </div>`;
 }
 
 function macProduct(lang, eager = false) {
   return `<div class="device-mac">
-    <div class="mac-display"><img src="../images/product/${lang.code}/mac-inbox.webp" width="1072" height="842" alt="${escapeHtml(workflowCopy[lang.code].stages[2][0])}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></div>
+    <div class="mac-display"><img src="../images/product/${lang.code}/mac-search.webp" width="1072" height="791" alt="${escapeHtml(workflowCopy[lang.code].stages[2][1])}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></div>
     <img class="device-frame" src="../images/product/macbook-frame.webp" width="1600" height="1067" alt="" aria-hidden="true" decoding="async">
   </div>`;
 }
@@ -1142,7 +1142,7 @@ ${body}
 function renderHome(lang) {
   const c = copy[lang.code].home;
   const product = productCopy[lang.code];
-  const icons = ["share-2", "inbox", "search", "undo-2", "bell", "cloud"];
+  const icons = ["share-2", "inbox", "search", "undo-2", "bell", "cloud", "arrow-right"];
   const sections = c.sections.map((section) => `<section class="section features-section">
       <h2>${escapeHtml(section.title)}</h2>
       <div class="grid">
@@ -1153,7 +1153,7 @@ function renderHome(lang) {
   const workflow = workflowCopy[lang.code];
   const proof = workflow.stages.slice(0, 3).map((stage, index) => `<figure class="workflow-step">
         <figcaption><span class="step-number" aria-hidden="true">0${index + 1}</span><h3>${escapeHtml(stage[0])}</h3><p>${escapeHtml(stage[1])}</p></figcaption>
-        <div class="workflow-media">${index === 2 ? macProduct(lang) : phoneProduct(lang, index === 0 ? "capture" : "inbox")}</div>
+        <div class="workflow-media">${index === 0 ? phoneProduct(lang) : `<img class="workflow-detail" src="../images/product/${lang.code}/${index === 1 ? "note-detail" : "mac-match"}.webp" alt="${escapeHtml(stage[1])}" loading="lazy" decoding="async">`}</div>
       </figure>`).join("\n");
 
   return `<section class="hero workflow-hero">
@@ -1165,7 +1165,7 @@ function renderHome(lang) {
         </div>
         <p class="download-note">${escapeHtml(productCopy[lang.code].downloadNote)}</p>
       </div>
-      <div class="product-scene">${macProduct(lang, true)}${phoneProduct(lang, "capture", true)}</div>
+      <div class="product-scene">${macProduct(lang, true)}${phoneProduct(lang, true)}</div>
       <p class="platform-line"><span>iPhone</span><span>iPad</span><span>Mac</span></p>
     </section>
 
@@ -1403,7 +1403,7 @@ function writeMachineReadableContent() {
     const story = workflowCopy[lang.code];
     const product = productCopy[lang.code];
     const home = `# ${c.home.title}\n\n${c.home.description}\n\n${c.home.lead}\n\n${markdownSections([
-      { title: c.home.eyebrow, items: story.stages.map(stage => stage.slice(0, 2)) },
+      { title: c.home.eyebrow, items: story.stages.slice(0, 3).map(stage => stage.slice(0, 2)) },
       { title: product.useCasesHeading, intro: product.summary, items: product.useCases },
       ...c.home.sections,
       { title: c.help.faqTitle, items: product.boundaries }
@@ -1420,6 +1420,7 @@ function writeMachineReadableContent() {
   }
   const english = productCopy["en-US"];
   write(path.join(root, "llms.txt"), `# ${appName}\n\n> ${english.summary}\n\nOfficial product and help content for CarryOver, developed by Peike Luo. The localized Markdown documents below are generated from the same content as the public HTML pages.\n\n${markdownSections([
+    { title: "From the share sheet to a Mac search", items: workflowCopy["en-US"].stages.slice(0, 3).map(stage => stage.slice(0, 2)) },
     { title: "Features", items: english.features },
     { title: "Content and sync boundaries", items: english.boundaries }
   ])}\n\n${english.faq.at(-1)[1]}\n\n${english.downloadNote}\n\n## Product and help by language\n\n${links.join("\n")}\n\n## Official links\n\n- [Product website](${pageUrl(languages[0], "")})\n- [Help](${pageUrl(languages[0], "help")})\n- [App Store](${appStoreUrl})\n- [Support](${pageUrl(languages[0], "support")})\n- [Privacy policy](${pageUrl(languages[0], "privacy-policy")})\n`);

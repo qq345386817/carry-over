@@ -1,6 +1,6 @@
 # Comment utiliser CarryOver
 
-CarryOver est une boîte de réception pour ce que vous voulez traiter plus tard, sur iPhone, iPad et Mac. Gardez une publication, une référence ou une idée au fil de votre navigation, puis reprenez sur Mac pour vérifier, rechercher et donner suite.
+Reprenez sur Mac les liens, extraits et images mis de côté sur iPhone ou iPad. Si le titre vous échappe, retrouvez un élément en recherchant son domaine d’origine, quelques mots de l’extrait ou votre propre note.
 
 ## Enregistrer du contenu
 
@@ -14,7 +14,7 @@ Dans une app compatible, ouvrez le menu Partager du système et choisissez Carry
 
 ### Vérifier et enregistrer
 
-Vérifiez le contenu dans le formulaire de partage. Vous pouvez modifier le titre ou définir un rappel. Choisissez Enregistrer pour l’ajouter à la liste à traiter.
+Pour cette étude sur la marche, notez « Taille de l’échantillon à vérifier ». La note est facultative. Vérifiez le contenu dans le formulaire de partage. Vous pouvez modifier le titre ou définir un rappel. Choisissez Enregistrer pour l’ajouter à la liste à traiter.
 
 ### Ajouter une note manuellement
 
@@ -24,7 +24,7 @@ Ouvrez le formulaire d’ajout dans CarryOver pour noter une idée ou coller du 
 
 ### Ouvrir le contenu ou sa source
 
-Sélectionnez un élément pour le consulter ou le modifier. Si une URL source existe, utilisez l’action de source pour l’ouvrir dans le navigateur.
+Dans les éléments à traiter ou l’historique, recherchez le domaine source, un extrait partagé, une note ou un sujet. Ouvrir le résultat pour vérifier la source ne le marque pas comme traité.
 
 ### Garder l’essentiel dans les favoris
 
@@ -40,7 +40,11 @@ Utilisez le bouton de restauration à côté d’un élément terminé pour le r
 
 ### Confirmer la suppression
 
-Sur iPhone et iPad, balayez un élément vers la gauche et choisissez Supprimer. Sur Mac, utilisez l’action de suppression. Confirmez avant son retrait.
+Sur iPhone et iPad, balayez un élément vers la gauche et choisissez Supprimer. Sur Mac, utilisez l’action de suppression. Confirmez avant son retrait. Corbeille: Les éléments supprimés sont conservés 30 jours. Vous pouvez les restaurer avant leur suppression définitive.
+
+### Exporter en Markdown
+
+Détails de l’élément › Plus d’actions › Exporter en Markdown. Vous pouvez exporter sa source et vos notes dans un fichier Markdown.
 
 ## Synchronisation et dépannage
 
@@ -72,19 +76,23 @@ Non. La synchronisation utilise les services iCloud d'Apple lorsqu'ils sont disp
 
 ### Que peut enregistrer CarryOver depuis d’autres apps ?
 
-L’app enregistre les textes, liens ou images réellement partagés par l’app source. Une publication sociale peut être partagée sous forme de lien, sans son contenu complet. Les liens web ouvrent la page d’origine, pas une copie intégrale hors ligne ; une connexion ou une identification peut être nécessaire.
+L’app enregistre les textes, liens ou images réellement partagés par l’app source. Une publication sociale peut être partagée sous forme de lien, sans son contenu complet. L’ouverture d’un lien peut nécessiter une connexion à Internet ou l’identification sur le site.
 
 ### Puis-je enregistrer maintenant et synchroniser plus tard ?
 
 Les éléments sont d’abord enregistrés sur l’appareil. La synchronisation nécessite le même compte Apple, iCloud activé et une connexion Internet. Consultez son état et réessayez au besoin ; elle peut prendre du temps.
 
+### Comment retrouver un élément sans son titre ?
+
+Dans les éléments à traiter ou l’historique, recherchez le domaine source, un extrait partagé, une note ou un sujet. Ouvrir le résultat pour vérifier la source ne le marque pas comme traité.
+
+### Puis-je lire un article hors ligne ?
+
+Pour les articles publics en HTTPS pris en charge, vous pouvez créer une copie texte à lire hors ligne. Elle reste sur l’appareil où vous l’avez créée. Détails de l’élément › Plus d’actions › Créer une copie de l’article
+
 ### Les éléments à traiter disparaissent-ils après quelques jours ?
 
-Non. Ils restent dans la liste à traiter. Les marquer comme terminés les déplace vers l’historique ; les supprimer les retire.
-
-### Puis-je rechercher mes contenus enregistrés ?
-
-Oui. Recherchez titres, textes et URL sources sur iPhone, iPad et Mac, y compris dans l’historique.
+Les éléments non terminés restent dans votre liste, quelle que soit leur ancienneté. Les éléments terminés vont dans l’historique.
 
 ### Un rappel est-il réellement envoyé ?
 

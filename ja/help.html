@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CarryOver ヘルプ - 共有保存・iCloud 同期・リマインダー</title>
-  <meta name="description" content="共有拡張機能での保存、手動メモ、お気に入り、iCloud 同期、リマインダーの使い方を紹介。iPhone、iPad、Mac で続きを進めましょう。">
+  <title>CarryOver ヘルプ｜共有時のメモ・検索・Markdown書き出し</title>
+  <meta name="description" content="共有時のメモの付け方、Macでの資料の探し方、出典の確認と書き出しを案内します。iCloudで同期する項目と端末にだけ残る記事のコピーの違いも確認できます。">
   <meta name="keywords" content="CarryOver ヘルプ,リンク保存,あとで読む,共有シート,iCloud同期,URL検出,Appleデバイス">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -32,8 +32,8 @@
   <link rel="alternate" hreflang="it" href="https://carryover.luopeike.com/it/help">
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/help">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/help">
-  <meta property="og:title" content="CarryOver ヘルプ - 共有保存・iCloud 同期・リマインダー">
-  <meta property="og:description" content="共有拡張機能での保存、手動メモ、お気に入り、iCloud 同期、リマインダーの使い方を紹介。iPhone、iPad、Mac で続きを進めましょう。">
+  <meta property="og:title" content="CarryOver ヘルプ｜共有時のメモ・検索・Markdown書き出し">
+  <meta property="og:description" content="共有時のメモの付け方、Macでの資料の探し方、出典の確認と書き出しを案内します。iCloudで同期する項目と端末にだけ残る記事のコピーの違いも確認できます。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://carryover.luopeike.com/ja/help">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -52,8 +52,8 @@
   <meta property="og:locale:alternate" content="it_IT">
   <meta property="og:locale:alternate" content="id_ID">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CarryOver ヘルプ - 共有保存・iCloud 同期・リマインダー">
-  <meta name="twitter:description" content="共有拡張機能での保存、手動メモ、お気に入り、iCloud 同期、リマインダーの使い方を紹介。iPhone、iPad、Mac で続きを進めましょう。">
+  <meta name="twitter:title" content="CarryOver ヘルプ｜共有時のメモ・検索・Markdown書き出し">
+  <meta name="twitter:description" content="共有時のメモの付け方、Macでの資料の探し方、出典の確認と書き出しを案内します。iCloudで同期する項目と端末にだけ残る記事のコピーの違いも確認できます。">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -89,11 +89,11 @@
     {
       "@type": "WebPage",
       "@id": "https://carryover.luopeike.com/ja/help#webpage",
-      "name": "CarryOver ヘルプ - 共有保存・iCloud 同期・リマインダー",
+      "name": "CarryOver ヘルプ｜共有時のメモ・検索・Markdown書き出し",
       "url": "https://carryover.luopeike.com/ja/help",
-      "description": "共有拡張機能での保存、手動メモ、お気に入り、iCloud 同期、リマインダーの使い方を紹介。iPhone、iPad、Mac で続きを進めましょう。",
+      "description": "共有時のメモの付け方、Macでの資料の探し方、出典の確認と書き出しを案内します。iCloudで同期する項目と端末にだけ残る記事のコピーの違いも確認できます。",
       "inLanguage": "ja",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-23",
       "isPartOf": {
         "@id": "https://carryover.luopeike.com/#website"
       },
@@ -135,7 +135,7 @@
           "name": "ほかのアプリから何を保存できますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "元のアプリが実際に共有したテキスト、リンク、画像を保存します。SNS の投稿は全文ではなくリンクとして共有される場合があります。ウェブリンクは元のページを開くもので、全文のオフラインコピーではありません。閲覧には通信やログインが必要な場合があります。"
+            "text": "元のアプリが実際に共有したテキスト、リンク、画像を保存します。SNS の投稿は全文ではなくリンクとして共有される場合があります。リンク先を見るにはインターネット接続やログインが必要な場合があります。"
           }
         },
         {
@@ -148,18 +148,26 @@
         },
         {
           "@type": "Question",
-          "name": "未処理の内容は数日で消えますか？",
+          "name": "タイトルを忘れた資料はどう探せますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "いいえ。未処理の内容は受信トレイに残ります。完了にすると履歴へ移動し、削除すると取り除かれます。"
+            "text": "未処理の一覧や履歴で、出典のドメイン、共有した文章の一部、自分のメモ、トピックを検索できます。結果を開いて出典を確認しても、自動で完了にはなりません。"
           }
         },
         {
           "@type": "Question",
-          "name": "保存した内容を検索できますか？",
+          "name": "保存した記事をオフラインで読めますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "はい。iPhone、iPad、Mac でタイトル、本文、元の URL を検索できます。履歴の完了済み項目も対象です。"
+            "text": "対応する公開HTTPS記事は、必要なときに本文のテキストを保存してオフラインで読めます。記事のコピーは作成した端末だけに保存されます。 アイテムの詳細 › その他の操作 › 本文のコピーを作成"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "未処理の内容は数日で消えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "未処理の内容は保存から何日経っても受信トレイに残ります。完了した内容は履歴へ。"
           }
         },
         {
@@ -233,14 +241,14 @@
 <article class="content-card">
       <p class="eyebrow">ヘルプとサポート</p>
       <h1>CarryOver の使い方</h1>
-      <p class="lead">CarryOver は iPhone、iPad、Mac で使える、あとで取り組むための受信トレイです。閲覧中に見つけた投稿、参考資料、会話から浮かんだアイデアを保存し、時間ができたら Mac で確認・調査を続けられます。</p>
+      <p class="lead">iPhoneやiPadで保存したリンク、引用、画像をMacで開き、調べ物を再開できます。タイトルを思い出せなくても、出典のドメイン、引用の一節、自分のメモから探せます。</p>
 
       <section class="section" id="save">
         <h2>保存する</h2>
         <div class="step-list">
           <article class="step"><h3>共有できる内容を選ぶ</h3><p>残したいテキスト、リンク、画像、投稿を選びます。共有できる内容は元のアプリによって異なります。</p></article>
           <article class="step"><h3>共有を使う</h3><p>対応アプリのシステム共有メニューから CarryOver を選択します。iPhone と iPad で表示されない場合は「その他」を確認。Mac では元のアプリ、内容の種類、システムの機能拡張設定によって利用できるかが異なります。</p></article>
-          <article class="step"><h3>確認して保存</h3><p>共有画面で内容を確認し、必要に応じてタイトルやリマインダーを設定。保存を選ぶと受信トレイに追加されます。</p></article>
+          <article class="step"><h3>確認して保存</h3><p>ウォーキングの研究には「調査対象の人数を確認」とメモ。急いでいるときは空欄のまま保存できます。 共有画面で内容を確認し、必要に応じてタイトルやリマインダーを設定。保存を選ぶと受信トレイに追加されます。</p></article>
           <article class="step"><h3>手入力で記録する</h3><p>CarryOver の共有追加画面でアイデアを入力したり、内容を貼り付けたりして、受信トレイに保存できます。</p></article>
         </div>
       </section>
@@ -248,11 +256,12 @@
       <section class="section" id="manage">
         <h2>リストを管理</h2>
         <div class="step-list">
-          <article class="step"><h3>内容や元のページを開く</h3><p>項目を選択して内容を確認・編集。元の URL があれば、ソースを開く操作でブラウザに移動できます。</p></article>
+          <article class="step"><h3>内容や元のページを開く</h3><p>未処理の一覧や履歴で、出典のドメイン、共有した文章の一部、自分のメモ、トピックを検索できます。結果を開いて出典を確認しても、自動で完了にはなりません。</p></article>
           <article class="step"><h3>大切な項目をお気に入りに</h3><p>未完了の項目をお気に入りにすると、お気に入りフィルタで見つけられます。完了にするまでは受信トレイにも残ります。</p></article>
           <article class="step"><h3>処理したら完了にする</h3><p>完了ボタンで処理済みの項目を履歴へ移動。未処理の項目は期限切れになりません。</p></article>
           <article class="step"><h3>履歴から戻す</h3><p>履歴の項目の横にある復元ボタンで、受信トレイに戻せます。</p></article>
-          <article class="step"><h3>確認してから削除</h3><p>iPhone と iPad では項目を左にスワイプして削除を選択。Mac では削除操作を使います。確認後に削除されます。</p></article>
+          <article class="step"><h3>確認してから削除</h3><p>iPhone と iPad では項目を左にスワイプして削除を選択。Mac では削除操作を使います。確認後に削除されます。 ゴミ箱：削除した項目は30日間保持されます。完全に削除される前であれば復元できます。</p></article>
+          <article class="step"><h3>Markdownを書き出す</h3><p>アイテムの詳細 › その他の操作 › Markdownを書き出す。 項目ごとに出典とメモをMarkdownファイルに書き出せます。</p></article>
         </div>
       </section>
 
@@ -271,10 +280,11 @@
           <article class="policy-item"><h3>CarryOver に共有するには？</h3><p>対応アプリのシステム共有メニューから CarryOver を選択します。iPhone と iPad で表示されない場合は「その他」を確認。Mac では元のアプリ、内容の種類、システムの機能拡張設定によって利用できるかが異なります。</p></article>
           <article class="policy-item"><h3>別のデバイスにすぐ同期されないのはなぜですか？</h3><p>ネットワーク、低電力モード、iCloud 容量不足により同期が遅れることがあります。</p></article>
           <article class="policy-item"><h3>CarryOver のアカウントは必要ですか？</h3><p>いいえ。利用可能な場合は Apple の iCloud サービスで同期します。</p></article>
-          <article class="policy-item"><h3>ほかのアプリから何を保存できますか？</h3><p>元のアプリが実際に共有したテキスト、リンク、画像を保存します。SNS の投稿は全文ではなくリンクとして共有される場合があります。ウェブリンクは元のページを開くもので、全文のオフラインコピーではありません。閲覧には通信やログインが必要な場合があります。</p></article>
+          <article class="policy-item"><h3>ほかのアプリから何を保存できますか？</h3><p>元のアプリが実際に共有したテキスト、リンク、画像を保存します。SNS の投稿は全文ではなくリンクとして共有される場合があります。リンク先を見るにはインターネット接続やログインが必要な場合があります。</p></article>
           <article class="policy-item"><h3>先に保存して、あとで同期できますか？</h3><p>内容はまず本体に保存されます。デバイス間の同期には、同じ Apple Account、iCloud の有効化、インターネット接続が必要です。同期状況を確認し、必要に応じて再試行できます。すぐに同期されるとは限りません。</p></article>
-          <article class="policy-item"><h3>未処理の内容は数日で消えますか？</h3><p>いいえ。未処理の内容は受信トレイに残ります。完了にすると履歴へ移動し、削除すると取り除かれます。</p></article>
-          <article class="policy-item"><h3>保存した内容を検索できますか？</h3><p>はい。iPhone、iPad、Mac でタイトル、本文、元の URL を検索できます。履歴の完了済み項目も対象です。</p></article>
+          <article class="policy-item"><h3>タイトルを忘れた資料はどう探せますか？</h3><p>未処理の一覧や履歴で、出典のドメイン、共有した文章の一部、自分のメモ、トピックを検索できます。結果を開いて出典を確認しても、自動で完了にはなりません。</p></article>
+          <article class="policy-item"><h3>保存した記事をオフラインで読めますか？</h3><p>対応する公開HTTPS記事は、必要なときに本文のテキストを保存してオフラインで読めます。記事のコピーは作成した端末だけに保存されます。 アイテムの詳細 › その他の操作 › 本文のコピーを作成</p></article>
+          <article class="policy-item"><h3>未処理の内容は数日で消えますか？</h3><p>未処理の内容は保存から何日経っても受信トレイに残ります。完了した内容は履歴へ。</p></article>
           <article class="policy-item"><h3>あとで処理するための通知は届きますか？</h3><p>はい。未来の日時を設定し、システム設定で CarryOver の通知を許可してください。ローカル通知が届きますが、集中モードや通知設定で音が鳴らない場合があります。通知をタップすると該当項目が開きます。</p></article>
           <article class="policy-item"><h3>完了した内容を再び処理できますか？</h3><p>はい。履歴で項目の横にある復元ボタンを使うと、受信トレイに戻せます。</p></article>
           <article class="policy-item"><h3>1日の保存回数に制限はありますか？</h3><p>現在のバージョンには1日の保存回数の制限はなく、別途 Pro にアップグレードする必要もありません。お住まいの地域での提供状況と価格は App Store でご確認ください。</p></article>

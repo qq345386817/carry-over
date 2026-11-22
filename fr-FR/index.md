@@ -1,8 +1,8 @@
-# CarryOver - Liens sur iPhone, à retrouver sur Mac
+# CarryOver | Enregistrer sur iPhone, retrouver par note sur Mac
 
-Enregistrez liens, textes et images via Partager sur iPhone ou iPad, puis reprenez sur Mac. Notes, favoris, recherche, rappels et synchronisation iCloud.
+Depuis le menu de partage, gardez un lien, un extrait ou une image avec une note. Sur Mac, retrouvez la source et exportez la fiche en Markdown.
 
-Enregistrez liens, textes et images via Partager sur iPhone ou iPad. Reprenez sur Mac pour vérifier, rechercher et donner suite.
+Sur iPhone ou iPad, gardez ce qui vous intéresse et notez pourquoi. Sur Mac, quelques mots de cette note suffisent pour retrouver la source.
 
 ## Enregistrez maintenant, revenez plus tard
 
@@ -10,21 +10,17 @@ Enregistrez liens, textes et images via Partager sur iPhone ou iPad. Reprenez su
 
 Envoyez liens, publications et idées à CarryOver
 
-### Gardé pour plus tard
+### Noter ce qui vous intéresse
 
-Les éléments à traiter restent dans la liste
+Pour cette étude sur la marche, notez « Taille de l’échantillon à vérifier ». La note est facultative.
 
-### Reprendre sur Mac
+### Retrouver l’étude sur Mac
 
-Ouvrez la source, vérifiez et donnez suite avant de terminer
-
-### Terminé, mais conservé
-
-Les éléments terminés restent dans l’historique
+Recherchez « taille » sur Mac : la note fait ressortir l’étude, même si vous avez oublié son titre.
 
 ## Une place pour les découvertes à reprendre plus tard
 
-CarryOver est une boîte de réception pour ce que vous voulez traiter plus tard, sur iPhone, iPad et Mac. Gardez une publication, une référence ou une idée au fil de votre navigation, puis reprenez sur Mac pour vérifier, rechercher et donner suite.
+Reprenez sur Mac les liens, extraits et images mis de côté sur iPhone ou iPad. Si le titre vous échappe, retrouvez un élément en recherchant son domaine d’origine, quelques mots de l’extrait ou votre propre note.
 
 ### Une publication pendant un trajet
 
@@ -32,7 +28,7 @@ Partagez une publication utile depuis une app sociale compatible. Ouvrez sa sour
 
 ### Une référence pour votre prochain projet
 
-Gardez dans Safari un lien à étudier, une annonce sur l’IA ou une référence de design. Ajoutez les éléments importants aux favoris et retrouvez-les par leur titre, texte ou URL enregistrés.
+Depuis le menu de partage de l’iPhone ou de l’iPad, gardez un lien, un extrait ou une image. Ajoutez par exemple « Taille de l’échantillon à vérifier ». Sur Mac, cette note vous rappelle ce que vous vouliez faire.
 
 ### Une idée après une conversation
 
@@ -50,7 +46,7 @@ Les éléments non terminés restent dans votre liste, quelle que soit leur anci
 
 ### Rechercher vos contenus partout
 
-Sur iPhone, iPad et Mac, recherchez titres, textes et URL sources, dans la liste à traiter comme dans l’historique.
+Dans les éléments à traiter ou l’historique, recherchez le domaine source, un extrait partagé, une note ou un sujet.
 
 ### Terminé, mais encore accessible
 
@@ -64,15 +60,27 @@ Choisissez une date et une heure et autorisez les notifications système. Touche
 
 iCloud synchronise iPhone, iPad et Mac connectés au même compte Apple. Le réseau et l’état d’iCloud peuvent retarder la synchronisation.
 
+### Exporter en Markdown
+
+Ajoutez vos notes et un sujet tout en conservant le contenu d’origine. Ouvrez la source pour vérifier un détail et marquez l’élément comme traité une fois le travail terminé. Vous pouvez exporter sa source et vos notes dans un fichier Markdown.
+
 ## Questions fréquentes
 
 ### Que peut enregistrer CarryOver depuis d’autres apps ?
 
-L’app enregistre les textes, liens ou images réellement partagés par l’app source. Une publication sociale peut être partagée sous forme de lien, sans son contenu complet. Les liens web ouvrent la page d’origine, pas une copie intégrale hors ligne ; une connexion ou une identification peut être nécessaire.
+L’app enregistre les textes, liens ou images réellement partagés par l’app source. Une publication sociale peut être partagée sous forme de lien, sans son contenu complet. L’ouverture d’un lien peut nécessiter une connexion à Internet ou l’identification sur le site.
 
 ### Puis-je enregistrer maintenant et synchroniser plus tard ?
 
 Les éléments sont d’abord enregistrés sur l’appareil. La synchronisation nécessite le même compte Apple, iCloud activé et une connexion Internet. Consultez son état et réessayez au besoin ; elle peut prendre du temps.
+
+### Comment retrouver un élément sans son titre ?
+
+Dans les éléments à traiter ou l’historique, recherchez le domaine source, un extrait partagé, une note ou un sujet. Ouvrir le résultat pour vérifier la source ne le marque pas comme traité.
+
+### Puis-je lire un article hors ligne ?
+
+Pour les articles publics en HTTPS pris en charge, vous pouvez créer une copie texte à lire hors ligne. Elle reste sur l’appareil où vous l’avez créée. Détails de l’élément › Plus d’actions › Créer une copie de l’article
 
 La version actuelle n’impose aucune limite quotidienne d’enregistrements et ne nécessite pas de mise à niveau Pro séparée. Consultez l’App Store pour la disponibilité et le prix dans votre région.
 

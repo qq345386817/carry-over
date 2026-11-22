@@ -1,8 +1,8 @@
-# CarryOver - Links auf dem iPhone sichern, am Mac fortsetzen
+# CarryOver | Auf dem iPhone sichern, per Notiz am Mac wiederfinden
 
-Links, Texte und Bilder per Teilen-Menü auf iPhone oder iPad sichern, am Mac weiterbearbeiten. Mit Notizen, Favoriten, Suche, Erinnerungen und iCloud-Sync.
+Sichere Links, Zitate und Bilder im Teilen-Menü mit einer Notiz. Finde sie am Mac über die Notiz oder Quelle und exportiere einzelne Einträge als Markdown.
 
-Links, Texte und Bilder per Teilen-Menü auf iPhone oder iPad sichern. Am Mac prüfen, recherchieren und weiterarbeiten, wenn du Zeit hast.
+Halte auf dem iPhone oder iPad fest, was dir auffällt und warum. Wenn du später am Mac weiterarbeitest, findest du den Eintrag über deine Notiz.
 
 ## Jetzt sichern, später handeln
 
@@ -10,21 +10,17 @@ Links, Texte und Bilder per Teilen-Menü auf iPhone oder iPad sichern. Am Mac pr
 
 Links, Beiträge und Ideen an CarryOver senden
 
-### Gespeichert für später
+### Den Grund notieren
 
-Offene Einträge bleiben im Posteingang
+Schreib zur Gehstudie „Stichprobengröße prüfen“. Das Notizfeld kannst du auch leer lassen.
 
-### Am Mac weitermachen
+### Über die Notiz wiederfinden
 
-Quelle öffnen, nachsehen und erledigen
-
-### Erledigt und aufgehoben
-
-Erledigte Einträge bleiben im Verlauf
+Suche am Mac nach „Stichprobengröße“. Die passende Notiz führt dich zur Studie, auch ohne den Titel.
 
 ## Ein Platz für Entdeckungen, auf die du zurückkommen willst
 
-CarryOver ist ein Posteingang für Dinge, die du später bearbeiten möchtest, auf iPhone, iPad und Mac. Sichere beim Stöbern einen Beitrag, eine Quelle oder eine Idee und kehre am Mac zurück, wenn du Zeit zum Prüfen, Recherchieren und Nachfassen hast.
+Greif am Mac die Links, Zitate und Bilder wieder auf, die du auf dem iPhone oder iPad gesammelt hast. Fehlt dir der Titel, suche nach der Domain, einer Textstelle oder deiner eigenen Notiz.
 
 ### Ein Beitrag auf dem Arbeitsweg
 
@@ -32,7 +28,7 @@ Teile einen nützlichen Beitrag aus einer kompatiblen Social-App. Öffne die Que
 
 ### Material für dein nächstes Projekt
 
-Sichere in Safari einen Recherche-Link, eine KI-Ankündigung oder eine Designreferenz. Markiere Wichtiges als Favorit und suche später nach gespeichertem Titel, Text oder URL.
+Sichere Links, Textstellen oder Bilder über das Teilen-Menü auf dem iPhone oder iPad. Schreib kurz dazu, was du vorhast, etwa „Stichprobengröße prüfen“. Am Mac weißt du dann, warum du den Eintrag behalten hast.
 
 ### Eine Idee nach einem Gespräch
 
@@ -50,7 +46,7 @@ Unerledigte Einträge bleiben unabhängig von ihrem Alter im Posteingang. Markie
 
 ### Gespeichertes überall durchsuchen
 
-Suche auf iPhone, iPad und Mac nach Titeln, Texten und Quell-URLs, im Posteingang und im Verlauf.
+Suche im Posteingang oder Verlauf nach der Domain, einer Textstelle, deiner Notiz oder einem Thema.
 
 ### Erledigt, aber nicht verloren
 
@@ -64,15 +60,27 @@ Lege Datum und Uhrzeit fest und erlaube Systemmitteilungen. Ein Klick auf die Er
 
 iCloud synchronisiert iPhone, iPad und Mac mit demselben Apple Account. Netzwerk- und iCloud-Bedingungen können die Synchronisierung verzögern.
 
+### Markdown exportieren
+
+Ergänze Notizen und ein Thema, ohne die ursprüngliche Quelle zu verändern. Öffne das Original zum Nachlesen und markiere den Eintrag als erledigt, wenn du fertig bist. Quelle und Notizen eines Eintrags kannst du gemeinsam als Markdown-Datei exportieren.
+
 ## Häufige Fragen
 
 ### Was speichert CarryOver aus anderen Apps?
 
-Gespeichert werden Texte, Links oder Bilder, die die Quell-App tatsächlich teilt. Ein Social-Media-Beitrag wird möglicherweise nur als Link geteilt. Weblinks öffnen die Originalseite, keine vollständige Offline-Kopie; Internetzugang oder eine Anmeldung können nötig sein.
+Gespeichert werden Texte, Links oder Bilder, die die Quell-App tatsächlich teilt. Ein Social-Media-Beitrag wird möglicherweise nur als Link geteilt. Für einen Link brauchst du unter Umständen Internetzugang oder eine Anmeldung.
 
 ### Kann ich jetzt sichern und später synchronisieren?
 
 Einträge werden zuerst lokal gespeichert. Die Synchronisierung zwischen Geräten erfordert denselben Apple Account, aktiviertes iCloud und eine Internetverbindung. Prüfe den Sync-Status und versuche es bei Bedarf erneut; die Synchronisierung kann Zeit benötigen.
+
+### Wie finde ich einen Eintrag ohne Titel wieder?
+
+Suche im Posteingang oder Verlauf nach der Domain, einer Textstelle, deiner Notiz oder einem Thema. Öffne den Treffer, um die Quelle zu prüfen. Er wird dadurch nicht als erledigt markiert.
+
+### Kann ich gespeicherte Artikel offline lesen?
+
+Bei unterstützten öffentlichen HTTPS-Artikeln kannst du eine Textkopie zum Offline-Lesen anlegen. Sie bleibt auf dem Gerät, auf dem du sie erstellt hast. Details zum Inhalt › Weitere Aktionen › Artikelkopie erstellen
 
 Die aktuelle Version hat kein tägliches Speicherlimit und erfordert kein separates Pro-Upgrade. Verfügbarkeit und Preis für deine Region findest du im App Store.
 

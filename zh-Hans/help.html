@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CarryOver 使用帮助｜分享保存、iCloud 同步与提醒</title>
-  <meta name="description" content="了解如何使用 CarryOver 分享扩展保存内容、手动记录、查找收藏、通过 iCloud 同步和设置提醒，在 iPhone、iPad 与 Mac 间继续处理。">
+  <title>CarryOver 帮助｜分享保存、备注搜索与 Markdown 导出</title>
+  <meta name="description" content="了解怎样分享时写备注、在 Mac 找回资料、打开来源并导出 Markdown，也可查看 iCloud 同步条件和本机离线副本的使用方法。">
   <meta name="keywords" content="CarryOver帮助,保存链接,稍后读指南,分享菜单,iCloud同步,链接识别,Apple设备">
   <meta name="author" content="Peike Luo">
   <meta name="application-name" content="CarryOver">
@@ -32,8 +32,8 @@
   <link rel="alternate" hreflang="it" href="https://carryover.luopeike.com/it/help">
   <link rel="alternate" hreflang="id" href="https://carryover.luopeike.com/id/help">
   <link rel="alternate" hreflang="x-default" href="https://carryover.luopeike.com/en-US/help">
-  <meta property="og:title" content="CarryOver 使用帮助｜分享保存、iCloud 同步与提醒">
-  <meta property="og:description" content="了解如何使用 CarryOver 分享扩展保存内容、手动记录、查找收藏、通过 iCloud 同步和设置提醒，在 iPhone、iPad 与 Mac 间继续处理。">
+  <meta property="og:title" content="CarryOver 帮助｜分享保存、备注搜索与 Markdown 导出">
+  <meta property="og:description" content="了解怎样分享时写备注、在 Mac 找回资料、打开来源并导出 Markdown，也可查看 iCloud 同步条件和本机离线副本的使用方法。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://carryover.luopeike.com/zh-Hans/help">
   <meta property="og:image" content="https://carryover.luopeike.com/images/app-icon.png">
@@ -52,8 +52,8 @@
   <meta property="og:locale:alternate" content="it_IT">
   <meta property="og:locale:alternate" content="id_ID">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CarryOver 使用帮助｜分享保存、iCloud 同步与提醒">
-  <meta name="twitter:description" content="了解如何使用 CarryOver 分享扩展保存内容、手动记录、查找收藏、通过 iCloud 同步和设置提醒，在 iPhone、iPad 与 Mac 间继续处理。">
+  <meta name="twitter:title" content="CarryOver 帮助｜分享保存、备注搜索与 Markdown 导出">
+  <meta name="twitter:description" content="了解怎样分享时写备注、在 Mac 找回资料、打开来源并导出 Markdown，也可查看 iCloud 同步条件和本机离线副本的使用方法。">
   <meta name="twitter:image" content="https://carryover.luopeike.com/images/app-icon.png">
   <meta name="twitter:image:alt" content="CarryOver">
   <script type="application/ld+json">
@@ -89,11 +89,11 @@
     {
       "@type": "WebPage",
       "@id": "https://carryover.luopeike.com/zh-Hans/help#webpage",
-      "name": "CarryOver 使用帮助｜分享保存、iCloud 同步与提醒",
+      "name": "CarryOver 帮助｜分享保存、备注搜索与 Markdown 导出",
       "url": "https://carryover.luopeike.com/zh-Hans/help",
-      "description": "了解如何使用 CarryOver 分享扩展保存内容、手动记录、查找收藏、通过 iCloud 同步和设置提醒，在 iPhone、iPad 与 Mac 间继续处理。",
+      "description": "了解怎样分享时写备注、在 Mac 找回资料、打开来源并导出 Markdown，也可查看 iCloud 同步条件和本机离线副本的使用方法。",
       "inLanguage": "zh-Hans",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-23",
       "isPartOf": {
         "@id": "https://carryover.luopeike.com/#website"
       },
@@ -135,7 +135,7 @@
           "name": "能从其他 App 保存哪些内容？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "保存内容以来源 App 实际分享的文字、链接或图片为准。社交帖子可能只分享链接，而非全部内容。网页链接打开原始页面，不是全文离线副本；访问来源可能需要联网或登录。"
+            "text": "保存内容以来源 App 实际分享的文字、链接或图片为准。社交帖子可能只分享链接，而非全部内容。打开原始链接有时需要联网或登录。"
           }
         },
         {
@@ -148,18 +148,26 @@
         },
         {
           "@type": "Question",
-          "name": "未完成的内容会在几天后消失吗？",
+          "name": "忘了标题，怎样找回资料？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "不会。未完成的内容持续留在待处理列表。标记完成后进入历史记录，删除则会移除内容。"
+            "text": "在待处理或历史记录中搜索来源域名、分享的原文片段、个人备注或主题。打开命中条目可以核对来源；查看不会自动标为已处理。"
           }
         },
         {
           "@type": "Question",
-          "name": "能搜索保存过的内容吗？",
+          "name": "保存的文章可以离线阅读吗？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "可以。在 iPhone、iPad 和 Mac 上按标题、文字和来源网址搜索，也能搜索历史记录中的已完成内容。"
+            "text": "对于支持的公开 HTTPS 文章，可手动保存纯文本副本，供这台设备离线阅读。文章副本仅保存在创建设备上。 资料详情 › 更多操作 › 生成正文副本"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "未完成的内容会在几天后消失吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "未完成的内容不会因为保存时间久而离开待处理列表。完成的内容进入历史记录。"
           }
         },
         {
@@ -233,14 +241,14 @@
 <article class="content-card">
       <p class="eyebrow">帮助与支持</p>
       <h1>如何使用 CarryOver</h1>
-      <p class="lead">CarryOver 是适用于 iPhone、iPad 和 Mac 的稍后处理收件箱。刷到帖子、待查证的资料或聊天中的灵感时，先接住内容，等回到 Mac，再专注查看、调研和跟进。</p>
+      <p class="lead">回到 Mac，继续处理在 iPhone 或 iPad 上存下的链接、引文和图片。想不起标题时，可以搜来源域名、记得的一句话，或当时给自己写的备注。</p>
 
       <section class="section" id="save">
         <h2>保存内容</h2>
         <div class="step-list">
           <article class="step"><h3>选择支持分享的内容</h3><p>选择想保留的文字、链接、图片或帖子。能分享哪些内容取决于来源 App。</p></article>
           <article class="step"><h3>使用分享</h3><p>在兼容的 App 中打开系统分享菜单，选择 CarryOver。iPhone 和 iPad 上若未显示，可查看“更多”；Mac 上是否可用还取决于来源 App、内容类型和系统扩展设置。</p></article>
-          <article class="step"><h3>确认内容并保存</h3><p>在分享表单中检查内容，也可以修改标题或设置提醒。点击保存，加入待处理列表。</p></article>
+          <article class="step"><h3>确认内容并保存</h3><p>保存这份步行研究时，写下「核对样本量」。只想先存下来，也可以留空。 在分享表单中检查内容，也可以修改标题或设置提醒。点击保存，加入待处理列表。</p></article>
           <article class="step"><h3>手动添加记录</h3><p>在 CarryOver 中打开“添加分享”，记录想法或粘贴内容，保存到待处理列表。</p></article>
         </div>
       </section>
@@ -248,11 +256,12 @@
       <section class="section" id="manage">
         <h2>管理列表</h2>
         <div class="step-list">
-          <article class="step"><h3>查看内容，打开来源</h3><p>选择一条记录即可查看或编辑。如果包含来源链接，可以使用来源操作在浏览器中打开。</p></article>
+          <article class="step"><h3>查看内容，打开来源</h3><p>在待处理或历史记录中搜索来源域名、分享的原文片段、个人备注或主题。打开命中条目可以核对来源；查看不会自动标为已处理。</p></article>
           <article class="step"><h3>把重要内容加入收藏</h3><p>收藏尚未完成的记录后，可以在“收藏”筛选中找到。内容仍留在收件箱，直到标记完成。</p></article>
           <article class="step"><h3>处理完，标记完成</h3><p>使用完成按钮将处理过的内容移到历史记录。只有已完成的内容会进入历史，未完成的内容不会过期。</p></article>
           <article class="step"><h3>从历史记录恢复</h3><p>在历史记录中点击对应记录旁的恢复按钮，即可重新放回待处理列表。</p></article>
-          <article class="step"><h3>删除前确认</h3><p>在 iPhone 和 iPad 上左滑记录后选择删除；在 Mac 上使用删除操作。确认后才会移除记录。</p></article>
+          <article class="step"><h3>删除前确认</h3><p>在 iPhone 和 iPad 上左滑记录后选择删除；在 Mac 上使用删除操作。确认后才会移除记录。回收站：已删除的项目保留 30 天，期间可恢复，之后将永久删除。</p></article>
+          <article class="step"><h3>导出 Markdown</h3><p>资料详情 › 更多操作 › 导出 Markdown。 需要写进文稿时，可将单条资料的来源和笔记一起导出为 Markdown 文件。</p></article>
         </div>
       </section>
 
@@ -271,10 +280,11 @@
           <article class="policy-item"><h3>如何分享到 CarryOver？</h3><p>在兼容的 App 中打开系统分享菜单，选择 CarryOver。iPhone 和 iPad 上若未显示，可查看“更多”；Mac 上是否可用还取决于来源 App、内容类型和系统扩展设置。</p></article>
           <article class="policy-item"><h3>为什么另一台设备没有马上同步？</h3><p>iCloud 同步可能受到网络状态、低电量模式或 iCloud 存储空间不足影响。请保持两台设备都安装 App，并给系统一点时间完成后台同步。</p></article>
           <article class="policy-item"><h3>CarryOver 需要注册账号吗？</h3><p>不需要单独的 CarryOver 账号。可用时，同步使用 Apple 的 iCloud 服务。</p></article>
-          <article class="policy-item"><h3>能从其他 App 保存哪些内容？</h3><p>保存内容以来源 App 实际分享的文字、链接或图片为准。社交帖子可能只分享链接，而非全部内容。网页链接打开原始页面，不是全文离线副本；访问来源可能需要联网或登录。</p></article>
+          <article class="policy-item"><h3>能从其他 App 保存哪些内容？</h3><p>保存内容以来源 App 实际分享的文字、链接或图片为准。社交帖子可能只分享链接，而非全部内容。打开原始链接有时需要联网或登录。</p></article>
           <article class="policy-item"><h3>可以先保存，稍后再同步吗？</h3><p>内容先保存在本地。跨设备同步需要使用同一 Apple 账户、启用 iCloud 并连接互联网。可查看同步状态，需要时重试；同步不保证即时完成。</p></article>
-          <article class="policy-item"><h3>未完成的内容会在几天后消失吗？</h3><p>不会。未完成的内容持续留在待处理列表。标记完成后进入历史记录，删除则会移除内容。</p></article>
-          <article class="policy-item"><h3>能搜索保存过的内容吗？</h3><p>可以。在 iPhone、iPad 和 Mac 上按标题、文字和来源网址搜索，也能搜索历史记录中的已完成内容。</p></article>
+          <article class="policy-item"><h3>忘了标题，怎样找回资料？</h3><p>在待处理或历史记录中搜索来源域名、分享的原文片段、个人备注或主题。打开命中条目可以核对来源；查看不会自动标为已处理。</p></article>
+          <article class="policy-item"><h3>保存的文章可以离线阅读吗？</h3><p>对于支持的公开 HTTPS 文章，可手动保存纯文本副本，供这台设备离线阅读。文章副本仅保存在创建设备上。 资料详情 › 更多操作 › 生成正文副本</p></article>
+          <article class="policy-item"><h3>未完成的内容会在几天后消失吗？</h3><p>未完成的内容不会因为保存时间久而离开待处理列表。完成的内容进入历史记录。</p></article>
           <article class="policy-item"><h3>“稍后处理”真的会提醒吗？</h3><p>会。设置未来的日期和时间，并在系统设置中允许 CarryOver 发送通知。系统会发送本地通知；专注模式和通知设置可能使提醒静音。点击通知可打开对应内容。</p></article>
           <article class="policy-item"><h3>已完成的内容还能继续处理吗？</h3><p>可以。在历史记录中使用记录旁的恢复按钮，即可放回待处理列表。</p></article>
           <article class="policy-item"><h3>每天保存有次数限制吗？</h3><p>当前版本没有每日保存次数限制，也无需另购 Pro 升级。当地上架情况和价格以 App Store 为准。</p></article>

@@ -1,8 +1,8 @@
-# CarryOver - Save Links & Notes on iPhone, Continue on Mac
+# CarryOver | Save on iPhone, find it by your notes on Mac
 
-Save links, text and images from the Share menu on iPhone or iPad. Review and research on Mac, with manual notes, favorites, search, reminders and iCloud sync.
+Save a link, quote or image with a note in the iPhone share sheet. Find it by note or source on Mac and export the item with its notes as Markdown.
 
-Save links, text and images from the Share menu on iPhone or iPad. Pick them up on Mac when you're ready to act.
+Save what caught your eye on iPhone or iPad. Jot down why, then find it by that note when you’re back at your Mac.
 
 ## Capture now, action later
 
@@ -10,21 +10,17 @@ Save links, text and images from the Share menu on iPhone or iPad. Pick them up 
 
 Save links, posts and ideas from the Share menu
 
-### Saved for later
+### Leave yourself a note
 
-Unfinished items stay in your inbox
+Add “Check sample size” to the walking study, or leave the note blank.
 
-### Pick it up on Mac
+### Find it by your own words
 
-Open the source, research and follow up when you're ready
-
-### Done, not lost
-
-Completed items remain in History
+Search “sample size” on Mac. The matching note points back to the study, even if you forget its title.
 
 ## A place for the things you want to come back to
 
-CarryOver is a save-for-later inbox for iPhone, iPad and Mac. Capture a post, a reference or an idea while browsing, then return on Mac when you have time to review, research and follow up.
+Pick up on Mac with the links, quotes and images you saved on iPhone or iPad. If you forget a title, search for the source domain, a phrase you saved or the note you left yourself.
 
 ### A post during your commute
 
@@ -32,7 +28,7 @@ Share a useful post from a compatible social app. Open its source on Mac when yo
 
 ### A reference for your next project
 
-Save a link from Safari for later research, whether it is an AI announcement or a design reference. Favorite it and find the saved title, text or URL later.
+Save a link, a passage or a photo from the share sheet on iPhone or iPad. Add a line like “check the sample size” so that when you open CarryOver on Mac, you know why you kept it.
 
 ### An idea you do not want to lose
 
@@ -50,7 +46,7 @@ Unfinished items stay in your inbox regardless of age. Favorite important finds,
 
 ### Search saved content on any device
 
-Search titles, saved text and source URLs on iPhone, iPad and Mac, across your inbox and History.
+Search the source domain, a phrase from the shared text, a personal note or a topic in the inbox or History.
 
 ### Done, with a way back
 
@@ -64,15 +60,27 @@ Set a date and time and allow system notifications. Tap the reminder to open the
 
 iCloud sync connects iPhone, iPad and Mac signed in to the same Apple Account. Network and iCloud conditions can delay syncing.
 
+### Export Markdown
+
+Keep your notes and topic alongside the original. Open the source to check a detail, then mark the item done when you finish. To use it in your writing, export that item’s source and notes as a Markdown file.
+
 ## Frequently asked questions
 
 ### What does CarryOver save from other apps?
 
-It saves the text, links or images that the source app actually shares. A social post may be shared as a link rather than its full content. Web links open the original page, not a full-text offline copy; internet access or a login may be required.
+It saves the text, links or images that the source app actually shares. A social post may be shared as a link rather than its full content. Opening a link may require internet access or a login.
 
 ### Can I save now and sync later?
 
 Items are saved locally first. Cross-device sync needs the same Apple Account, iCloud enabled and an internet connection. Check the sync status and retry if needed; syncing is not guaranteed to be immediate.
+
+### Can I find a saved item without its title?
+
+Search the source domain, a phrase from the shared text, a personal note or a topic in the inbox or History. Open the result to check its source; opening it doesn’t mark it done.
+
+### Can I read a saved article offline?
+
+For supported public HTTPS articles, you can save a plain-text copy to read offline on this device. Article copies stay on the device where you create them. Item details › More actions › Create article copy
 
 The current version has no daily save limit and does not require a separate Pro upgrade. Check the App Store for availability and pricing in your region.
 

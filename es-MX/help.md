@@ -1,6 +1,6 @@
 # Cómo usar CarryOver
 
-CarryOver es una bandeja para lo que quieres retomar después en iPhone, iPad y Mac. Guarda una publicación, una referencia o una idea mientras navegas y vuelve en Mac cuando tengas tiempo de revisar, investigar y darle seguimiento.
+Retoma en la Mac los enlaces, citas e imágenes que guardaste en el iPhone o iPad. Si no recuerdas el título, busca por el dominio de origen, unas palabras de la cita o la nota que te dejaste.
 
 ## Guardar contenido
 
@@ -14,7 +14,7 @@ En una app compatible, abre el menú Compartir del sistema y elige CarryOver. En
 
 ### Revisa y guarda
 
-Revisa el contenido en el formulario de compartir. Puedes cambiar el título o poner un recordatorio. Elige Guardar para agregarlo a pendientes.
+Al guardar el estudio sobre caminatas, escribe «Revisar tamaño de la muestra». También puedes dejar la nota en blanco. Revisa el contenido en el formulario de compartir. Puedes cambiar el título o poner un recordatorio. Elige Guardar para agregarlo a pendientes.
 
 ### Agrega una nota manualmente
 
@@ -24,7 +24,7 @@ Abre el formulario para agregar en CarryOver, anota una idea o pega contenido y 
 
 ### Abre el elemento o su fuente
 
-Selecciona un elemento para verlo o editarlo. Si tiene una URL de origen, usa la acción de fuente para abrirla en el navegador.
+Busca en Pendientes o en el historial por dominio, fragmento del texto compartido, nota o tema. Abre el resultado para revisar la fuente: eso no lo marca como completado.
 
 ### Guarda lo importante en favoritos
 
@@ -40,7 +40,11 @@ Usa el botón de restaurar junto a un elemento completado para devolverlo a pend
 
 ### Confirma antes de eliminar
 
-En iPhone y iPad, desliza un elemento a la izquierda y elige Eliminar. En Mac, usa la acción de eliminar. Confirma antes de quitarlo.
+En iPhone y iPad, desliza un elemento a la izquierda y elige Eliminar. En Mac, usa la acción de eliminar. Confirma antes de quitarlo. Papelera: Los elementos eliminados se conservan durante 30 días. Puedes restaurarlos antes de que se eliminen definitivamente.
+
+### Exportar Markdown
+
+Detalles del elemento › Más acciones › Exportar Markdown. Puedes exportar la fuente y las notas de un elemento en un archivo Markdown.
 
 ## Sincronización y solución de problemas
 
@@ -72,19 +76,23 @@ No. La sincronización usa los servicios iCloud de Apple cuando están disponibl
 
 ### ¿Qué guarda CarryOver desde otras apps?
 
-Guarda los textos, enlaces o imágenes que la app de origen realmente comparte. Una publicación social puede compartirse como enlace y no con todo su contenido. Los enlaces web abren la página original, no una copia completa sin conexión; podría requerirse Internet o iniciar sesión.
+Guarda los textos, enlaces o imágenes que la app de origen realmente comparte. Una publicación social puede compartirse como enlace y no con todo su contenido. Para abrir un enlace, es posible que necesites internet o iniciar sesión.
 
 ### ¿Puedo guardar ahora y sincronizar después?
 
 Los elementos se guardan primero en el dispositivo. La sincronización requiere la misma Cuenta de Apple, iCloud activado y conexión a Internet. Revisa el estado y vuelve a intentarlo si hace falta; no se garantiza que sea inmediata.
 
+### ¿Cómo encuentro algo si olvidé el título?
+
+Busca en Pendientes o en el historial por dominio, fragmento del texto compartido, nota o tema. Abre el resultado para revisar la fuente: eso no lo marca como completado.
+
+### ¿Puedo leer un artículo sin conexión?
+
+Si un artículo público con HTTPS es compatible, puedes guardar una copia de texto para leerla sin conexión. Esa copia se queda en el dispositivo donde la creaste. Detalles del elemento › Más acciones › Crear copia del artículo
+
 ### ¿Los pendientes desaparecen después de unos días?
 
-No. Los pendientes permanecen en tu bandeja. Al marcarlos como listos pasan al historial; al eliminarlos se quitan.
-
-### ¿Puedo buscar el contenido guardado?
-
-Sí. Busca títulos, textos y URL de origen en iPhone, iPad y Mac, incluidos los elementos del historial.
+Los elementos sin completar permanecen en tu bandeja sin importar su antigüedad. Los elementos completados pasan al historial.
 
 ### ¿Recibiré un recordatorio de verdad?
 

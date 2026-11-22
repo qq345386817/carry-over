@@ -1,6 +1,6 @@
 # So nutzt du CarryOver
 
-CarryOver ist ein Posteingang für Dinge, die du später bearbeiten möchtest, auf iPhone, iPad und Mac. Sichere beim Stöbern einen Beitrag, eine Quelle oder eine Idee und kehre am Mac zurück, wenn du Zeit zum Prüfen, Recherchieren und Nachfassen hast.
+Greif am Mac die Links, Zitate und Bilder wieder auf, die du auf dem iPhone oder iPad gesammelt hast. Fehlt dir der Titel, suche nach der Domain, einer Textstelle oder deiner eigenen Notiz.
 
 ## Inhalte sichern
 
@@ -14,7 +14,7 @@ Wähle den Text, Link, das Bild oder den Beitrag, den du behalten möchtest. Wel
 
 ### Prüfen und speichern
 
-Prüfe den Inhalt im Teilen-Formular. Du kannst den Titel ändern oder eine Erinnerung einstellen. Wähle Speichern, um den Eintrag hinzuzufügen.
+Schreib zur Gehstudie „Stichprobengröße prüfen“. Das Notizfeld kannst du auch leer lassen. Prüfe den Inhalt im Teilen-Formular. Du kannst den Titel ändern oder eine Erinnerung einstellen. Wähle Speichern, um den Eintrag hinzuzufügen.
 
 ### Eine Notiz selbst hinzufügen
 
@@ -24,7 +24,7 @@ Prüfe den Inhalt im Teilen-Formular. Du kannst den Titel ändern oder eine Erin
 
 ### Eintrag oder Quelle öffnen
 
-Wähle einen Eintrag zum Anzeigen oder Bearbeiten aus. Ist eine Quell-URL vorhanden, kannst du sie über die Quellenaktion im Browser öffnen.
+Suche im Posteingang oder Verlauf nach der Domain, einer Textstelle, deiner Notiz oder einem Thema. Öffne den Treffer, um die Quelle zu prüfen. Er wird dadurch nicht als erledigt markiert.
 
 ### Wichtiges als Favorit behalten
 
@@ -40,7 +40,11 @@ Mit der Wiederherstellen-Schaltfläche neben einem erledigten Eintrag kommt er z
 
 ### Löschen mit Bestätigung
 
-Wische auf iPhone und iPad einen Eintrag nach links und wähle Löschen. Nutze am Mac die Löschaktion. Erst nach Bestätigung wird er entfernt.
+Wische auf iPhone und iPad einen Eintrag nach links und wähle Löschen. Nutze am Mac die Löschaktion. Erst nach Bestätigung wird er entfernt. Papierkorb: Gelöschte Einträge bleiben 30 Tage erhalten. In dieser Zeit kannst du sie wiederherstellen, bevor sie endgültig gelöscht werden.
+
+### Markdown exportieren
+
+Details zum Inhalt › Weitere Aktionen › Markdown exportieren. Quelle und Notizen eines Eintrags kannst du gemeinsam als Markdown-Datei exportieren.
 
 ## Sync und Fehlerbehebung
 
@@ -72,19 +76,23 @@ Nein. Sync läuft, wenn verfügbar, über Apples iCloud-Dienste.
 
 ### Was speichert CarryOver aus anderen Apps?
 
-Gespeichert werden Texte, Links oder Bilder, die die Quell-App tatsächlich teilt. Ein Social-Media-Beitrag wird möglicherweise nur als Link geteilt. Weblinks öffnen die Originalseite, keine vollständige Offline-Kopie; Internetzugang oder eine Anmeldung können nötig sein.
+Gespeichert werden Texte, Links oder Bilder, die die Quell-App tatsächlich teilt. Ein Social-Media-Beitrag wird möglicherweise nur als Link geteilt. Für einen Link brauchst du unter Umständen Internetzugang oder eine Anmeldung.
 
 ### Kann ich jetzt sichern und später synchronisieren?
 
 Einträge werden zuerst lokal gespeichert. Die Synchronisierung zwischen Geräten erfordert denselben Apple Account, aktiviertes iCloud und eine Internetverbindung. Prüfe den Sync-Status und versuche es bei Bedarf erneut; die Synchronisierung kann Zeit benötigen.
 
+### Wie finde ich einen Eintrag ohne Titel wieder?
+
+Suche im Posteingang oder Verlauf nach der Domain, einer Textstelle, deiner Notiz oder einem Thema. Öffne den Treffer, um die Quelle zu prüfen. Er wird dadurch nicht als erledigt markiert.
+
+### Kann ich gespeicherte Artikel offline lesen?
+
+Bei unterstützten öffentlichen HTTPS-Artikeln kannst du eine Textkopie zum Offline-Lesen anlegen. Sie bleibt auf dem Gerät, auf dem du sie erstellt hast. Details zum Inhalt › Weitere Aktionen › Artikelkopie erstellen
+
 ### Verschwinden offene Einträge nach einigen Tagen?
 
-Nein. Offene Einträge bleiben im Posteingang. Als erledigt markierte Einträge wechseln in den Verlauf; Löschen entfernt sie.
-
-### Kann ich gespeicherte Inhalte durchsuchen?
-
-Ja. Durchsuche Titel, Texte und Quell-URLs auf iPhone, iPad und Mac, auch erledigte Einträge im Verlauf.
+Unerledigte Einträge bleiben unabhängig von ihrem Alter im Posteingang. Erledigte Einträge landen im Verlauf.
 
 ### Erinnert mich Später tatsächlich?
 

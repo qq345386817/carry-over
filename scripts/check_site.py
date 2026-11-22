@@ -177,6 +177,8 @@ def check_pages():
                     for text in [node["name"], node["acceptedAnswer"]["text"]]:
                         assert text in visible and text in markdown_path.read_text(), (url, text)
             if key == "home":
+                for name in ("phone-share", "mac-search", "note-detail", "mac-match"):
+                    assert f"../images/product/{locale}/{name}.webp" in page.resources, (url, name)
                 assert page.title == product["title"], url
                 assert page.meta["description"] == product["description"], url
                 assert len(faq["mainEntity"]) == len(product["boundaries"]), url
@@ -266,6 +268,8 @@ def check_routing():
     llms = (ROOT / "llms.txt").read_text()
     assert_current_distribution(llms, "llms.txt")
     assert PRODUCT["en-US"]["summary"] in llms
+    for title, text, *_ in WORKFLOW["en-US"]["stages"][:3]:
+        assert title in llms and text in llms, ("llms.txt", title)
     for heading, text in PRODUCT["en-US"]["features"] + PRODUCT["en-US"]["boundaries"]:
         assert heading in llms and text in llms, ("llms.txt", heading)
     headers = (ROOT / "_headers").read_text()

@@ -1,6 +1,6 @@
 {
   "en-US": {
-    "intro": "Save links, text and images from the Share menu on iPhone or iPad. Pick them up on Mac when you're ready to act.",
+    "intro": "Save what caught your eye on iPhone or iPad. Jot down why, then find it by that note when you’re back at your Mac.",
     "stages": [
       [
         "Share to CarryOver",
@@ -9,14 +9,14 @@
         "Capture it without switching into work"
       ],
       [
-        "Saved for later",
-        "Unfinished items stay in your inbox",
+        "Leave yourself a note",
+        "Add “Check sample size” to the walking study, or leave the note blank.",
         "Keep the context",
         "The title and source stay with your item"
       ],
       [
-        "Pick it up on Mac",
-        "Open the source, research and follow up when you're ready",
+        "Find it by your own words",
+        "Search “sample size” on Mac. The matching note points back to the study, even if you forget its title.",
         "Continue on Mac",
         "Find it, open it and mark it done"
       ],
@@ -29,7 +29,7 @@
     ]
   },
   "zh-Hans": {
-    "intro": "在 iPhone、iPad 上，从分享菜单收下链接、文字和图片。回到 Mac，再查看、调研和跟进。",
+    "intro": "在 iPhone 或 iPad 上存下感兴趣的资料，顺手记一句为什么要留。回到 Mac，凭这句话就能找回来。",
     "stages": [
       [
         "从分享菜单保存",
@@ -38,14 +38,14 @@
         "不用立刻切换到工作状态"
       ],
       [
-        "已保存，稍后处理",
-        "未完成的内容持续留在待处理列表",
+        "记一句为什么要留",
+        "保存这份步行研究时，写下「核对样本量」。只想先存下来，也可以留空。",
         "保留上下文",
         "标题和来源跟着内容一起保存"
       ],
       [
-        "回到 Mac 接着处理",
-        "打开来源，专注调研和跟进，处理完再标记完成",
+        "凭备注找回原资料",
+        "在 Mac 搜「样本量」，就能从匹配的备注找到这份研究，不必记住标题。",
         "在 Mac 继续",
         "把手机上的发现变成实际行动"
       ],
@@ -58,7 +58,7 @@
     ]
   },
   "zh-Hant": {
-    "intro": "在 iPhone、iPad 上，從分享選單留下連結、文字和圖片。回到 Mac，再查看、研究與跟進。",
+    "intro": "在 iPhone 或 iPad 上存下感興趣的資料，順手寫下為什麼要留。回到 Mac，憑這句備註就能找回來。",
     "stages": [
       [
         "從分享選單儲存",
@@ -67,14 +67,14 @@
         "不用立刻切換到工作狀態"
       ],
       [
-        "已儲存，稍後處理",
-        "未完成的內容持續留在待處理清單",
+        "寫下想留下的原因",
+        "儲存這份步行研究時，寫下「核對樣本數」。只想先存起來，也可以留白。",
         "保留上下文",
         "標題和來源跟著內容一起儲存"
       ],
       [
-        "回到 Mac 接著處理",
-        "開啟來源，專心研究與跟進，處理完再標記完成",
+        "用備註找回資料",
+        "在 Mac 搜尋「樣本數」，就能從相符的備註找回這份研究，不必記得標題。",
         "在 Mac 繼續",
         "將手機上的發現變成實際行動"
       ],
@@ -87,7 +87,7 @@
     ]
   },
   "ja": {
-    "intro": "iPhone・iPad の共有メニューからリンク、テキスト、画像を保存。時間ができたら、Mac で確認や調査を続けられます。",
+    "intro": "iPhoneやiPadで気になった資料を保存するときに、理由もひと言。Macに戻ったら、そのメモを手がかりに見つけられます。",
     "stages": [
       [
         "共有メニューから保存",
@@ -96,14 +96,14 @@
         "作業を始めずに気になるものを残す"
       ],
       [
-        "保存して、あとで処理",
-        "未処理の内容は受信トレイに残ります",
+        "理由をひと言添える",
+        "ウォーキングの研究には「調査対象の人数を確認」とメモ。急いでいるときは空欄のまま保存できます。",
         "文脈もそのまま",
         "タイトルと元のリンクを保存"
       ],
       [
-        "Mac で続ける",
-        "元のページを開いて調べ、取り組んだら完了に",
+        "Macでメモから探す",
+        "Macで「人数」と検索すれば、タイトルを覚えていなくてもメモから研究が見つかります。",
         "Mac で取り組む",
         "スマホでの発見を次の行動へ"
       ],
@@ -116,7 +116,7 @@
     ]
   },
   "ko": {
-    "intro": "iPhone·iPad 공유 메뉴로 링크, 텍스트, 이미지를 저장하세요. 시간이 날 때 Mac에서 확인하고 이어서 처리하세요.",
+    "intro": "iPhone이나 iPad에서 눈길이 간 자료를 저장할 때 이유도 한 줄 남기세요. 나중에 Mac에서 그 메모로 자료를 다시 찾을 수 있습니다.",
     "stages": [
       [
         "공유 메뉴에서 저장",
@@ -125,14 +125,14 @@
         "바로 작업하지 않아도 놓치지 않아요"
       ],
       [
-        "저장하고 나중에 처리",
-        "미완료 항목은 계속 목록에 남아요",
+        "저장한 이유 남기기",
+        "걷기 연구를 저장하면서 ‘표본 수 확인하기’라고 적어 보세요. 메모는 비워 둬도 됩니다.",
         "맥락을 그대로",
         "제목과 출처를 함께 저장해요"
       ],
       [
-        "Mac에서 이어서 처리",
-        "출처를 열고 확인한 뒤 완료하세요",
+        "Mac에서 메모로 찾기",
+        "Mac에서 ‘표본 수’를 검색하세요. 제목을 잊어도 메모가 일치하는 연구를 찾을 수 있습니다.",
         "Mac에서 계속",
         "휴대폰에서 발견한 내용을 행동으로"
       ],
@@ -145,7 +145,7 @@
     ]
   },
   "de-DE": {
-    "intro": "Links, Texte und Bilder per Teilen-Menü auf iPhone oder iPad sichern. Am Mac prüfen, recherchieren und weiterarbeiten, wenn du Zeit hast.",
+    "intro": "Halte auf dem iPhone oder iPad fest, was dir auffällt und warum. Wenn du später am Mac weiterarbeitest, findest du den Eintrag über deine Notiz.",
     "stages": [
       [
         "Per Teilen-Menü speichern",
@@ -154,14 +154,14 @@
         "Ohne sofort mit der Arbeit anzufangen"
       ],
       [
-        "Gespeichert für später",
-        "Offene Einträge bleiben im Posteingang",
+        "Den Grund notieren",
+        "Schreib zur Gehstudie „Stichprobengröße prüfen“. Das Notizfeld kannst du auch leer lassen.",
         "Kontext behalten",
         "Titel und Quelle bleiben erhalten"
       ],
       [
-        "Am Mac weitermachen",
-        "Quelle öffnen, nachsehen und erledigen",
+        "Über die Notiz wiederfinden",
+        "Suche am Mac nach „Stichprobengröße“. Die passende Notiz führt dich zur Studie, auch ohne den Titel.",
         "Am Mac fortsetzen",
         "Aus Entdeckungen werden nächste Schritte"
       ],
@@ -174,7 +174,7 @@
     ]
   },
   "fr-FR": {
-    "intro": "Enregistrez liens, textes et images via Partager sur iPhone ou iPad. Reprenez sur Mac pour vérifier, rechercher et donner suite.",
+    "intro": "Sur iPhone ou iPad, gardez ce qui vous intéresse et notez pourquoi. Sur Mac, quelques mots de cette note suffisent pour retrouver la source.",
     "stages": [
       [
         "Enregistrer via Partager",
@@ -183,14 +183,14 @@
         "Sans devoir commencer le travail tout de suite"
       ],
       [
-        "Gardé pour plus tard",
-        "Les éléments à traiter restent dans la liste",
+        "Noter ce qui vous intéresse",
+        "Pour cette étude sur la marche, notez « Taille de l’échantillon à vérifier ». La note est facultative.",
         "Conserver le contexte",
         "Le titre et la source restent avec le contenu"
       ],
       [
-        "Reprendre sur Mac",
-        "Ouvrez la source, vérifiez et donnez suite avant de terminer",
+        "Retrouver l’étude sur Mac",
+        "Recherchez « taille » sur Mac : la note fait ressortir l’étude, même si vous avez oublié son titre.",
         "Continuer sur Mac",
         "Transformez vos trouvailles en actions"
       ],
@@ -203,7 +203,7 @@
     ]
   },
   "es-MX": {
-    "intro": "Guarda enlaces, textos e imágenes desde Compartir en iPhone o iPad. Retómalos en Mac para revisar, investigar y dar seguimiento.",
+    "intro": "Guarda lo que te interesa en el iPhone o iPad y anota por qué. Cuando vuelvas a la Mac, esa nota te ayudará a encontrarlo.",
     "stages": [
       [
         "Guardar desde Compartir",
@@ -212,14 +212,14 @@
         "Sin tener que ponerte a trabajar de inmediato"
       ],
       [
-        "Guardado para después",
-        "Los pendientes permanecen en tu bandeja",
+        "Anota el motivo",
+        "Al guardar el estudio sobre caminatas, escribe «Revisar tamaño de la muestra». También puedes dejar la nota en blanco.",
         "Conservar el contexto",
         "El título y la fuente se guardan juntos"
       ],
       [
-        "Continuar en Mac",
-        "Abre la fuente, investiga y da seguimiento antes de terminar",
+        "Encuéntralo por tu nota",
+        "Busca «tamaño» en la Mac. La nota te lleva al estudio aunque no recuerdes el título.",
         "Seguir en Mac",
         "Convierte lo que encontraste en acciones"
       ],
@@ -232,7 +232,7 @@
     ]
   },
   "it": {
-    "intro": "Salva link, testi e immagini da Condividi su iPhone o iPad. Riprendi sul Mac per verificare, fare ricerche e dare seguito.",
+    "intro": "Quando qualcosa ti interessa su iPhone o iPad, salvalo e annota il motivo. Sul Mac ti basteranno le parole dell’appunto per ritrovarlo.",
     "stages": [
       [
         "Salva da Condividi",
@@ -241,14 +241,14 @@
         "Senza iniziare subito a lavorare"
       ],
       [
-        "Salvato per dopo",
-        "Gli elementi aperti restano nella tua lista",
+        "Annota il motivo",
+        "Per lo studio sul cammino scrivi «Quanti partecipanti?». Se preferisci, lascia vuoto il campo.",
         "Mantieni il contesto",
         "Titolo e fonte restano con il contenuto"
       ],
       [
-        "Riprendi sul Mac",
-        "Apri la fonte, approfondisci e poi segna come completato",
+        "Ritrova lo studio sul Mac",
+        "Cerca «partecipanti» sul Mac. L’appunto ti riporta allo studio anche se non ne ricordi il titolo.",
         "Continua sul Mac",
         "Trasforma le scoperte in azioni"
       ],
@@ -261,7 +261,7 @@
     ]
   },
   "id": {
-    "intro": "Simpan tautan, teks, dan gambar lewat Bagikan di iPhone atau iPad. Lanjutkan di Mac saat siap memeriksa, meneliti, dan menindaklanjuti.",
+    "intro": "Saat menemukan sesuatu yang menarik di iPhone atau iPad, simpan dan catat alasannya. Di Mac, cari lagi dengan kata-kata dari catatanmu.",
     "stages": [
       [
         "Simpan dari Bagikan",
@@ -270,14 +270,14 @@
         "Tanpa harus langsung mulai bekerja"
       ],
       [
-        "Tersimpan untuk nanti",
-        "Item yang belum selesai tetap di kotak masuk",
+        "Catat alasannya",
+        "Saat menyimpan studi tentang jalan kaki, tulis “Cek jumlah sampel”. Kolom catatan juga boleh dikosongkan.",
         "Jaga konteksnya",
         "Judul dan sumber tetap bersama konten"
       ],
       [
-        "Lanjutkan di Mac",
-        "Buka sumber, teliti, dan tindak lanjuti sebelum menandai selesai",
+        "Cari lewat catatanmu",
+        "Cari “jumlah sampel” di Mac. Catatan itu membantumu menemukan studinya meski judulnya sudah lupa.",
         "Lanjut di Mac",
         "Ubah temuan di ponsel menjadi tindakan"
       ],

@@ -1,8 +1,22 @@
 # CarryOver
 
-> CarryOver is a save-for-later inbox for iPhone, iPad and Mac. Capture a post, a reference or an idea while browsing, then return on Mac when you have time to review, research and follow up.
+> Pick up on Mac with the links, quotes and images you saved on iPhone or iPad. If you forget a title, search for the source domain, a phrase you saved or the note you left yourself.
 
 Official product and help content for CarryOver, developed by Peike Luo. The localized Markdown documents below are generated from the same content as the public HTML pages.
+
+## From the share sheet to a Mac search
+
+### Share to CarryOver
+
+Save links, posts and ideas from the Share menu
+
+### Leave yourself a note
+
+Add “Check sample size” to the walking study, or leave the note blank.
+
+### Find it by your own words
+
+Search “sample size” on Mac. The matching note points back to the study, even if you forget its title.
 
 ## Features
 
@@ -16,7 +30,7 @@ Unfinished items stay in your inbox regardless of age. Favorite important finds,
 
 ### Search saved content on any device
 
-Search titles, saved text and source URLs on iPhone, iPad and Mac, across your inbox and History.
+Search the source domain, a phrase from the shared text, a personal note or a topic in the inbox or History.
 
 ### Done, with a way back
 
@@ -30,15 +44,27 @@ Set a date and time and allow system notifications. Tap the reminder to open the
 
 iCloud sync connects iPhone, iPad and Mac signed in to the same Apple Account. Network and iCloud conditions can delay syncing.
 
+### Export Markdown
+
+Keep your notes and topic alongside the original. Open the source to check a detail, then mark the item done when you finish. To use it in your writing, export that item’s source and notes as a Markdown file.
+
 ## Content and sync boundaries
 
 ### What does CarryOver save from other apps?
 
-It saves the text, links or images that the source app actually shares. A social post may be shared as a link rather than its full content. Web links open the original page, not a full-text offline copy; internet access or a login may be required.
+It saves the text, links or images that the source app actually shares. A social post may be shared as a link rather than its full content. Opening a link may require internet access or a login.
 
 ### Can I save now and sync later?
 
 Items are saved locally first. Cross-device sync needs the same Apple Account, iCloud enabled and an internet connection. Check the sync status and retry if needed; syncing is not guaranteed to be immediate.
+
+### Can I find a saved item without its title?
+
+Search the source domain, a phrase from the shared text, a personal note or a topic in the inbox or History. Open the result to check its source; opening it doesn’t mark it done.
+
+### Can I read a saved article offline?
+
+For supported public HTTPS articles, you can save a plain-text copy to read offline on this device. Article copies stay on the device where you create them. Item details › More actions › Create article copy
 
 The current version has no daily save limit and does not require a separate Pro upgrade. Check the App Store for availability and pricing in your region.
 
@@ -46,25 +72,25 @@ Get CarryOver for iPhone, iPad and Mac on the App Store.
 
 ## Product and help by language
 
-- [English: CarryOver - Save Links & Notes on iPhone, Continue on Mac](https://carryover.luopeike.com/en-US/index.md)
+- [English: CarryOver | Save on iPhone, find it by your notes on Mac](https://carryover.luopeike.com/en-US/index.md)
 - [English: How to use CarryOver](https://carryover.luopeike.com/en-US/help.md)
-- [简体中文: CarryOver｜iPhone 保存链接与笔记，Mac 接着处理](https://carryover.luopeike.com/zh-Hans/index.md)
+- [简体中文: CarryOver｜iPhone 分享时记下原因，Mac 按备注找回](https://carryover.luopeike.com/zh-Hans/index.md)
 - [简体中文: 如何使用 CarryOver](https://carryover.luopeike.com/zh-Hans/help.md)
-- [繁體中文: CarryOver｜iPhone 儲存連結與筆記，Mac 接著處理](https://carryover.luopeike.com/zh-Hant/index.md)
+- [繁體中文: CarryOver｜在 iPhone 分享時留個備註，回到 Mac 找回資料](https://carryover.luopeike.com/zh-Hant/index.md)
 - [繁體中文: 如何使用 CarryOver](https://carryover.luopeike.com/zh-Hant/help.md)
-- [日本語: CarryOver - iPhone でリンクやメモを保存、Mac で続ける](https://carryover.luopeike.com/ja/index.md)
+- [日本語: CarryOver｜iPhoneで保存した資料をMacでメモから探す](https://carryover.luopeike.com/ja/index.md)
 - [日本語: CarryOver の使い方](https://carryover.luopeike.com/ja/help.md)
-- [한국어: CarryOver - iPhone에서 링크·메모 저장, Mac에서 이어서](https://carryover.luopeike.com/ko/index.md)
+- [한국어: CarryOver | iPhone에서 저장하고 Mac에서 메모로 다시 찾기](https://carryover.luopeike.com/ko/index.md)
 - [한국어: CarryOver 사용 방법](https://carryover.luopeike.com/ko/help.md)
-- [Deutsch: CarryOver - Links auf dem iPhone sichern, am Mac fortsetzen](https://carryover.luopeike.com/de-DE/index.md)
+- [Deutsch: CarryOver | Auf dem iPhone sichern, per Notiz am Mac wiederfinden](https://carryover.luopeike.com/de-DE/index.md)
 - [Deutsch: So nutzt du CarryOver](https://carryover.luopeike.com/de-DE/help.md)
-- [Français: CarryOver - Liens sur iPhone, à retrouver sur Mac](https://carryover.luopeike.com/fr-FR/index.md)
+- [Français: CarryOver | Enregistrer sur iPhone, retrouver par note sur Mac](https://carryover.luopeike.com/fr-FR/index.md)
 - [Français: Comment utiliser CarryOver](https://carryover.luopeike.com/fr-FR/help.md)
-- [Español: CarryOver - Guarda enlaces en iPhone, retómalos en Mac](https://carryover.luopeike.com/es-MX/index.md)
+- [Español: CarryOver | Guarda en iPhone y busca por nota en la Mac](https://carryover.luopeike.com/es-MX/index.md)
 - [Español: Cómo usar CarryOver](https://carryover.luopeike.com/es-MX/help.md)
-- [Italiano: CarryOver - Salva link su iPhone, riprendi sul Mac](https://carryover.luopeike.com/it/index.md)
+- [Italiano: CarryOver | Salva su iPhone, ritrova le fonti dagli appunti sul Mac](https://carryover.luopeike.com/it/index.md)
 - [Italiano: Come usare CarryOver](https://carryover.luopeike.com/it/help.md)
-- [Bahasa Indonesia: CarryOver - Simpan tautan di iPhone, lanjutkan di Mac](https://carryover.luopeike.com/id/index.md)
+- [Bahasa Indonesia: CarryOver | Simpan di iPhone, temukan kembali lewat catatan di Mac](https://carryover.luopeike.com/id/index.md)
 - [Bahasa Indonesia: Cara menggunakan CarryOver](https://carryover.luopeike.com/id/help.md)
 
 ## Official links

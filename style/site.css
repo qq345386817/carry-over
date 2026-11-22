@@ -65,6 +65,7 @@ img { max-width: 100%; }
 .workflow-step p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
 .workflow-media { display: grid; place-items: center; min-width: 0; height: 350px; padding: 24px 16px; border-radius: var(--radius); background: var(--surface-muted); }
 .workflow-media > .device-phone { width: 144px; }
+.workflow-detail { display: block; width: 100%; max-width: 460px; height: auto; }
 .workflow-media > .device-mac { width: 100%; max-width: 360px; }
 .features-section { padding-top: 44px; border-top: 1px solid var(--border); }
 .use-cases-section { padding-top: 44px; border-top: 1px solid var(--border); }

@@ -1,8 +1,8 @@
-# CarryOver - Guarda enlaces en iPhone, retómalos en Mac
+# CarryOver | Guarda en iPhone y busca por nota en la Mac
 
-Guarda enlaces, textos e imágenes desde Compartir en iPhone o iPad y retómalos en Mac. Con notas, favoritos, búsqueda, recordatorios y sincronización iCloud.
+Guarda enlaces, citas o imágenes con una nota desde el menú Compartir. Busca por nota o fuente en la Mac y exporta un elemento con sus notas en Markdown.
 
-Guarda enlaces, textos e imágenes desde Compartir en iPhone o iPad. Retómalos en Mac para revisar, investigar y dar seguimiento.
+Guarda lo que te interesa en el iPhone o iPad y anota por qué. Cuando vuelvas a la Mac, esa nota te ayudará a encontrarlo.
 
 ## Guarda ahora, vuelve después
 
@@ -10,21 +10,17 @@ Guarda enlaces, textos e imágenes desde Compartir en iPhone o iPad. Retómalos 
 
 Envía enlaces, publicaciones e ideas a CarryOver
 
-### Guardado para después
+### Anota el motivo
 
-Los pendientes permanecen en tu bandeja
+Al guardar el estudio sobre caminatas, escribe «Revisar tamaño de la muestra». También puedes dejar la nota en blanco.
 
-### Continuar en Mac
+### Encuéntralo por tu nota
 
-Abre la fuente, investiga y da seguimiento antes de terminar
-
-### Listo y conservado
-
-Los elementos completados quedan en el historial
+Busca «tamaño» en la Mac. La nota te lleva al estudio aunque no recuerdes el título.
 
 ## Un lugar para lo que vale la pena retomar
 
-CarryOver es una bandeja para lo que quieres retomar después en iPhone, iPad y Mac. Guarda una publicación, una referencia o una idea mientras navegas y vuelve en Mac cuando tengas tiempo de revisar, investigar y darle seguimiento.
+Retoma en la Mac los enlaces, citas e imágenes que guardaste en el iPhone o iPad. Si no recuerdas el título, busca por el dominio de origen, unas palabras de la cita o la nota que te dejaste.
 
 ### Una publicación durante el trayecto
 
@@ -32,7 +28,7 @@ Comparte una publicación útil desde una app social compatible. Abre su fuente 
 
 ### Una referencia para tu próximo proyecto
 
-Guarda en Safari un enlace por investigar, un anuncio de IA o una referencia de diseño. Agrega lo importante a favoritos y búscalo por su título, texto o URL guardados.
+Desde el menú Compartir del iPhone o iPad, guarda enlaces, fragmentos de texto o imágenes. Agrega una nota como «Revisar tamaño de la muestra». Cuando abras el material en la Mac, sabrás por qué lo guardaste.
 
 ### Una idea después de una conversación
 
@@ -50,7 +46,7 @@ Los elementos sin completar permanecen en tu bandeja sin importar su antigüedad
 
 ### Busca lo guardado en cualquier dispositivo
 
-En iPhone, iPad y Mac, busca por título, texto y URL de origen, tanto en pendientes como en el historial.
+Busca en Pendientes o en el historial por dominio, fragmento del texto compartido, nota o tema.
 
 ### Listo, pero no perdido
 
@@ -64,15 +60,27 @@ Elige fecha y hora y permite las notificaciones del sistema. Toca el recordatori
 
 iCloud sincroniza iPhone, iPad y Mac con la misma cuenta de Apple. La red y el estado de iCloud pueden retrasar la sincronización.
 
+### Exportar Markdown
+
+Agrega tus notas y un tema sin cambiar el material original. Abre la fuente para revisar un dato y marca el elemento como completado al terminar. Puedes exportar la fuente y las notas de un elemento en un archivo Markdown.
+
 ## Preguntas frecuentes
 
 ### ¿Qué guarda CarryOver desde otras apps?
 
-Guarda los textos, enlaces o imágenes que la app de origen realmente comparte. Una publicación social puede compartirse como enlace y no con todo su contenido. Los enlaces web abren la página original, no una copia completa sin conexión; podría requerirse Internet o iniciar sesión.
+Guarda los textos, enlaces o imágenes que la app de origen realmente comparte. Una publicación social puede compartirse como enlace y no con todo su contenido. Para abrir un enlace, es posible que necesites internet o iniciar sesión.
 
 ### ¿Puedo guardar ahora y sincronizar después?
 
 Los elementos se guardan primero en el dispositivo. La sincronización requiere la misma Cuenta de Apple, iCloud activado y conexión a Internet. Revisa el estado y vuelve a intentarlo si hace falta; no se garantiza que sea inmediata.
+
+### ¿Cómo encuentro algo si olvidé el título?
+
+Busca en Pendientes o en el historial por dominio, fragmento del texto compartido, nota o tema. Abre el resultado para revisar la fuente: eso no lo marca como completado.
+
+### ¿Puedo leer un artículo sin conexión?
+
+Si un artículo público con HTTPS es compatible, puedes guardar una copia de texto para leerla sin conexión. Esa copia se queda en el dispositivo donde la creaste. Detalles del elemento › Más acciones › Crear copia del artículo
 
 La versión actual no tiene límite diario ni requiere una actualización Pro por separado. Consulta la disponibilidad y el precio de tu región en App Store.
 

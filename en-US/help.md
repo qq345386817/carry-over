@@ -1,6 +1,6 @@
 # How to use CarryOver
 
-CarryOver is a save-for-later inbox for iPhone, iPad and Mac. Capture a post, a reference or an idea while browsing, then return on Mac when you have time to review, research and follow up.
+Pick up on Mac with the links, quotes and images you saved on iPhone or iPad. If you forget a title, search for the source domain, a phrase you saved or the note you left yourself.
 
 ## Save content
 
@@ -14,7 +14,7 @@ In a compatible app, open the system Share menu and choose CarryOver. On iPhone 
 
 ### Review and save
 
-In the share form, review the content and optionally edit the title or set a reminder. Choose Save to add it to your inbox.
+Add “Check sample size” to the walking study, or leave the note blank. In the share form, review the content and optionally edit the title or set a reminder. Choose Save to add it to your inbox.
 
 ### Add a note manually
 
@@ -24,7 +24,7 @@ Open Add Share in CarryOver to record an idea or paste content, then save it to 
 
 ### Open the item or its source
 
-Select an item to view or edit it. If a source URL is available, use the source action to open it in the browser.
+Search the source domain, a phrase from the shared text, a personal note or a topic in the inbox or History. Open the result to check its source; opening it doesn’t mark it done.
 
 ### Keep important items in Favorites
 
@@ -40,7 +40,11 @@ Use the restore button beside a completed item to return it to the inbox.
 
 ### Delete with confirmation
 
-On iPhone and iPad, swipe left on an item and choose Delete. On Mac, use the delete action. Confirm before the item is removed.
+On iPhone and iPad, swipe left on an item and choose Delete. On Mac, use the delete action. Confirm before the item is removed. Trash: Deleted items are kept for 30 days. You can restore them before they are permanently deleted.
+
+### Export Markdown
+
+Item details › More actions › Export Markdown. To use it in your writing, export that item’s source and notes as a Markdown file.
 
 ## Sync and troubleshooting
 
@@ -72,19 +76,23 @@ No separate CarryOver account is required. Sync uses Apple's iCloud services whe
 
 ### What does CarryOver save from other apps?
 
-It saves the text, links or images that the source app actually shares. A social post may be shared as a link rather than its full content. Web links open the original page, not a full-text offline copy; internet access or a login may be required.
+It saves the text, links or images that the source app actually shares. A social post may be shared as a link rather than its full content. Opening a link may require internet access or a login.
 
 ### Can I save now and sync later?
 
 Items are saved locally first. Cross-device sync needs the same Apple Account, iCloud enabled and an internet connection. Check the sync status and retry if needed; syncing is not guaranteed to be immediate.
 
+### Can I find a saved item without its title?
+
+Search the source domain, a phrase from the shared text, a personal note or a topic in the inbox or History. Open the result to check its source; opening it doesn’t mark it done.
+
+### Can I read a saved article offline?
+
+For supported public HTTPS articles, you can save a plain-text copy to read offline on this device. Article copies stay on the device where you create them. Item details › More actions › Create article copy
+
 ### Do unfinished items disappear after a few days?
 
-No. Unfinished items remain in the inbox regardless of age. Marking an item done moves it to History; deleting removes it.
-
-### Can I search my saved content?
-
-Yes. Search titles, saved text and source URLs on iPhone, iPad and Mac, including completed items in History.
+Unfinished items stay in your inbox regardless of age. Completed items move to History.
 
 ### Will Later actually remind me?
 

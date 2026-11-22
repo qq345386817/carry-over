@@ -1,6 +1,6 @@
 # Cara menggunakan CarryOver
 
-CarryOver adalah kotak masuk untuk hal yang ingin Anda tangani nanti di iPhone, iPad, dan Mac. Simpan postingan, referensi, atau ide saat menjelajah, lalu kembali di Mac saat ada waktu untuk memeriksa, meneliti, dan menindaklanjuti.
+Lanjutkan di Mac dengan tautan, kutipan, dan gambar yang kamu simpan di iPhone atau iPad. Jika lupa judulnya, cari dengan domain sumber, potongan kutipan, atau catatan yang kamu tinggalkan.
 
 ## Simpan konten
 
@@ -14,7 +14,7 @@ Di aplikasi yang kompatibel, buka menu Bagikan sistem dan pilih CarryOver. Di iP
 
 ### Periksa dan simpan
 
-Periksa konten di formulir berbagi. Anda dapat mengubah judul atau mengatur pengingat. Pilih Simpan untuk menambahkannya ke kotak masuk.
+Saat menyimpan studi tentang jalan kaki, tulis “Cek jumlah sampel”. Kolom catatan juga boleh dikosongkan. Periksa konten di formulir berbagi. Anda dapat mengubah judul atau mengatur pengingat. Pilih Simpan untuk menambahkannya ke kotak masuk.
 
 ### Tambah catatan secara manual
 
@@ -24,7 +24,7 @@ Buka formulir tambah di CarryOver, catat ide atau tempel konten, lalu simpan ke 
 
 ### Buka item atau sumbernya
 
-Pilih item untuk melihat atau mengeditnya. Jika ada URL sumber, gunakan tindakan sumber untuk membukanya di browser.
+Di daftar yang belum diproses atau riwayat, cari domain sumber, potongan teks, catatan, atau topik. Membuka hasil untuk memeriksa sumber tidak menandainya sebagai selesai.
 
 ### Simpan yang penting di favorit
 
@@ -40,7 +40,11 @@ Gunakan tombol pulihkan di samping item selesai untuk mengembalikannya ke kotak 
 
 ### Konfirmasi sebelum menghapus
 
-Di iPhone dan iPad, geser item ke kiri lalu pilih Hapus. Di Mac, gunakan tindakan hapus. Item dihapus setelah Anda mengonfirmasi.
+Di iPhone dan iPad, geser item ke kiri lalu pilih Hapus. Di Mac, gunakan tindakan hapus. Item dihapus setelah Anda mengonfirmasi. Sampah: Item yang dihapus disimpan selama 30 hari. Anda dapat memulihkannya sebelum dihapus secara permanen.
+
+### Ekspor Markdown
+
+Rincian item › Tindakan lainnya › Ekspor Markdown. Sumber dan catatan untuk satu item bisa kamu ekspor bersama ke berkas Markdown.
 
 ## Sinkronisasi dan pemecahan masalah
 
@@ -72,19 +76,23 @@ Tidak. Sinkronisasi menggunakan layanan iCloud Apple saat tersedia.
 
 ### Apa yang disimpan CarryOver dari aplikasi lain?
 
-CarryOver menyimpan teks, tautan, atau gambar yang benar-benar dibagikan oleh aplikasi sumber. Postingan sosial mungkin dibagikan sebagai tautan, bukan seluruh isinya. Tautan web membuka halaman asli, bukan salinan artikel lengkap secara offline; akses Internet atau login mungkin diperlukan.
+CarryOver menyimpan teks, tautan, atau gambar yang benar-benar dibagikan oleh aplikasi sumber. Postingan sosial mungkin dibagikan sebagai tautan, bukan seluruh isinya. Untuk membuka tautan, kamu mungkin perlu terhubung ke internet atau masuk ke situs.
 
 ### Bisakah saya menyimpan sekarang dan menyinkronkan nanti?
 
 Item disimpan di perangkat terlebih dahulu. Sinkronisasi antarperangkat memerlukan Akun Apple yang sama, iCloud aktif, dan koneksi Internet. Periksa status dan coba lagi jika perlu; sinkronisasi tidak dijamin langsung selesai.
 
+### Bagaimana cara mencari item jika lupa judulnya?
+
+Di daftar yang belum diproses atau riwayat, cari domain sumber, potongan teks, catatan, atau topik. Membuka hasil untuk memeriksa sumber tidak menandainya sebagai selesai.
+
+### Bisakah saya membaca artikel secara offline?
+
+Untuk artikel HTTPS publik yang didukung, kamu bisa menyimpan salinan teks untuk dibaca secara offline. Salinan itu hanya tersimpan di perangkat tempat kamu membuatnya. Rincian item › Tindakan lainnya › Buat salinan artikel
+
 ### Apakah item belum selesai hilang setelah beberapa hari?
 
-Tidak. Item belum selesai tetap di kotak masuk. Menandainya selesai memindahkannya ke riwayat; menghapus akan membuangnya.
-
-### Bisakah saya mencari konten tersimpan?
-
-Ya. Cari judul, teks dan URL sumber di iPhone, iPad dan Mac, termasuk item dalam riwayat.
+Item yang belum selesai tetap di kotak masuk, berapa pun usianya. Item selesai masuk ke riwayat.
 
 ### Apakah pengingat benar-benar dikirim?
 

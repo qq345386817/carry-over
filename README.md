@@ -47,7 +47,12 @@ were added for the design refresh.
   The privacy policy's displayed effective date is separate and is not changed
   by a rebuild or a metadata-only edit.
 
-Search covers saved titles, text and source URLs on iPhone, iPad and Mac.
+The share sheet can save an optional personal note with the source. Search
+covers saved titles, shared text, source URLs, notes and topics. A single
+item's source and notes can be exported as Markdown. Only supported public
+HTTPS articles can be explicitly saved as local plain-text copies; those
+copies do not sync. See `images/product/README.md` for the localized research
+sample used in the website's three-step walkthrough.
 Unfinished items stay in the inbox; completed items go to History and can be
 restored. Reminders are system-delivered local notifications
 and require permission. Sync requires the same Apple Account and available
