@@ -99,3 +99,24 @@ request recrawling/validation where appropriate. Expected redirected aliases
 and intentional non-indexed Markdown are not pages that need to be forced into
 the index. Deployment alone does not prove Google has re-crawled or resolved a
 reported issue.
+
+## Bing and IndexNow
+
+On a push to `main` that changes the sitemap, the IndexNow workflow compares
+the previous and current canonical URLs and their substantive modification
+dates, including removed URLs. It waits for the public ownership file and the
+expected production sitemap before submitting. Do not submit redirects,
+Markdown mirrors or unchanged URLs. No Bing account credentials are required.
+
+To preview a deployment manually, run
+`python3 scripts/notify_indexnow.py --before /path/to/previous-sitemap.xml`.
+For a second substantive update on the same date (no sitemap diff), use
+`--urls https://carryover.luopeike.com/en-US/help` with the actual changed
+URLs after verifying production. Add `--submit` to transmit.
+HTTP 200 acknowledges receipt; 202 means key verification is pending.
+Neither means the URLs are indexed. Review the site's IndexNow report later.
+
+The separate Bing recommendation about quality inbound links requires genuine
+editorial references from other sites. Internal links and repeated URL
+submission do not satisfy it. When maintaining an actual product listing
+elsewhere, link to the matching language's canonical homepage or help page.

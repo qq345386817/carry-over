@@ -1,0 +1,22 @@
+name: Notify IndexNow
+on:
+  push:
+    branches: [main]
+    paths: [sitemap.xml]
+permissions:
+  contents: read
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Compare sitemaps and wait for production
+        env:
+          PREVIOUS: ${{ github.event.before }}
+        run: |
+          git show "${PREVIOUS}:sitemap.xml" > "$RUNNER_TEMP/previous.xml"
+          python3 scripts/notify_indexnow.py --before "$RUNNER_TEMP/previous.xml" --submit
